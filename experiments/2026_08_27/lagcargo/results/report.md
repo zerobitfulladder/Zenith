@@ -1,0 +1,4 @@
+# Square, same-rate chassis + observed cargo (delayed write)
+
+FREE-RUN 100 emissions: mean |x err| 0.00 (max 0)  (refs: lag-advance flat 0.00; tonight's inferred-cargo 6.65)
+first 33 (gen_x, true_x): (20,20) (19,19) (18,18) (17,17) (16,16) (15,15) (14,14) (13,13) (12,12) (11,11) (10,10) (9,9) (8,8) (7,7) (6,6) (5,5) (4,4) (3,3) (2,2) (1,1) (0,0) (1,1) (2,2) (3,3) (4,4) (5,5) (6,6) (7,7) (8,8) (9,9) (10,10) (11,11) (12,12)

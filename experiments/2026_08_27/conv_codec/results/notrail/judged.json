@@ -1,0 +1,19 @@
+{
+  "arm": "notrail",
+  "probe_val_acc_on_real_renders": 0.916,
+  "old_judge_acc_on_real_renders": 0.851,
+  "graded_probe_advance": 0.455,
+  "graded_probe_timeline": 0.11,
+  "graded_probe_distinct_classes": 8,
+  "graded_meanjudge_advance": 0.677,
+  "graded_meanjudge_timeline": 0.1,
+  "graded_meanjudge_distinct_classes": 9,
+  "graded_probe_first40": "9013443678013443678013443678013443678013",
+  "committed_probe_advance": 0.364,
+  "committed_probe_timeline": 0.2,
+  "committed_probe_distinct_classes": 8,
+  "committed_meanjudge_advance": 0.747,
+  "committed_meanjudge_timeline": 0.18,
+  "committed_meanjudge_distinct_classes": 9,
+  "committed_probe_first40": "9513436785134367851343678513436785134367"
+}

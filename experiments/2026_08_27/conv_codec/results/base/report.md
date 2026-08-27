@@ -1,0 +1,34 @@
+# Conv codec arm `base`
+
+win 8x8, K1=64, GC=0.5, trail=True
+
+- arm: base
+- win: 8
+- k1: 64
+- gc: 0.5
+- trail: True
+- cargo_share_of_row: 0.26
+- window_fidelity: 0.232
+- recon_corr_committed: 0.502
+- recon_corr_graded: 0.552
+- decoder_ceiling_committed: 0.27
+- decoder_ceiling_graded: 0.31
+- judge_on_real_frames: 0.87
+- l1_units_used: 60
+- l1_top_unit_share: 0.037
+- l2_rows_ever_win: 32
+- l2_top_row_share: 0.943
+- phase_from_code_trail: 1.0
+- tf_read_in_code_space: 0.18
+- tf_through_decoder: 0.14
+- tf_distinct_winners: 9
+- bounce_graded_distinct_winners: 2
+- bounce_graded_top_winner_share: 0.99
+- bounce_graded_advance: 0.0
+- bounce_graded_timeline: 0.1
+- bounce_graded_first30: 202222222222222222222222222222
+- bounce_committed_distinct_winners: 2
+- bounce_committed_top_winner_share: 0.99
+- bounce_committed_advance: 0.0
+- bounce_committed_timeline: 0.1
+- bounce_committed_first30: 202222222222222222222222222222
