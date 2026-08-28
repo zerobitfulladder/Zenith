@@ -1,0 +1,29 @@
+{
+  "teacher_rate": 1.0,
+  "gains": [
+    0.15,
+    0.3,
+    2.0,
+    0.6
+  ],
+  "mlp_outer_phi": 0.682,
+  "nn1_outer_phi": 0.594,
+  "mlp_inner_diff": 0.89,
+  "nn1_inner_diff": 0.768,
+  "r0": 25,
+  "r0_tf_inner": 0.766,
+  "r1": 19,
+  "r1_tf_inner": 0.71,
+  "r2": 39,
+  "r2_tf_inner": 0.654,
+  "r3": 48,
+  "r3_tf_inner": 0.648,
+  "r4": 57,
+  "r4_tf_inner": 0.613,
+  "r5": 61,
+  "r5_tf_inner": 0.596,
+  "best": {
+    "score": 61,
+    "round": 5
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "best": {
+    "score": -1.0,
+    "tick": 0
+  },
+  "reports": [
+    {
+      "tick": 10000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 45,
+      "success_last100": 1.0,
+      "agree_outer": 1.0,
+      "agree_inner": 1.0,
+      "bestmatch_outer": null,
+      "bestmatch_inner": null
+    },
+    {
+      "tick": 20000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 90,
+      "success_last100": 1.0,
+      "agree_outer": 1.0,
+      "agree_inner": 1.0,
+      "bestmatch_outer": null,
+      "bestmatch_inner": null
+    },
+    {
+      "tick": 30000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 136,
+      "success_last100": 1.0,
+      "agree_outer": 1.0,
+      "agree_inner": 1.0,
+      "bestmatch_outer": null,
+      "bestmatch_inner": null
+    },
+    {
+      "tick": 40000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 180,
+      "success_last100": 1.0,
+      "agree_outer": 1.0,
+      "agree_inner": 1.0,
+      "bestmatch_outer": null,
+      "bestmatch_inner": null
+    }
+  ]
+}

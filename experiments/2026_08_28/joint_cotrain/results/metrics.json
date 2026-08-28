@@ -1,0 +1,20 @@
+{
+  "T": 32,
+  "epochs": 20,
+  "units_used": [
+    128,
+    128,
+    512
+  ],
+  "top_max_win_share": 0.0417,
+  "tf_train": 0.637,
+  "tf_held": 0.36,
+  "free_pixel_train_advance": 0.0,
+  "free_pixel_train_match": 0.755,
+  "free_pixel_held_advance": 0.0,
+  "free_pixel_held_match": 0.396,
+  "free_code_train_advance": 0.0,
+  "free_code_train_match": 0.751,
+  "free_code_held_advance": 0.0,
+  "free_code_held_match": 0.396
+}

@@ -1,0 +1,19 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+retraining tops...
+wrote truth_0_right.gif
+wrote truth_1_rot.gif
+wrote twotrack_pixel_0_right.gif
+wrote twotrack_sub_0_right.gif
+wrote twotrack_sub_1_rot.gif
+wrote twotrack_sub_0_down.gif
+wrote twotrack_sub_2_right_HELDOUT.gif
+wrote twotrack_sub_3_down_HELDOUT.gif
+wrote twotrack_sub_4_rot_HELDOUT.gif
+wrote joint_frozen_0_right.gif
+wrote joint_adapt_0_right.gif
+wrote joint_adapt_1_rot.gif
+all gifs written to /home/lavender/Projects/Geodesique/experiments/experiments_2026_08_28/gifs

@@ -1,0 +1,21 @@
+{
+  "teacher_rate": 1.0,
+  "gains": [
+    0.15,
+    0.3,
+    2.0,
+    0.6
+  ],
+  "mlp_outer_phi": 0.682,
+  "nn1_outer_phi": 0.594,
+  "mlp_inner_diff": 0.89,
+  "nn1_inner_diff": 0.768,
+  "r0": 76,
+  "r0_tf_inner": 0.767,
+  "r1": 74,
+  "r1_tf_inner": 0.708,
+  "r2": 83,
+  "r2_tf_inner": 0.687,
+  "r3": 61,
+  "r3_tf_inner": 0.672
+}

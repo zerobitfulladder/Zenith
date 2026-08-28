@@ -1,0 +1,60 @@
+{
+  "train_n": 55000,
+  "test_n": 5000,
+  "r_train": 4,
+  "units_used": [
+    64,
+    64,
+    100
+  ],
+  "committee_L1_res_R1_mse": 0.02048,
+  "committee_L1_res_R1_corr": 0.918,
+  "committee_L1_res_R2_mse": 0.00978,
+  "committee_L1_res_R2_corr": 0.956,
+  "committee_L1_res_R3_mse": 0.00671,
+  "committee_L1_res_R3_corr": 0.966,
+  "committee_L1_res_R4_mse": 0.0055,
+  "committee_L1_res_R4_corr": 0.97,
+  "committee_L1_res_R5_mse": 0.00492,
+  "committee_L1_res_R5_corr": 0.972,
+  "committee_L1_res_R6_mse": 0.00456,
+  "committee_L1_res_R6_corr": 0.974,
+  "committee_L1_graded_mse": 0.00935,
+  "committee_L1_graded_corr": 0.945,
+  "committee_L2_parity_mse": 0.01345,
+  "committee_L2_parity_corr": 0.921,
+  "committee_L2_sc_graded_mse": 0.01344,
+  "committee_L2_sc_graded_corr": 0.921,
+  "committee_L2_res_R1_mse": 0.0286,
+  "committee_L2_res_R1_corr": 0.847,
+  "committee_L2_res_R2_mse": 0.01924,
+  "committee_L2_res_R2_corr": 0.896,
+  "committee_L2_res_R3_mse": 0.01612,
+  "committee_L2_res_R3_corr": 0.91,
+  "committee_L2_res_R4_mse": 0.01481,
+  "committee_L2_res_R4_corr": 0.916,
+  "committee_L3_parity_mse": 0.0171,
+  "committee_L3_parity_corr": 0.899,
+  "committee_L3_res_mse": 0.02345,
+  "committee_L3_res_corr": 0.866,
+  "committee_matchq_L1": [
+    0.723,
+    0.635,
+    0.516,
+    0.409,
+    0.334,
+    0.284
+  ],
+  "committee_matchq_L2": [
+    0.333,
+    0.288,
+    0.258,
+    0.231
+  ],
+  "committee_matchq_L3": [
+    0.353,
+    0.304,
+    0.275,
+    0.253
+  ]
+}

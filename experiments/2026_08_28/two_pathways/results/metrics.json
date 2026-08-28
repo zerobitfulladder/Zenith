@@ -1,0 +1,40 @@
+{
+  "T": 32,
+  "k_top": 512,
+  "held_out": [
+    [
+      2,
+      "right"
+    ],
+    [
+      3,
+      "down"
+    ],
+    [
+      4,
+      "rot"
+    ]
+  ],
+  "form_motion_selectivity": 0.458,
+  "form_digit_selectivity": 0.4,
+  "motion_motion_selectivity": 0.528,
+  "motion_digit_selectivity": 0.34,
+  "joint_motion_selectivity": 0.559,
+  "joint_digit_selectivity": 0.43,
+  "top_units_used": [
+    512,
+    512
+  ],
+  "tf_train_twotrack": 0.768,
+  "tf_train_joint": 0.703,
+  "tf_held_twotrack": 0.38,
+  "tf_held_joint": 0.378,
+  "free_train_twotrack_advance": 0.362,
+  "free_train_twotrack_match": 0.79,
+  "free_train_joint_advance": 0.0,
+  "free_train_joint_match": 0.787,
+  "free_held_twotrack_advance": 0.199,
+  "free_held_twotrack_match": 0.412,
+  "free_held_joint_advance": 0.0,
+  "free_held_joint_match": 0.508
+}

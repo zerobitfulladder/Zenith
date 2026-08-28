@@ -1,0 +1,36 @@
+teacher {'type': 'lqr', 'ke': -1.0, 'cent': 1.0} audition 25/25, rate 0.93
+demos: 300 recoveries, 94001 samples
+[full] round 0: {'hard': 41, 'graded': 2} (data 94001)
+[full] round 1: {'hard': 87, 'graded': 6} (data 118475)
+{
+  "n_demos": 300,
+  "rounds": 2,
+  "eval_n": 100,
+  "lags": [
+    4,
+    16
+  ],
+  "k": [
+    256,
+    32,
+    2048
+  ],
+  "full_r0_hard": 41,
+  "full_r0_hard_tf": 0.59,
+  "full_r0_graded": 2,
+  "full_r0_graded_tf": 0.532,
+  "full_r1_hard": 87,
+  "full_r1_hard_tf": 0.598,
+  "full_r1_graded": 6,
+  "full_r1_graded_tf": 0.522,
+  "best": {
+    "score": 87,
+    "arm": "full",
+    "read": "hard",
+    "round": 1,
+    "lags": [
+      4,
+      16
+    ]
+  }
+}

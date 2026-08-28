@@ -1,0 +1,64 @@
+{
+  "xp": "cupy",
+  "train_n": 55000,
+  "test_n": 5000,
+  "r_train": 4,
+  "arms": [
+    "full"
+  ],
+  "full_units_used": [
+    64,
+    64,
+    100
+  ],
+  "full_L1_res_R1_mse": 0.01691,
+  "full_L1_res_R1_corr": 0.924,
+  "full_L1_res_R2_mse": 0.00972,
+  "full_L1_res_R2_corr": 0.95,
+  "full_L1_res_R3_mse": 0.00749,
+  "full_L1_res_R3_corr": 0.959,
+  "full_L1_res_R4_mse": 0.00644,
+  "full_L1_res_R4_corr": 0.964,
+  "full_L1_res_R5_mse": 0.00581,
+  "full_L1_res_R5_corr": 0.967,
+  "full_L1_res_R6_mse": 0.00539,
+  "full_L1_res_R6_corr": 0.969,
+  "full_L1_graded_mse": 0.00953,
+  "full_L1_graded_corr": 0.945,
+  "full_L2_parity_mse": 0.01676,
+  "full_L2_parity_corr": 0.901,
+  "full_L2_sc_graded_mse": 0.01729,
+  "full_L2_sc_graded_corr": 0.898,
+  "full_L2_res_R1_mse": 0.01992,
+  "full_L2_res_R1_corr": 0.882,
+  "full_L2_res_R2_mse": 0.01641,
+  "full_L2_res_R2_corr": 0.902,
+  "full_L2_res_R3_mse": 0.01559,
+  "full_L2_res_R3_corr": 0.907,
+  "full_L2_res_R4_mse": 0.01537,
+  "full_L2_res_R4_corr": 0.908,
+  "full_L3_parity_mse": 0.02257,
+  "full_L3_parity_corr": 0.866,
+  "full_L3_res_mse": 0.02236,
+  "full_L3_res_corr": 0.868,
+  "full_matchq_L1": [
+    0.754,
+    0.573,
+    0.445,
+    0.377,
+    0.327,
+    0.292
+  ],
+  "full_matchq_L2": [
+    0.457,
+    0.348,
+    0.283,
+    0.24
+  ],
+  "full_matchq_L3": [
+    0.417,
+    0.333,
+    0.283,
+    0.249
+  ]
+}

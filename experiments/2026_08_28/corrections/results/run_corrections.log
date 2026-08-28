@@ -1,0 +1,33 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+(0,0) done
+(2,0) done
+(4,0) done
+(0,4) done
+(2,2) done
+(4,4) done
+{
+  "test_n": 5000,
+  "r3": 4,
+  "c0_0_mse": 0.02403,
+  "c0_0_corr": 0.856,
+  "c0_0_stored_numbers": 72,
+  "c2_0_mse": 0.01932,
+  "c2_0_corr": 0.884,
+  "c2_0_stored_numbers": 172,
+  "c4_0_mse": 0.01872,
+  "c4_0_corr": 0.887,
+  "c4_0_stored_numbers": 272,
+  "c0_4_mse": 0.00776,
+  "c0_4_corr": 0.955,
+  "c0_4_stored_numbers": 1040,
+  "c2_2_mse": 0.01004,
+  "c2_2_corr": 0.941,
+  "c2_2_stored_numbers": 656,
+  "c4_4_mse": 0.00742,
+  "c4_4_corr": 0.957,
+  "c4_4_stored_numbers": 1240
+}

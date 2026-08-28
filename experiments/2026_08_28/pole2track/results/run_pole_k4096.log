@@ -1,0 +1,35 @@
+expert sign -1 (20/20)
+demos: 300 recoveries, 22970 samples
+[flat] round 0: {'hard': 1} (data 22970)
+[flat] round 1: {'hard': 2} (data 53052)
+[flat] round 2: {'hard': 1} (data 77024)
+{
+  "n_demos": 300,
+  "rounds": 3,
+  "eval_n": 100,
+  "lags": [
+    4,
+    16
+  ],
+  "k": [
+    256,
+    32,
+    4096
+  ],
+  "flat_r0_hard": 1,
+  "flat_r0_hard_tf": 0.564,
+  "flat_r1_hard": 2,
+  "flat_r1_hard_tf": 0.496,
+  "flat_r2_hard": 1,
+  "flat_r2_hard_tf": 0.517,
+  "best": {
+    "score": 2,
+    "arm": "flat",
+    "read": "hard",
+    "round": 1,
+    "lags": [
+      4,
+      16
+    ]
+  }
+}

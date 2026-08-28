@@ -1,0 +1,32 @@
+{
+  "n_demos": 300,
+  "rounds": 2,
+  "eval_n": 100,
+  "lags": [
+    4,
+    16
+  ],
+  "k": [
+    256,
+    32,
+    2048
+  ],
+  "full_r0_hard": 41,
+  "full_r0_hard_tf": 0.59,
+  "full_r0_graded": 2,
+  "full_r0_graded_tf": 0.532,
+  "full_r1_hard": 87,
+  "full_r1_hard_tf": 0.598,
+  "full_r1_graded": 6,
+  "full_r1_graded_tf": 0.522,
+  "best": {
+    "score": 87,
+    "arm": "full",
+    "read": "hard",
+    "round": 1,
+    "lags": [
+      4,
+      16
+    ]
+  }
+}

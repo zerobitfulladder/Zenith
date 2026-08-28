@@ -1,0 +1,43 @@
+cascade teacher (0.15, 0.3, 2.0, 0.6) audition 12/12 rate 1.00
+demos 400: outer 120042, inner 120042
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+controls outer_phi: MLP 0.682 1-NN 0.594
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+controls inner_diff: MLP 0.890 1-NN 0.768
+round 0: 25/100 tf_inner 0.766 (outer 120042)
+round 1: 19/100 tf_inner 0.710 (outer 139867)
+round 2: 39/100 tf_inner 0.654 (outer 159134)
+round 3: 48/100 tf_inner 0.648 (outer 175789)
+round 4: 57/100 tf_inner 0.613 (outer 190349)
+round 5: 61/100 tf_inner 0.596 (outer 210342)
+{
+  "teacher_rate": 1.0,
+  "gains": [
+    0.15,
+    0.3,
+    2.0,
+    0.6
+  ],
+  "mlp_outer_phi": 0.682,
+  "nn1_outer_phi": 0.594,
+  "mlp_inner_diff": 0.89,
+  "nn1_inner_diff": 0.768,
+  "r0": 25,
+  "r0_tf_inner": 0.766,
+  "r1": 19,
+  "r1_tf_inner": 0.71,
+  "r2": 39,
+  "r2_tf_inner": 0.654,
+  "r3": 48,
+  "r3_tf_inner": 0.648,
+  "r4": 57,
+  "r4_tf_inner": 0.613,
+  "r5": 61,
+  "r5_tf_inner": 0.596,
+  "best": {
+    "score": 61,
+    "round": 5
+  }
+}

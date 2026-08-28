@@ -1,0 +1,27 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+{"tick": 5000, "phase": "WARM(oracle flies)", "episodes": 23, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 5000, "code_occupancy": null}
+{"tick": 10000, "phase": "WARM(oracle flies)", "episodes": 47, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 10000, "code_occupancy": null}
+{"tick": 15000, "phase": "WARM(oracle flies)", "episodes": 70, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 15000, "code_occupancy": null}
+{"tick": 20000, "phase": "WARM(oracle flies)", "episodes": 92, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 20000, "code_occupancy": null}
+{"tick": 25000, "phase": "WARM(oracle flies)", "episodes": 117, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 25000, "code_occupancy": null}
+{"tick": 30000, "phase": "WARM(oracle flies)", "episodes": 139, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 30000, "code_occupancy": null}
+{"tick": 35000, "phase": "WARM(oracle flies)", "episodes": 161, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 32768, "code_occupancy": null}
+{"tick": 40000, "phase": "WARM(oracle flies)", "episodes": 184, "success_last100": 1.0, "agree": 1.0, "bestmatch": null, "minicolumns_used": 32768, "code_occupancy": null}
+{"tick": 45000, "phase": "pupil", "episodes": 196, "success_last100": 0.89, "agree": 0.182, "bestmatch": 0.511, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+  new best 0.89 @ 45000
+{"tick": 50000, "phase": "pupil", "episodes": 208, "success_last100": 0.77, "agree": 0.193, "bestmatch": 0.503, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 55000, "phase": "pupil", "episodes": 218, "success_last100": 0.69, "agree": 0.19, "bestmatch": 0.541, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+{"tick": 60000, "phase": "pupil", "episodes": 230, "success_last100": 0.58, "agree": 0.264, "bestmatch": 0.488, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 65000, "phase": "pupil", "episodes": 240, "success_last100": 0.48, "agree": 0.217, "bestmatch": 0.509, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 70000, "phase": "pupil", "episodes": 251, "success_last100": 0.38, "agree": 0.256, "bestmatch": 0.505, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 75000, "phase": "pupil", "episodes": 258, "success_last100": 0.32, "agree": 0.174, "bestmatch": 0.523, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+{"tick": 80000, "phase": "pupil", "episodes": 267, "success_last100": 0.23, "agree": 0.241, "bestmatch": 0.512, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 85000, "phase": "pupil", "episodes": 279, "success_last100": 0.12, "agree": 0.26, "bestmatch": 0.514, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+{"tick": 90000, "phase": "pupil", "episodes": 290, "success_last100": 0.07, "agree": 0.247, "bestmatch": 0.501, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+{"tick": 95000, "phase": "pupil", "episodes": 302, "success_last100": 0.07, "agree": 0.216, "bestmatch": 0.489, "minicolumns_used": 32768, "code_occupancy": 0.0047}
+{"tick": 100000, "phase": "pupil", "episodes": 311, "success_last100": 0.07, "agree": 0.214, "bestmatch": 0.501, "minicolumns_used": 32768, "code_occupancy": 0.0046}
+{"tick": 105000, "phase": "pupil", "episodes": 321, "success_last100": 0.05, "agree": 0.205, "bestmatch": 0.503, "minicolumns_used": 32768, "code_occupancy": 0.0047}

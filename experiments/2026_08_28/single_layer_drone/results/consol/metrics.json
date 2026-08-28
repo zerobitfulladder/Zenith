@@ -1,0 +1,215 @@
+{
+  "best": {
+    "score": 0.89,
+    "tick": 45000
+  },
+  "config": {
+    "k": 32768,
+    "size": 8192,
+    "nb": 128,
+    "eta": 0.05,
+    "warm": 40000
+  },
+  "reports": [
+    {
+      "tick": 5000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 23,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 5000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 10000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 47,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 10000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 15000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 70,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 15000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 20000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 92,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 20000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 25000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 117,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 25000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 30000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 139,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 30000,
+      "code_occupancy": null
+    },
+    {
+      "tick": 35000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 161,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 32768,
+      "code_occupancy": null
+    },
+    {
+      "tick": 40000,
+      "phase": "WARM(oracle flies)",
+      "episodes": 184,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "bestmatch": null,
+      "minicolumns_used": 32768,
+      "code_occupancy": null
+    },
+    {
+      "tick": 45000,
+      "phase": "pupil",
+      "episodes": 196,
+      "success_last100": 0.89,
+      "agree": 0.175,
+      "bestmatch": 0.493,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 50000,
+      "phase": "pupil",
+      "episodes": 209,
+      "success_last100": 0.76,
+      "agree": 0.216,
+      "bestmatch": 0.487,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 55000,
+      "phase": "pupil",
+      "episodes": 220,
+      "success_last100": 0.65,
+      "agree": 0.219,
+      "bestmatch": 0.497,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0046
+    },
+    {
+      "tick": 60000,
+      "phase": "pupil",
+      "episodes": 229,
+      "success_last100": 0.56,
+      "agree": 0.2,
+      "bestmatch": 0.491,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0046
+    },
+    {
+      "tick": 65000,
+      "phase": "pupil",
+      "episodes": 237,
+      "success_last100": 0.48,
+      "agree": 0.157,
+      "bestmatch": 0.521,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 70000,
+      "phase": "pupil",
+      "episodes": 245,
+      "success_last100": 0.4,
+      "agree": 0.197,
+      "bestmatch": 0.488,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 75000,
+      "phase": "pupil",
+      "episodes": 258,
+      "success_last100": 0.29,
+      "agree": 0.163,
+      "bestmatch": 0.514,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 80000,
+      "phase": "pupil",
+      "episodes": 269,
+      "success_last100": 0.18,
+      "agree": 0.198,
+      "bestmatch": 0.481,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0046
+    },
+    {
+      "tick": 85000,
+      "phase": "pupil",
+      "episodes": 276,
+      "success_last100": 0.11,
+      "agree": 0.15,
+      "bestmatch": 0.528,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 90000,
+      "phase": "pupil",
+      "episodes": 287,
+      "success_last100": 0.03,
+      "agree": 0.193,
+      "bestmatch": 0.517,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    },
+    {
+      "tick": 95000,
+      "phase": "pupil",
+      "episodes": 299,
+      "success_last100": 0.03,
+      "agree": 0.204,
+      "bestmatch": 0.462,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0046
+    },
+    {
+      "tick": 100000,
+      "phase": "pupil",
+      "episodes": 311,
+      "success_last100": 0.04,
+      "agree": 0.224,
+      "bestmatch": 0.504,
+      "minicolumns_used": 32768,
+      "code_occupancy": 0.0047
+    }
+  ]
+}

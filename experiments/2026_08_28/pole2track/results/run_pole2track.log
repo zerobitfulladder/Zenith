@@ -1,0 +1,78 @@
+teacher {'type': 'lqr', 'ke': -1.0, 'cent': 1.0} audition 25/25, rate 0.93
+demos: 300 recoveries, 94001 samples
+[flat] round 0: {'hard': 3} (data 94001)
+[flat] round 1: {'hard': 15} (data 127802)
+[flat] round 2: {'hard': 7} (data 159789)
+[flat] round 3: {'hard': 6} (data 191757)
+[ident] round 0: {'hard': 36, 'graded': 1} (data 94001)
+[ident] round 1: {'hard': 50, 'graded': 4} (data 120062)
+[ident] round 2: {'hard': 52, 'graded': 2} (data 139384)
+[ident] round 3: {'hard': 69, 'graded': 5} (data 160689)
+[full] round 0: {'hard': 41, 'graded': 2} (data 94001)
+[full] round 1: {'hard': 87, 'graded': 6} (data 118475)
+[full] round 2: {'hard': 76, 'graded': 1} (data 132947)
+[full] round 3: {'hard': 71, 'graded': 8} (data 150127)
+{
+  "n_demos": 300,
+  "rounds": 4,
+  "eval_n": 100,
+  "lags": [
+    4,
+    16
+  ],
+  "k": [
+    256,
+    32,
+    2048
+  ],
+  "flat_r0_hard": 3,
+  "flat_r0_hard_tf": 0.611,
+  "flat_r1_hard": 15,
+  "flat_r1_hard_tf": 0.557,
+  "flat_r2_hard": 7,
+  "flat_r2_hard_tf": 0.502,
+  "flat_r3_hard": 6,
+  "flat_r3_hard_tf": 0.466,
+  "ident_r0_hard": 36,
+  "ident_r0_hard_tf": 0.624,
+  "ident_r0_graded": 1,
+  "ident_r0_graded_tf": 0.543,
+  "ident_r1_hard": 50,
+  "ident_r1_hard_tf": 0.596,
+  "ident_r1_graded": 4,
+  "ident_r1_graded_tf": 0.498,
+  "ident_r2_hard": 52,
+  "ident_r2_hard_tf": 0.563,
+  "ident_r2_graded": 2,
+  "ident_r2_graded_tf": 0.482,
+  "ident_r3_hard": 69,
+  "ident_r3_hard_tf": 0.523,
+  "ident_r3_graded": 5,
+  "ident_r3_graded_tf": 0.438,
+  "full_r0_hard": 41,
+  "full_r0_hard_tf": 0.59,
+  "full_r0_graded": 2,
+  "full_r0_graded_tf": 0.532,
+  "full_r1_hard": 87,
+  "full_r1_hard_tf": 0.598,
+  "full_r1_graded": 6,
+  "full_r1_graded_tf": 0.522,
+  "full_r2_hard": 76,
+  "full_r2_hard_tf": 0.567,
+  "full_r2_graded": 1,
+  "full_r2_graded_tf": 0.499,
+  "full_r3_hard": 71,
+  "full_r3_hard_tf": 0.535,
+  "full_r3_graded": 8,
+  "full_r3_graded_tf": 0.461,
+  "best": {
+    "score": 87,
+    "arm": "full",
+    "read": "hard",
+    "round": 1,
+    "lags": [
+      4,
+      16
+    ]
+  }
+}

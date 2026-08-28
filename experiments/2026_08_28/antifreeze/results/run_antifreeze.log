@@ -1,0 +1,58 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+retraining tops...
+joint pixel done
+joint code done
+joint pixel_sub done
+joint pixel_adapt done
+joint code_sub done
+twotrack pixel done
+twotrack code done
+twotrack pixel_sub done
+twotrack pixel_adapt done
+{
+  "T": 32,
+  "sub": 0.5,
+  "hgam": 0.5,
+  "a_inc": 0.3,
+  "a_dec": 0.7,
+  "joint_pixel_train_advance": 0.0,
+  "joint_pixel_train_match": 0.783,
+  "joint_pixel_held_advance": 0.0,
+  "joint_pixel_held_match": 0.722,
+  "joint_code_train_advance": 0.0,
+  "joint_code_train_match": 0.784,
+  "joint_code_held_advance": 0.0,
+  "joint_code_held_match": 0.722,
+  "joint_pixel_sub_train_advance": 0.183,
+  "joint_pixel_sub_train_match": 0.729,
+  "joint_pixel_sub_held_advance": 0.0,
+  "joint_pixel_sub_held_match": 0.458,
+  "joint_pixel_adapt_train_advance": 0.502,
+  "joint_pixel_adapt_train_match": 0.631,
+  "joint_pixel_adapt_held_advance": 0.319,
+  "joint_pixel_adapt_held_match": 0.281,
+  "joint_code_sub_train_advance": 0.051,
+  "joint_code_sub_train_match": 0.749,
+  "joint_code_sub_held_advance": 0.085,
+  "joint_code_sub_held_match": 0.334,
+  "twotrack_pixel_train_advance": 0.438,
+  "twotrack_pixel_train_match": 0.775,
+  "twotrack_pixel_held_advance": 0.27,
+  "twotrack_pixel_held_match": 0.375,
+  "twotrack_code_train_advance": 0.475,
+  "twotrack_code_train_match": 0.769,
+  "twotrack_code_held_advance": 0.0,
+  "twotrack_code_held_match": 0.488,
+  "twotrack_pixel_sub_train_advance": 0.672,
+  "twotrack_pixel_sub_train_match": 0.783,
+  "twotrack_pixel_sub_held_advance": 0.319,
+  "twotrack_pixel_sub_held_match": 0.313,
+  "twotrack_pixel_adapt_train_advance": 0.711,
+  "twotrack_pixel_adapt_train_match": 0.671,
+  "twotrack_pixel_adapt_held_advance": 0.248,
+  "twotrack_pixel_adapt_held_match": 0.356
+}

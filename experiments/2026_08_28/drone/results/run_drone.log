@@ -1,0 +1,63 @@
+LQR teacher rate: 0.95
+demos 400, samples 86885
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+controls thruster 0: MLP 0.780  1-NN 0.537
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+controls thruster 1: MLP 0.790  1-NN 0.534
+[joint] round 0: 0/100 tf 0.227/0.006 (data 86885)
+[joint] round 1: 0/100 tf 0.176/0.02 (data 93973)
+[joint] round 2: 0/100 tf 0.167/0.018 (data 101041)
+[fact] round 0: 0/100 tf 0.557/0.391 (data 86885)
+[fact] round 1: 0/100 tf 0.492/0.345 (data 94978)
+[fact] round 2: 0/100 tf 0.458/0.323 (data 102976)
+{
+  "n_demos": 400,
+  "teacher_rate": 0.95,
+  "nlev": 13,
+  "k": [
+    192,
+    128,
+    4096
+  ],
+  "mlp_acc_t0": 0.78,
+  "nn1_acc_t0": 0.537,
+  "mlp_acc_t1": 0.79,
+  "nn1_acc_t1": 0.534,
+  "joint_r0": 0,
+  "joint_r0_tf": [
+    0.227,
+    0.006
+  ],
+  "joint_r1": 0,
+  "joint_r1_tf": [
+    0.176,
+    0.02
+  ],
+  "joint_r2": 0,
+  "joint_r2_tf": [
+    0.167,
+    0.018
+  ],
+  "fact_r0": 0,
+  "fact_r0_tf": [
+    0.557,
+    0.391
+  ],
+  "fact_r1": 0,
+  "fact_r1_tf": [
+    0.492,
+    0.345
+  ],
+  "fact_r2": 0,
+  "fact_r2_tf": [
+    0.458,
+    0.323
+  ],
+  "best": {
+    "score": 0,
+    "arm": "joint",
+    "round": 0
+  }
+}

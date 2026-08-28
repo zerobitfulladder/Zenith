@@ -1,0 +1,47 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+training L1 (joint 2ch)...
+training L2 over code...
+training top (EP=2)...
+ep2 done
+training top (EP=20)...
+ep20 done
+{
+  "T": 32,
+  "k_top": 512,
+  "held_out": [
+    [
+      2,
+      "right"
+    ],
+    [
+      3,
+      "down"
+    ],
+    [
+      4,
+      "rot"
+    ]
+  ],
+  "L1joint_motion_selectivity": 0.559,
+  "L1joint_digit_selectivity": 0.43,
+  "L2joint_motion_selectivity": 0.675,
+  "L2joint_digit_selectivity": 0.548,
+  "ep2_top_units_used": 512,
+  "ep2_tf_train": 0.453,
+  "ep2_tf_held": 0.225,
+  "ep2_free_train_advance": 0.309,
+  "ep2_free_train_match": 0.434,
+  "ep2_free_held_advance": 0.149,
+  "ep2_free_held_match": 0.221,
+  "ep20_top_units_used": 512,
+  "ep20_tf_train": 0.696,
+  "ep20_tf_held": 0.379,
+  "ep20_free_train_advance": 0.0,
+  "ep20_free_train_match": 0.783,
+  "ep20_free_held_advance": 0.0,
+  "ep20_free_held_match": 0.722
+}

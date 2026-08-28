@@ -1,0 +1,71 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[full] trained in 36.9s
+[full] eval 6.5s
+{
+  "xp": "cupy",
+  "train_n": 55000,
+  "test_n": 5000,
+  "r_train": 4,
+  "arms": [
+    "full"
+  ],
+  "full_units_used": [
+    64,
+    64,
+    100
+  ],
+  "full_L1_res_R1_mse": 0.01729,
+  "full_L1_res_R1_corr": 0.918,
+  "full_L1_res_R2_mse": 0.011,
+  "full_L1_res_R2_corr": 0.94,
+  "full_L1_res_R3_mse": 0.00871,
+  "full_L1_res_R3_corr": 0.952,
+  "full_L1_res_R4_mse": 0.00723,
+  "full_L1_res_R4_corr": 0.96,
+  "full_L1_res_R5_mse": 0.00647,
+  "full_L1_res_R5_corr": 0.964,
+  "full_L1_res_R6_mse": 0.006,
+  "full_L1_res_R6_corr": 0.966,
+  "full_L1_graded_mse": 0.01463,
+  "full_L1_graded_corr": 0.917,
+  "full_L2_parity_mse": 0.01883,
+  "full_L2_parity_corr": 0.89,
+  "full_L2_sc_graded_mse": 0.02404,
+  "full_L2_sc_graded_corr": 0.862,
+  "full_L2_res_R1_mse": 0.05574,
+  "full_L2_res_R1_corr": 0.669,
+  "full_L2_res_R2_mse": 0.04165,
+  "full_L2_res_R2_corr": 0.757,
+  "full_L2_res_R3_mse": 0.03564,
+  "full_L2_res_R3_corr": 0.794,
+  "full_L2_res_R4_mse": 0.03249,
+  "full_L2_res_R4_corr": 0.813,
+  "full_L3_parity_mse": 0.02391,
+  "full_L3_parity_corr": 0.86,
+  "full_L3_res_mse": 0.03678,
+  "full_L3_res_corr": 0.785,
+  "full_matchq_L1": [
+    0.758,
+    0.562,
+    0.437,
+    0.393,
+    0.343,
+    0.298
+  ],
+  "full_matchq_L2": [
+    0.45,
+    0.345,
+    0.28,
+    0.236
+  ],
+  "full_matchq_L3": [
+    0.409,
+    0.329,
+    0.285,
+    0.254
+  ]
+}

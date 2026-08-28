@@ -1,0 +1,105 @@
+[seq] epoch 1/1 5000/55000
+[seq] epoch 1/1 10000/55000
+[seq] epoch 1/1 15000/55000
+[seq] epoch 1/1 20000/55000
+[seq] epoch 1/1 25000/55000
+[seq] epoch 1/1 30000/55000
+[seq] epoch 1/1 35000/55000
+[seq] epoch 1/1 40000/55000
+[seq] epoch 1/1 45000/55000
+[seq] epoch 1/1 50000/55000
+[seq] epoch 1/1 55000/55000
+[seq] residual read done
+[seq] deep rungs done
+[loo] epoch 1/1 5000/55000
+[loo] epoch 1/1 10000/55000
+[loo] epoch 1/1 15000/55000
+[loo] epoch 1/1 20000/55000
+[loo] epoch 1/1 25000/55000
+[loo] epoch 1/1 30000/55000
+[loo] epoch 1/1 35000/55000
+[loo] epoch 1/1 40000/55000
+[loo] epoch 1/1 45000/55000
+[loo] epoch 1/1 50000/55000
+[loo] epoch 1/1 55000/55000
+[loo] residual read done
+[loo] deep rungs done
+{
+  "train_n": 55000,
+  "test_n": 5000,
+  "r_train": 4,
+  "arms": [
+    "seq",
+    "loo"
+  ],
+  "seq_L1_R1_mse": 0.01639,
+  "seq_L1_R1_corr": 0.921,
+  "seq_L1_R2_mse": 0.00992,
+  "seq_L1_R2_corr": 0.948,
+  "seq_L1_R3_mse": 0.00764,
+  "seq_L1_R3_corr": 0.958,
+  "seq_L1_R4_mse": 0.00651,
+  "seq_L1_R4_corr": 0.964,
+  "seq_L1_R5_mse": 0.00584,
+  "seq_L1_R5_corr": 0.967,
+  "seq_L1_R6_mse": 0.00539,
+  "seq_L1_R6_corr": 0.969,
+  "seq_residual_norm_per_round": [
+    0.596,
+    0.476,
+    0.417,
+    0.383,
+    0.36,
+    0.343
+  ],
+  "seq_match_quality_per_round": [
+    0.771,
+    0.585,
+    0.471,
+    0.389,
+    0.331,
+    0.288
+  ],
+  "seq_units_used": 64,
+  "seq_L1_graded_mse": 0.01072,
+  "seq_L1_graded_corr": 0.938,
+  "seq_L2_graded_mse": 0.01975,
+  "seq_L2_graded_corr": 0.884,
+  "seq_L3_graded_mse": 0.02615,
+  "seq_L3_graded_corr": 0.847,
+  "loo_L1_R1_mse": 0.05072,
+  "loo_L1_R1_corr": 0.733,
+  "loo_L1_R2_mse": 0.04119,
+  "loo_L1_R2_corr": 0.811,
+  "loo_L1_R3_mse": 0.03421,
+  "loo_L1_R3_corr": 0.857,
+  "loo_L1_R4_mse": 0.02884,
+  "loo_L1_R4_corr": 0.887,
+  "loo_L1_R5_mse": 0.02459,
+  "loo_L1_R5_corr": 0.908,
+  "loo_L1_R6_mse": 0.02116,
+  "loo_L1_R6_corr": 0.924,
+  "loo_residual_norm_per_round": [
+    0.932,
+    0.876,
+    0.827,
+    0.783,
+    0.743,
+    0.706
+  ],
+  "loo_match_quality_per_round": [
+    0.359,
+    0.338,
+    0.327,
+    0.321,
+    0.315,
+    0.31
+  ],
+  "loo_units_used": 64,
+  "loo_L1_graded_mse": 0.00222,
+  "loo_L1_graded_corr": 0.989,
+  "loo_L2_graded_mse": 0.0277,
+  "loo_L2_graded_corr": 0.846,
+  "loo_L3_graded_mse": 0.0455,
+  "loo_L3_graded_corr": 0.72
+}
