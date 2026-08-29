@@ -1,0 +1,24 @@
+{
+  "best": {
+    "score": 0.03125,
+    "closest": 3.423004150390625,
+    "median": 376.5,
+    "tick": 399872
+  },
+  "reports": [
+    {
+      "exp_ticks": 299904,
+      "EVAL": 0.016,
+      "closest": 3.25,
+      "median_ticks": 312.5,
+      "mins": 0.6
+    },
+    {
+      "exp_ticks": 399872,
+      "EVAL": 0.031,
+      "closest": 3.42,
+      "median_ticks": 376.5,
+      "mins": 0.8
+    }
+  ]
+}

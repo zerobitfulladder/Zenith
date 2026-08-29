@@ -1,0 +1,18 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+teacher through batched harness: 1.00 (must be ~1.00)
+{"exp_ticks": 400000, "episodes": 448, "EVAL": 0.0, "closest": 2.39, "agree": 0.764, "l3": 8192, "support": 0.999, "mins": 3.0}
+  new best 0.0 @ 400000
+{"exp_ticks": 800000, "episodes": 1078, "EVAL": 0.0, "closest": 2.05, "agree": 0.604, "l3": 8192, "support": 1.0, "mins": 6.4}
+{"exp_ticks": 1200000, "episodes": 1798, "EVAL": 0.0, "closest": 1.6, "agree": 0.473, "l3": 8192, "support": 1.0, "mins": 10.3}
+{"exp_ticks": 1600000, "episodes": 2477, "EVAL": 0.0, "closest": 1.61, "agree": 0.495, "l3": 8192, "support": 1.0, "mins": 14.7}
+{"exp_ticks": 2000000, "episodes": 3181, "EVAL": 0.0, "closest": 1.39, "agree": 0.518, "l3": 8192, "support": 1.0, "mins": 21.0}
+{"exp_ticks": 2400000, "episodes": 3897, "EVAL": 0.0, "closest": 0.97, "agree": 0.494, "l3": 8192, "support": 1.0, "mins": 27.1}
+{"exp_ticks": 2800000, "episodes": 4618, "EVAL": 0.0, "closest": 1.22, "agree": 0.511, "l3": 8192, "support": 1.0, "mins": 31.8}
+{"exp_ticks": 3200000, "episodes": 5322, "EVAL": 0.0, "closest": 1.21, "agree": 0.484, "l3": 8192, "support": 1.0, "mins": 36.6}
+{"exp_ticks": 3600000, "episodes": 6088, "EVAL": 0.0, "closest": 1.31, "agree": 0.504, "l3": 8192, "support": 1.0, "mins": 40.2}
+{"exp_ticks": 4000000, "episodes": 6806, "EVAL": 0.0, "closest": 1.22, "agree": 0.529, "l3": 8192, "support": 1.0, "mins": 43.3}
+done — best 0.0 (43.3 min)

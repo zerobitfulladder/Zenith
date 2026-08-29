@@ -1,0 +1,29 @@
+{
+  "ckpt": "/home/lavender/Projects/Geodesique/experiments/2026_08_29/balance/results/dagger3/weights_best.npz",
+  "gate_mode_EVAL": 0.0,
+  "gate_unsupported_ticks": 1061,
+  "notch_support": 0.555,
+  "sweep": [
+    {
+      "beta": 0.0,
+      "EVAL": 0.0
+    },
+    {
+      "beta": 0.25,
+      "EVAL": 0.0
+    },
+    {
+      "beta": 0.5,
+      "EVAL": 0.0
+    },
+    {
+      "beta": 1.0,
+      "EVAL": 0.0
+    },
+    {
+      "beta": 2.0,
+      "EVAL": 0.0
+    }
+  ],
+  "mins": 0.9
+}

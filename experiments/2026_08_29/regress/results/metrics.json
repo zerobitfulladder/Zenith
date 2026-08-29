@@ -1,0 +1,319 @@
+{
+  "config": {
+    "k": 256,
+    "epochs": 40,
+    "halfw_cells": 10,
+    "cells_per_channel": 96,
+    "array_size": 8192,
+    "eta": 0.05,
+    "n_train": 800,
+    "gap": [
+      1.2,
+      2.8
+    ],
+    "selection": "dot (the drone's rule)",
+    "read": "top-1",
+    "train_seconds": 3.7
+  },
+  "layer": {
+    "minicolumns_adopted": 256,
+    "distinct_winners_on_grid": 166,
+    "mean_winning_bid_on_grid": 1.856,
+    "active_cells_per_code": 40,
+    "code_density": 0.0049
+  },
+  "headline": [
+    {
+      "probe": "unseen x in range",
+      "model": "hypercolumn \u2014 top-1 cell",
+      "rmse": 0.1065,
+      "mae": 0.0865
+    },
+    {
+      "probe": "unseen x in range",
+      "model": "hypercolumn \u2014 sub-cell read",
+      "rmse": 0.1021,
+      "mae": 0.0823
+    },
+    {
+      "probe": "unseen x in range",
+      "model": "k-nearest neighbours (k=5)",
+      "rmse": 0.0375,
+      "mae": 0.0302
+    },
+    {
+      "probe": "unseen x in range",
+      "model": "random forest (300 trees)",
+      "rmse": 0.0557,
+      "mae": 0.0451
+    },
+    {
+      "probe": "unseen x in range",
+      "model": "MLP (64-64, tanh)",
+      "rmse": 0.1382,
+      "mae": 0.1124
+    },
+    {
+      "probe": "held-out slice",
+      "model": "hypercolumn \u2014 top-1 cell",
+      "rmse": 0.7292,
+      "mae": 0.5791
+    },
+    {
+      "probe": "held-out slice",
+      "model": "hypercolumn \u2014 sub-cell read",
+      "rmse": 0.7404,
+      "mae": 0.5924
+    },
+    {
+      "probe": "held-out slice",
+      "model": "k-nearest neighbours (k=5)",
+      "rmse": 0.7385,
+      "mae": 0.5867
+    },
+    {
+      "probe": "held-out slice",
+      "model": "random forest (300 trees)",
+      "rmse": 0.7652,
+      "mae": 0.5968
+    },
+    {
+      "probe": "held-out slice",
+      "model": "MLP (64-64, tanh)",
+      "rmse": 0.1224,
+      "mae": 0.0948
+    },
+    {
+      "probe": "held-out slice",
+      "model": "(hold the value at the nearer rim)",
+      "rmse": 0.6957,
+      "mae": 0.5262
+    }
+  ],
+  "collisions": {
+    "shared_positions": 2,
+    "rmse_with_collisions": 0.1567,
+    "rmse_disjoint": 0.1065
+  },
+  "selection_sweep": [
+    {
+      "k": 128,
+      "mode": "dot",
+      "rmse_support": 0.1017,
+      "distinct_winners": 109
+    },
+    {
+      "k": 128,
+      "mode": "masked",
+      "rmse_support": 0.0915,
+      "distinct_winners": 123
+    },
+    {
+      "k": 256,
+      "mode": "dot",
+      "rmse_support": 0.1065,
+      "distinct_winners": 166
+    },
+    {
+      "k": 256,
+      "mode": "masked",
+      "rmse_support": 0.1054,
+      "distinct_winners": 236
+    },
+    {
+      "k": 512,
+      "mode": "dot",
+      "rmse_support": 0.3962,
+      "distinct_winners": 164
+    },
+    {
+      "k": 512,
+      "mode": "masked",
+      "rmse_support": 0.0977,
+      "distinct_winners": 377
+    },
+    {
+      "k": 1024,
+      "mode": "dot",
+      "rmse_support": 0.5463,
+      "distinct_winners": 130
+    },
+    {
+      "k": 1024,
+      "mode": "masked",
+      "rmse_support": 0.0941,
+      "distinct_winners": 471
+    }
+  ],
+  "read_rules": [
+    {
+      "read": "top-1 cell (as specified)",
+      "rmse_support": 0.0941,
+      "rmse_support_subcell": 0.0879,
+      "rmse_gap": 0.7482
+    },
+    {
+      "read": "graded, top-4 matches",
+      "rmse_support": 0.0647,
+      "rmse_support_subcell": 0.0541,
+      "rmse_gap": 0.7482
+    },
+    {
+      "read": "graded, top-16 matches",
+      "rmse_support": 0.0461,
+      "rmse_support_subcell": 0.04,
+      "rmse_gap": 0.7679
+    },
+    {
+      "read": "graded, top-64 matches",
+      "rmse_support": 0.1027,
+      "rmse_support_subcell": 0.0851,
+      "rmse_gap": 0.8886
+    },
+    {
+      "read": "graded, every positive match",
+      "rmse_support": 0.4877,
+      "rmse_support_subcell": 0.2847,
+      "rmse_gap": 0.946
+    }
+  ],
+  "width_sweep": [
+    {
+      "halfw": 1,
+      "rmse_support": 0.0971,
+      "rmse_gap": 1.9141,
+      "distinct_winners": 145
+    },
+    {
+      "halfw": 2,
+      "rmse_support": 0.0823,
+      "rmse_gap": 1.8194,
+      "distinct_winners": 219
+    },
+    {
+      "halfw": 4,
+      "rmse_support": 0.0845,
+      "rmse_gap": 0.865,
+      "distinct_winners": 211
+    },
+    {
+      "halfw": 8,
+      "rmse_support": 0.0937,
+      "rmse_gap": 0.7355,
+      "distinct_winners": 177
+    },
+    {
+      "halfw": 12,
+      "rmse_support": 0.1516,
+      "rmse_gap": 1.0784,
+      "distinct_winners": 147
+    },
+    {
+      "halfw": 16,
+      "rmse_support": 0.3208,
+      "rmse_gap": 0.6919,
+      "distinct_winners": 110
+    },
+    {
+      "halfw": 24,
+      "rmse_support": 1.0762,
+      "rmse_gap": 0.5567,
+      "distinct_winners": 58
+    },
+    {
+      "halfw": 32,
+      "rmse_support": 2.1885,
+      "rmse_gap": 0.9195,
+      "distinct_winners": 17
+    },
+    {
+      "halfw": 48,
+      "rmse_support": 3.6026,
+      "rmse_gap": 3.4647,
+      "distinct_winners": 9
+    }
+  ],
+  "width_sweep_sparse_60_pairs": [
+    {
+      "halfw": 1,
+      "rmse_support": 0.576
+    },
+    {
+      "halfw": 2,
+      "rmse_support": 0.347
+    },
+    {
+      "halfw": 4,
+      "rmse_support": 0.1628
+    },
+    {
+      "halfw": 8,
+      "rmse_support": 0.1675
+    },
+    {
+      "halfw": 12,
+      "rmse_support": 0.1936
+    },
+    {
+      "halfw": 16,
+      "rmse_support": 0.2171
+    },
+    {
+      "halfw": 24,
+      "rmse_support": 0.3248
+    },
+    {
+      "halfw": 32,
+      "rmse_support": 0.4468
+    },
+    {
+      "halfw": 48,
+      "rmse_support": 0.8239
+    }
+  ],
+  "gap_sweep": [
+    {
+      "width": 0.2,
+      "rmse_model": 0.271,
+      "rmse_edge": 0.1006,
+      "rmse_mlp": 0.0509
+    },
+    {
+      "width": 0.4,
+      "rmse_model": 0.2383,
+      "rmse_edge": 0.2001,
+      "rmse_mlp": 0.0689
+    },
+    {
+      "width": 0.8,
+      "rmse_model": 0.372,
+      "rmse_edge": 0.3901,
+      "rmse_mlp": 0.1459
+    },
+    {
+      "width": 1.2,
+      "rmse_model": 0.5427,
+      "rmse_edge": 0.5582,
+      "rmse_mlp": 0.1418
+    },
+    {
+      "width": 1.6,
+      "rmse_model": 0.7292,
+      "rmse_edge": 0.6957,
+      "rmse_mlp": 0.1224
+    },
+    {
+      "width": 2.2,
+      "rmse_model": 0.8187,
+      "rmse_edge": 0.8362,
+      "rmse_mlp": 0.385
+    },
+    {
+      "width": 3.0,
+      "rmse_model": 0.8185,
+      "rmse_edge": 0.9298,
+      "rmse_mlp": 1.3692
+    }
+  ],
+  "total_seconds": 98.4
+}

@@ -1,0 +1,11 @@
+teacher audition: success 1.00  median ticks-to-balance 176
+{"tick": 20000, "episodes": 50, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.667, "end_speed": 81.59, "l3": 0, "mins": 0.4}
+  new best 0.0 (agree 0.0) @ 20000
+{"tick": 40000, "episodes": 100, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.47, "end_speed": 47.86, "coll_corr": 0.984, "coll_snr": 5.68, "diff_corr": 0.79, "diff_snr": 1.41, "agree": 0.839, "winners": 3052, "l3": 3559, "mins": 0.9}
+  new best 0.0 (agree 0.839) @ 40000
+{"tick": 60000, "episodes": 150, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.34, "end_speed": 51.88, "coll_corr": 0.973, "coll_snr": 4.3, "diff_corr": 0.782, "diff_snr": 1.53, "agree": 0.841, "winners": 3148, "l3": 4096, "mins": 1.6}
+  new best 0.0 (agree 0.841) @ 60000
+{"tick": 80000, "episodes": 200, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.347, "end_speed": 50.02, "coll_corr": 0.965, "coll_snr": 3.8, "diff_corr": 0.775, "diff_snr": 1.5, "agree": 0.841, "winners": 2943, "l3": 4096, "mins": 2.3}
+{"tick": 100000, "episodes": 250, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.515, "end_speed": 54.41, "coll_corr": 0.973, "coll_snr": 4.29, "diff_corr": 0.812, "diff_snr": 1.65, "agree": 0.84, "winners": 2953, "l3": 4096, "mins": 2.9}
+{"tick": 120000, "episodes": 300, "EVAL": 0.0, "ticks_to_balance": null, "end_tilt": 1.252, "end_speed": 45.67, "coll_corr": 0.973, "coll_snr": 4.33, "diff_corr": 0.78, "diff_snr": 1.55, "agree": 0.837, "winners": 2833, "l3": 4096, "mins": 3.6}
+done — best 0.0 @ 60000 (3.6 min)

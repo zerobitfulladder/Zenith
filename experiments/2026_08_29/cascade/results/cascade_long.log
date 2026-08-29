@@ -1,0 +1,17 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+{"exp_ticks": 640000, "EVAL": 0.0, "closest": 2.19, "outer_only": [0.98, 0.11], "inner_only": [0.02, 2.13], "agree": 0.514, "mins": 0.8}
+  new best 0.0 (closest 2.19)
+{"exp_ticks": 1280000, "EVAL": 0.0, "closest": 2.18, "outer_only": [1.0, 0.02], "inner_only": [0.0, 1.96], "agree": 0.555, "mins": 1.7}
+  new best 0.0 (closest 2.18)
+{"exp_ticks": 1920000, "EVAL": 0.0, "closest": 2.38, "outer_only": [0.98, 0.12], "inner_only": [0.02, 1.97], "agree": 0.597, "mins": 2.6}
+{"exp_ticks": 2560000, "EVAL": 0.0, "closest": 2.33, "outer_only": [0.99, 0.07], "inner_only": [0.0, 2.14], "agree": 0.605, "mins": 3.5}
+{"exp_ticks": 3200000, "EVAL": 0.0, "closest": 2.52, "outer_only": [1.0, 0.02], "inner_only": [0.02, 2.03], "agree": 0.6, "mins": 4.4}
+{"exp_ticks": 3840000, "EVAL": 0.008, "closest": 2.16, "outer_only": [0.99, 0.05], "inner_only": [0.0, 1.73], "agree": 0.596, "mins": 5.3}
+  new best 0.0078125 (closest 2.16)
+{"exp_ticks": 4480000, "EVAL": 0.0, "closest": 2.3, "outer_only": [0.99, 0.08], "inner_only": [0.01, 2.32], "agree": 0.611, "mins": 6.1}
+{"exp_ticks": 5120000, "EVAL": 0.008, "closest": 2.16, "outer_only": [0.98, 0.16], "inner_only": [0.0, 2.54], "agree": 0.579, "mins": 7.0}
+{"exp_ticks": 5760000, "EVAL": 0.0, "closest": 2.24, "outer_only": [1.0, 0.02], "inner_only": [0.02, 1.84], "agree": 0.596, "mins": 7.9}

@@ -1,0 +1,43 @@
+teacher audition: success 1.00  median ticks-to-balance 70
+{"tick": 20000, "phase": 1, "episodes": 50, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 81.59, "l3": 0, "mins": 0.3}
+  new best 0.0 (agree 0.0) @ 20000
+{"tick": 40000, "phase": 1, "episodes": 100, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 15.99, "coll_corr": 0.802, "coll_snr": 1.64, "diff_corr": 0.584, "diff_snr": 1.16, "agree": 0.865, "winners": 3628, "l3": 4000, "mins": 1.0}
+  new best 0.0 (agree 0.865) @ 40000
+{"tick": 60000, "phase": 1, "episodes": 150, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 14.0, "coll_corr": 0.833, "coll_snr": 1.8, "diff_corr": 0.656, "diff_snr": 1.3, "agree": 0.874, "winners": 3477, "l3": 4096, "mins": 1.9}
+  new best 0.0 (agree 0.874) @ 60000
+{"tick": 80000, "phase": 1, "episodes": 200, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 9.98, "coll_corr": 0.896, "coll_snr": 2.25, "diff_corr": 0.728, "diff_snr": 1.43, "agree": 0.874, "winners": 3351, "l3": 4096, "mins": 2.7}
+{"tick": 100000, "phase": 1, "episodes": 250, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 16.2, "coll_corr": 0.809, "coll_snr": 1.7, "diff_corr": 0.636, "diff_snr": 1.28, "agree": 0.88, "winners": 3371, "l3": 4096, "mins": 3.7}
+  new best 0.0 (agree 0.88) @ 100000
+{"tick": 120000, "phase": 1, "episodes": 300, "EVAL": 0.0, "bal_frac": 0.014, "end_speed": 14.55, "coll_corr": 0.882, "coll_snr": 2.12, "diff_corr": 0.67, "diff_snr": 1.3, "agree": 0.879, "winners": 3334, "l3": 4096, "mins": 4.5}
+{"tick": 140000, "phase": 2, "episodes": 366, "EVAL": 0.0, "bal_frac": 0.016, "end_speed": 32.49, "coll_corr": 0.814, "coll_snr": 1.72, "diff_corr": 0.246, "diff_snr": 1.03, "agree": 0.636, "winners": 3282, "l3": 4096, "mins": 5.3}
+{"tick": 160000, "phase": 2, "episodes": 438, "EVAL": 0.04, "bal_frac": 0.042, "end_speed": 33.42, "coll_corr": 0.759, "coll_snr": 1.53, "diff_corr": 0.349, "diff_snr": 1.06, "agree": 0.684, "winners": 3264, "l3": 4096, "mins": 6.2}
+  new best 0.04 (agree 0.684) @ 160000
+{"tick": 180000, "phase": 2, "episodes": 509, "EVAL": 0.0, "bal_frac": 0.063, "end_speed": 28.37, "coll_corr": 0.857, "coll_snr": 1.94, "diff_corr": 0.372, "diff_snr": 1.05, "agree": 0.68, "winners": 3197, "l3": 4096, "mins": 6.9}
+{"tick": 200000, "phase": 2, "episodes": 571, "EVAL": 0.04, "bal_frac": 0.226, "end_speed": 33.48, "coll_corr": 0.666, "coll_snr": 1.34, "diff_corr": 0.294, "diff_snr": 0.98, "agree": 0.679, "winners": 3332, "l3": 4096, "mins": 7.7}
+{"tick": 220000, "phase": 2, "episodes": 636, "EVAL": 0.16, "bal_frac": 0.327, "end_speed": 39.91, "coll_corr": 0.724, "coll_snr": 1.45, "diff_corr": 0.368, "diff_snr": 1.0, "agree": 0.698, "winners": 3299, "l3": 4096, "mins": 8.4}
+  new best 0.16 (agree 0.698) @ 220000
+{"tick": 240000, "phase": 2, "episodes": 699, "EVAL": 0.28, "bal_frac": 0.378, "end_speed": 31.61, "coll_corr": 0.7, "coll_snr": 1.4, "diff_corr": 0.362, "diff_snr": 1.02, "agree": 0.715, "winners": 3220, "l3": 4096, "mins": 9.1}
+  new best 0.28 (agree 0.715) @ 240000
+{"tick": 260000, "phase": 2, "episodes": 756, "EVAL": 0.28, "bal_frac": 0.326, "end_speed": 13.37, "coll_corr": 0.825, "coll_snr": 1.77, "diff_corr": 0.324, "diff_snr": 1.0, "agree": 0.721, "winners": 3315, "l3": 4096, "mins": 9.8}
+  new best 0.28 (agree 0.721) @ 260000
+{"tick": 280000, "phase": 2, "episodes": 811, "EVAL": 0.24, "bal_frac": 0.466, "end_speed": 10.04, "coll_corr": 0.521, "coll_snr": 1.17, "diff_corr": 0.405, "diff_snr": 1.06, "agree": 0.704, "winners": 3309, "l3": 4096, "mins": 10.6}
+{"tick": 300000, "phase": 2, "episodes": 870, "EVAL": 0.44, "bal_frac": 0.512, "end_speed": 9.34, "coll_corr": 0.872, "coll_snr": 2.04, "diff_corr": 0.404, "diff_snr": 1.04, "agree": 0.728, "winners": 3380, "l3": 4096, "mins": 11.3}
+  new best 0.44 (agree 0.728) @ 300000
+{"tick": 320000, "phase": 2, "episodes": 924, "EVAL": 0.28, "bal_frac": 0.479, "end_speed": 6.19, "coll_corr": 0.862, "coll_snr": 1.97, "diff_corr": 0.418, "diff_snr": 1.05, "agree": 0.712, "winners": 3221, "l3": 4096, "mins": 12.0}
+{"tick": 340000, "phase": 2, "episodes": 978, "EVAL": 0.4, "bal_frac": 0.486, "end_speed": 28.08, "coll_corr": 0.828, "coll_snr": 1.78, "diff_corr": 0.414, "diff_snr": 1.04, "agree": 0.728, "winners": 3362, "l3": 4096, "mins": 12.8}
+{"tick": 360000, "phase": 2, "episodes": 1033, "EVAL": 0.52, "bal_frac": 0.78, "end_speed": 4.12, "coll_corr": 0.695, "coll_snr": 1.39, "diff_corr": 0.361, "diff_snr": 1.03, "agree": 0.718, "winners": 3293, "l3": 4096, "mins": 13.5}
+  new best 0.52 (agree 0.718) @ 360000
+{"tick": 380000, "phase": 2, "episodes": 1086, "EVAL": 0.44, "bal_frac": 0.623, "end_speed": 1.52, "coll_corr": 0.893, "coll_snr": 2.21, "diff_corr": 0.481, "diff_snr": 1.1, "agree": 0.728, "winners": 3348, "l3": 4096, "mins": 14.2}
+{"tick": 400000, "phase": 2, "episodes": 1140, "EVAL": 0.4, "bal_frac": 0.537, "end_speed": 16.34, "coll_corr": 0.804, "coll_snr": 1.68, "diff_corr": 0.398, "diff_snr": 1.06, "agree": 0.727, "winners": 3319, "l3": 4096, "mins": 14.9}
+{"tick": 420000, "phase": 2, "episodes": 1193, "EVAL": 0.36, "bal_frac": 0.696, "end_speed": 7.24, "coll_corr": 0.909, "coll_snr": 2.39, "diff_corr": 0.411, "diff_snr": 1.04, "agree": 0.739, "winners": 3263, "l3": 4096, "mins": 15.7}
+{"tick": 440000, "phase": 2, "episodes": 1246, "EVAL": 0.44, "bal_frac": 0.81, "end_speed": 0.17, "coll_corr": 0.859, "coll_snr": 1.95, "diff_corr": 0.453, "diff_snr": 1.06, "agree": 0.751, "winners": 3307, "l3": 4096, "mins": 16.5}
+{"tick": 460000, "phase": 2, "episodes": 1298, "EVAL": 0.64, "bal_frac": 0.79, "end_speed": 3.92, "coll_corr": 0.832, "coll_snr": 1.8, "diff_corr": 0.422, "diff_snr": 1.05, "agree": 0.732, "winners": 3382, "l3": 4096, "mins": 17.2}
+  new best 0.64 (agree 0.732) @ 460000
+{"tick": 480000, "phase": 2, "episodes": 1352, "EVAL": 0.6, "bal_frac": 0.776, "end_speed": 0.57, "coll_corr": 0.791, "coll_snr": 1.63, "diff_corr": 0.441, "diff_snr": 1.06, "agree": 0.74, "winners": 3274, "l3": 4096, "mins": 18.0}
+{"tick": 500000, "phase": 2, "episodes": 1402, "EVAL": 0.68, "bal_frac": 0.847, "end_speed": 0.15, "coll_corr": 0.838, "coll_snr": 1.83, "diff_corr": 0.457, "diff_snr": 1.1, "agree": 0.735, "winners": 3269, "l3": 4096, "mins": 18.8}
+  new best 0.68 (agree 0.735) @ 500000
+{"tick": 520000, "phase": 2, "episodes": 1455, "EVAL": 0.72, "bal_frac": 0.829, "end_speed": 4.68, "coll_corr": 0.702, "coll_snr": 1.4, "diff_corr": 0.481, "diff_snr": 1.11, "agree": 0.747, "winners": 3318, "l3": 4096, "mins": 19.5}
+  new best 0.72 (agree 0.747) @ 520000
+{"tick": 540000, "phase": 2, "episodes": 1507, "EVAL": 0.68, "bal_frac": 0.835, "end_speed": 0.18, "coll_corr": 0.818, "coll_snr": 1.74, "diff_corr": 0.438, "diff_snr": 1.07, "agree": 0.744, "winners": 3303, "l3": 4096, "mins": 20.3}
+{"tick": 560000, "phase": 2, "episodes": 1558, "EVAL": 0.64, "bal_frac": 0.847, "end_speed": 0.19, "coll_corr": 0.528, "coll_snr": 1.18, "diff_corr": 0.577, "diff_snr": 1.2, "agree": 0.753, "winners": 3415, "l3": 4096, "mins": 21.0}
+{"tick": 580000, "phase": 2, "episodes": 1611, "EVAL": 0.6, "bal_frac": 0.83, "end_speed": 4.96, "coll_corr": 0.889, "coll_snr": 2.16, "diff_corr": 0.553, "diff_snr": 1.16, "agree": 0.746, "winners": 3303, "l3": 4096, "mins": 21.8}

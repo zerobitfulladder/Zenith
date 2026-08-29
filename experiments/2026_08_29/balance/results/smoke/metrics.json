@@ -1,0 +1,66 @@
+{
+  "best": {
+    "score": 0.0,
+    "agree": 0.839,
+    "tick": 8000
+  },
+  "config": {
+    "kind": "module",
+    "module": "td_balance",
+    "dir": "experiments/2026_08_29/temporal_drone",
+    "k1": 64,
+    "k2": 128,
+    "k3": 1024,
+    "topm": 8,
+    "seed": 0,
+    "every": 5,
+    "cmd_share": 0.25,
+    "ns": 3,
+    "stage1": 2000,
+    "stage2": 4000
+  },
+  "reports": [
+    {
+      "tick": 4000,
+      "episodes": 10,
+      "EVAL": 0.0,
+      "ticks_to_balance": null,
+      "end_tilt": 1.667,
+      "end_speed": 81.59,
+      "l3": 0,
+      "mins": 0.1
+    },
+    {
+      "tick": 8000,
+      "episodes": 20,
+      "EVAL": 0.0,
+      "ticks_to_balance": null,
+      "end_tilt": 1.707,
+      "end_speed": 67.92,
+      "coll_corr": 0.983,
+      "coll_snr": 5.48,
+      "diff_corr": 0.728,
+      "diff_snr": 1.27,
+      "agree": 0.839,
+      "winners": 633,
+      "l3": 719,
+      "mins": 0.3
+    },
+    {
+      "tick": 12000,
+      "episodes": 30,
+      "EVAL": 0.0,
+      "ticks_to_balance": null,
+      "end_tilt": 1.746,
+      "end_speed": 67.8,
+      "coll_corr": 0.966,
+      "coll_snr": 3.86,
+      "diff_corr": 0.592,
+      "diff_snr": 1.17,
+      "agree": 0.802,
+      "winners": 723,
+      "l3": 1024,
+      "mins": 0.4
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "best": {
+    "score": 0.5546875,
+    "closest": 1.290563941001892,
+    "median": 334.0,
+    "tick": 599808
+  },
+  "reports": [
+    {
+      "exp_ticks": 399872,
+      "EVAL": 0.516,
+      "closest": 1.5,
+      "median_ticks": 332.5,
+      "mins": 0.5
+    },
+    {
+      "exp_ticks": 599808,
+      "EVAL": 0.555,
+      "closest": 1.29,
+      "median_ticks": 334.0,
+      "mins": 0.8
+    },
+    {
+      "exp_ticks": 799744,
+      "EVAL": 0.469,
+      "closest": 1.71,
+      "median_ticks": 337.5,
+      "mins": 1.1
+    },
+    {
+      "exp_ticks": 999680,
+      "EVAL": 0.5,
+      "closest": 1.41,
+      "median_ticks": 327.0,
+      "mins": 1.3
+    },
+    {
+      "exp_ticks": 1199616,
+      "EVAL": 0.523,
+      "closest": 1.44,
+      "median_ticks": 337.0,
+      "mins": 1.6
+    }
+  ]
+}

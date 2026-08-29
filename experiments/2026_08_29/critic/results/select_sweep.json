@@ -1,0 +1,36 @@
+{
+  "margin": 0.05,
+  "eps": 50,
+  "rows": [
+    {
+      "beta": 0.0,
+      "EVAL": 0.72,
+      "bal_frac": 0.804
+    },
+    {
+      "beta": 0.005,
+      "EVAL": 0.62,
+      "bal_frac": 0.717
+    },
+    {
+      "beta": 0.01,
+      "EVAL": 0.5,
+      "bal_frac": 0.682
+    },
+    {
+      "beta": 0.02,
+      "EVAL": 0.4,
+      "bal_frac": 0.534
+    },
+    {
+      "beta": 0.05,
+      "EVAL": 0.28,
+      "bal_frac": 0.474
+    },
+    {
+      "beta": 0.1,
+      "EVAL": 0.12,
+      "bal_frac": 0.413
+    }
+  ]
+}

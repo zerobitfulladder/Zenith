@@ -1,0 +1,308 @@
+{
+  "best": {
+    "score": 0.0,
+    "tick": 25000
+  },
+  "config": {
+    "kind": "module",
+    "module": "td_tracks",
+    "dir": "experiments/2026_08_29/temporal_drone",
+    "k1": 64,
+    "k2": 128,
+    "k3": 8192,
+    "topm": 8,
+    "seed": 0,
+    "every": 5,
+    "mode": "clone"
+  },
+  "reports": [
+    {
+      "tick": 25000,
+      "episodes": 167,
+      "EVAL": 0.0,
+      "closest_approach": 4.05,
+      "agree_on_oracle_path": 0.342,
+      "l3_input_cells": 39.8,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 3356,
+      "mins": 0.5
+    },
+    {
+      "tick": 50000,
+      "episodes": 327,
+      "EVAL": 0.0,
+      "closest_approach": 4.05,
+      "agree_on_oracle_path": 0.341,
+      "l3_input_cells": 40.0,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 6787,
+      "mins": 1.0
+    },
+    {
+      "tick": 75000,
+      "episodes": 490,
+      "EVAL": 0.0,
+      "closest_approach": 2.37,
+      "agree_on_oracle_path": 0.314,
+      "l3_input_cells": 39.9,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 1.7
+    },
+    {
+      "tick": 100000,
+      "episodes": 650,
+      "EVAL": 0.0,
+      "closest_approach": 2.38,
+      "agree_on_oracle_path": 0.281,
+      "l3_input_cells": 39.9,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 2.4
+    },
+    {
+      "tick": 125000,
+      "episodes": 813,
+      "EVAL": 0.0,
+      "closest_approach": 3.36,
+      "agree_on_oracle_path": 0.27,
+      "l3_input_cells": 40.0,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 3.2
+    },
+    {
+      "tick": 150000,
+      "episodes": 976,
+      "EVAL": 0.0,
+      "closest_approach": 2.46,
+      "agree_on_oracle_path": 0.273,
+      "l3_input_cells": 39.9,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 3.9
+    },
+    {
+      "tick": 175000,
+      "episodes": 1139,
+      "EVAL": 0.0,
+      "closest_approach": 4.05,
+      "agree_on_oracle_path": 0.29,
+      "l3_input_cells": 39.9,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 4.6
+    },
+    {
+      "tick": 200000,
+      "episodes": 1303,
+      "EVAL": 0.0,
+      "closest_approach": 2.37,
+      "agree_on_oracle_path": 0.288,
+      "l3_input_cells": 39.7,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 5.3
+    },
+    {
+      "tick": 225000,
+      "episodes": 1462,
+      "EVAL": 0.0,
+      "closest_approach": 2.37,
+      "agree_on_oracle_path": 0.289,
+      "l3_input_cells": 39.8,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 6.0
+    },
+    {
+      "tick": 250000,
+      "episodes": 1628,
+      "EVAL": 0.0,
+      "closest_approach": 2.42,
+      "agree_on_oracle_path": 0.274,
+      "l3_input_cells": 39.7,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 6.7
+    },
+    {
+      "tick": 275000,
+      "episodes": 1793,
+      "EVAL": 0.0,
+      "closest_approach": 2.37,
+      "agree_on_oracle_path": 0.293,
+      "l3_input_cells": 39.8,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 7.4
+    },
+    {
+      "tick": 300000,
+      "episodes": 1962,
+      "EVAL": 0.0,
+      "closest_approach": 4.05,
+      "agree_on_oracle_path": 0.271,
+      "l3_input_cells": 39.8,
+      "l1": [
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "l2": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "l3": 8192,
+      "mins": 8.1
+    }
+  ]
+}

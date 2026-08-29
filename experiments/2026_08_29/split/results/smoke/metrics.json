@@ -1,0 +1,37 @@
+{
+  "best": {
+    "score": 0.0,
+    "agree": 0.908,
+    "tick": 8000
+  },
+  "config": {
+    "kind": "raw",
+    "k3": 1024,
+    "pres": 0.5,
+    "tracks_from": "/home/lavender/Projects/Geodesique/experiments/2026_08_29/balance/results/dagger3/weights_best.npz"
+  },
+  "reports": [
+    {
+      "tick": 8000,
+      "phase": 1,
+      "EVAL": 0.0,
+      "bal_frac": 0.0,
+      "agree": 0.908,
+      "winners": 1010,
+      "l3": 1024,
+      "support": 0.986,
+      "mins": 0.4
+    },
+    {
+      "tick": 16000,
+      "phase": 2,
+      "EVAL": 0.0,
+      "bal_frac": 0.023,
+      "agree": 0.616,
+      "winners": 835,
+      "l3": 1024,
+      "support": 0.995,
+      "mins": 0.7
+    }
+  ]
+}

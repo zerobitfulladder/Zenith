@@ -1,0 +1,117 @@
+{
+  "config": {
+    "k1": 64,
+    "k2": 96,
+    "l1_taps": 5,
+    "l1_patch_width": 0.8,
+    "l2_taps": 51,
+    "l2_window_width": 5.0,
+    "windows": 12000,
+    "gap": [
+      1.2,
+      2.8
+    ]
+  },
+  "level0": {
+    "grid": 241,
+    "with_data": 226,
+    "missing": 15
+  },
+  "layer1": {
+    "templates": 64,
+    "codes_present": 210,
+    "codes_absent": 31
+  },
+  "layer2": {
+    "templates": 96,
+    "training_positions": 110,
+    "winner": 65,
+    "match": 62.748,
+    "codes_completed": 23
+  },
+  "gap_rmse": {
+    "conv L1 + L2 over its codes": 0.0864,
+    "conv L1 alone, walking": 0.4279,
+    "MLP (64-64, tanh)": 0.1445,
+    "hold the value at the nearer rim": 0.7432,
+    "old place-bound layer 1 alone": 0.817
+  },
+  "per_point": [
+    {
+      "x": 1.3,
+      "predicted": 2.291,
+      "truth": 2.313
+    },
+    {
+      "x": 1.4,
+      "predicted": 2.203,
+      "truth": 2.278
+    },
+    {
+      "x": 1.5,
+      "predicted": 2.153,
+      "truth": 2.217
+    },
+    {
+      "x": 1.6,
+      "predicted": 2.064,
+      "truth": 2.131
+    },
+    {
+      "x": 1.7,
+      "predicted": 1.981,
+      "truth": 2.022
+    },
+    {
+      "x": 1.8,
+      "predicted": 1.867,
+      "truth": 1.891
+    },
+    {
+      "x": 1.9,
+      "predicted": 1.634,
+      "truth": 1.741
+    },
+    {
+      "x": 2.0,
+      "predicted": 1.487,
+      "truth": 1.575
+    },
+    {
+      "x": 2.1,
+      "predicted": 1.264,
+      "truth": 1.395
+    },
+    {
+      "x": 2.2,
+      "predicted": 1.106,
+      "truth": 1.205
+    },
+    {
+      "x": 2.3,
+      "predicted": 0.894,
+      "truth": 1.008
+    },
+    {
+      "x": 2.4,
+      "predicted": 0.727,
+      "truth": 0.807
+    },
+    {
+      "x": 2.5,
+      "predicted": 0.488,
+      "truth": 0.606
+    },
+    {
+      "x": 2.6,
+      "predicted": 0.31,
+      "truth": 0.408
+    },
+    {
+      "x": 2.7,
+      "predicted": 0.14,
+      "truth": 0.217
+    }
+  ],
+  "seconds": 16.2
+}

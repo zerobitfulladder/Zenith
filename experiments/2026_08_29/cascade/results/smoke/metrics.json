@@ -1,0 +1,37 @@
+{
+  "best": {
+    "score": 0.0078125,
+    "closest": 2.3841805458068848,
+    "tick": 399872
+  },
+  "reports": [
+    {
+      "exp_ticks": 99968,
+      "EVAL": 0.0,
+      "closest": 2.74,
+      "agree": null,
+      "mins": 0.2
+    },
+    {
+      "exp_ticks": 199936,
+      "EVAL": 0.0,
+      "closest": 2.67,
+      "agree": 0.52,
+      "mins": 0.3
+    },
+    {
+      "exp_ticks": 299904,
+      "EVAL": 0.0,
+      "closest": 2.49,
+      "agree": 0.435,
+      "mins": 0.5
+    },
+    {
+      "exp_ticks": 399872,
+      "EVAL": 0.008,
+      "closest": 2.38,
+      "agree": 0.347,
+      "mins": 0.6
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+teacher audition: success 1.00  median ticks-to-balance 70
+{"tick": 20000, "phase": 1, "episodes": 50, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 81.59, "l3": 0, "mins": 0.4}
+  new best 0.0 (agree 0.0) @ 20000
+{"tick": 40000, "phase": 1, "episodes": 100, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 15.99, "coll_corr": 0.802, "coll_snr": 1.64, "diff_corr": 0.584, "diff_snr": 1.16, "agree": 0.865, "winners": 3628, "l3": 4000, "mins": 1.1}
+  new best 0.0 (agree 0.865) @ 40000
+{"tick": 60000, "phase": 1, "episodes": 150, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 14.0, "coll_corr": 0.833, "coll_snr": 1.8, "diff_corr": 0.656, "diff_snr": 1.3, "agree": 0.874, "winners": 3477, "l3": 4096, "mins": 1.8}
+  new best 0.0 (agree 0.874) @ 60000
+{"tick": 80000, "phase": 1, "episodes": 200, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 9.98, "coll_corr": 0.896, "coll_snr": 2.25, "diff_corr": 0.728, "diff_snr": 1.43, "agree": 0.874, "winners": 3351, "l3": 4096, "mins": 2.5}
+{"tick": 100000, "phase": 1, "episodes": 250, "EVAL": 0.0, "bal_frac": 0.0, "end_speed": 16.2, "coll_corr": 0.809, "coll_snr": 1.7, "diff_corr": 0.636, "diff_snr": 1.28, "agree": 0.88, "winners": 3371, "l3": 4096, "mins": 3.3}
+  new best 0.0 (agree 0.88) @ 100000
+{"tick": 120000, "phase": 1, "episodes": 300, "EVAL": 0.0, "bal_frac": 0.014, "end_speed": 14.55, "coll_corr": 0.882, "coll_snr": 2.12, "diff_corr": 0.67, "diff_snr": 1.3, "agree": 0.879, "winners": 3334, "l3": 4096, "mins": 4.0}
+{"tick": 140000, "phase": 2, "episodes": 366, "EVAL": 0.0, "bal_frac": 0.016, "end_speed": 32.49, "coll_corr": 0.814, "coll_snr": 1.72, "diff_corr": 0.246, "diff_snr": 1.03, "agree": 0.636, "winners": 3282, "l3": 4096, "mins": 4.7}
+{"tick": 160000, "phase": 2, "episodes": 438, "EVAL": 0.04, "bal_frac": 0.042, "end_speed": 33.42, "coll_corr": 0.759, "coll_snr": 1.53, "diff_corr": 0.349, "diff_snr": 1.06, "agree": 0.684, "winners": 3264, "l3": 4096, "mins": 5.4}
+  new best 0.04 (agree 0.684) @ 160000
+{"tick": 180000, "phase": 2, "episodes": 509, "EVAL": 0.0, "bal_frac": 0.063, "end_speed": 28.37, "coll_corr": 0.857, "coll_snr": 1.94, "diff_corr": 0.372, "diff_snr": 1.05, "agree": 0.68, "winners": 3197, "l3": 4096, "mins": 6.1}
+{"tick": 200000, "phase": 2, "episodes": 571, "EVAL": 0.04, "bal_frac": 0.226, "end_speed": 33.48, "coll_corr": 0.666, "coll_snr": 1.34, "diff_corr": 0.294, "diff_snr": 0.98, "agree": 0.679, "winners": 3332, "l3": 4096, "mins": 6.8}
+{"tick": 220000, "phase": 2, "episodes": 636, "EVAL": 0.16, "bal_frac": 0.327, "end_speed": 39.91, "coll_corr": 0.724, "coll_snr": 1.45, "diff_corr": 0.368, "diff_snr": 1.0, "agree": 0.698, "winners": 3299, "l3": 4096, "mins": 7.5}
+  new best 0.16 (agree 0.698) @ 220000
+{"tick": 240000, "phase": 2, "episodes": 699, "EVAL": 0.28, "bal_frac": 0.378, "end_speed": 31.61, "coll_corr": 0.7, "coll_snr": 1.4, "diff_corr": 0.362, "diff_snr": 1.02, "agree": 0.715, "winners": 3220, "l3": 4096, "mins": 8.2}
+  new best 0.28 (agree 0.715) @ 240000
+done — best 0.28 @ 240000 (8.2 min)

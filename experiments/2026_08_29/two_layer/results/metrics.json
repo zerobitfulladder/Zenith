@@ -1,0 +1,125 @@
+{
+  "config": {
+    "k1": 1024,
+    "k2": 384,
+    "taps": 21,
+    "delta": 0.2,
+    "windows": 12000,
+    "n_train": 1600,
+    "x_range": [
+      -12,
+      12
+    ],
+    "gap": [
+      1.2,
+      2.8
+    ]
+  },
+  "runs": [
+    {
+      "function": "wave_plus_trend",
+      "layer1_support_rmse": 0.0671,
+      "unknown_taps": 7,
+      "hole": [
+        1.2,
+        2.8
+      ],
+      "interfaces": [
+        {
+          "interface": "value-relative",
+          "rmse_hole": 0.032947199370215896,
+          "fit_to_known_taps": 0.138,
+          "blank_control_rmse": 0.059,
+          "templates": 384,
+          "cells_per_tap": 96,
+          "seconds": 7.7
+        },
+        {
+          "interface": "value-absolute",
+          "rmse_hole": 3.2209901078465513,
+          "fit_to_known_taps": 3.725,
+          "blank_control_rmse": 0.055,
+          "templates": 384,
+          "cells_per_tap": 96,
+          "seconds": 7.4
+        },
+        {
+          "interface": "winner (one-hot)",
+          "rmse_hole": 4.317493821194629,
+          "fit_to_known_taps": 2.881,
+          "blank_control_rmse": 0.638,
+          "templates": 384,
+          "cells_per_tap": 1024,
+          "seconds": 2.5
+        },
+        {
+          "interface": "graded top-16",
+          "rmse_hole": 2.7833325443130335,
+          "fit_to_known_taps": 4.025,
+          "blank_control_rmse": 0.143,
+          "templates": 384,
+          "cells_per_tap": 1024,
+          "seconds": 16.7
+        }
+      ],
+      "baselines": {
+        "layer 1 alone (no second layer)": 0.8166,
+        "hold the value at the nearer rim": 0.8191,
+        "MLP (64-64, tanh)": 0.1494
+      }
+    },
+    {
+      "function": "pure_wave",
+      "layer1_support_rmse": 0.1115,
+      "unknown_taps": 7,
+      "hole": [
+        1.2,
+        2.8
+      ],
+      "interfaces": [
+        {
+          "interface": "value-relative",
+          "rmse_hole": 0.10235050523163856,
+          "fit_to_known_taps": 0.235,
+          "blank_control_rmse": 0.087,
+          "templates": 384,
+          "cells_per_tap": 96,
+          "seconds": 7.5
+        },
+        {
+          "interface": "value-absolute",
+          "rmse_hole": 0.0628967967812484,
+          "fit_to_known_taps": 0.222,
+          "blank_control_rmse": 0.087,
+          "templates": 384,
+          "cells_per_tap": 96,
+          "seconds": 7.3
+        },
+        {
+          "interface": "winner (one-hot)",
+          "rmse_hole": 0.4265815570397664,
+          "fit_to_known_taps": 1.182,
+          "blank_control_rmse": 0.763,
+          "templates": 384,
+          "cells_per_tap": 1024,
+          "seconds": 2.4
+        },
+        {
+          "interface": "graded top-16",
+          "rmse_hole": 1.5944783867385544,
+          "fit_to_known_taps": 3.091,
+          "blank_control_rmse": 0.141,
+          "templates": 384,
+          "cells_per_tap": 1024,
+          "seconds": 15.4
+        }
+      ],
+      "baselines": {
+        "layer 1 alone (no second layer)": 1.0252,
+        "hold the value at the nearer rim": 0.5272,
+        "MLP (64-64, tanh)": 0.1826
+      }
+    }
+  ],
+  "total_seconds": 136.3
+}

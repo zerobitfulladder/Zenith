@@ -1,0 +1,26 @@
+{
+  "ckpt": "/home/lavender/Projects/Geodesique/experiments/2026_08_29/balance/results/dagger3/weights_best.npz",
+  "ticks": 8000,
+  "gamma": 0.98,
+  "lam": 0.9,
+  "alpha": 0.1,
+  "gateA_meanV": {
+    "basin": [
+      0.51,
+      3405
+    ],
+    "tumble": [
+      0.04,
+      53
+    ],
+    "mid": [
+      0.15,
+      638
+    ]
+  },
+  "gateB_corr_V_return": 0.396,
+  "gateC_topk_V_spread": 0.87,
+  "gateC_disagree_frac": 0.777,
+  "gateC_mean_dV_over_top1": 1.23,
+  "mins": 0.4
+}

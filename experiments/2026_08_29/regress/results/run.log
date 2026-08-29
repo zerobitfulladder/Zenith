@@ -1,0 +1,52 @@
+trained 256 minicolumns in 3.7s
+  unseen x in range    hypercolumn — top-1 cell             rmse 0.1065
+  unseen x in range    hypercolumn — sub-cell read          rmse 0.1021
+  unseen x in range    k-nearest neighbours (k=5)           rmse 0.0375
+  unseen x in range    random forest (300 trees)            rmse 0.0557
+  unseen x in range    MLP (64-64, tanh)                    rmse 0.1382
+  held-out slice       hypercolumn — top-1 cell             rmse 0.7292
+  held-out slice       hypercolumn — sub-cell read          rmse 0.7404
+  held-out slice       k-nearest neighbours (k=5)           rmse 0.7385
+  held-out slice       random forest (300 trees)            rmse 0.7652
+  held-out slice       MLP (64-64, tanh)                    rmse 0.1224
+  held-out slice       (hold the value at the nearer rim)   rmse 0.6957
+collisions: 2 shared positions -> rmse 0.1567 vs 0.1065 disjoint
+  k=128   dot     rmse 0.1017  winners 109
+  k=128   masked  rmse 0.0915  winners 123
+  k=256   dot     rmse 0.1065  winners 166
+  k=256   masked  rmse 0.1054  winners 236
+  k=512   dot     rmse 0.3962  winners 164
+  k=512   masked  rmse 0.0977  winners 377
+  k=1024  dot     rmse 0.5463  winners 130
+  k=1024  masked  rmse 0.0941  winners 471
+  top-1 cell (as specified)        sup 0.0941  gap 0.7482
+  graded, top-4 matches            sup 0.0647  gap 0.7482
+  graded, top-16 matches           sup 0.0461  gap 0.7679
+  graded, top-64 matches           sup 0.1027  gap 0.8886
+  graded, every positive match     sup 0.4877  gap 0.9460
+  halfw   1  sup 0.0971  gap 1.9141
+  halfw   2  sup 0.0823  gap 1.8194
+  halfw   4  sup 0.0845  gap 0.8650
+  halfw   8  sup 0.0937  gap 0.7355
+  halfw  12  sup 0.1516  gap 1.0784
+  halfw  16  sup 0.3208  gap 0.6919
+  halfw  24  sup 1.0762  gap 0.5567
+  halfw  32  sup 2.1885  gap 0.9195
+  halfw  48  sup 3.6026  gap 3.4647
+  sparse halfw   1  sup 0.5760
+  sparse halfw   2  sup 0.3470
+  sparse halfw   4  sup 0.1628
+  sparse halfw   8  sup 0.1675
+  sparse halfw  12  sup 0.1936
+  sparse halfw  16  sup 0.2171
+  sparse halfw  24  sup 0.3248
+  sparse halfw  32  sup 0.4468
+  sparse halfw  48  sup 0.8239
+  hole 0.2  model 0.271  rim-hold 0.101  mlp 0.051
+  hole 0.4  model 0.238  rim-hold 0.200  mlp 0.069
+  hole 0.8  model 0.372  rim-hold 0.390  mlp 0.146
+  hole 1.2  model 0.543  rim-hold 0.558  mlp 0.142
+  hole 1.6  model 0.729  rim-hold 0.696  mlp 0.122
+  hole 2.2  model 0.819  rim-hold 0.836  mlp 0.385
+  hole 3.0  model 0.819  rim-hold 0.930  mlp 1.369
+done in 98.4s -> /home/lavender/Projects/Geodesique/experiments/experiments_2026_08_29/results

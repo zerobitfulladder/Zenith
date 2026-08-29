@@ -1,0 +1,159 @@
+{
+  "best": {
+    "score": 0.0078125,
+    "closest": 2.3116958141326904,
+    "tick": 640000
+  },
+  "reports": [
+    {
+      "exp_ticks": 160000,
+      "EVAL": 0.0,
+      "closest": 2.3,
+      "outer_only": [
+        0.97,
+        0.16
+      ],
+      "inner_only": [
+        0.01,
+        2.23
+      ],
+      "agree": null,
+      "mins": 0.4
+    },
+    {
+      "exp_ticks": 320000,
+      "EVAL": 0.0,
+      "closest": 2.21,
+      "outer_only": [
+        1.0,
+        0.02
+      ],
+      "inner_only": [
+        0.0,
+        1.83
+      ],
+      "agree": 0.697,
+      "mins": 0.7
+    },
+    {
+      "exp_ticks": 480000,
+      "EVAL": 0.0,
+      "closest": 2.4,
+      "outer_only": [
+        0.98,
+        0.12
+      ],
+      "inner_only": [
+        0.01,
+        1.91
+      ],
+      "agree": 0.438,
+      "mins": 1.0
+    },
+    {
+      "exp_ticks": 640000,
+      "EVAL": 0.008,
+      "closest": 2.31,
+      "outer_only": [
+        0.99,
+        0.06
+      ],
+      "inner_only": [
+        0.01,
+        2.13
+      ],
+      "agree": 0.511,
+      "mins": 1.4
+    },
+    {
+      "exp_ticks": 800000,
+      "EVAL": 0.0,
+      "closest": 2.41,
+      "outer_only": [
+        1.0,
+        0.01
+      ],
+      "inner_only": [
+        0.0,
+        2.02
+      ],
+      "agree": 0.474,
+      "mins": 1.7
+    },
+    {
+      "exp_ticks": 960000,
+      "EVAL": 0.0,
+      "closest": 2.05,
+      "outer_only": [
+        0.99,
+        0.05
+      ],
+      "inner_only": [
+        0.01,
+        1.66
+      ],
+      "agree": 0.565,
+      "mins": 2.0
+    },
+    {
+      "exp_ticks": 1120000,
+      "EVAL": 0.0,
+      "closest": 2.36,
+      "outer_only": [
+        0.98,
+        0.12
+      ],
+      "inner_only": [
+        0.01,
+        2.34
+      ],
+      "agree": 0.585,
+      "mins": 2.4
+    },
+    {
+      "exp_ticks": 1280000,
+      "EVAL": 0.0,
+      "closest": 2.2,
+      "outer_only": [
+        0.98,
+        0.16
+      ],
+      "inner_only": [
+        0.02,
+        2.56
+      ],
+      "agree": 0.598,
+      "mins": 2.7
+    },
+    {
+      "exp_ticks": 1440000,
+      "EVAL": 0.0,
+      "closest": 2.28,
+      "outer_only": [
+        1.0,
+        0.02
+      ],
+      "inner_only": [
+        0.0,
+        1.89
+      ],
+      "agree": 0.573,
+      "mins": 3.1
+    },
+    {
+      "exp_ticks": 1600000,
+      "EVAL": 0.008,
+      "closest": 2.52,
+      "outer_only": [
+        0.99,
+        0.07
+      ],
+      "inner_only": [
+        0.0,
+        2.01
+      ],
+      "agree": 0.621,
+      "mins": 3.4
+    }
+  ]
+}

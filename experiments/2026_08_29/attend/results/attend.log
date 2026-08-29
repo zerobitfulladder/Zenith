@@ -1,0 +1,17 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+tracks trained (0.2 min)
+MI stream: 187264 decisions (1.2 min)
+greedy relevance selection:
+  round 0: {'pres-dx': np.float64(0.287), 'pres-dy': np.float64(0.264), 'pres-ang': np.float64(0.143), 'ctx-dx': np.float64(0.216), 'ctx-dy': np.float64(0.21), 'ctx-ang': np.float64(0.168)}
+    -> selected pres-dx (gain 0.287)
+  round 1: {'pres-dy': np.float64(0.155), 'pres-ang': np.float64(0.035), 'ctx-dx': np.float64(0.027), 'ctx-dy': np.float64(0.075), 'ctx-ang': np.float64(0.024)}
+    -> selected pres-dy (gain 0.155)
+  round 2: {'pres-ang': np.float64(-0.009), 'ctx-dx': np.float64(-0.021), 'ctx-dy': np.float64(-0.006), 'ctx-ang': np.float64(-0.028)}
+shares: {'pres-dx': 0.649, 'pres-dy': 0.351}
+learned: EVAL 0.03  closest 0.08  median 413
+handtruth: EVAL 0.05  closest 0.04  median 522
+done (4.8 min)

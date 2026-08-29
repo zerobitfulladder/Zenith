@@ -1,0 +1,36 @@
+phase N done (4.6 min): cetele-read EVAL 0.42 (baseline 0.72), unsupported ticks 27, templates with support 99%
+phase V done (16.9 min): V mean 6.46, |W| mean 1.533
+  beta 0.0   EVAL 0.56
+  beta 0.25  EVAL 0.52
+  beta 0.5   EVAL 0.50
+  beta 1.0   EVAL 0.50
+  beta 2.0   EVAL 0.50
+{
+  "ckpt": "/home/lavender/Projects/Geodesique/experiments/experiments_temporal_drone/results_balance_dagger3/weights_best.npz",
+  "gate_mode_EVAL": 0.42,
+  "gate_unsupported_ticks": 27,
+  "notch_support": 0.989,
+  "sweep": [
+    {
+      "beta": 0.0,
+      "EVAL": 0.56
+    },
+    {
+      "beta": 0.25,
+      "EVAL": 0.52
+    },
+    {
+      "beta": 0.5,
+      "EVAL": 0.5
+    },
+    {
+      "beta": 1.0,
+      "EVAL": 0.5
+    },
+    {
+      "beta": 2.0,
+      "EVAL": 0.5
+    }
+  ],
+  "mins": 19.4
+}

@@ -1,0 +1,11 @@
+[wave_plus_trend] layer 1: 1024 minicolumns, 28s, in-support RMSE 0.0671
+[wave_plus_trend] value-relative     hole 0.033  fit-to-known 0.138  blank-control 0.059  (8s)
+[wave_plus_trend] value-absolute     hole 3.221  fit-to-known 3.725  blank-control 0.055  (7s)
+[wave_plus_trend] winner (one-hot)   hole 4.317  fit-to-known 2.881  blank-control 0.638  (3s)
+[wave_plus_trend] graded top-16      hole 2.783  fit-to-known 4.025  blank-control 0.143  (17s)
+[pure_wave] layer 1: 1024 minicolumns, 28s, in-support RMSE 0.1115
+[pure_wave] value-relative     hole 0.102  fit-to-known 0.235  blank-control 0.087  (7s)
+[pure_wave] value-absolute     hole 0.063  fit-to-known 0.222  blank-control 0.087  (7s)
+[pure_wave] winner (one-hot)   hole 0.427  fit-to-known 1.182  blank-control 0.763  (2s)
+[pure_wave] graded top-16      hole 1.594  fit-to-known 3.091  blank-control 0.141  (15s)
+done in 136.3s -> /home/lavender/Projects/Geodesique/experiments/experiments_2026_08_29/results_two_layer

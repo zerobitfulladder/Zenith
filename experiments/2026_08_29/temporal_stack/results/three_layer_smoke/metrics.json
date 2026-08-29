@@ -1,0 +1,53 @@
+{
+  "best": {
+    "score": 0.0,
+    "tick": 3000
+  },
+  "config": {
+    "kind": "module",
+    "module": "td3_stack",
+    "dir": "experiments/2026_08_29/temporal_drone",
+    "k1": 128,
+    "k2": 256,
+    "k3": 4096,
+    "seed": 0,
+    "oracle": "fast",
+    "replay": 2
+  },
+  "reports": [
+    {
+      "tick": 1500,
+      "phase": "WARM",
+      "episodes": 9,
+      "success_last100": 1.0,
+      "agree": 1.0,
+      "retrieval": null,
+      "thrust_pupil": 5.21,
+      "thrust_oracle": 5.21,
+      "spread_pupil": 0.31,
+      "spread_oracle": 0.31,
+      "shapes": "128/256",
+      "commands": 1360,
+      "reservoir": 1360,
+      "EVAL": null,
+      "mins": 0.0
+    },
+    {
+      "tick": 3000,
+      "phase": "pupil",
+      "episodes": 17,
+      "success_last100": 0.882,
+      "agree": 0.492,
+      "retrieval": 0.621,
+      "thrust_pupil": 5.4,
+      "thrust_oracle": 5.63,
+      "spread_pupil": 0.46,
+      "spread_oracle": 0.8,
+      "shapes": "128/256",
+      "commands": 4096,
+      "reservoir": 2748,
+      "EVAL": 0.0,
+      "mins": 0.2
+    }
+  ]
+}

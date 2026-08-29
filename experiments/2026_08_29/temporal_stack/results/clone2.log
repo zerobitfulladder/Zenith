@@ -1,0 +1,5 @@
+{"tick": 15000, "phase": "WARM", "episodes": 90, "success_last100": 1.0, "agree": 1.0, "retrieval": null, "thrust_pupil": 5.17, "thrust_oracle": 5.17, "spread_pupil": 0.27, "spread_oracle": 0.27, "shapes": "128/256", "commands": 2744, "reservoir": 2744, "EVAL": 0.0, "mins": 0.2}
+{"tick": 30000, "phase": "WARM", "episodes": 178, "success_last100": 1.0, "agree": 1.0, "retrieval": null, "thrust_pupil": 5.18, "thrust_oracle": 5.18, "spread_pupil": 0.28, "spread_oracle": 0.28, "shapes": "128/256", "commands": 4096, "reservoir": 5499, "EVAL": 0.0, "mins": 0.8}
+{"tick": 45000, "phase": "WARM", "episodes": 265, "success_last100": 1.0, "agree": 1.0, "retrieval": null, "thrust_pupil": 5.21, "thrust_oracle": 5.21, "spread_pupil": 0.27, "spread_oracle": 0.27, "shapes": "128/256", "commands": 4096, "reservoir": 8251, "EVAL": 0.0, "mins": 1.6}
+{"tick": 60000, "phase": "WARM", "episodes": 352, "success_last100": 1.0, "agree": 1.0, "retrieval": null, "thrust_pupil": 5.16, "thrust_oracle": 5.16, "spread_pupil": 0.28, "spread_oracle": 0.28, "shapes": "128/256", "commands": 4096, "reservoir": 11003, "EVAL": 0.0, "mins": 2.2}
+done — best -1.0 @ 0 (2.5 min)

@@ -1,0 +1,35 @@
+phase A done (4.1 min)  V: mean 9.38  max 27.19  nonzero 4044/4096
+{
+  "ckpt": "/home/lavender/Projects/Geodesique/experiments/experiments_temporal_drone/results_balance_dagger3/weights_best.npz",
+  "ticks": 160000,
+  "gamma": 0.98,
+  "lam": 0.9,
+  "alpha": 0.1,
+  "gateA_meanV": {
+    "basin": [
+      10.48,
+      3405
+    ],
+    "tumble": [
+      1.63,
+      53
+    ],
+    "mid": [
+      4.2,
+      638
+    ]
+  },
+  "gateB_corr_V_return": 0.729,
+  "gateC_topk_V_spread": 3.48,
+  "gateC_disagree_frac": 0.845,
+  "gateC_mean_dV_over_top1": 3.8,
+  "mins": 4.8
+}
+margin 0.05, 50 episodes per arm
+  beta 0.0    EVAL 0.72   bal_frac 0.804
+  beta 0.005  EVAL 0.62   bal_frac 0.717
+  beta 0.01   EVAL 0.50   bal_frac 0.682
+  beta 0.02   EVAL 0.40   bal_frac 0.534
+  beta 0.05   EVAL 0.28   bal_frac 0.474
+  beta 0.1    EVAL 0.12   bal_frac 0.413
+(2.7 min)

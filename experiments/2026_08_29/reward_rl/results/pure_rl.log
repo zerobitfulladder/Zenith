@@ -1,0 +1,6 @@
+step 50000: EVAL 0.15  closest 0.06  median 496  (0.3 min)
+step 100000: EVAL 0.62  closest 0.06  median 436  (0.7 min)
+step 150000: EVAL 0.64  closest 0.02  median 445  (1.0 min)
+step 200000: EVAL 0.43  closest 0.03  median 477  (1.4 min)
+step 250000: EVAL 0.63  closest 0.03  median 445  (1.8 min)
+saved pure_rl.npz

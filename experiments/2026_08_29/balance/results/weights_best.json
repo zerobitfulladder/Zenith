@@ -1,0 +1,1 @@
+{"kind": "module", "module": "td_balance", "dir": "experiments/2026_08_29/temporal_drone", "k1": 64, "k2": 128, "k3": 4096, "topm": 8, "seed": 0, "every": 5, "cmd_share": 0.25, "ns": 3, "stage1": 10000, "stage2": 20000, "score": 0.04, "agree": 0.842, "tick": 60000}

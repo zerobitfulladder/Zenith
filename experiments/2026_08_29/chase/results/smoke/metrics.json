@@ -1,0 +1,38 @@
+{
+  "best": {
+    "score": 0.0,
+    "tick": 80000
+  },
+  "reports": [
+    {
+      "exp_ticks": 80000,
+      "episodes": 64,
+      "EVAL": 0.0,
+      "closest": 3.04,
+      "agree": null,
+      "l3": 0,
+      "support": 0.0,
+      "mins": 0.6
+    },
+    {
+      "exp_ticks": 160000,
+      "episodes": 192,
+      "EVAL": 0.0,
+      "closest": 2.78,
+      "agree": 0.803,
+      "l3": 8192,
+      "support": 0.988,
+      "mins": 1.4
+    },
+    {
+      "exp_ticks": 240000,
+      "episodes": 269,
+      "EVAL": 0.0,
+      "closest": 2.53,
+      "agree": 0.631,
+      "l3": 8192,
+      "support": 0.996,
+      "mins": 2.1
+    }
+  ]
+}

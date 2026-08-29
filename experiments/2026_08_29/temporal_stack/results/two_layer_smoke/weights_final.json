@@ -1,0 +1,1 @@
+{"kind": "module", "module": "td_stack", "dir": "experiments/2026_08_29/temporal_drone", "k1": 128, "k2": 2048, "topm": 6, "seed": 0, "oracle": "fast", "replay": 2, "tick": 6000, "score": 0.406}
