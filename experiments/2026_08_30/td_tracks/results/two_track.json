@@ -1,0 +1,12 @@
+{
+  "kind": "module",
+  "module": "two_track",
+  "dir": "experiments/2026_08_30/td_tracks",
+  "k_sens": 1024,
+  "k_mot": 169,
+  "k_top": 4096,
+  "topm": 8,
+  "rho": 1.0,
+  "seed": 0,
+  "read": "graded"
+}

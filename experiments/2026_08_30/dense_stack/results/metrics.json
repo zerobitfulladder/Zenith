@@ -1,0 +1,184 @@
+{
+  "config": {
+    "k1": 144,
+    "k2": 96,
+    "l1_taps": 5,
+    "l1_patch_width": 0.8,
+    "l2_taps": 51,
+    "l2_window_width": 5.0,
+    "windows": 12000,
+    "gap": [
+      1.2,
+      2.8
+    ]
+  },
+  "level0": {
+    "grid": 241,
+    "with_data": 226,
+    "missing": 15
+  },
+  "arms": {
+    "dense": {
+      "rmse": 0.1118,
+      "l2_winner": 65,
+      "l2_match": 3.056,
+      "codes_completed": 23,
+      "l2_templates": 96
+    },
+    "dense-random": {
+      "rmse": 0.2091,
+      "l2_winner": 65,
+      "l2_match": 0.641,
+      "codes_completed": 23,
+      "l2_templates": 96
+    },
+    "pca": {
+      "rmse": 0.2548,
+      "l2_winner": 65,
+      "l2_match": 0.909,
+      "codes_completed": 23,
+      "l2_templates": 96
+    },
+    "wta": {
+      "rmse": 0.1735,
+      "l2_winner": 65,
+      "l2_match": 56.046,
+      "codes_completed": 23,
+      "l2_templates": 96
+    }
+  },
+  "gap_rmse": {
+    "dense L1 + L2 over its codes": 0.1118,
+    "dense-random L1 + L2 over its codes": 0.2091,
+    "pca L1 + L2 over its codes": 0.2548,
+    "wta L1 + L2 over its codes": 0.1735,
+    "conv L1 alone, walking": 0.4279,
+    "MLP (64-64, tanh)": 0.1445,
+    "hold the value at the nearer rim": 0.7432,
+    "published 08-29 wta stack (K1=64)": 0.086
+  },
+  "dense_vs_random_code_agreement": 0.9636,
+  "per_point": [
+    {
+      "x": 1.3,
+      "dense": 2.25,
+      "dense-random": 2.288,
+      "pca": 2.188,
+      "wta": 2.203,
+      "truth": 2.313
+    },
+    {
+      "x": 1.4,
+      "dense": 2.148,
+      "dense-random": 2.182,
+      "pca": 2.293,
+      "wta": 2.161,
+      "truth": 2.278
+    },
+    {
+      "x": 1.5,
+      "dense": 2.121,
+      "dense-random": 2.02,
+      "pca": 2.221,
+      "wta": 2.085,
+      "truth": 2.217
+    },
+    {
+      "x": 1.6,
+      "dense": 2.057,
+      "dense-random": 1.862,
+      "pca": 2.323,
+      "wta": 2.003,
+      "truth": 2.131
+    },
+    {
+      "x": 1.7,
+      "dense": 1.978,
+      "dense-random": 1.935,
+      "pca": 2.205,
+      "wta": 1.906,
+      "truth": 2.022
+    },
+    {
+      "x": 1.8,
+      "dense": 1.82,
+      "dense-random": 1.523,
+      "pca": 2.514,
+      "wta": 1.688,
+      "truth": 1.891
+    },
+    {
+      "x": 1.9,
+      "dense": 1.628,
+      "dense-random": 1.563,
+      "pca": 2.122,
+      "wta": 1.551,
+      "truth": 1.741
+    },
+    {
+      "x": 2.0,
+      "dense": 1.428,
+      "dense-random": 1.238,
+      "pca": 1.963,
+      "wta": 1.351,
+      "truth": 1.575
+    },
+    {
+      "x": 2.1,
+      "dense": 1.257,
+      "dense-random": 1.382,
+      "pca": 1.506,
+      "wta": 1.173,
+      "truth": 1.395
+    },
+    {
+      "x": 2.2,
+      "dense": 1.082,
+      "dense-random": 0.964,
+      "pca": 1.517,
+      "wta": 1.008,
+      "truth": 1.205
+    },
+    {
+      "x": 2.3,
+      "dense": 0.919,
+      "dense-random": 1.074,
+      "pca": 1.062,
+      "wta": 0.806,
+      "truth": 1.008
+    },
+    {
+      "x": 2.4,
+      "dense": 0.689,
+      "dense-random": 0.572,
+      "pca": 1.043,
+      "wta": 0.579,
+      "truth": 0.807
+    },
+    {
+      "x": 2.5,
+      "dense": 0.451,
+      "dense-random": 0.718,
+      "pca": 0.535,
+      "wta": 0.409,
+      "truth": 0.606
+    },
+    {
+      "x": 2.6,
+      "dense": 0.25,
+      "dense-random": 0.235,
+      "pca": 0.5,
+      "wta": 0.266,
+      "truth": 0.408
+    },
+    {
+      "x": 2.7,
+      "dense": 0.141,
+      "dense-random": 0.509,
+      "pca": 0.068,
+      "wta": 0.114,
+      "truth": 0.217
+    }
+  ],
+  "seconds": 126.2
+}

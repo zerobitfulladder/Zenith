@@ -1,0 +1,89 @@
+{
+  "config": {
+    "k1": 64,
+    "k2": 128,
+    "k3": 1024,
+    "train": 20000,
+    "test": 5000,
+    "epochs": 2,
+    "epochs_l3": 2,
+    "rhos": [
+      0.1,
+      0.3,
+      0.6,
+      1.0
+    ]
+  },
+  "judge_accuracy": 0.9074,
+  "results": {
+    "dense": {
+      "0.1": {
+        "accuracy": 0.9096,
+        "template_purity": 0.9340586435310676,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.9,
+        "generation_accuracy_graded": 1.0,
+        "recon_error": 0.7333420961253128
+      },
+      "0.3": {
+        "accuracy": 0.9284,
+        "template_purity": 0.9890151120768553,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.8,
+        "generation_accuracy_graded": 1.0,
+        "recon_error": 0.7333420961253128
+      },
+      "0.6": {
+        "accuracy": 0.9232,
+        "template_purity": 1.0,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.8,
+        "generation_accuracy_graded": 1.0,
+        "recon_error": 0.7333420961253128
+      },
+      "1.0": {
+        "accuracy": 0.9134,
+        "template_purity": 1.0,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.7,
+        "generation_accuracy_graded": 1.0,
+        "recon_error": 0.7333420961253128
+      }
+    },
+    "wta": {
+      "0.1": {
+        "accuracy": 0.4702,
+        "template_purity": 0.6644291594209211,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.7,
+        "generation_accuracy_graded": 1.0,
+        "recon_error": 0.755423111872605
+      },
+      "0.3": {
+        "accuracy": 0.501,
+        "template_purity": 0.7745014445821972,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.5,
+        "generation_accuracy_graded": 0.8,
+        "recon_error": 0.755423111872605
+      },
+      "0.6": {
+        "accuracy": 0.5708,
+        "template_purity": 0.9873841110058038,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.5,
+        "generation_accuracy_graded": 0.9,
+        "recon_error": 0.755423111872605
+      },
+      "1.0": {
+        "accuracy": 0.5588,
+        "template_purity": 1.0,
+        "templates_used": 1024,
+        "generation_accuracy_top1": 0.4,
+        "generation_accuracy_graded": 0.8,
+        "recon_error": 0.755423111872605
+      }
+    }
+  },
+  "seconds": 263.3
+}

@@ -1,0 +1,35 @@
+{
+  "config": {
+    "k_sens": 1024,
+    "k_mot": 169,
+    "k_top": 4096,
+    "topm": 8,
+    "rho": 1.0,
+    "episodes": 900,
+    "epochs": 3,
+    "ticks": 155462
+  },
+  "bench": {
+    "PID oracle (the teacher)": {
+      "success": 1.0,
+      "to_target": 80.0,
+      "total": 173.0
+    },
+    "two-track memory, graded read": {
+      "success": 0.0,
+      "to_target": NaN,
+      "total": NaN
+    },
+    "two-track memory, top1 read": {
+      "success": 0.0,
+      "to_target": NaN,
+      "total": NaN
+    },
+    "hover, no control": {
+      "success": 0.0,
+      "to_target": NaN,
+      "total": NaN
+    }
+  },
+  "seconds": 295.4
+}
