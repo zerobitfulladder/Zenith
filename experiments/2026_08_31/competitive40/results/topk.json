@@ -1,0 +1,36 @@
+{
+  "competitive": {
+    "hard top-1": 0.939,
+    "hard top-2": 0.939,
+    "hard top-3": 0.7084,
+    "hard top-4": 0.5982,
+    "hard top-5": 0.5376,
+    "hard top-7": 0.496,
+    "hard top-10": 0.482,
+    "soft all T=0.005": 0.939,
+    "soft all T=0.01": 0.94,
+    "soft all T=0.02": 0.9392,
+    "soft all T=0.05": 0.9258,
+    "soft all T=0.1": 0.8624,
+    "per-digit mean of best 1": 0.939,
+    "per-digit mean of best 2": 0.9176,
+    "per-digit mean of best 3": 0.9176
+  },
+  "conscience": {
+    "hard top-1": 0.9392,
+    "hard top-2": 0.9392,
+    "hard top-3": 0.8712,
+    "hard top-4": 0.8408,
+    "hard top-5": 0.8006,
+    "hard top-7": 0.7408,
+    "hard top-10": 0.621,
+    "soft all T=0.005": 0.94,
+    "soft all T=0.01": 0.94,
+    "soft all T=0.02": 0.9402,
+    "soft all T=0.05": 0.9312,
+    "soft all T=0.1": 0.8998,
+    "per-digit mean of best 1": 0.9392,
+    "per-digit mean of best 2": 0.9336,
+    "per-digit mean of best 3": 0.9308
+  }
+}

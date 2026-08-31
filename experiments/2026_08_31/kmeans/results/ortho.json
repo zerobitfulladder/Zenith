@@ -1,0 +1,86 @@
+{
+  "cos_mustache_male": 0.8126399012381644,
+  "cos_glasses_male": 0.6056893875989013,
+  "panels": {
+    "woman + mustache (raw direction)|beta=0.0": {
+      "along_male": 0.0,
+      "along_attr": 0.0
+    },
+    "woman + mustache (raw direction)|beta=0.5": {
+      "along_male": 3.8102878950862253,
+      "along_attr": 4.688777759101606
+    },
+    "woman + mustache (raw direction)|beta=1.0": {
+      "along_male": 7.620575790172451,
+      "along_attr": 9.377555518203213
+    },
+    "woman + mustache (raw direction)|beta=1.5": {
+      "along_male": 11.430863685258677,
+      "along_attr": 14.06633327730482
+    },
+    "woman + mustache (raw direction)|beta=2.0": {
+      "along_male": 15.241151580344905,
+      "along_attr": 18.755111036406426
+    },
+    "woman + mustache (male component removed)|beta=0.0": {
+      "along_male": 0.0,
+      "along_attr": 0.0
+    },
+    "woman + mustache (male component removed)|beta=0.5": {
+      "along_male": 3.254285729781259e-12,
+      "along_attr": 2.7324609843175742
+    },
+    "woman + mustache (male component removed)|beta=1.0": {
+      "along_male": 6.508460437260055e-12,
+      "along_attr": 5.4649219686351485
+    },
+    "woman + mustache (male component removed)|beta=1.5": {
+      "along_male": 9.763079233948702e-12,
+      "along_attr": 8.197382952952722
+    },
+    "woman + mustache (male component removed)|beta=2.0": {
+      "along_male": 1.3017142919125035e-11,
+      "along_attr": 10.929843937270297
+    },
+    "woman + glasses (raw direction)|beta=0.0": {
+      "along_male": 0.0,
+      "along_attr": 0.0
+    },
+    "woman + glasses (raw direction)|beta=0.5": {
+      "along_male": 2.8399429294992373,
+      "along_attr": 4.688777759102235
+    },
+    "woman + glasses (raw direction)|beta=1.0": {
+      "along_male": 5.679885858998475,
+      "along_attr": 9.37755551820447
+    },
+    "woman + glasses (raw direction)|beta=1.5": {
+      "along_male": 8.519828788497712,
+      "along_attr": 14.066333277306706
+    },
+    "woman + glasses (raw direction)|beta=2.0": {
+      "along_male": 11.35977171799695,
+      "along_attr": 18.75511103640894
+    },
+    "woman + glasses (male component removed)|beta=0.0": {
+      "along_male": 0.0,
+      "along_attr": 0.0
+    },
+    "woman + glasses (male component removed)|beta=0.5": {
+      "along_male": 1.7763013282490192e-12,
+      "along_attr": 3.730865989478189
+    },
+    "woman + glasses (male component removed)|beta=1.0": {
+      "along_male": 3.5526026564980384e-12,
+      "along_attr": 7.461731978956378
+    },
+    "woman + glasses (male component removed)|beta=1.5": {
+      "along_male": 5.329070518200751e-12,
+      "along_attr": 11.192597968434567
+    },
+    "woman + glasses (male component removed)|beta=2.0": {
+      "along_male": 7.105316335298539e-12,
+      "along_attr": 14.923463957912755
+    }
+  }
+}

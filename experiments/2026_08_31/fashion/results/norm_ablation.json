@@ -1,0 +1,45 @@
+{
+  "results": {
+    "centre + L2 (current)": {
+      "acc": 0.817,
+      "acc_reluctance": 0.8278,
+      "coherence": 0.02874077091752821,
+      "max_coherence": 0.22138082250427646,
+      "dc_alignment": 0.022159003007044625,
+      "purity": 0.8279550372307846,
+      "alive": 36,
+      "eta_scale": 1.0
+    },
+    "centre only": {
+      "acc": 0.7928,
+      "acc_reluctance": 0.8098,
+      "coherence": 0.028940235737933133,
+      "max_coherence": 0.2624786427179074,
+      "dc_alignment": 0.02264509983784211,
+      "purity": 0.8351976854059305,
+      "alive": 38,
+      "eta_scale": 239.66730786562124
+    },
+    "L2 only": {
+      "acc": 0.7316,
+      "acc_reluctance": 0.8082,
+      "coherence": 0.02880574953197633,
+      "max_coherence": 0.22577000221744303,
+      "dc_alignment": 0.05106167313004892,
+      "purity": 0.8897308430995979,
+      "alive": 30,
+      "eta_scale": 1.0
+    },
+    "raw": {
+      "acc": 0.7052,
+      "acc_reluctance": 0.8062,
+      "coherence": 0.02881763954678891,
+      "max_coherence": 0.22659762274932546,
+      "dc_alignment": 0.05048403261881655,
+      "purity": 0.881183698265904,
+      "alive": 31,
+      "eta_scale": 322.7930910548249
+    }
+  },
+  "seconds": 253.2
+}

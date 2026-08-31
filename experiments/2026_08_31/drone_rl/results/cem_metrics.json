@@ -1,0 +1,101 @@
+{
+  "config": {
+    "H": 48,
+    "K": 8,
+    "gamma": 0.99,
+    "topq": 0.2,
+    "eta": 0.15,
+    "batches": 240,
+    "per_batch": 25
+  },
+  "final": {
+    "reward": -27.75025065338445,
+    "success": 0.0,
+    "steps": 26.453333333333333
+  },
+  "baselines": {
+    "teacher": {
+      "reward": -49.78611385069152,
+      "success": 0.9416666666666667
+    },
+    "random": {
+      "reward": -41.32943023643188,
+      "success": 0.0
+    }
+  },
+  "curve": [
+    {
+      "episodes": 500,
+      "reward": -50.646461632725185,
+      "success": 0.0,
+      "steps": 54.65
+    },
+    {
+      "episodes": 1000,
+      "reward": -39.034804040618866,
+      "success": 0.0,
+      "steps": 38.46666666666667
+    },
+    {
+      "episodes": 1500,
+      "reward": -35.631733649187225,
+      "success": 0.0,
+      "steps": 35.8
+    },
+    {
+      "episodes": 2000,
+      "reward": -34.27189559589486,
+      "success": 0.0,
+      "steps": 32.45
+    },
+    {
+      "episodes": 2500,
+      "reward": -32.76638146544371,
+      "success": 0.0,
+      "steps": 33.28333333333333
+    },
+    {
+      "episodes": 3000,
+      "reward": -26.733073651500625,
+      "success": 0.0,
+      "steps": 25.141666666666666
+    },
+    {
+      "episodes": 3500,
+      "reward": -27.78161850527009,
+      "success": 0.0,
+      "steps": 24.858333333333334
+    },
+    {
+      "episodes": 4000,
+      "reward": -31.303359850439946,
+      "success": 0.0,
+      "steps": 27.45
+    },
+    {
+      "episodes": 4500,
+      "reward": -26.542041131359063,
+      "success": 0.0,
+      "steps": 24.65
+    },
+    {
+      "episodes": 5000,
+      "reward": -27.05723591089088,
+      "success": 0.0,
+      "steps": 26.025
+    },
+    {
+      "episodes": 5500,
+      "reward": -25.624783395094997,
+      "success": 0.0,
+      "steps": 24.725
+    },
+    {
+      "episodes": 6000,
+      "reward": -27.93975689212044,
+      "success": 0.0,
+      "steps": 27.833333333333332
+    }
+  ],
+  "seconds": 60.4
+}

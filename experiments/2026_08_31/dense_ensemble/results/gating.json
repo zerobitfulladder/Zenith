@@ -1,0 +1,37 @@
+{
+  "margin (top1 - top2)": {
+    "accuracy": 0.7856,
+    "busiest_hypercolumn_share": 0.0778,
+    "hypercolumns_ever_picked": 30
+  },
+  "margin / label-block norm": {
+    "accuracy": 0.786,
+    "busiest_hypercolumn_share": 0.0996,
+    "hypercolumns_ever_picked": 30
+  },
+  "top-1 score": {
+    "accuracy": 0.764,
+    "busiest_hypercolumn_share": 0.1426,
+    "hypercolumns_ever_picked": 30
+  },
+  "label-block norm (commitment)": {
+    "accuracy": 0.7666,
+    "busiest_hypercolumn_share": 0.1444,
+    "hypercolumns_ever_picked": 30
+  },
+  "negative softmax entropy": {
+    "accuracy": 0.75,
+    "busiest_hypercolumn_share": 0.1784,
+    "hypercolumns_ever_picked": 30
+  },
+  "best image reconstruction": {
+    "accuracy": 0.7454,
+    "busiest_hypercolumn_share": 0.0558,
+    "hypercolumns_ever_picked": 30
+  },
+  "oracle_any_right": 0.914,
+  "anti_oracle_all_right": 0.5192,
+  "single_mean": 0.7634733333333334,
+  "soft_vote_30": 0.796,
+  "majority_30": 0.7918
+}

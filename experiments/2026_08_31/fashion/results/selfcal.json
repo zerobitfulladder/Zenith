@@ -1,0 +1,23 @@
+{
+  "graded \u03bb=4, no punishment": {
+    "raw": 0.601,
+    "minus habitual (all inputs)": 0.6414,
+    "divided by habitual (all inputs)": 0.6376,
+    "minus habitual (own wins, iterated)": 0.1886,
+    "teacher-trained reluctance": 0.7066
+  },
+  "graded \u03bb=4 + sleep": {
+    "raw": 0.6148,
+    "minus habitual (all inputs)": 0.6868,
+    "divided by habitual (all inputs)": 0.6848,
+    "minus habitual (own wins, iterated)": 0.1886,
+    "teacher-trained reluctance": 0.7282
+  },
+  "graded \u03bb=4 + repulsion": {
+    "raw": 0.817,
+    "minus habitual (all inputs)": 0.8078,
+    "divided by habitual (all inputs)": 0.8094,
+    "minus habitual (own wins, iterated)": 0.1876,
+    "teacher-trained reluctance": 0.8278
+  }
+}

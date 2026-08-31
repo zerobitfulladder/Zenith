@@ -1,0 +1,37 @@
+{
+  "phase 1": {
+    "acc_0_4": 0.975724353954581,
+    "acc_5_9": 0.0,
+    "acc_all": 0.4984,
+    "live_experts": 14,
+    "phase_wins_to_previously_live": null,
+    "phase_wins_to_previously_dead": null
+  },
+  "phase 2": {
+    "acc_0_4": 0.9526233359436178,
+    "acc_5_9": 0.9043336058871627,
+    "acc_all": 0.929,
+    "live_experts": 25,
+    "phase_wins_to_previously_live": 0.0,
+    "phase_wins_to_previously_dead": 1.0
+  },
+  "mechanism": {
+    "dead_after_phase1": 26,
+    "phase2_to_previously_live": 0.0,
+    "phase2_to_previously_dead": 1.0,
+    "experts_that_changed_claim": 0,
+    "changes": []
+  },
+  "baselines": {
+    "logistic (SGD)": {
+      "p1": 0.9487,
+      "p2": 0.0094,
+      "5_9": 0.8949
+    },
+    "MLP 256 (SGD)": {
+      "p1": 0.9765,
+      "p2": 0.0,
+      "5_9": 0.9673
+    }
+  }
+}

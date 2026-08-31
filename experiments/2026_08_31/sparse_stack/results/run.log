@@ -1,0 +1,13 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1184: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=-1', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+train 20000  test 5000  rho=0.6  judge (logistic on pixels) 0.9074
+
+dense                        accuracy 0.9232  purity 1.000  gen top-1 0.8 graded 1.0  recon 0.733  lit 0.492  148.0s
+wta                          accuracy 0.5708  purity 0.987  gen top-1 0.5 graded 0.9  recon 0.755  lit 0.007  37.9s
+sparse k=2                   accuracy 0.7132  purity 0.999  gen top-1 0.8 graded 0.9  recon 0.661  lit 0.015  64.0s
+sparse k=4                   accuracy 0.7494  purity 0.999  gen top-1 0.7 graded 1.0  recon 0.567  lit 0.030  87.3s
+sparse k=8                   accuracy 0.7646  purity 1.000  gen top-1 1.0 graded 1.0  recon 0.475  lit 0.059  128.7s
+sparse k=4, settled read     accuracy 0.7946  purity 0.999  gen top-1 0.8 graded 1.0  recon 0.637  lit 0.029  185.2s
+sparse k=4, no L3 centring   accuracy 0.7494  purity 0.999  gen top-1 1.0 graded 1.0  recon 0.567  lit 0.030  85.7s
+
+done in 752s -> /home/lavender/Projects/Geodesique/experiments/experiments_2026_08_31/sparse_stack/results

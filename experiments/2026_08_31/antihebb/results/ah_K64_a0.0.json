@@ -1,0 +1,91 @@
+{
+  "K": 64,
+  "p_target": 0.0625,
+  "eta": 0.5,
+  "alpha": 0.0,
+  "beta": 0.3,
+  "iters": 20,
+  "history": [
+    {
+      "epoch": 1,
+      "active_frac": 0.06325390625,
+      "active_units": 4.04825,
+      "rebuild_cos": 0.8262223867654402,
+      "lstsq_cos": 0.835185445803833,
+      "coherence": 0.34454817482487266,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 2,
+      "active_frac": 0.0627578125,
+      "active_units": 4.0165,
+      "rebuild_cos": 0.8222510383057524,
+      "lstsq_cos": 0.8263907215067169,
+      "coherence": 0.3422717346375188,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 3,
+      "active_frac": 0.0616171875,
+      "active_units": 3.9435,
+      "rebuild_cos": 0.8102353008464295,
+      "lstsq_cos": 0.814951093587222,
+      "coherence": 0.34241902960764947,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 4,
+      "active_frac": 0.0627734375,
+      "active_units": 4.0175,
+      "rebuild_cos": 0.8297998452965817,
+      "lstsq_cos": 0.8384062667254408,
+      "coherence": 0.33467926623268596,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 5,
+      "active_frac": 0.06210546875,
+      "active_units": 3.97475,
+      "rebuild_cos": 0.8082334773688492,
+      "lstsq_cos": 0.8135397453054184,
+      "coherence": 0.34270270169356887,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 6,
+      "active_frac": 0.06273828125,
+      "active_units": 4.01525,
+      "rebuild_cos": 0.8298170698007266,
+      "lstsq_cos": 0.83377213628837,
+      "coherence": 0.3408476347406593,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 7,
+      "active_frac": 0.06240234375,
+      "active_units": 3.99375,
+      "rebuild_cos": 0.8262394882303529,
+      "lstsq_cos": 0.8354378591112269,
+      "coherence": 0.3420002300549313,
+      "M_mean": 0.0,
+      "dead": 0
+    },
+    {
+      "epoch": 8,
+      "active_frac": 0.06309375,
+      "active_units": 4.038,
+      "rebuild_cos": 0.8207539228699654,
+      "lstsq_cos": 0.8160796924962712,
+      "coherence": 0.3394690519510518,
+      "M_mean": 0.0,
+      "dead": 0
+    }
+  ],
+  "seconds": 38.1
+}

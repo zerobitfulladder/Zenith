@@ -1,0 +1,73 @@
+{
+  "alpha": 1.0,
+  "results": {
+    "dense": {
+      "variants": {
+        "count/log/count": 0.6252,
+        "count/log/mass": 0.6608,
+        "count/linear/count": 0.5838,
+        "count/linear/mass": 0.706,
+        "mass/log/count": 0.102,
+        "mass/log/mass": 0.102,
+        "mass/linear/count": 0.0768,
+        "mass/linear/mass": 0.05
+      },
+      "best": "count/linear/mass",
+      "best_accuracy": 0.706,
+      "fraction_lit": 0.4917048611111111
+    },
+    "wta": {
+      "variants": {
+        "count/log/count": 0.7852,
+        "count/log/mass": 0.7536,
+        "count/linear/count": 0.7052,
+        "count/linear/mass": 0.6684,
+        "mass/log/count": 0.784,
+        "mass/log/mass": 0.7592,
+        "mass/linear/count": 0.6974,
+        "mass/linear/mass": 0.663
+      },
+      "best": "count/log/count",
+      "best_accuracy": 0.7852,
+      "fraction_lit": 0.00749375
+    },
+    "sparse k=4": {
+      "variants": {
+        "count/log/count": 0.8672,
+        "count/log/mass": 0.846,
+        "count/linear/count": 0.8074,
+        "count/linear/mass": 0.7764,
+        "mass/log/count": 0.8626,
+        "mass/log/mass": 0.8456,
+        "mass/linear/count": 0.8038,
+        "mass/linear/mass": 0.7778
+      },
+      "best": "count/log/count",
+      "best_accuracy": 0.8672,
+      "fraction_lit": 0.030127256944444444
+    },
+    "sparse k=4 settled": {
+      "variants": {
+        "count/log/count": 0.867,
+        "count/log/mass": 0.837,
+        "count/linear/count": 0.7814,
+        "count/linear/mass": 0.7628,
+        "mass/log/count": 0.8508,
+        "mass/log/mass": 0.8294,
+        "mass/linear/count": 0.7516,
+        "mass/linear/mass": 0.7474
+      },
+      "best": "count/log/count",
+      "best_accuracy": 0.867,
+      "fraction_lit": 0.02894392361111111
+    }
+  },
+  "board": {
+    "dense, layer three": 0.9232,
+    "wta, layer three": 0.5708,
+    "sparse k=4, layer three": 0.7494,
+    "sparse k=4 settled, layer three": 0.7946,
+    "judge (logistic on pixels)": 0.9074
+  },
+  "seconds": 942.6
+}

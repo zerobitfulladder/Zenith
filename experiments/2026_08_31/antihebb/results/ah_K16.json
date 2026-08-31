@@ -1,0 +1,91 @@
+{
+  "K": 16,
+  "p_target": 0.25,
+  "eta": 0.5,
+  "alpha": 0.4,
+  "beta": 0.3,
+  "iters": 20,
+  "history": [
+    {
+      "epoch": 1,
+      "active_frac": 0.246609375,
+      "active_units": 3.94575,
+      "rebuild_cos": 0.7832686181019358,
+      "lstsq_cos": 0.858879816764272,
+      "coherence": 0.3393822935097546,
+      "M_mean": 2.6274492384750565,
+      "dead": 0
+    },
+    {
+      "epoch": 2,
+      "active_frac": 0.2471875,
+      "active_units": 3.955,
+      "rebuild_cos": 0.7817091786545777,
+      "lstsq_cos": 0.8450801694662617,
+      "coherence": 0.34468842305447045,
+      "M_mean": 3.4838166345910073,
+      "dead": 0
+    },
+    {
+      "epoch": 3,
+      "active_frac": 0.2520625,
+      "active_units": 4.033,
+      "rebuild_cos": 0.8013002112991259,
+      "lstsq_cos": 0.8676158809816648,
+      "coherence": 0.33023557183704044,
+      "M_mean": 3.0876486793795643,
+      "dead": 0
+    },
+    {
+      "epoch": 4,
+      "active_frac": 0.246421875,
+      "active_units": 3.94275,
+      "rebuild_cos": 0.7877122124880357,
+      "lstsq_cos": 0.8509735619104852,
+      "coherence": 0.3398701819690977,
+      "M_mean": 3.1570719373842953,
+      "dead": 0
+    },
+    {
+      "epoch": 5,
+      "active_frac": 0.252453125,
+      "active_units": 4.03925,
+      "rebuild_cos": 0.796407264266409,
+      "lstsq_cos": 0.8542371804864,
+      "coherence": 0.3428657732855319,
+      "M_mean": 2.9817354674783454,
+      "dead": 0
+    },
+    {
+      "epoch": 6,
+      "active_frac": 0.250765625,
+      "active_units": 4.01225,
+      "rebuild_cos": 0.7870988418951833,
+      "lstsq_cos": 0.8521857480808624,
+      "coherence": 0.3566695078597951,
+      "M_mean": 2.846392856603282,
+      "dead": 0
+    },
+    {
+      "epoch": 7,
+      "active_frac": 0.2466875,
+      "active_units": 3.947,
+      "rebuild_cos": 0.8108291058993744,
+      "lstsq_cos": 0.8794631921729704,
+      "coherence": 0.3139329885819972,
+      "M_mean": 3.001718353082069,
+      "dead": 0
+    },
+    {
+      "epoch": 8,
+      "active_frac": 0.249109375,
+      "active_units": 3.98575,
+      "rebuild_cos": 0.7907500464348898,
+      "lstsq_cos": 0.8562477775726226,
+      "coherence": 0.33053128432963386,
+      "M_mean": 2.9497201348921323,
+      "dead": 0
+    }
+  ],
+  "seconds": 12.8
+}

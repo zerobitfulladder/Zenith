@@ -1,0 +1,97 @@
+{
+  "norm_ripple_max_over_min_by_halfw": {
+    "1.0": 1.4142065555846872,
+    "1.5": 1.0289915108550534,
+    "3.0": 1.1766968108291047,
+    "6.0": 1.2792042981336627
+  },
+  "image_recon_by_nb__(peak, centroid, fraction_lit)": {
+    "2": [
+      0.09093509508428309,
+      0.039660387172576785,
+      1.0
+    ],
+    "3": [
+      0.0482791783141314,
+      0.02050615755917132,
+      0.6827699829931972
+    ],
+    "4": [
+      0.03352051993875859,
+      0.013390401137757664,
+      0.5167610012755102
+    ],
+    "6": [
+      0.02011954489466603,
+      0.008440865192843173,
+      0.3479817708333333
+    ],
+    "8": [
+      0.014295522865377207,
+      0.006295102303991548,
+      0.2619678730867347
+    ],
+    "12": [
+      0.00956937470753534,
+      0.00430520241868567,
+      0.17544576424319727
+    ],
+    "16": [
+      0.007088585148302014,
+      0.0035026917811729168,
+      0.1318085339604592
+    ],
+    "24": [
+      0.0049235153557850315,
+      0.002424494058267166,
+      0.08806667198129252
+    ]
+  },
+  "positive_template_scores": {
+    "centre dark\n(what it wants)": 0.9999999999999998,
+    "centre bright\n(inverted)": 0.0,
+    "flat mid grey": 0.0,
+    "all bright": 0.8888888888888887,
+    "all dark": 0.1111111111111111
+  },
+  "motor_rmse_peak": 0.10539239156081397,
+  "motor_rmse_centroid": 0.040047425420214736,
+  "motor_cell_spacing": 0.34782608695652173,
+  "motor_bump_radius": 0.5217391304347826,
+  "selectivity_by_nb": {
+    "2": {
+      "cos_of_the_two_extremes": 0.47058823529411786,
+      "value_gap_until_codes_are_disjoint": null
+    },
+    "3": {
+      "cos_of_the_two_extremes": 0.05882352941176476,
+      "value_gap_until_codes_are_disjoint": null
+    },
+    "4": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.6785
+    },
+    "6": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.40750000000000003
+    },
+    "8": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.291
+    },
+    "12": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.1855
+    },
+    "16": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.136
+    },
+    "24": {
+      "cos_of_the_two_extremes": 0.0,
+      "value_gap_until_codes_are_disjoint": 0.0885
+    }
+  },
+  "any_negative_value_anywhere": false,
+  "fraction_lit_at_nb8": 0.2619678730867347
+}

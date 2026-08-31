@@ -1,0 +1,26 @@
+{
+  "identity, global": {
+    "acc": 0.312,
+    "dims": 8
+  },
+  "identity, 2x2": {
+    "acc": 0.7775,
+    "dims": 32
+  },
+  "identity+dense, global": {
+    "acc": 0.702,
+    "dims": 48
+  },
+  "identity+dense, 2x2": {
+    "acc": 0.9445,
+    "dims": 192
+  },
+  "counts, global": {
+    "acc": 0.6105,
+    "dims": 8
+  },
+  "raw pixels": {
+    "acc": 0.8925,
+    "dims": 784
+  }
+}

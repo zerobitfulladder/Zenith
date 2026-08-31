@@ -1,0 +1,94 @@
+{
+  "config": {
+    "k1": 64,
+    "k2": 128,
+    "k3": 1024,
+    "rho": 0.6,
+    "nb": 8,
+    "train": 20000,
+    "test": 5000,
+    "epochs": 2,
+    "epochs_l3": 2
+  },
+  "judge_accuracy": 0.9074,
+  "results": {
+    "dense": {
+      "accuracy": 0.9232,
+      "purity": 1.0,
+      "templates_used": 1024,
+      "gen_top1": 0.8,
+      "gen_graded": 1.0,
+      "recon_error": 0.733,
+      "l2_code_fraction_lit": 0.4917,
+      "seconds_l1l2": 141.7,
+      "seconds": 148.0
+    },
+    "wta": {
+      "accuracy": 0.5708,
+      "purity": 0.9873841110058038,
+      "templates_used": 1024,
+      "gen_top1": 0.5,
+      "gen_graded": 0.9,
+      "recon_error": 0.755,
+      "l2_code_fraction_lit": 0.0075,
+      "seconds_l1l2": 31.1,
+      "seconds": 37.9
+    },
+    "sparse k=2": {
+      "accuracy": 0.7132,
+      "purity": 0.9990472928211422,
+      "templates_used": 1024,
+      "gen_top1": 0.8,
+      "gen_graded": 0.9,
+      "recon_error": 0.661,
+      "l2_code_fraction_lit": 0.0153,
+      "seconds_l1l2": 58.7,
+      "seconds": 64.0
+    },
+    "sparse k=4": {
+      "accuracy": 0.7494,
+      "purity": 0.9994490231160859,
+      "templates_used": 1024,
+      "gen_top1": 0.7,
+      "gen_graded": 1.0,
+      "recon_error": 0.567,
+      "l2_code_fraction_lit": 0.0301,
+      "seconds_l1l2": 81.5,
+      "seconds": 87.3
+    },
+    "sparse k=8": {
+      "accuracy": 0.7646,
+      "purity": 0.9998520521972357,
+      "templates_used": 1024,
+      "gen_top1": 1.0,
+      "gen_graded": 1.0,
+      "recon_error": 0.475,
+      "l2_code_fraction_lit": 0.0595,
+      "seconds_l1l2": 123.1,
+      "seconds": 128.7
+    },
+    "sparse k=4, settled read": {
+      "accuracy": 0.7946,
+      "purity": 0.9989675205442159,
+      "templates_used": 1024,
+      "gen_top1": 0.8,
+      "gen_graded": 1.0,
+      "recon_error": 0.637,
+      "l2_code_fraction_lit": 0.0289,
+      "seconds_l1l2": 179.4,
+      "seconds": 185.2
+    },
+    "sparse k=4, no L3 centring": {
+      "accuracy": 0.7494,
+      "purity": 0.9994435717939486,
+      "templates_used": 1024,
+      "gen_top1": 1.0,
+      "gen_graded": 1.0,
+      "recon_error": 0.567,
+      "l2_code_fraction_lit": 0.0301,
+      "seconds_l1l2": 80.3,
+      "seconds": 85.7
+    }
+  },
+  "seconds": 752.0
+}

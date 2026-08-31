@@ -1,0 +1,63 @@
+{
+  "teacher": {
+    "success": 0.97,
+    "steps": 203.6
+  },
+  "by_n": {
+    "64": {
+      "tally": {
+        "success": 0.0,
+        "steps": 89.25333333333333
+      },
+      "constant": {
+        "success": 0.0,
+        "steps": 116.94666666666667
+      },
+      "linear": {
+        "success": 0.9333333333333333,
+        "steps": 211.06666666666666
+      },
+      "cells_used": 33,
+      "cells_with_linear": 33
+    },
+    "256": {
+      "tally": {
+        "success": 0.0,
+        "steps": 95.99666666666667
+      },
+      "constant": {
+        "success": 0.0,
+        "steps": 111.85666666666667
+      },
+      "linear": {
+        "success": 0.88,
+        "steps": 216.14
+      },
+      "cells_used": 42,
+      "cells_with_linear": 42
+    },
+    "512": {
+      "tally": {
+        "success": 0.0,
+        "steps": 88.51
+      },
+      "constant": {
+        "success": 0.0,
+        "steps": 111.09
+      },
+      "linear": {
+        "success": 0.9166666666666666,
+        "steps": 212.19666666666666
+      },
+      "cells_used": 57,
+      "cells_with_linear": 57
+    }
+  },
+  "config": {
+    "K": 6,
+    "nb": 12,
+    "demo_episodes": 1500,
+    "demo_steps": 312900
+  },
+  "seconds": 321.6
+}

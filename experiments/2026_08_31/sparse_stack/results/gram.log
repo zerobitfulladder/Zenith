@@ -1,0 +1,8 @@
+layers 1-2 done in 96s; layer-three input 5184 cells (0.630 lit)
+
+  gram-space score   accuracy 0.7164   purity 1.000   gen top-1 0.8  graded 1.0
+  sparse k=4, cell-wise score  0.7494   (-0.0330)
+  dense                        0.9232   (-0.2068)
+  wta                          0.5708   (+0.1456)
+
+done in 156s

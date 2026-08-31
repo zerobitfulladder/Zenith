@@ -1,0 +1,55 @@
+{
+  "phase 1": {
+    "raw": {
+      "acc_0_4": 0.9800313234142521,
+      "acc_5_9": 0.0,
+      "acc_all": 0.5006
+    },
+    "with_reluctance": {
+      "acc_0_4": 0.980814408770556,
+      "acc_5_9": 0.0,
+      "acc_all": 0.501
+    },
+    "live": 33,
+    "repelled": 0,
+    "phase_wins_to_previously_live": 0.0,
+    "phase_wins_to_previously_dead": 1.0
+  },
+  "phase 2": {
+    "raw": {
+      "acc_0_4": 0.9620203602192638,
+      "acc_5_9": 0.9186426819296811,
+      "acc_all": 0.9408
+    },
+    "with_reluctance": {
+      "acc_0_4": 0.7357086922474549,
+      "acc_5_9": 0.9603434178250204,
+      "acc_all": 0.8456
+    },
+    "live": 40,
+    "repelled": 0,
+    "phase_wins_to_previously_live": 0.0,
+    "phase_wins_to_previously_dead": 1.0
+  },
+  "mechanism": {
+    "dead_after_phase1": 27,
+    "phase2_to_previously_live": 0.0,
+    "phase2_to_previously_dead": 1.0,
+    "changed_claim": 0,
+    "changes": []
+  },
+  "baselines": {
+    "logistic (SGD)": [
+      0.9487,
+      0.0094
+    ],
+    "MLP 256 (SGD)": [
+      0.9765,
+      0.0
+    ],
+    "old rule (label-picked)": [
+      0.9757,
+      0.9526
+    ]
+  }
+}

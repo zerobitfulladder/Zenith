@@ -1,0 +1,12 @@
+{
+  "raw": 0.804,
+  "with_reluctance": 0.829,
+  "plain_repulsion": {
+    "raw": 0.817,
+    "with_reluctance": 0.8278
+  },
+  "plasticity_mean_live": 0.38813755233663233,
+  "plasticity_min_live": 7.75750440466173e-05,
+  "fully_plastic": 14,
+  "alive": 36
+}

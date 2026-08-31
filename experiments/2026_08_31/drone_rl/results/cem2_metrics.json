@@ -1,0 +1,102 @@
+{
+  "config": {
+    "H": 48,
+    "K": 8,
+    "gamma": 0.99,
+    "topq": 0.2,
+    "freeze_situation": true,
+    "eta": 0.15,
+    "batches": 240,
+    "per_batch": 25
+  },
+  "final": {
+    "reward": -32.1199013668996,
+    "success": 0.0,
+    "steps": 32.94
+  },
+  "baselines": {
+    "teacher": {
+      "reward": -49.78611385069152,
+      "success": 0.9416666666666667
+    },
+    "random": {
+      "reward": -41.32943023643188,
+      "success": 0.0
+    }
+  },
+  "curve": [
+    {
+      "episodes": 500,
+      "reward": -71.67882193107279,
+      "success": 0.0,
+      "steps": 71.23333333333333
+    },
+    {
+      "episodes": 1000,
+      "reward": -53.83559688915003,
+      "success": 0.0,
+      "steps": 54.3
+    },
+    {
+      "episodes": 1500,
+      "reward": -45.26790725818007,
+      "success": 0.0,
+      "steps": 47.108333333333334
+    },
+    {
+      "episodes": 2000,
+      "reward": -39.37226458825527,
+      "success": 0.0,
+      "steps": 40.575
+    },
+    {
+      "episodes": 2500,
+      "reward": -36.937549317740086,
+      "success": 0.0,
+      "steps": 38.166666666666664
+    },
+    {
+      "episodes": 3000,
+      "reward": -40.472558228103324,
+      "success": 0.0,
+      "steps": 41.541666666666664
+    },
+    {
+      "episodes": 3500,
+      "reward": -38.250354888305736,
+      "success": 0.0,
+      "steps": 39.38333333333333
+    },
+    {
+      "episodes": 4000,
+      "reward": -32.94380189429326,
+      "success": 0.0,
+      "steps": 33.49166666666667
+    },
+    {
+      "episodes": 4500,
+      "reward": -35.111962821990076,
+      "success": 0.0,
+      "steps": 35.9
+    },
+    {
+      "episodes": 5000,
+      "reward": -37.677865370211364,
+      "success": 0.0,
+      "steps": 36.59166666666667
+    },
+    {
+      "episodes": 5500,
+      "reward": -38.48988236211219,
+      "success": 0.0,
+      "steps": 38.55
+    },
+    {
+      "episodes": 6000,
+      "reward": -34.328288279526504,
+      "success": 0.0,
+      "steps": 33.49166666666667
+    }
+  ],
+  "seconds": 78.3
+}

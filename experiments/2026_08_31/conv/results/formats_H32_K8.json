@@ -1,0 +1,17 @@
+{
+  "identity_recoverable": 0.50795,
+  "chance": 0.03125,
+  "majority": 0.05105,
+  "1 identity only": {
+    "acc": 0.907,
+    "dims": 128
+  },
+  "2 identity+dense": {
+    "acc": 0.9605,
+    "dims": 1024
+  },
+  "3 dense only": {
+    "acc": 0.6825,
+    "dims": 32
+  }
+}

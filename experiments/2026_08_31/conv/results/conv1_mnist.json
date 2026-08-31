@@ -1,0 +1,110 @@
+{
+  "dataset": "mnist",
+  "patch": 5,
+  "gamma": 0.3,
+  "eta": 0.5,
+  "epochs": 3,
+  "per_img": 60,
+  "results": {
+    "H8_K3": {
+      "rebuild_err": 0.37549549829554946,
+      "dead": 0,
+      "busiest": 0.16540382950939156,
+      "overlap": 0.28678101489017344,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.59,
+      "templates": 24
+    },
+    "H8_K4": {
+      "rebuild_err": 0.31694780570971953,
+      "dead": 0,
+      "busiest": 0.15433439118089193,
+      "overlap": 0.39861292610186083,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.66,
+      "templates": 32
+    },
+    "H8_K6": {
+      "rebuild_err": 0.24825719990376877,
+      "dead": 0,
+      "busiest": 0.15143720485293893,
+      "overlap": 0.41641860597839336,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.686,
+      "templates": 48
+    },
+    "H8_K8": {
+      "rebuild_err": 0.20272372366690328,
+      "dead": 0,
+      "busiest": 0.15714502634495953,
+      "overlap": 0.4972119064446535,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.7575,
+      "templates": 64
+    },
+    "H8_K16": {
+      "rebuild_err": 0.10430562234984513,
+      "dead": 0,
+      "busiest": 0.19737461469547657,
+      "overlap": 0.6515043148504837,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.7865,
+      "templates": 128
+    },
+    "H8_K32": {
+      "rebuild_err": 0.1010039819348171,
+      "dead": 0,
+      "busiest": 0.19646354981247247,
+      "overlap": 0.8044844399424561,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.818,
+      "templates": 256
+    },
+    "H8_K64": {
+      "rebuild_err": 0.27188465930443995,
+      "dead": 0,
+      "busiest": 0.1724038446938063,
+      "overlap": 0.6708312579978922,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.8585,
+      "templates": 512
+    },
+    "H4_K8": {
+      "rebuild_err": 0.24073209460934297,
+      "dead": 0,
+      "busiest": 0.34457992316686153,
+      "overlap": 0.5520148511660214,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.6135,
+      "templates": 32
+    },
+    "H16_K8": {
+      "rebuild_err": 0.1743926827254506,
+      "dead": 0,
+      "busiest": 0.09376527931730871,
+      "overlap": 0.46799552821385326,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.824,
+      "templates": 128
+    },
+    "H32_K8": {
+      "rebuild_err": 0.1568913680279811,
+      "dead": 0,
+      "busiest": 0.049765400792626445,
+      "overlap": 0.4269808672684884,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.845,
+      "templates": 256
+    },
+    "H64_K8": {
+      "rebuild_err": 0.14138525576723052,
+      "dead": 5,
+      "busiest": 0.042797272879116874,
+      "overlap": 0.38723760850562644,
+      "kept_patches": 0.5860877403846154,
+      "probe": 0.8775,
+      "templates": 512
+    }
+  },
+  "seconds": 382.6
+}

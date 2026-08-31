@@ -1,0 +1,23 @@
+{
+  "wake (no correction)": {
+    "acc": 0.601,
+    "own_class_err": 0.6707562114381932,
+    "imagination": 0.7833244195094868,
+    "realism": 0.7506804801774047,
+    "self_similarity": 0.5618981036570914
+  },
+  "wake + sleep": {
+    "acc": 0.6148,
+    "own_class_err": 0.687732520422716,
+    "imagination": 0.8136117745813884,
+    "realism": 0.7336975501943195,
+    "self_similarity": 0.5295316384319979
+  },
+  "wake + repulsion": {
+    "acc": 0.817,
+    "own_class_err": 0.7635301689133163,
+    "imagination": 0.9222940363108073,
+    "realism": 0.70568147033352,
+    "self_similarity": 0.3601657375329487
+  }
+}

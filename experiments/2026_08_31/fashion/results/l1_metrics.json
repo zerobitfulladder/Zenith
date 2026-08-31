@@ -1,0 +1,209 @@
+{
+  "config": {
+    "H": 40,
+    "K": 36,
+    "rho": 1.0,
+    "eta": 0.5,
+    "epochs": 6,
+    "batch": 128,
+    "gamma": 1.0,
+    "total_templates": 1440,
+    "n_train": 20000,
+    "n_test": 5000
+  },
+  "results": {
+    "competitive": {
+      "gate_fit": 0.5952,
+      "gate_fit_busiest": 0.1858,
+      "gate_fit_used": 14,
+      "gate_confidence": 0.3074,
+      "gate_confidence_busiest": 0.3058,
+      "gate_confidence_used": 15,
+      "soft_vote": 0.1812,
+      "oracle": 1.0,
+      "single_mean": 0.10643,
+      "dead_hypercolumns": 25,
+      "train_win_share_max": 0.100575,
+      "mean_class_purity_live": 0.9996475043631717,
+      "pure_specialists_over_0.9": 15,
+      "subspace_overlap": 0.05005155588278634
+    },
+    "conscience": {
+      "gate_fit": 0.609,
+      "gate_fit_busiest": 0.1384,
+      "gate_fit_used": 20,
+      "gate_confidence": 0.3062,
+      "gate_confidence_busiest": 0.1822,
+      "gate_confidence_used": 20,
+      "soft_vote": 0.131,
+      "oracle": 1.0,
+      "single_mean": 0.09870999999999999,
+      "dead_hypercolumns": 20,
+      "train_win_share_max": 0.099725,
+      "mean_class_purity_live": 0.9994070802261537,
+      "pure_specialists_over_0.9": 20,
+      "subspace_overlap": 0.05663776410953747
+    },
+    "control": {
+      "gate_fit": 0.6366,
+      "gate_fit_busiest": 0.0576,
+      "gate_fit_used": 40,
+      "gate_confidence": 0.6604,
+      "gate_confidence_busiest": 0.1228,
+      "gate_confidence_used": 40,
+      "soft_vote": 0.659,
+      "oracle": 0.7742,
+      "single_mean": 0.652275,
+      "dead_hypercolumns": 40,
+      "train_win_share_max": 0.0,
+      "mean_class_purity_live": 0.0,
+      "pure_specialists_over_0.9": 0,
+      "subspace_overlap": 0.4112632178282332
+    }
+  },
+  "best": {
+    "arm": "control + confidence gate",
+    "acc": 0.6604,
+    "per_class": {
+      "T-shirt/top": 0.8680412371134021,
+      "Trouser": 0.9680451127819549,
+      "Pullover": 0.4658385093167702,
+      "Dress": 0.6255144032921811,
+      "Coat": 0.9156862745098039,
+      "Sandal": 0.11819887429643527,
+      "Shirt": 0.06031128404669261,
+      "Sneaker": 0.8138075313807531,
+      "Bag": 0.8565656565656565,
+      "Ankle boot": 0.9566115702479339
+    },
+    "confusion": [
+      [
+        421,
+        25,
+        6,
+        8,
+        20,
+        0,
+        1,
+        0,
+        4,
+        0
+      ],
+      [
+        2,
+        515,
+        0,
+        5,
+        8,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        46,
+        5,
+        225,
+        2,
+        196,
+        0,
+        1,
+        0,
+        6,
+        2
+      ],
+      [
+        30,
+        94,
+        3,
+        304,
+        54,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        13,
+        17,
+        5,
+        467,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        63,
+        0,
+        238,
+        5,
+        226
+      ],
+      [
+        158,
+        12,
+        43,
+        5,
+        246,
+        0,
+        31,
+        0,
+        18,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        389,
+        2,
+        86
+      ],
+      [
+        6,
+        0,
+        9,
+        0,
+        11,
+        0,
+        1,
+        29,
+        424,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        463
+      ]
+    ]
+  },
+  "board": {
+    "MNIST: competitive + fit gate": 0.939,
+    "MNIST: conscience + fit gate": 0.9392,
+    "MNIST: control + soft vote": 0.8246,
+    "MNIST: logistic on pixels": 0.9074
+  },
+  "seconds": 928.6
+}

@@ -1,0 +1,189 @@
+{
+  "config": {
+    "nb": 8,
+    "patch": 4,
+    "K": 64,
+    "eta": 0.5,
+    "dim": 128,
+    "train": 24000,
+    "epochs": 3
+  },
+  "by_k": {
+    "1": {
+      "rebuild_err": 0.5483441599250304,
+      "pixel_rmse": 0.20007459289599874,
+      "mean_used": 1.0,
+      "dead_templates": 0,
+      "usage_entropy_bits": 5.6290011136497995,
+      "distinct_supports": 64,
+      "coherence_mean_pairwise_cos": 0.419,
+      "train_s": 0.3
+    },
+    "2": {
+      "rebuild_err": 0.523810304867847,
+      "pixel_rmse": 0.1812292934044043,
+      "mean_used": 2.0,
+      "dead_templates": 0,
+      "usage_entropy_bits": 5.805029843714636,
+      "distinct_supports": 612,
+      "coherence_mean_pairwise_cos": 0.066,
+      "train_s": 0.4
+    },
+    "4": {
+      "rebuild_err": 0.4630773876274646,
+      "pixel_rmse": 0.14358079826163633,
+      "mean_used": 4.0,
+      "dead_templates": 0,
+      "usage_entropy_bits": 5.949518407399656,
+      "distinct_supports": 2842,
+      "coherence_mean_pairwise_cos": 0.036,
+      "train_s": 0.7
+    },
+    "8": {
+      "rebuild_err": 0.3937376249584014,
+      "pixel_rmse": 0.07770240989612909,
+      "mean_used": 8.0,
+      "dead_templates": 0,
+      "usage_entropy_bits": 5.949566393992086,
+      "distinct_supports": 3440,
+      "coherence_mean_pairwise_cos": 0.016,
+      "train_s": 1.0
+    },
+    "16": {
+      "rebuild_err": 0.34767653346617067,
+      "pixel_rmse": 0.04182372878591305,
+      "mean_used": 16.0,
+      "dead_templates": 0,
+      "usage_entropy_bits": 5.959977445429821,
+      "distinct_supports": 3733,
+      "coherence_mean_pairwise_cos": -0.008,
+      "train_s": 1.7
+    }
+  },
+  "support_kept_vs_noise": {
+    "1": [
+      0.9826666666666667,
+      0.966,
+      0.8833333333333333,
+      0.774,
+      0.5766666666666667
+    ],
+    "2": [
+      0.9616666666666667,
+      0.9266666666666666,
+      0.8373333333333334,
+      0.6563333333333333,
+      0.456
+    ],
+    "4": [
+      0.9606666666666667,
+      0.9138333333333334,
+      0.7916666666666666,
+      0.5866666666666667,
+      0.3595
+    ],
+    "8": [
+      0.9555833333333333,
+      0.913154761904762,
+      0.7819603174603175,
+      0.6100873015873015,
+      0.4059484126984127
+    ],
+    "16": [
+      0.9357577533577534,
+      0.8915906593406594,
+      0.7690959706959707,
+      0.6262832722832723,
+      0.4737430097680098
+    ]
+  },
+  "support_kept_raw_pixels_k4": [
+    0.8912777777777778,
+    0.8256111111111112,
+    0.6985,
+    0.5669444444444445,
+    0.4091666666666667
+  ],
+  "nonneg_weight_control": {
+    "place code, signed weights": {
+      "residual_by_step": [
+        1.0,
+        0.586,
+        0.532,
+        0.492,
+        0.46,
+        0.436,
+        0.417,
+        0.402,
+        0.392
+      ],
+      "coherence": 0.016
+    },
+    "place code, nonneg weights": {
+      "residual_by_step": [
+        1.0,
+        0.611,
+        0.596,
+        0.595,
+        0.595,
+        0.595,
+        0.595,
+        0.595,
+        0.595
+      ],
+      "coherence": 0.546
+    },
+    "raw pixels, signed weights": {
+      "residual_by_step": [
+        1.0,
+        0.337,
+        0.234,
+        0.178,
+        0.141,
+        0.116,
+        0.097,
+        0.082,
+        0.07
+      ],
+      "coherence": 0.019
+    },
+    "raw pixels, nonneg weights": {
+      "residual_by_step": [
+        1.0,
+        0.418,
+        0.383,
+        0.381,
+        0.381,
+        0.381,
+        0.381,
+        0.381,
+        0.381
+      ],
+      "coherence": 0.766
+    }
+  },
+  "noise_levels": [
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "timing": {
+    "1": {
+      "batched_s_per_2048": 0.0039,
+      "naive_s_per_2048": 0.08,
+      "speedup": 20.6
+    },
+    "4": {
+      "batched_s_per_2048": 0.0135,
+      "naive_s_per_2048": 0.286,
+      "speedup": 21.2
+    },
+    "8": {
+      "batched_s_per_2048": 0.0299,
+      "naive_s_per_2048": 0.567,
+      "speedup": 19.0
+    }
+  }
+}

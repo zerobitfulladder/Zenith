@@ -1,0 +1,20 @@
+{
+  "config": {
+    "H": 10,
+    "K": 100,
+    "patch": 8,
+    "stride": 1,
+    "eta": 0.5,
+    "images": 20000,
+    "epochs": 2,
+    "patches_per_epoch": 8820000
+  },
+  "rebuild_raw": 0.1850212477774425,
+  "rebuild_best_scaled": 0.1639197171636572,
+  "optimal_scale": 0.9122929415842341,
+  "tight_frame_prediction": 0.63,
+  "effective_rank": 53.97538821736886,
+  "within_coherence": 0.0733156384091275,
+  "pairwise_subspace_overlap": 1.8526949292445771,
+  "seconds": 174.2
+}

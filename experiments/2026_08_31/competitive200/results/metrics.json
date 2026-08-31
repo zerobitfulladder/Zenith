@@ -1,0 +1,72 @@
+{
+  "config": {
+    "H": 200,
+    "K": 9,
+    "rho": 1.0,
+    "eta": 0.5,
+    "epochs": 15,
+    "batch": 1024,
+    "gamma": 1.0,
+    "total_templates": 1800
+  },
+  "results": {
+    "competitive": {
+      "gate_fit": 0.8822,
+      "gate_fit_busiest": 0.0638,
+      "gate_fit_used": 52,
+      "gate_confidence": 0.1838,
+      "gate_confidence_busiest": 0.1446,
+      "gate_confidence_used": 58,
+      "soft_vote": 0.145,
+      "oracle": 1.0,
+      "single_mean": 0.104312,
+      "dead_hypercolumns": 148,
+      "train_win_share_max": 0.07386666666666666,
+      "mean_class_purity_live": 0.9993179358657961,
+      "pure_specialists_over_0.9": 52,
+      "subspace_overlap": 0.013482125769009692
+    },
+    "conscience": {
+      "gate_fit": 0.8994,
+      "gate_fit_busiest": 0.0374,
+      "gate_fit_used": 69,
+      "gate_confidence": 0.1852,
+      "gate_confidence_busiest": 0.1068,
+      "gate_confidence_used": 70,
+      "soft_vote": 0.1468,
+      "oracle": 1.0,
+      "single_mean": 0.103984,
+      "dead_hypercolumns": 130,
+      "train_win_share_max": 0.022866666666666667,
+      "mean_class_purity_live": 0.9994309879435332,
+      "pure_specialists_over_0.9": 70,
+      "subspace_overlap": 0.01613323608439923
+    },
+    "control": {
+      "gate_fit": 0.7578,
+      "gate_fit_busiest": 0.1562,
+      "gate_fit_used": 120,
+      "gate_confidence": 0.7172,
+      "gate_confidence_busiest": 0.0434,
+      "gate_confidence_used": 182,
+      "soft_vote": 0.734,
+      "oracle": 0.8738,
+      "single_mean": 0.724177,
+      "dead_hypercolumns": 200,
+      "train_win_share_max": 0.0,
+      "mean_class_purity_live": 0.0,
+      "pure_specialists_over_0.9": 0,
+      "subspace_overlap": 0.9155819547552656
+    }
+  },
+  "board": {
+    "40x36 competitive + fit gate": 0.939,
+    "40x36 conscience + soft vote": 0.9402,
+    "10x144 competitive + fit gate": 0.8698,
+    "sparse + tally": 0.8672,
+    "dense + layer three": 0.9232,
+    "logistic on pixels": 0.9074,
+    "10x144 control soft vote": 0.809
+  },
+  "seconds": 559.3
+}

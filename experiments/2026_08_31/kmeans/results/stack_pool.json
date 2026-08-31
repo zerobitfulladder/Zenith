@@ -1,0 +1,30 @@
+{
+  "4": {
+    "acc": 0.9492,
+    "dims": 1034,
+    "params": 103400,
+    "dead": 0
+  },
+  "3": {
+    "acc": 0.9364,
+    "dims": 586,
+    "params": 58600,
+    "dead": 0
+  },
+  "2": {
+    "acc": 0.926,
+    "dims": 266,
+    "params": 26600,
+    "dead": 0
+  },
+  "1": {
+    "acc": 0.518,
+    "dims": 74,
+    "params": 7400,
+    "dead": 0
+  },
+  "reference": {
+    "one layer on raw pixels": 0.921,
+    "logistic": 0.9074
+  }
+}

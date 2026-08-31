@@ -1,0 +1,63 @@
+{
+  "phase 1": {
+    "raw": {
+      "acc_0_4": 0.980422866092404,
+      "acc_5_9": 0.0,
+      "acc_all": 0.5008
+    },
+    "with_reluctance": {
+      "acc_0_4": 0.9796397807361003,
+      "acc_5_9": 0.0,
+      "acc_all": 0.5004
+    },
+    "live": 33,
+    "repelled": 3743,
+    "phase_wins_to_previously_live": 0.0,
+    "phase_wins_to_previously_dead": 1.0
+  },
+  "phase 2": {
+    "raw": {
+      "acc_0_4": 0.9048551292090838,
+      "acc_5_9": 0.9517579721995094,
+      "acc_all": 0.9278
+    },
+    "with_reluctance": {
+      "acc_0_4": 0.6386061080657792,
+      "acc_5_9": 0.9533932951757972,
+      "acc_all": 0.7926
+    },
+    "live": 40,
+    "repelled": 7192,
+    "phase_wins_to_previously_live": 0.0,
+    "phase_wins_to_previously_dead": 1.0
+  },
+  "mechanism": {
+    "dead_after_phase1": 27,
+    "phase2_to_previously_live": 0.0,
+    "phase2_to_previously_dead": 1.0,
+    "changed_claim": 0,
+    "changes": []
+  },
+  "baselines": {
+    "logistic (SGD)": [
+      0.9487,
+      0.0094
+    ],
+    "MLP 256 (SGD)": [
+      0.9765,
+      0.0
+    ],
+    "old rule (label-picked)": [
+      0.9757,
+      0.9526
+    ],
+    "new rule, repulsion": [
+      0.9828,
+      0.3171
+    ],
+    "new rule, no correction": [
+      0.98,
+      0.962
+    ]
+  }
+}

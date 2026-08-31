@@ -1,0 +1,27 @@
+{
+  "128": {
+    "acc": 0.9224,
+    "params": 394728,
+    "l3_input": 3210,
+    "dead_l2": 0,
+    "dead_l3": 0
+  },
+  "256": {
+    "acc": 0.9274,
+    "params": 788456,
+    "l3_input": 6410,
+    "dead_l2": 0,
+    "dead_l3": 0
+  },
+  "512": {
+    "acc": 0.9052,
+    "params": 1575912,
+    "l3_input": 12810,
+    "dead_l2": 0,
+    "dead_l3": 0
+  },
+  "reference": {
+    "two rungs": 0.9492,
+    "one rung on pixels": 0.921
+  }
+}

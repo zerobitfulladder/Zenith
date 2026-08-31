@@ -1,0 +1,17 @@
+{
+  "16": {
+    "rel_error": 0.23771842672403354,
+    "index_bits": 100.0,
+    "bits_per_pixel_index_only": 0.16
+  },
+  "64": {
+    "rel_error": 0.16151703522642483,
+    "index_bits": 150.0,
+    "bits_per_pixel_index_only": 0.24
+  },
+  "256": {
+    "rel_error": 0.11971192516007254,
+    "index_bits": 200.0,
+    "bits_per_pixel_index_only": 0.32
+  }
+}

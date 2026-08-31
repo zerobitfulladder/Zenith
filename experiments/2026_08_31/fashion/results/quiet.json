@@ -1,0 +1,35 @@
+{
+  "graded \u03bb=4, no punishment": {
+    "raw": 0.601,
+    "raw_busiest": 0.1682,
+    "equal airtime": 0.4496,
+    "equal airtime_busiest": 0.0458,
+    "half-strength": 0.4496,
+    "half-strength_busiest": 0.0458,
+    "habitual error": 0.6414,
+    "teacher reluctance": 0.7066,
+    "teacher reluctance_busiest": 0.1062
+  },
+  "graded \u03bb=4 + sleep": {
+    "raw": 0.6148,
+    "raw_busiest": 0.1744,
+    "equal airtime": 0.453,
+    "equal airtime_busiest": 0.0444,
+    "half-strength": 0.453,
+    "half-strength_busiest": 0.0444,
+    "habitual error": 0.6868,
+    "teacher reluctance": 0.7282,
+    "teacher reluctance_busiest": 0.1094
+  },
+  "graded \u03bb=4 + repulsion": {
+    "raw": 0.817,
+    "raw_busiest": 0.1364,
+    "equal airtime": 0.504,
+    "equal airtime_busiest": 0.039,
+    "half-strength": 0.504,
+    "half-strength_busiest": 0.039,
+    "habitual error": 0.8078,
+    "teacher reluctance": 0.8278,
+    "teacher reluctance_busiest": 0.1204
+  }
+}

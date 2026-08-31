@@ -1,0 +1,70 @@
+{
+  "config": {
+    "H": 40,
+    "K": 36,
+    "rho": 1.0,
+    "eta": 0.5,
+    "epochs": 6,
+    "batch": 128,
+    "gamma": 1.0,
+    "total_templates": 1440
+  },
+  "results": {
+    "competitive": {
+      "gate_fit": 0.939,
+      "gate_fit_busiest": 0.108,
+      "gate_fit_used": 15,
+      "gate_confidence": 0.2944,
+      "gate_confidence_busiest": 0.179,
+      "gate_confidence_used": 16,
+      "soft_vote": 0.1384,
+      "oracle": 1.0,
+      "single_mean": 0.113805,
+      "dead_hypercolumns": 25,
+      "train_win_share_max": 0.10223333333333333,
+      "mean_class_purity_live": 0.9998113339701689,
+      "pure_specialists_over_0.9": 15,
+      "subspace_overlap": 0.06816139918942496
+    },
+    "conscience": {
+      "gate_fit": 0.9392,
+      "gate_fit_busiest": 0.1032,
+      "gate_fit_used": 23,
+      "gate_confidence": 0.3106,
+      "gate_confidence_busiest": 0.1198,
+      "gate_confidence_used": 23,
+      "soft_vote": 0.111,
+      "oracle": 1.0,
+      "single_mean": 0.10525500000000002,
+      "dead_hypercolumns": 17,
+      "train_win_share_max": 0.10219166666666667,
+      "mean_class_purity_live": 0.9993661502232042,
+      "pure_specialists_over_0.9": 23,
+      "subspace_overlap": 0.09291970188756593
+    },
+    "control": {
+      "gate_fit": 0.7944,
+      "gate_fit_busiest": 0.0522,
+      "gate_fit_used": 40,
+      "gate_confidence": 0.8162,
+      "gate_confidence_busiest": 0.0846,
+      "gate_confidence_used": 40,
+      "soft_vote": 0.8246,
+      "oracle": 0.9304,
+      "single_mean": 0.80001,
+      "dead_hypercolumns": 40,
+      "train_win_share_max": 0.0,
+      "mean_class_purity_live": 0.0,
+      "pure_specialists_over_0.9": 0,
+      "subspace_overlap": 0.5652785977302862
+    }
+  },
+  "board": {
+    "10x144 competitive + fit gate": 0.8698,
+    "sparse + tally": 0.8672,
+    "dense + layer three": 0.9232,
+    "logistic on pixels": 0.9074,
+    "10x144 control soft vote": 0.809
+  },
+  "seconds": 124.9
+}

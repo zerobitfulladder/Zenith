@@ -1,0 +1,98 @@
+{
+  "a woman with a mustache|joint|k=1": {
+    "male": -0.17365731298923492,
+    "mustache": -0.17365731298923492
+  },
+  "a woman with a mustache|joint|k=4": {
+    "male": -0.16604094952344894,
+    "mustache": -0.16604094952344894
+  },
+  "a woman with a mustache|joint|k=16": {
+    "male": -0.16243562893941998,
+    "mustache": -0.16243562893941998
+  },
+  "a woman with a mustache|joint|k=64": {
+    "male": -0.15774820744991302,
+    "mustache": -0.15774820744991302
+  },
+  "a woman with a mustache|per-attr|k=1": {
+    "male": 0.12595710158348083,
+    "mustache": 0.12595710158348083
+  },
+  "a woman with a mustache|per-attr|k=4": {
+    "male": 0.13772939401687853,
+    "mustache": 0.11943768224818056
+  },
+  "a woman with a mustache|per-attr|k=16": {
+    "male": 0.1460653514396282,
+    "mustache": 0.10926742279776436
+  },
+  "a woman with a mustache|per-attr|k=64": {
+    "male": 0.1460653514396282,
+    "mustache": 0.10926742279776436
+  },
+  "a man with a mustache|joint|k=1": {
+    "male": 0.15381184220314026,
+    "mustache": 0.12304024398326874
+  },
+  "a man with a mustache|joint|k=4": {
+    "male": 0.15713901948642373,
+    "mustache": 0.11314831399937005
+  },
+  "a man with a mustache|joint|k=16": {
+    "male": 0.1502821272971372,
+    "mustache": 0.0575255861981264
+  },
+  "a man with a mustache|joint|k=64": {
+    "male": 0.15126593581090683,
+    "mustache": 0.021328465821889128
+  },
+  "a man with a mustache|per-attr|k=1": {
+    "male": 0.12595710158348083,
+    "mustache": 0.12595710158348083
+  },
+  "a man with a mustache|per-attr|k=4": {
+    "male": 0.13772939401687853,
+    "mustache": 0.11943768224818056
+  },
+  "a man with a mustache|per-attr|k=16": {
+    "male": 0.1460653514396282,
+    "mustache": 0.10926742279776436
+  },
+  "a man with a mustache|per-attr|k=64": {
+    "male": 0.1460653514396282,
+    "mustache": 0.10926742279776436
+  },
+  "a woman with eyeglasses|joint|k=1": {
+    "male": -0.11485018581151962,
+    "mustache": -0.1667136549949646
+  },
+  "a woman with eyeglasses|joint|k=4": {
+    "male": -0.08868767822957599,
+    "mustache": -0.16819377576875616
+  },
+  "a woman with eyeglasses|joint|k=16": {
+    "male": -0.12764843405858528,
+    "mustache": -0.16928365160803932
+  },
+  "a woman with eyeglasses|joint|k=64": {
+    "male": -0.13201175869436582,
+    "mustache": -0.16828516746154137
+  },
+  "a woman with eyeglasses|per-attr|k=1": {
+    "male": 0.15803532302379608,
+    "mustache": -0.12325166165828705
+  },
+  "a woman with eyeglasses|per-attr|k=4": {
+    "male": 0.12593517509803615,
+    "mustache": -0.14831437416469323
+  },
+  "a woman with eyeglasses|per-attr|k=16": {
+    "male": 0.13022979264316187,
+    "mustache": -0.10964256673821322
+  },
+  "a woman with eyeglasses|per-attr|k=64": {
+    "male": 0.13022979264316187,
+    "mustache": -0.10964256673821322
+  }
+}

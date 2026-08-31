@@ -1,0 +1,37 @@
+{
+  "window": 200,
+  "consolidation": true,
+  "repulsion": true,
+  "phase 1": {
+    "raw": [
+      0.9765074393108849,
+      0.0,
+      0.4988
+    ],
+    "with_reluctance": [
+      0.9788566953797964,
+      0.0,
+      0.5
+    ],
+    "pushes": 1080,
+    "correctable": 5,
+    "live": 9
+  },
+  "phase 2": {
+    "raw": [
+      0.4083790133124511,
+      0.9533932951757972,
+      0.675
+    ],
+    "with_reluctance": [
+      0.25841816758026626,
+      0.964022894521668,
+      0.6036
+    ],
+    "pushes": 1952,
+    "correctable": 5,
+    "live": 18
+  },
+  "to_previously_live": 0.0,
+  "changed_claim": 0
+}

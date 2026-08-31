@@ -1,0 +1,16 @@
+{
+  "kmax": 4,
+  "l3_input_dim": 5184,
+  "l3_fraction_lit": 0.629636612654321,
+  "accuracy": 0.7164,
+  "purity": 1.0,
+  "templates_used": 1024,
+  "gen_top1": 0.8,
+  "gen_graded": 1.0,
+  "baselines": {
+    "sparse k=4, cell-wise score": 0.7494,
+    "dense": 0.9232,
+    "wta": 0.5708
+  },
+  "seconds": 155.7
+}

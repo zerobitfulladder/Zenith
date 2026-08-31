@@ -1,0 +1,16 @@
+{
+  "W_competitive": {
+    "winner_rebuild_err": 0.5277285963464792,
+    "mean_over_all_columns": 0.7049336351928223,
+    "worst_column": 0.9285123120256056,
+    "best_possible": 0.5277285963464792,
+    "pooled_all_columns": 0.5476858646064484
+  },
+  "W_control": {
+    "winner_rebuild_err": 0.4682194000617537,
+    "mean_over_all_columns": 0.48397710502591473,
+    "worst_column": 0.4997890539372209,
+    "best_possible": 0.4682194000617537,
+    "pooled_all_columns": 0.387437332772032
+  }
+}

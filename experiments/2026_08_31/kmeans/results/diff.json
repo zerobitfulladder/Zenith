@@ -1,0 +1,102 @@
+{
+  "a woman with a mustache|gain=0.0": {
+    "male": -0.01315413478740271,
+    "mustache": -0.03160180378079586,
+    "glasses": -0.1348965139293128
+  },
+  "a woman with a mustache|gain=0.5": {
+    "male": -0.01315413478740271,
+    "mustache": -0.03160180378079586,
+    "glasses": -0.1348965139293128
+  },
+  "a woman with a mustache|gain=1.0": {
+    "male": -0.01315413478740271,
+    "mustache": -0.03160180378079586,
+    "glasses": -0.1348965139293128
+  },
+  "a woman with a mustache|gain=1.5": {
+    "male": -0.01315413478740271,
+    "mustache": -0.03160180378079586,
+    "glasses": -0.1348965139293128
+  },
+  "a woman with a mustache|gain=2.0": {
+    "male": -0.01315413478740271,
+    "mustache": -0.03160180378079586,
+    "glasses": -0.1348965139293128
+  },
+  "a man with a mustache|gain=0.0": {
+    "male": 0.15249152579454006,
+    "mustache": 0.032803988667256354,
+    "glasses": -0.10196248838207522
+  },
+  "a man with a mustache|gain=0.5": {
+    "male": 0.15249152579454006,
+    "mustache": 0.032803988667256354,
+    "glasses": -0.10196248838207522
+  },
+  "a man with a mustache|gain=1.0": {
+    "male": 0.15249152579454006,
+    "mustache": 0.032803988667256354,
+    "glasses": -0.10196248838207522
+  },
+  "a man with a mustache|gain=1.5": {
+    "male": 0.15249152579454006,
+    "mustache": 0.032803988667256354,
+    "glasses": -0.10196248838207522
+  },
+  "a man with a mustache|gain=2.0": {
+    "male": 0.15249152579454006,
+    "mustache": 0.032803988667256354,
+    "glasses": -0.10196248838207522
+  },
+  "a woman with eyeglasses|gain=0.0": {
+    "male": -0.02107191418563588,
+    "mustache": -0.14105679854878467,
+    "glasses": -0.023518098318143082
+  },
+  "a woman with eyeglasses|gain=0.5": {
+    "male": -0.02107191418563588,
+    "mustache": -0.14105679854878467,
+    "glasses": -0.023518098318143082
+  },
+  "a woman with eyeglasses|gain=1.0": {
+    "male": -0.02107191418563588,
+    "mustache": -0.14105679854878467,
+    "glasses": -0.023518098318143082
+  },
+  "a woman with eyeglasses|gain=1.5": {
+    "male": -0.02107191418563588,
+    "mustache": -0.14105679854878467,
+    "glasses": -0.023518098318143082
+  },
+  "a woman with eyeglasses|gain=2.0": {
+    "male": -0.02107191418563588,
+    "mustache": -0.14105679854878467,
+    "glasses": -0.023518098318143082
+  },
+  "a bald woman|gain=0.0": {
+    "male": -0.08618681050721681,
+    "mustache": -0.08623551517967805,
+    "glasses": -0.08125368025658969
+  },
+  "a bald woman|gain=0.5": {
+    "male": -0.08618681050721681,
+    "mustache": -0.08623551517967805,
+    "glasses": -0.08125368025658969
+  },
+  "a bald woman|gain=1.0": {
+    "male": -0.08618681050721681,
+    "mustache": -0.08623551517967805,
+    "glasses": -0.08125368025658969
+  },
+  "a bald woman|gain=1.5": {
+    "male": -0.08618681050721681,
+    "mustache": -0.08623551517967805,
+    "glasses": -0.08125368025658969
+  },
+  "a bald woman|gain=2.0": {
+    "male": -0.08618681050721681,
+    "mustache": -0.08623551517967805,
+    "glasses": -0.08125368025658969
+  }
+}
