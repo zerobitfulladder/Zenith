@@ -1,0 +1,22 @@
+{
+  "reference": {
+    "flat L2 free": 0.8605,
+    "flat L2 fixed": 0.979,
+    "conv2 all-windows K2=100 top1": 0.6145
+  },
+  "A oracle window, graded_logistic": 0.8405,
+  "A oracle window, graded_mlp": 0.941,
+  "B oracle window, K2=100 top1_logistic": 0.3345,
+  "B oracle window, K2=100 top1_mlp": 0.382,
+  "C all windows, K2=100 top1_logistic": 0.5475,
+  "C all windows, K2=100 top1_mlp": 0.614,
+  "D all windows, K2=100 top3_logistic": 0.614,
+  "D all windows, K2=100 top3_mlp": 0.747,
+  "B oracle window, K2=300 top1_logistic": 0.524,
+  "B oracle window, K2=300 top1_mlp": 0.5505,
+  "C all windows, K2=300 top1_logistic": 0.702,
+  "C all windows, K2=300 top1_mlp": 0.7425,
+  "D all windows, K2=300 top3_logistic": 0.777,
+  "D all windows, K2=300 top3_mlp": 0.837,
+  "seconds": 145.1
+}

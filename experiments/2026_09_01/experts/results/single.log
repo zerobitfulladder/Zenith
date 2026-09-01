@@ -1,0 +1,7 @@
+720,000 patches, one hypercolumn, 180 competing templates
+
+  WITH label: reusing cached weights
+  WITH label   table 0.9627   nearest-mean 0.9097   linear 0.9773   gap 0.0677   purity 0.350   live 166/180  (24s)
+  NO label     table 0.9613   nearest-mean 0.9100   linear 0.9767   gap 0.0667   purity 0.323   live 179/180  (108s)
+
+done in 134s

@@ -1,0 +1,19 @@
+{'train': 400, 'order': 200, 'triple': 120}
+  encoded train   (20000, 2048)  (61s)
+  encoded seen    (3000, 2048)  (9s)
+  encoded order   (3000, 2048)  (9s)
+  encoded triple  (3000, 2048)  (9s)
+  Q1 presence  quantiser  seen 0.0247  order 0.0097  triple 0.0000   (13s)
+  Q1 presence  logistic   seen 0.2520  order 0.2510  triple 0.2523   (3s)
+  Q1 presence  mlp        seen 0.4330  order 0.3793  triple 0.4007   (32s)
+  Q2 leftmost  quantiser  seen 0.3310  order 0.3203  triple 0.3227   (14s)
+  Q2 leftmost  logistic   seen 0.8253  order 0.8150  triple 0.8263   (3s)
+  Q2 leftmost  mlp        seen 0.8797  order 0.8793  triple 0.8820   (23s)
+  Q2 rightmost quantiser  seen 0.3317  order 0.2983  triple 0.3177   (13s)
+  Q2 rightmost logistic   seen 0.8323  order 0.7843  triple 0.8113   (4s)
+  Q2 rightmost mlp        seen 0.8880  order 0.8520  triple 0.8840   (27s)
+  Q3 anchored  quantiser  seen 0.3504  order 0.3224  triple 0.3236   (39s)
+  Q3 anchored  logistic   seen 0.4162  order 0.3844  triple 0.3950   (14s)
+  Q3 anchored  mlp        seen 0.6799  order 0.6311  triple 0.6270   (99s)
+
+done in 374s -> results/baseline.json

@@ -1,0 +1,51 @@
+{
+  "blank=False grid=4": {
+    "acc": 0.9423333333333334,
+    "open_closed_errors": 45,
+    "shape_errors": 28,
+    "cells": 16,
+    "symbols": 30,
+    "params": 4800
+  },
+  "blank=False grid=6": {
+    "acc": 0.9506666666666667,
+    "open_closed_errors": 35,
+    "shape_errors": 25,
+    "cells": 36,
+    "symbols": 30,
+    "params": 10800
+  },
+  "blank=False grid=8": {
+    "acc": 0.952,
+    "open_closed_errors": 34,
+    "shape_errors": 23,
+    "cells": 64,
+    "symbols": 30,
+    "params": 19200
+  },
+  "blank=True grid=4": {
+    "acc": 0.914,
+    "open_closed_errors": 71,
+    "shape_errors": 40,
+    "cells": 16,
+    "symbols": 31,
+    "params": 4960
+  },
+  "blank=True grid=6": {
+    "acc": 0.9216666666666666,
+    "open_closed_errors": 58,
+    "shape_errors": 44,
+    "cells": 36,
+    "symbols": 31,
+    "params": 11160
+  },
+  "blank=True grid=8": {
+    "acc": 0.923,
+    "open_closed_errors": 54,
+    "shape_errors": 41,
+    "cells": 64,
+    "symbols": 31,
+    "params": 19840
+  },
+  "seconds": 108.5
+}

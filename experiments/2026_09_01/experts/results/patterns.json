@@ -1,0 +1,11 @@
+{
+  "nonzero_per_image": 317.25,
+  "dims_full": 17280,
+  "dims_pooled": 480,
+  "full_within": 0.09812422096729279,
+  "full_between": 0.040929801762104034,
+  "pooled_within": 0.5397739410400391,
+  "pooled_between": 0.4055855870246887,
+  "full_gap": 0.05719441920518875,
+  "pooled_gap": 0.13418835401535034
+}

@@ -1,0 +1,8 @@
+{
+  "K2": 200,
+  "acc_raw_argmax": 0.954,
+  "acc_log_ratio": 0.954,
+  "mean_confidence": 0.8670439727646013,
+  "params_templates": 576000,
+  "params_table": 2000
+}

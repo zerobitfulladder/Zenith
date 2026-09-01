@@ -1,0 +1,53 @@
+{
+  "K180_top1": {
+    "acc": 0.9656666666666667,
+    "slots": 103680,
+    "active": 331.243,
+    "dead": 10,
+    "params": 4500,
+    "seconds": 112.9
+  },
+  "K400_top1": {
+    "acc": 0.9706666666666667,
+    "slots": 230400,
+    "active": 331.243,
+    "dead": 28,
+    "params": 10000,
+    "seconds": 151.4
+  },
+  "K800_top1": {
+    "acc": 0.9686666666666667,
+    "slots": 460800,
+    "active": 331.243,
+    "dead": 91,
+    "params": 20000,
+    "seconds": 244.5
+  },
+  "K180_top3": {
+    "acc": 0.96,
+    "slots": 103680,
+    "active": 993.729,
+    "dead": 10,
+    "params": 4500,
+    "seconds": 111.4
+  },
+  "K400_top3": {
+    "acc": 0.9653333333333334,
+    "slots": 230400,
+    "active": 993.729,
+    "dead": 28,
+    "params": 10000,
+    "seconds": 153.1
+  },
+  "K800_top3": {
+    "acc": 0.9683333333333334,
+    "slots": 460800,
+    "active": 993.729,
+    "dead": 91,
+    "params": 20000,
+    "seconds": 251.5
+  },
+  "reference": {
+    "K180 top1 grid6 (today's best)": 0.965
+  }
+}

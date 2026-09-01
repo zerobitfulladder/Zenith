@@ -1,0 +1,23 @@
+720,000 patches of 5x5 + label, joint dim 35
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+  H=30 K=8 lam=1.0  live 30/30  patch 0.1162  IMAGE 0.1543  expert purity 0.154  (47s)
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+  H=30 K=8 lam=0.0  live 30/30  patch 0.1155  IMAGE 0.4143  expert purity 0.151  (42s)
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+  H=30 K=8 lam=4.0  live 25/30  patch 0.1144  IMAGE 0.1527  expert purity 0.158  (39s)
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+  H=30 K=4 lam=1.0  live 27/30  patch 0.1238  IMAGE 0.2093  expert purity 0.153  (38s)
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+  H=30 K=12 lam=1.0  live 27/30  patch 0.1015  IMAGE 0.1410  expert purity 0.153  (40s)
+
+done in 209s -> results/experts.json

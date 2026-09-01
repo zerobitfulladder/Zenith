@@ -1,0 +1,82 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+
+=== fashion_mnist  K=400  train=12000  nb=4 ===
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 7:  argmax 0.8453   per-cell 0.8833   (34s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 8:  argmax 0.8420   per-cell 0.8823   (33s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 9:  argmax 0.8430   per-cell 0.8803   (33s)
+  fashion_mnist K=400 n=12000:  argmax 0.8434+-0.0014   per-cell 0.8820+-0.0012
+
+=== fashion_mnist  K=800  train=12000  nb=4 ===
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 7:  argmax 0.8503   per-cell 0.8847   (33s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 8:  argmax 0.8447   per-cell 0.8800   (32s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 9:  argmax 0.8477   per-cell 0.8823   (31s)
+  fashion_mnist K=800 n=12000:  argmax 0.8476+-0.0023   per-cell 0.8823+-0.0019
+
+=== fashion_mnist  K=400  train=40000  nb=4 ===
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 7:  argmax 0.8453   per-cell 0.8993   (83s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 8:  argmax 0.8483   per-cell 0.9007   (81s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 9:  argmax 0.8447   per-cell 0.8967   (83s)
+  fashion_mnist K=400 n=40000:  argmax 0.8461+-0.0016   per-cell 0.8989+-0.0017
+
+=== fashion_mnist  K=800  train=40000  nb=4 ===
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 7:  argmax 0.8550   per-cell 0.8943   (93s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 8:  argmax 0.8533   per-cell 0.8940   (98s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 9:  argmax 0.8527   per-cell 0.8933   (98s)
+  fashion_mnist K=800 n=40000:  argmax 0.8537+-0.0010   per-cell 0.8939+-0.0004
+
+=== mnist  K=800  train=40000  nb=1 ===
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 7:  argmax 0.9747   per-cell 0.9873   (60s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 8:  argmax 0.9733   per-cell 0.9857   (60s)
+    L1 epoch 1/3
+    L1 epoch 2/3
+    L1 epoch 3/3
+  seed 9:  argmax 0.9750   per-cell 0.9877   (60s)
+  mnist K=800 n=40000:  argmax 0.9743+-0.0007   per-cell 0.9869+-0.0009
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_01/stack/results/percell.json

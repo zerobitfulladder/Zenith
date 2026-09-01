@@ -1,0 +1,3 @@
+  position fixed  logistic 0.9790  mlp 0.9755
+  position free   logistic 0.8205  mlp 0.8605
+done in 69s

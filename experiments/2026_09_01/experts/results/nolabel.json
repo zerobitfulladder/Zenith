@@ -1,0 +1,15 @@
+{
+  "dim": 25,
+  "H": 30,
+  "K": 8,
+  "ink_rebuild_error": 0.028112059433604005,
+  "LLR by 4x4 cell": 0.9323333333333333,
+  "LLR bag": 0.546,
+  "dense expert map (probe)": 0.9663333333333334,
+  "with label block, same pipeline": {
+    "LLR by 4x4 cell": 0.9423,
+    "LLR bag": 0.546,
+    "dense expert map (probe)": 0.9717
+  },
+  "seconds": 111.1
+}

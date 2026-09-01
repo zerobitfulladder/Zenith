@@ -1,0 +1,23 @@
+{
+  "chance": 0.4756209868527801,
+  "N": 100,
+  "A raw, nonneg W and a": {
+    "match": 0.7813335657119751,
+    "over_chance": 0.305712578859195,
+    "active_per_patch": 36.861979166666664,
+    "rebuild_error": 0.555533071788144
+  },
+  "B centred, nonneg a": {
+    "match": 0.48188546299934387,
+    "over_chance": 0.00626447614656378,
+    "active_per_patch": 29.161458333333332,
+    "rebuild_error": 0.2332814104848065
+  },
+  "C centred, unconstrained": {
+    "match": 0.4651334881782532,
+    "over_chance": -0.010487498674526918,
+    "active_per_patch": 49.83246527777778,
+    "rebuild_error": 0.002736773602731304
+  },
+  "seconds": 254.2
+}

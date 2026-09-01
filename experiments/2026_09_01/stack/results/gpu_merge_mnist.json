@@ -1,0 +1,25 @@
+{
+  "L1_alone": 0.9696666666666667,
+  "w=4": {
+    "acc": 0.9623333333333334,
+    "rf_px": 8,
+    "positions": 441,
+    "template_numbers": 400,
+    "dead": 3
+  },
+  "w=6": {
+    "acc": 0.962,
+    "rf_px": 10,
+    "positions": 361,
+    "template_numbers": 400,
+    "dead": 1
+  },
+  "w=8": {
+    "acc": 0.9603333333333334,
+    "rf_px": 12,
+    "positions": 289,
+    "template_numbers": 400,
+    "dead": 0
+  },
+  "seconds": 71.7
+}

@@ -1,0 +1,33 @@
+{
+  "100": {
+    "acc": 0.9506666666666667,
+    "purity": 0.2816870229788781,
+    "live": 99,
+    "template_params": 162000,
+    "table_params": 36000,
+    "seconds": 16.4
+  },
+  "200": {
+    "acc": 0.9593333333333334,
+    "purity": 0.3473879448534447,
+    "live": 198,
+    "template_params": 324000,
+    "table_params": 72000,
+    "seconds": 22.8
+  },
+  "400": {
+    "acc": 0.9586666666666667,
+    "purity": 0.40170733714656853,
+    "live": 395,
+    "template_params": 648000,
+    "table_params": 144000,
+    "seconds": 25.1
+  },
+  "reference": {
+    "L1 alone counted table": 0.954,
+    "L2 whole-image K2=200": 0.954,
+    "L2 whole-image K2=400": 0.9567,
+    "whole-image L2 params": 576000
+  },
+  "seconds": 88.6
+}

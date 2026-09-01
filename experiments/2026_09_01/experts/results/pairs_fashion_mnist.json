@@ -1,0 +1,71 @@
+{
+  "pairw=0.0": 0.8293333333333334,
+  "pairw=0.02": 0.833,
+  "pairw=0.05": 0.8356666666666667,
+  "pairw=0.15": 0.8333333333333334,
+  "pairw=0.5": 0.8206666666666667,
+  "pairw=1.0": 0.806,
+  "ancw=0.0": 0.8293333333333334,
+  "ancw=0.1": 0.8286666666666667,
+  "ancw=0.3": 0.83,
+  "ancw=1.0": 0.8296666666666667,
+  "tree": [
+    [
+      "Coat",
+      "Shirt"
+    ],
+    [
+      "Pullover",
+      "Coat",
+      "Shirt"
+    ],
+    [
+      "Dress",
+      "Pullover",
+      "Coat",
+      "Shirt"
+    ],
+    [
+      "T-shirt",
+      "Dress",
+      "Pullover",
+      "Coat",
+      "Shirt"
+    ],
+    [
+      "Sandal",
+      "Ankle boot"
+    ],
+    [
+      "Sneaker",
+      "Sandal",
+      "Ankle boot"
+    ],
+    [
+      "Trouser",
+      "T-shirt",
+      "Dress",
+      "Pullover",
+      "Coat",
+      "Shirt"
+    ],
+    [
+      "Bag",
+      "Sneaker",
+      "Sandal",
+      "Ankle boot"
+    ],
+    [
+      "Trouser",
+      "T-shirt",
+      "Dress",
+      "Pullover",
+      "Coat",
+      "Shirt",
+      "Bag",
+      "Sneaker",
+      "Sandal",
+      "Ankle boot"
+    ]
+  ]
+}

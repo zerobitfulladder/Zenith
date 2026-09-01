@@ -1,0 +1,40 @@
+
+=== fashion_mnist ===
+  fashion_mnist seed 7: live patches 0.774 (1s to code)
+    val  nb=1   base 0.8310
+    val  nb=3   base 0.8290
+    val  chosen nb=1  base 0.8310
+    val  +flat    lam 0.35  0.8335  (+0.0025)
+    val  +int     lam 0.00  0.8310  (+0.0000)
+    val  +magbin  lam 0.00  0.8310  (+0.0000)
+    val  +silh7   lam 0.00  0.8310  (+0.0000)
+    val  +silh4   lam 0.00  0.8310  (+0.0000)
+    val  combo 0.8345  lams flat=0.35 silh7=0.35
+  seed 7:  binned4 0.8350   base(nb=1) 0.8400   combo 0.8375   (2s)
+           +flat    0.8400
+           +int     0.8400
+           +magbin  0.8400
+           +silh7   0.8387
+           +silh4   0.8400
+
+  fashion_mnist over 1 seed(s):  binned4 0.8350+-0.0000   combo 0.8375+-0.0000
+
+=== mnist ===
+  mnist seed 7: live patches 0.572 (1s to code)
+    val  nb=1   base 0.9575
+    val  nb=3   base 0.9560
+    val  chosen nb=1  base 0.9575
+    val  +flat    lam 0.20  0.9585  (+0.0010)
+    val  +int     lam 0.00  0.9575  (+0.0000)
+    val  +magbin  lam 0.00  0.9575  (+0.0000)
+    val  +silh7   lam 0.00  0.9575  (+0.0000)
+    val  +silh4   lam 0.00  0.9575  (+0.0000)
+    val  combo 0.9585  lams flat=0.20
+  seed 7:  binned4 0.9563   base(nb=1) 0.9613   combo 0.9613   (1s)
+           +flat    0.9613
+           +int     0.9613
+           +magbin  0.9613
+           +silh7   0.9613
+           +silh4   0.9613
+
+  mnist over 1 seed(s):  binned4 0.9563+-0.0000   combo 0.9613+-0.0000

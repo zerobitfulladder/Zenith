@@ -1,0 +1,36 @@
+{
+  "0.0": {
+    "nearest_mean": 0.8956666666666667,
+    "1nn": 0.9716666666666667,
+    "linear": 0.9716666666666667,
+    "mlp": 0.974,
+    "gap": 0.12104824185371399,
+    "belief_acc": 0.9423333333333334,
+    "agreement_with_belief": 0.923,
+    "nearest_mean_when_belief_right": 0.9395118500176866,
+    "nearest_mean_when_belief_wrong": 0.1791907514450867
+  },
+  "0.4": {
+    "nearest_mean": 0.915,
+    "1nn": 0.9703333333333334,
+    "linear": 0.9703333333333334,
+    "mlp": 0.971,
+    "gap": 0.2177557647228241,
+    "belief_acc": 0.9423333333333334,
+    "agreement_with_belief": 0.948,
+    "nearest_mean_when_belief_right": 0.9617969579059074,
+    "nearest_mean_when_belief_wrong": 0.15028901734104047
+  },
+  "1.0": {
+    "nearest_mean": 0.9236666666666666,
+    "1nn": 0.9676666666666667,
+    "linear": 0.9686666666666667,
+    "mlp": 0.9696666666666667,
+    "gap": 0.301033616065979,
+    "belief_acc": 0.9423333333333334,
+    "agreement_with_belief": 0.952,
+    "nearest_mean_when_belief_right": 0.9692253272019808,
+    "nearest_mean_when_belief_wrong": 0.1791907514450867
+  },
+  "seconds": 502.5
+}

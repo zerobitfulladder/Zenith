@@ -1,0 +1,9 @@
+{
+  "argmax": 0.97,
+  "linear on 10 summed": 0.9486666666666667,
+  "linear on 360 per-cell": 0.977,
+  "L2 argmax": 0.9616666666666667,
+  "linear on 20 summed": 0.9593333333333334,
+  "linear on 720 per-cell": 0.9753333333333334,
+  "probe on raw pooled code": 0.984
+}

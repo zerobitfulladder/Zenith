@@ -1,0 +1,33 @@
+{
+  "rounds": [
+    {
+      "round": 0,
+      "beta": 0.0,
+      "table_acc": 0.957,
+      "nearest_mean": 0.91,
+      "linear": 0.9766666666666667,
+      "ladder_gap": 0.06666666666666665
+    },
+    {
+      "round": 1,
+      "beta": 0.75,
+      "table_acc": 0.952,
+      "nearest_mean": 0.938,
+      "linear": 0.978,
+      "ladder_gap": 0.040000000000000036
+    },
+    {
+      "round": 2,
+      "beta": 1.5,
+      "table_acc": 0.954,
+      "nearest_mean": 0.946,
+      "linear": 0.981,
+      "ladder_gap": 0.03500000000000003
+    }
+  ],
+  "reference": {
+    "table": 0.9613,
+    "nearest_mean": 0.91,
+    "linear": 0.9767
+  }
+}

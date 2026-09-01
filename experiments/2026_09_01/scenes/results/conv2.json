@@ -1,0 +1,17 @@
+{
+  "K2": 100,
+  "windows": [
+    3,
+    10
+  ],
+  "dims": 3000,
+  "floor": 5.777289867401123,
+  "dead": 0,
+  "single_free_logistic": 0.5475,
+  "single_free_mlp": 0.6145,
+  "reference": {
+    "flat L2, free position": 0.8605,
+    "flat L2, fixed position": 0.979
+  },
+  "seconds": 79.2
+}

@@ -1,0 +1,14 @@
+{
+  "fixed": {
+    "logistic": 0.979,
+    "mlp": 0.9755
+  },
+  "free": {
+    "logistic": 0.8205,
+    "mlp": 0.8605
+  },
+  "reference": {
+    "yesterday, 28x28 centred": 0.9492
+  },
+  "seconds": 68.9
+}

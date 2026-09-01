@@ -1,0 +1,4 @@
+
+=== fashion_mnist  K=400  train=4000  nb=4 ===
+  seed 7:  argmax 0.8320   per-cell 0.8807   (8s)
+  fashion_mnist K=400 n=4000:  argmax 0.8320+-0.0000   per-cell 0.8807+-0.0000

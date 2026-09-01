@@ -1,0 +1,23 @@
+{
+  "chance_25d": 0.4756209868527801,
+  "chance_35d": 0.4109820521033726,
+  "D centred + LABEL, unconstrained": {
+    "match": 0.412990003824234,
+    "chance": 0.4109820521033726,
+    "over_chance": 0.002007951720861434,
+    "active_per_patch": 47.748263888888886,
+    "rebuild_error": 0.018497973680496216
+  },
+  "E raw, SIGNED W, nonneg a": {
+    "match": 0.48950210213661194,
+    "chance": 0.4756209868527801,
+    "over_chance": 0.013881115283831846,
+    "active_per_patch": 27.12326388888889,
+    "rebuild_error": 0.21555788556618313
+  },
+  "reference": {
+    "A raw nonneg W+a": 0.7813,
+    "B centred nonneg a": 0.4819,
+    "C centred unconstrained": 0.4651
+  }
+}

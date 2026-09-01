@@ -1,0 +1,64 @@
+
+=== fashion_mnist ===
+  fashion_mnist seed 7: live patches 0.775 (9s to code)
+    val  nb=1   base 0.8295
+    val  nb=2   base 0.8345
+    val  nb=3   base 0.8370
+    val  nb=4   base 0.8365
+    val  nb=6   base 0.8330
+    val  nb=8   base 0.8285
+    val  nb=12  base 0.8310
+    val  nb=16  base 0.8290
+    val  chosen nb=3  base 0.8370
+    val  +flat    lam 1.00  0.8405  (+0.0035)
+    val  +int     lam 0.00  0.8370  (+0.0000)
+    val  +magbin  lam 0.00  0.8370  (+0.0000)
+    val  +silh7   lam 0.05  0.8375  (+0.0005)
+    val  +silh4   lam 0.10  0.8375  (+0.0005)
+    val  combo 0.8410  lams flat=1.00 silh7=0.10
+  seed 7:  binned4 0.8457   base(nb=3) 0.8420   combo 0.8427   (10s)
+           +flat    0.8427
+           +int     0.8420
+           +magbin  0.8420
+           +silh7   0.8413
+           +silh4   0.8417
+  seed 8:  binned4 0.8443   base(nb=3) 0.8440   combo 0.8440   (9s)
+           +flat    0.8443
+           +int     0.8440
+           +magbin  0.8440
+           +silh7   0.8440
+           +silh4   0.8440
+  seed 9:  binned4 0.8420   base(nb=3) 0.8437   combo 0.8443   (9s)
+           +flat    0.8443
+           +int     0.8437
+           +magbin  0.8437
+           +silh7   0.8437
+           +silh4   0.8433
+
+  fashion_mnist over 3 seed(s):  binned4 0.8440+-0.0015   combo 0.8437+-0.0007
+
+=== mnist ===
+  mnist seed 7: live patches 0.572 (9s to code)
+    val  nb=1   base 0.9720
+    val  nb=2   base 0.9755
+    val  nb=3   base 0.9750
+    val  nb=4   base 0.9740
+    val  nb=6   base 0.9745
+    val  nb=8   base 0.9715
+    val  nb=12  base 0.9705
+    val  nb=16  base 0.9680
+    val  chosen nb=2  base 0.9755
+    val  +flat    lam 1.00  0.9770  (+0.0015)
+    val  +int     lam 0.00  0.9755  (+0.0000)
+    val  +magbin  lam 0.00  0.9755  (+0.0000)
+    val  +silh7   lam 0.00  0.9755  (+0.0000)
+    val  +silh4   lam 0.00  0.9755  (+0.0000)
+    val  combo 0.9770  lams flat=1.00
+  seed 7:  binned4 0.9697   base(nb=2) 0.9693   combo 0.9697   (10s)
+           +flat    0.9697
+           +int     0.9693
+           +magbin  0.9693
+           +silh7   0.9693
+           +silh4   0.9693
+
+  mnist over 1 seed(s):  binned4 0.9697+-0.0000   combo 0.9697+-0.0000

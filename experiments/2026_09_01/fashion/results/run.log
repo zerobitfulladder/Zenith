@@ -1,0 +1,26 @@
+fashion_mnist: 720,000 patches, 12000 train / 3000 test
+    epoch 1/3
+    epoch 2/3
+    epoch 3/3
+
+  LLR by 4x4 cell   accuracy 0.7793
+     class          prec   rec    f1     n
+        T-shirt   0.784  0.794  0.789    311
+        Trouser   0.902  0.958  0.929    287
+       Pullover   0.727  0.750  0.738    316
+          Dress   0.716  0.808  0.759    302
+           Coat   0.667  0.675  0.671    302
+         Sandal   0.954  0.660  0.780    315
+          Shirt   0.629  0.464  0.534    304
+        Sneaker   0.684  0.961  0.799    281
+            Bag   0.890  0.915  0.902    283
+     Ankle boot   0.907  0.846  0.875    299
+     macro          0.786  0.783  0.778
+     worst confusions:  Sandal->Sneaker 86   Shirt->Coat 53   Pullover->Coat 42   Shirt->T-shirt 41   Shirt->Pullover 40   Ankle boot->Sneaker 39
+
+  LLR bag (no position)   0.5880
+  LLR by 4x4 cell         0.7793
+  dense probe             0.8570
+  code gap                +0.2048
+
+done in 195s

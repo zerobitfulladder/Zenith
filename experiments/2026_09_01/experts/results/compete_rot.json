@@ -1,0 +1,9 @@
+{
+  "chance": 0.4756209868527801,
+  "match": 0.7140346898852902,
+  "over_chance": 0.23841370303251008,
+  "reference": {
+    "nonneg templates": 0.7813,
+    "sparse coding best": 0.4882
+  }
+}

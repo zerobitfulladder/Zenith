@@ -1,0 +1,52 @@
+{
+  "H120_K2": {
+    "H": 120,
+    "K": 2,
+    "acc": 0.9613333333333334,
+    "expert_params": 8400,
+    "table_params": 43200,
+    "class_purity": 0.25951469266636346,
+    "live": 117,
+    "subspace_fraction": 0.057,
+    "seconds": 474.5
+  },
+  "H60_K4": {
+    "H": 60,
+    "K": 4,
+    "acc": 0.9606666666666667,
+    "expert_params": 8400,
+    "table_params": 21600,
+    "class_purity": 0.1721971615299544,
+    "live": 60,
+    "subspace_fraction": 0.114,
+    "seconds": 246.7
+  },
+  "H30_K8": {
+    "H": 30,
+    "K": 8,
+    "acc": 0.9506666666666667,
+    "expert_params": 8400,
+    "table_params": 10800,
+    "class_purity": 0.15054990639124624,
+    "live": 30,
+    "subspace_fraction": 0.229,
+    "seconds": 174.5
+  },
+  "H15_K16": {
+    "H": 15,
+    "K": 16,
+    "acc": 0.9133333333333333,
+    "expert_params": 8400,
+    "table_params": 5400,
+    "class_purity": 0.14227651872374095,
+    "live": 15,
+    "subspace_fraction": 0.457,
+    "seconds": 126.6
+  },
+  "reference": {
+    "H30_K8_grid4": 0.9423,
+    "H30_K8_grid6": 0.9507,
+    "kmeans 64 single templates (probe)": 0.9817
+  },
+  "seconds": 1023.9
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "dataset": "fashion_mnist",
+    "K": 400,
+    "ntrain": 4000,
+    "nb": 4,
+    "per_seed": [
+      {
+        "seed": 7,
+        "argmax": 0.832,
+        "percell": 0.8806666666666667
+      }
+    ],
+    "agg": {
+      "argmax": {
+        "mean": 0.832,
+        "std": 0.0
+      },
+      "percell": {
+        "mean": 0.8806666666666667,
+        "std": 0.0
+      }
+    }
+  }
+]

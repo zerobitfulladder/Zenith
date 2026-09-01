@@ -1,0 +1,23 @@
+{
+  "rounds": [
+    {
+      "epoch": 1,
+      "acc": 0.9556666666666667,
+      "match_avg": 0.9046666666666666
+    },
+    {
+      "epoch": 2,
+      "acc": 0.9543333333333334,
+      "match_avg": 0.9053333333333333
+    },
+    {
+      "epoch": 3,
+      "acc": 0.9546666666666667,
+      "match_avg": 0.9063333333333333
+    }
+  ],
+  "reference": {
+    "sliding L2 no feedback": 0.9593,
+    "whole-image L2 feedback, trained": 0.9453
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "labelled": {
+    "acc_counted_table": 0.9626666666666667,
+    "nearest_mean": 0.9096666666666666,
+    "linear": 0.9773333333333334,
+    "ladder_gap": 0.06766666666666676,
+    "code_gap": 0.1341322362422943,
+    "class_purity": 0.3504504324550705,
+    "live": 166,
+    "seconds": 23.9,
+    "label_block_energy": 0.2086288443433434
+  },
+  "unlabelled": {
+    "acc_counted_table": 0.9613333333333334,
+    "nearest_mean": 0.91,
+    "linear": 0.9766666666666667,
+    "ladder_gap": 0.06666666666666665,
+    "code_gap": 0.1348830759525299,
+    "class_purity": 0.32266974829311995,
+    "live": 179,
+    "seconds": 108.3
+  },
+  "reference": {
+    "H120_K2": 0.9613,
+    "H30_K8_grid6": 0.9507,
+    "shaped nearest-mean (H30)": 0.9237,
+    "shaped linear (H30)": 0.9687
+  },
+  "seconds": 133.9
+}

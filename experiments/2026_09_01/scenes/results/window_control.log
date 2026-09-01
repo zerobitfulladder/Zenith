@@ -1,0 +1,16 @@
+  encoded (33s)
+  A oracle window, graded      logistic  0.8405
+  A oracle window, graded      mlp       0.9410
+  B oracle window, K2=100 top1 logistic  0.3345
+  B oracle window, K2=100 top1 mlp       0.3820
+  C all windows, K2=100 top1   logistic  0.5475
+  C all windows, K2=100 top1   mlp       0.6140
+  D all windows, K2=100 top3   logistic  0.6140
+  D all windows, K2=100 top3   mlp       0.7470
+  B oracle window, K2=300 top1 logistic  0.5240
+  B oracle window, K2=300 top1 mlp       0.5505
+  C all windows, K2=300 top1   logistic  0.7020
+  C all windows, K2=300 top1   mlp       0.7425
+  D all windows, K2=300 top3   logistic  0.7770
+  D all windows, K2=300 top3   mlp       0.8370
+done in 145s

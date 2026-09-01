@@ -1,0 +1,76 @@
+{
+  "config": {
+    "H": 30,
+    "K": 8,
+    "rho": 1.0,
+    "eta": 0.5,
+    "gamma": 1.0,
+    "patch": 5,
+    "n_train": 12000,
+    "n_test": 3000,
+    "epochs": 3,
+    "patches": 720000
+  },
+  "runs": [
+    {
+      "H": 30,
+      "K": 8,
+      "lambda": 1.0,
+      "live": 30,
+      "patch_acc": 0.11616044213261362,
+      "image_acc": 0.15433333333333332,
+      "expert_label_purity": 0.1544753159481556,
+      "busiest_share": 0.1235105345622398,
+      "seconds": 46.6
+    },
+    {
+      "H": 30,
+      "K": 8,
+      "lambda": 0.0,
+      "live": 30,
+      "patch_acc": 0.11548822666944408,
+      "image_acc": 0.41433333333333333,
+      "expert_label_purity": 0.15054990639124624,
+      "busiest_share": 0.05966717284088519,
+      "seconds": 42.2
+    },
+    {
+      "H": 30,
+      "K": 8,
+      "lambda": 4.0,
+      "live": 25,
+      "patch_acc": 0.11438027872790268,
+      "image_acc": 0.15266666666666667,
+      "expert_label_purity": 0.1580477370340934,
+      "busiest_share": 0.18487736596194737,
+      "seconds": 39.0
+    },
+    {
+      "H": 30,
+      "K": 4,
+      "lambda": 1.0,
+      "live": 27,
+      "patch_acc": 0.12382752239292603,
+      "image_acc": 0.20933333333333334,
+      "expert_label_purity": 0.15333227185442724,
+      "busiest_share": 0.09280196109804585,
+      "seconds": 38.4
+    },
+    {
+      "H": 30,
+      "K": 12,
+      "lambda": 1.0,
+      "live": 27,
+      "patch_acc": 0.10151862328663046,
+      "image_acc": 0.141,
+      "expert_label_purity": 0.15265320635986596,
+      "busiest_share": 0.13526726099369143,
+      "seconds": 40.2
+    }
+  ],
+  "reference": {
+    "one k-means layer on pixels+label": 0.921,
+    "logistic on pixels": 0.9074
+  },
+  "seconds": 209.2
+}

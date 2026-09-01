@@ -1,0 +1,34 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+split-MNIST on the champion: 6041 images of 0-4, 5959 of 5-9, test 3000
+
+  seed 7  after phase A: old 0.9846  (5s)
+    online  old 0.9752  new 0.0457  all 0.5070
+    seq     old 0.7817  new 0.9795  all 0.8813
+    oracle  old 0.9731  new 0.9636  all 0.9683
+    frozen  old 0.9718  new 0.9623  all 0.9670
+    joint   old 0.9731  new 0.9643  all 0.9687   (19s)
+    churn on old data 0.542   dead-in-A 0/400   B wins into dead_in_A 0.00 light_in_A 0.31 heavy_in_A 0.69
+
+  seed 8  after phase A: old 0.9846  (5s)
+    online  old 0.9778  new 0.0774  all 0.5243
+    seq     old 0.7193  new 0.9788  all 0.8500
+    oracle  old 0.9745  new 0.9656  all 0.9700
+    frozen  old 0.9731  new 0.9636  all 0.9683
+    joint   old 0.9745  new 0.9616  all 0.9680   (19s)
+
+  seed 9  after phase A: old 0.9839  (5s)
+    online  old 0.9772  new 0.0490  all 0.5097
+    seq     old 0.6447  new 0.9795  all 0.8133
+    oracle  old 0.9731  new 0.9643  all 0.9687
+    frozen  old 0.9725  new 0.9643  all 0.9683
+    joint   old 0.9725  new 0.9643  all 0.9683   (19s)
+
+  over 3 seed(s):
+    old classes: after A 0.9843  ->  seq 0.7152+-0.0560   (oracle 0.9736, joint 0.9734)
+    forgetting: joint-vs-seq +0.2581 on old; table staleness share +0.2583
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_01/stack/results/forget_mnist.json
