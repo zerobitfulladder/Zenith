@@ -1,0 +1,24 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top1_contrast] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over contrast message, read top-1, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.8390  0.8380     0   4239  0.01/0.00   (9s)
+8       0.8027 |            0.8390  0.8410     0   4292  0.01/0.00   (9s)
+
+mean: L1 table 0.8028   joint L2 0.8390   code bits on 4646/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top1_contrast_std] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over contrast message, read top-1, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8027 |            0.8487  0.8473     0   3977  0.00/0.00   (9s)
+8       0.8027 |            0.8437  0.8417     0   3938  0.00/0.00   (9s)
+
+mean: L1 table 0.8027   joint L2 0.8462   code bits on 2378/6400

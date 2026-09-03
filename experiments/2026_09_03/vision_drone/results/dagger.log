@@ -1,0 +1,10 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+start: 20000 teacher ticks. rounds 3, fly 40/round, test 20, teacher share [0.5, 0.25, 0.0]
+round 0  pure pupil: success 0.00  median ticks 800  final dist 8.46
+round 1  flew 40 with teacher share 0.50 (success 1.00), +4692 ticks -> 24692 total; retrained (hires 4990); pure pupil: success 0.00  median ticks 800  final dist 8.46   (165s)
+round 2  flew 40 with teacher share 0.25 (success 0.93), +10419 ticks -> 35111 total; retrained (hires 8724); pure pupil: success 0.00  median ticks 800  final dist 6.36   (225s)
+round 3  flew 40 with teacher share 0.00 (success 0.03), +31416 ticks -> 66527 total; retrained (hires 23251); pure pupil: success 0.00  median ticks 800  final dist 6.89   (406s)

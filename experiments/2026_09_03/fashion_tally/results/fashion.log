@@ -1,0 +1,23 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+Fashion-MNIST, 12000 train / 3000 test, sizes [9, 28], seeds [7, 8]
+phase A = ['tshirt', 'trouser', 'pullover', 'dress', 'coat'], phase B = ['sandal', 'shirt', 'sneaker', 'bag', 'boot']
+
+== 9x9, 400 positions, batch 128, 3 epochs/phase
+arm                  JOINT recount  online    gap  dead |  SPLIT after 5-9 old/new   final  online  #com  drift  conv  dead
+champion                    0.8015  0.7147 0.0868     0 |         0.8172/0.7834  0.8063  0.4385     0    nan   nan     0   (60s)
+cntn none                   0.8068  0.8055 0.0013     0 |         0.8172/0.7804  0.8060  0.8052     0    nan   nan     0   (36s)
+cntn L0.25+B0.5             0.8038  0.7648 0.0390     0 |         0.8159/0.7837  0.8040  0.6098   396  0.102  0.38     0   (64s)
+purity L0.25+B0.5           0.8063  0.7618 0.0445     0 |         0.8205/0.7945  0.8048  0.5805   398  0.331  0.40     0   (67s)
+
+== 28x28, 1 positions, batch 512, 20 epochs/phase
+arm                  JOINT recount  online    gap  dead |  SPLIT after 5-9 old/new   final  online  #com  drift  conv  dead
+champion                    0.7520  0.7325 0.0195   238 |         0.7846/0.6333  0.7243  0.7010   168  0.004  0.01     0   (44s)
+cntn none                   0.7543  0.7548-0.0005   279 |         0.7352/0.6026  0.6920  0.6845    22  0.026  0.05   318   (20s)
+cntn L0.25+B0.5             0.7877  0.7785 0.0092   269 |         0.7839/0.8252  0.8158  0.8083   196  0.000  0.01     0   (44s)
+purity L0.25+B0.5           0.7920  0.7830 0.0090   256 |         0.8152/0.8107  0.8167  0.8130   210  0.002  0.01     0   (43s)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/fashion_tally/results/fashion_split.png

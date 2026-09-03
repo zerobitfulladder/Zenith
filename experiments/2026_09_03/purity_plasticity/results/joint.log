@@ -1,0 +1,19 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+joint 0-9, 40 epochs, batch 512, seeds [7, 8, 9]
+
+                      recount               (seeds)   online    gap  dead  still  purity
+  cntn  B1.5           0.9003  (0.899/0.898/0.903)   0.8953 0.0050   135      0   0.870   (49s)
+  purity B1.5          0.8766  (0.877/0.881/0.872)   0.8190 0.0576   212      0   0.839   (45s)
+  cntn  L0.25+B0.5     0.9191  (0.916/0.921/0.920)   0.9156 0.0036   185      0   0.887   (47s)
+  purity L0.25+B0.5    0.9271  (0.928/0.925/0.928)   0.9197 0.0074   175    103   0.880   (45s)
+  cntn  L0.25+B1.5     0.9248  (0.927/0.923/0.924)   0.9234 0.0013     1      0   0.909   (46s)
+  purity L0.25+B1.5    0.9314  (0.931/0.935/0.928)   0.9218 0.0097    77      8   0.890   (45s)
+  purity L0.25         0.9157  (0.916/0.919/0.912)   0.9137 0.0020   255     93   0.807   (19s)
+  purity none          0.8920  (0.878/0.897/0.901)   0.8776 0.0144   255      4   0.771   (19s)
+  cntn  none           0.8934  (0.892/0.898/0.891)   0.8909 0.0026   255      0   0.857   (20s)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/joint.png

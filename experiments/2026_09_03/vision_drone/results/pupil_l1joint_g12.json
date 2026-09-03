@@ -1,0 +1,1 @@
+{"kind": "module", "module": "vision_pupil", "dir": "experiments/2026_09_03/vision_drone", "frames": 1, "k1": 400, "ps": 9, "grid": 12, "read": "l1joint", "track": true, "trackw": 1.0}

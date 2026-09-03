@@ -1,0 +1,38 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+sizes [5, 9, 13, 17], split at [9, 13], 3 epochs, seeds [7, 8]
+
+JOINT 0-9
+size  arm                   recount   online     gap  dead  still  purity
+5     champion               0.9673   0.9230  0.0443     0      0   0.866   (26s)
+5     cntn L0.25+B0.5        0.9695   0.8933  0.0762     0      0   0.966   (27s)
+5     purity L0.25+B0.5      0.9685   0.8732  0.0953     0     38   0.966   (27s)
+5     purity B1.5            0.9695   0.7037  0.2658     0      0   0.770   (24s)
+9     champion               0.9680   0.9368  0.0312     0      0   0.892   (20s)
+9     cntn L0.25+B0.5        0.9692   0.9458  0.0233     0      0   0.978   (22s)
+9     purity L0.25+B0.5      0.9692   0.9370  0.0322     0    184   0.978   (22s)
+9     purity B1.5            0.9687   0.5938  0.3748     0      0   0.751   (20s)
+13    champion               0.9537   0.8965  0.0572     0      0   0.862   (17s)
+13    cntn L0.25+B0.5        0.9558   0.9285  0.0273     0      0   0.972   (18s)
+13    purity L0.25+B0.5      0.9528   0.9047  0.0482     0     39   0.971   (17s)
+13    purity B1.5            0.9498   0.5488  0.4010     0      0   0.690   (16s)
+17    champion               0.9272   0.8530  0.0742     0      0   0.823   (12s)
+17    cntn L0.25+B0.5        0.9260   0.8958  0.0302     0      0   0.948   (13s)
+17    purity L0.25+B0.5      0.9282   0.8442  0.0840     0      1   0.945   (13s)
+17    purity B1.5            0.9048   0.5652  0.3397     0      0   0.681   (12s)
+
+SPLIT 0-4 -> 5-9 -> 0-9
+size  arm                   after 5-9: old/new  final all   online  #com  drift  conv  dead
+9     champion                0.9728/0.9629     0.9688   0.7015   290  0.068  0.28     0   (41s)
+9     cntn L0.25+B0.5         0.9721/0.9659     0.9668   0.5070   399  0.102  0.58     0   (44s)
+9     purity L0.25+B0.5       0.9715/0.9682     0.9695   0.4950   400  0.497  0.60     0   (44s)
+9     purity B1.5             0.9708/0.9629     0.9657   0.1187   203  0.717  0.14     0   (40s)
+13    champion                0.9594/0.9474     0.9522   0.7247   352  0.111  0.34     0   (33s)
+13    cntn L0.25+B0.5         0.9661/0.9484     0.9550   0.6298   400  0.147  0.62     0   (35s)
+13    purity L0.25+B0.5       0.9570/0.9477     0.9545   0.5910   400  0.535  0.65     0   (35s)
+13    purity B1.5             0.9533/0.9434     0.9485   0.3007   306  0.736  0.30     0   (33s)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/patch_sizes.png

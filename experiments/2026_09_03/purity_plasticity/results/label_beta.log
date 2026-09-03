@@ -1,0 +1,18 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+label routing, betas [0.1, 0.25, 0.5, 1.0], seeds [7, 8, 9]
+
+                   after 0-4  after 5-9: old/new     final old/new/all  online  #com  pur B  drift   wsB  dead
+  cntn_label_b0.1     0.7954    0.9593/0.7604  0.9651/0.7726/0.8681  0.8663   102  0.982  0.001  0.02   253   (20s)
+  purity_label_b0.1    0.7965    0.9646/0.8056  0.9669/0.8092/0.8874  0.8864    98  0.984  0.000  0.00   253   (19s)
+  cntn_label_b0.25    0.8171    0.9387/0.8339  0.9476/0.8319/0.8893  0.8871    55  0.987 -0.000  0.00   254   (19s)
+  purity_label_b0.25    0.8017    0.9499/0.8498  0.9528/0.8566/0.9043  0.8998    57  0.988 -0.000  0.00   254   (21s)
+  cntn_label_b0.5     0.7679    0.8637/0.8151  0.8697/0.8246/0.8470  0.8350    18  0.996 -0.000  0.00   254   (21s)
+  purity_label_b0.5    0.7994    0.8858/0.8385  0.8961/0.8418/0.8688  0.8478    23  0.994 -0.000  0.00   254   (20s)
+  cntn_label_b1       0.7732    0.8247/0.7342  0.8211/0.7377/0.7791  0.7570    10  0.999 -0.000  0.00   254   (21s)
+  purity_label_b1     0.7515    0.8287/0.7779  0.8330/0.7801/0.8063  0.7723    11  0.999 -0.000  0.00   254   (20s)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/label_beta.png

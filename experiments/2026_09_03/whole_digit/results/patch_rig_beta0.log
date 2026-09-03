@@ -1,0 +1,27 @@
+split-MNIST on the champion: 6041 images of 0-4, 5959 of 5-9, test 3000
+
+  seed 7  after phase A: old 0.9886  (2s)
+    online  old 0.9772  new 0.9722  all 0.9747
+    seq     old 0.9785  new 0.9722  all 0.9753
+    oracle  old 0.9792  new 0.9722  all 0.9757
+    frozen  old 0.9792  new 0.9702  all 0.9747
+    joint   old 0.9792  new 0.9722  all 0.9757   (8s)
+    churn on old data 0.107   dead-in-A 65/400   B wins into dead_in_A 0.00 light_in_A 0.09 heavy_in_A 0.91
+
+  seed 8  after phase A: old 0.9893  (2s)
+    online  old 0.9718  new 0.9749  all 0.9733
+    seq     old 0.9772  new 0.9689  all 0.9730
+    oracle  old 0.9785  new 0.9682  all 0.9733
+    frozen  old 0.9792  new 0.9715  all 0.9753
+    joint   old 0.9772  new 0.9676  all 0.9723   (8s)
+
+  seed 9  after phase A: old 0.9886  (2s)
+    online  old 0.9752  new 0.9755  all 0.9753
+    seq     old 0.9765  new 0.9722  all 0.9743
+    oracle  old 0.9772  new 0.9702  all 0.9737
+    frozen  old 0.9772  new 0.9696  all 0.9733
+    joint   old 0.9772  new 0.9682  all 0.9727   (8s)
+
+  over 3 seed(s):
+    old classes: after A 0.9888  ->  seq 0.9774+-0.0008   (oracle 0.9783, joint 0.9778)
+    forgetting: joint-vs-seq +0.0004 on old; table staleness share +0.0009

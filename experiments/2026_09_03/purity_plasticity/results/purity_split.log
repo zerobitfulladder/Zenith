@@ -1,0 +1,19 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+28x28, 400 templates, 20 epochs/phase, batch 512, beta 1.5, seeds [7, 8, 9], committed = purity > 0.9
+phases 6041 / 5959 / 12000, test 3000
+
+                 after 0-4  after 5-9: old/new     final old/new/all  online  #com  pur B  drift   wsB still
+  cntn_none         0.7907    0.7687/0.7470  0.8919/0.8253/0.8583  0.8316   110  0.708  0.129  0.72     0   (21s)
+  cntn_belief       0.8032    0.9272/0.8500  0.9463/0.8840/0.9149  0.8989   366  0.876  0.029  0.64     0   (50s)
+  cntn_label        0.7482    0.8140/0.7379  0.8146/0.7320/0.7730  0.7539     7  0.999 -0.000  0.00     0   (22s)
+  purity_none       0.8034    0.7291/0.7820  0.8979/0.8626/0.8801  0.7942   115  0.674  0.299  0.73     5   (21s)
+  purity_belief     0.7925    0.9098/0.9029  0.9389/0.8789/0.9087  0.8596   372  0.819  0.168  0.81     5   (46s)
+  purity_label      0.7345    0.8265/0.7556  0.8209/0.7582/0.7893  0.7661     8  0.999 -0.000  0.00    15   (20s)
+/home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/purity_split.py:231: RuntimeWarning: Mean of empty slice
+  return steps, np.nanmean(vals, 0)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/purity_split.png, /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/committed_templates.png

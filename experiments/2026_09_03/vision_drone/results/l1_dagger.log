@@ -1,0 +1,13 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+round 0: 34583 teacher ticks; offline within-1 0.760, |coll err| 0.74, |diff err| 0.50
+round 1: flew 40x150 ticks, teacher share 0.50, success 0.88, +4795 ticks; offline within-1 0.741, |coll err| 0.73, |diff err| 0.54   (15s)
+round 2: flew 40x150 ticks, teacher share 0.25, success 0.20, +5799 ticks; offline within-1 0.728, |coll err| 0.76, |diff err| 0.60   (18s)
+round 3: flew 40x150 ticks, teacher share 0.00, success 0.00, +6000 ticks; offline within-1 0.730, |coll err| 0.80, |diff err| 0.62   (17s)
+round 4: flew 40x150 ticks, teacher share 0.00, success 0.00, +6000 ticks; offline within-1 0.718, |coll err| 0.84, |diff err| 0.65   (17s)
+round 5: flew 40x150 ticks, teacher share 0.00, success 0.00, +6000 ticks; offline within-1 0.711, |coll err| 0.87, |diff err| 0.64   (17s)
+round 6: flew 40x150 ticks, teacher share 0.00, success 0.05, +5720 ticks; offline within-1 0.712, |coll err| 0.86, |diff err| 0.63   (16s)
+FINAL pure pupil, 20 flights: success 0.00  median ticks 800  final dist 6.83   (PID 1.00, 109)

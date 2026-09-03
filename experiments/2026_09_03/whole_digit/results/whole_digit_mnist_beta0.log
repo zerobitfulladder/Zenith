@@ -1,0 +1,33 @@
+split-MNIST, WHOLE DIGIT receptive field: 400 templates x 784 px, 1 position, beta 0.0, 40 epochs
+  6041 images of 0-4, 5959 of 5-9, test 3000
+    phase-A learning curve (epoch, test 0-4): 4:0.9691 8:0.9691 12:0.9711 16:0.9725 20:0.9738 24:0.9745 28:0.9758 32:0.9745 36:0.9765 40:0.9765
+
+  seed 7  after phase A: old 0.9765  (2s)
+    online  old 0.7119  new 0.5970  all 0.6540
+    seq     old 0.7233  new 0.6439  all 0.6833
+    oracle  old 0.7119  new 0.7406  all 0.7263
+    frozen  old 0.8099  new 0.3779  all 0.5923
+    joint   old 0.8939  new 0.8822  all 0.8880   (8s)
+    churn on old data 0.582   dead-in-A 274/400   B wins into dead_in_A 0.06 light_in_A 0.42 heavy_in_A 0.52
+
+  seed 8  after phase A: old 0.9792  (2s)
+    online  old 0.7166  new 0.7201  all 0.7183
+    seq     old 0.7119  new 0.7194  all 0.7157
+    oracle  old 0.7146  new 0.8074  all 0.7613
+    frozen  old 0.7784  new 0.4474  all 0.6117
+    joint   old 0.9221  new 0.8795  all 0.9007   (8s)
+
+  seed 9  after phase A: old 0.9711  (2s)
+    online  old 0.7193  new 0.6420  all 0.6803
+    seq     old 0.7105  new 0.7062  all 0.7083
+    oracle  old 0.7092  new 0.8101  all 0.7600
+    frozen  old 0.7999  new 0.4302  all 0.6137
+    joint   old 0.9087  new 0.8809  all 0.8947   (8s)
+
+  over 3 seed(s):
+    old classes: after A 0.9756  ->  seq 0.7152+-0.0057   (oracle 0.7119, joint 0.9082)
+    REPRESENTATION damage (joint - oracle): +0.1963
+    BOOKKEEPING staleness (oracle - seq):   -0.0034
+    churn 0.582
+
+    patch rig for comparison: churn 0.542, damage +0.0002, staleness +0.2583

@@ -1,0 +1,19 @@
+split-MNIST, WHOLE DIGIT receptive field: 400 templates x 784 px, 1 position, beta 1.5, 3 epochs
+  1948 images of 0-4, 2052 of 5-9, test 800
+    phase-A learning curve (epoch, test all): 1:0.4512 2:0.4537 3:0.4562
+
+  seed 7  after phase A: old 0.9481  (0s)
+    online  old 0.8597  new 0.7349  all 0.7950
+    seq     old 0.8623  new 0.7518  all 0.8050
+    oracle  old 0.8571  new 0.7494  all 0.8013
+    frozen  old 0.8130  new 0.4048  all 0.6012
+    joint   old 0.8052  new 0.7976  all 0.8013   (1s)
+    churn on old data 0.127   dead-in-A 280/400   B wins into dead_in_A 0.00 light_in_A 0.72 heavy_in_A 0.28
+
+  over 1 seed(s):
+    old classes: after A 0.9481  ->  seq 0.8623+-0.0000   (oracle 0.8571, joint 0.8052)
+    REPRESENTATION damage (joint - oracle): -0.0519
+    BOOKKEEPING staleness (oracle - seq):   -0.0052
+    churn 0.127
+
+    patch rig for comparison: churn 0.542, damage +0.0002, staleness +0.2583

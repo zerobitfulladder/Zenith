@@ -1,0 +1,13 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+4096 templates over 768 bump numbers, 25 actions, 600 episodes, cap 300
+ep   100  eps 0.33  live  4096  train return (last 100)  -313.9  |  greedy 10 flights: success 0.00  median ticks 400  final dist 7.39   (221s)
+ep   200  eps 0.27  live  4096  train return (last 100)  -324.1  |  greedy 10 flights: success 0.00  median ticks 400  final dist 6.11   (433s)
+ep   300  eps 0.20  live  4096  train return (last 100)  -324.9  |  greedy 10 flights: success 0.00  median ticks 400  final dist 7.83   (586s)
+ep   400  eps 0.13  live  4096  train return (last 100)  -321.0  |  greedy 10 flights: success 0.00  median ticks 400  final dist 5.94   (740s)
+ep   500  eps 0.07  live  4096  train return (last 100)  -318.1  |  greedy 10 flights: success 0.00  median ticks 400  final dist 6.77   (893s)
+ep   600  eps 0.05  live  4096  train return (last 100)  -328.2  |  greedy 10 flights: success 0.00  median ticks 400  final dist 7.47   (1046s)
+saved pupil_rl

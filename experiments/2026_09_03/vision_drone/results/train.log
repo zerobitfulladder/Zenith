@@ -1,0 +1,26 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+43304 ticks, 400 episodes (8721 test ticks), frames=1, L1 400x9x9x1ch over 1600 positions, L2 x400, joint commands 169
+L1 trained (3s)
+encoded (34s), message 6400 numbers, 6020 nonzero
+L2 trained (37s), hires 4304, dead 0
+  joint read     exact pair 0.312   both within 1 level 0.696   mean |level error| 1.31
+  marginal read  exact pair 0.291   both within 1 level 0.669   mean |level error| 1.36
+  FLIGHT marginal  success 0.02   median ticks 800   median final distance 7.67   (PID: 1.00, 109)   (246s)
+  FLIGHT joint     success 0.02   median ticks 800   median final distance 7.61   (PID: 1.00, 109)   (245s)
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+43304 ticks, 400 episodes (8721 test ticks), frames=2, L1 400x9x9x2ch over 1600 positions, L2 x400, joint commands 169
+L1 trained (4s)
+encoded (35s), message 6400 numbers, 2400 nonzero
+L2 trained (38s), hires 4211, dead 0
+  joint read     exact pair 0.324   both within 1 level 0.711   mean |level error| 1.20
+  marginal read  exact pair 0.324   both within 1 level 0.690   mean |level error| 1.29
+  FLIGHT marginal  success 0.00   median ticks 800   median final distance 7.61   (PID: 1.00, 109)   (246s)
+  FLIGHT joint     success 0.00   median ticks 800   median final distance 7.92   (PID: 1.00, 109)   (248s)

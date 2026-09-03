@@ -1,0 +1,12 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+28x28, 20 epochs/phase, seeds [7, 8]
+
+arm             JOINT recount  online  dead |  SPLIT after 5-9 old/new   final  online  dead
+best                   0.9228  0.9158   226 |         0.9681/0.8921  0.9320  0.9285     0   (49s)
+best+hire              0.9458  0.9438     0 |         0.8687/0.9315  0.9470  0.9472     0   (59s)
+champion               0.8800  0.8797   241 |    (16s)
+champion+hire          0.9290  0.9292     0 |    (21s)

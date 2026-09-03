@@ -1,0 +1,76 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top3] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over raw code, read top-3, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8027 |            0.7937  0.7893     0   4499  0.18/0.25   (5s)
+8       0.8027 |            0.7883  0.7850     0   4529  0.18/0.25   (5s)
+
+mean: L1 table 0.8027   joint L2 0.7910   code bits on 172/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top5] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over raw code, read top-5, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8027 |            0.7710  0.7873     0   4524  0.18/0.23   (6s)
+8       0.8023 |            0.7673  0.7770     0   4559  0.18/0.23   (5s)
+
+mean: L1 table 0.8025   joint L2 0.7692   code bits on 172/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top3_strict] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over raw code, read top-3, strict hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.7617  0.7520     0   1749  0.21/0.28   (5s)
+8       0.8020 |            0.7660  0.7527     0   2192  0.21/0.27   (5s)
+
+mean: L1 table 0.8025   joint L2 0.7638   code bits on 172/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top1_ev] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over evidence map, read top-1, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.8177  0.8110     0   4088  0.00/0.00   (5s)
+8       0.8020 |            0.8180  0.8140     0   4239  0.00/0.00   (5s)
+
+mean: L1 table 0.8025   joint L2 0.8178   code bits on 80/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top3_ev] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over evidence map, read top-3, plain hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.8127  0.7937     0   4195  0.00/0.00   (5s)
+8       0.8020 |            0.8110  0.7907     0   4095  0.00/0.00   (5s)
+
+mean: L1 table 0.8025   joint L2 0.8118   code bits on 80/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+[k400_top3_strict_ev] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over evidence map, read top-3, strict hire, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.7927  0.7660     0   1708  0.00/0.00   (5s)
+8       0.8027 |            0.7780  0.7680     0   1696  0.00/0.00   (4s)
+
+mean: L1 table 0.8028   joint L2 0.7853   code bits on 80/6400
+[k400_top1_strict] Fashion 12000/3000, L1 9x9 x400 pooled 4x4, L2 x400 over raw code, read top-1, strict hire, seeds [7, 8]
+7       0.8030 |            0.8083  0.8060     0   4415  0.19/0.27   (5s)
+8       0.8017 |            0.8157  0.8140     0   4423  0.18/0.26   (5s)
+mean: L1 table 0.8023   joint L2 0.8120   code bits on 172/6400

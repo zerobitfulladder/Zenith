@@ -1,0 +1,20 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+summed biases, seeds [7, 8, 9], 20 epochs/phase
+
+               after 0-4  after 5-9: old/new     final old/new/all  online  #com  pur B  drift  conv d-kept  dead
+  champion        0.8032    0.9272/0.8500  0.9454/0.8835/0.9142  0.8984   366  0.876  0.029  0.12  0.010     0   (47s)
+  belief1.5       0.7925    0.9098/0.9029  0.9373/0.8712/0.9040  0.8619   372  0.819  0.168  0.19  0.098     0   (46s)
+  label0.25       0.8017    0.9499/0.8498  0.9528/0.8566/0.9043  0.8998    57  0.988 -0.000  0.00 -0.000   254   (20s)
+  L0.25+B0.5      0.8070    0.9664/0.8959  0.9702/0.8946/0.9321  0.9290   321  0.949  0.013  0.03  0.006     0   (45s)
+  L0.25+B1.0      0.8052    0.9628/0.8714  0.9698/0.8720/0.9206  0.9092   386  0.920  0.069  0.14  0.011     0   (43s)
+  L0.25+B1.5      0.8050    0.9566/0.8765  0.9687/0.8749/0.9214  0.9073   383  0.907  0.081  0.15  0.018     0   (43s)
+  L0.1+B1.5       0.7952    0.9342/0.8941  0.9519/0.8901/0.9208  0.8894   375  0.870  0.118  0.16  0.052     0   (45s)
+  L0.5+B1.5       0.7958    0.9626/0.8427  0.9700/0.8632/0.9162  0.9113   389  0.939  0.050  0.11  0.006     0   (45s)
+/home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/purity_split.py:236: RuntimeWarning: Mean of empty slice
+  return steps, np.nanmean(vals, 0)
+
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/combined.png

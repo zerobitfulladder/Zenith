@@ -1,0 +1,32 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+start: 20000 teacher ticks. rounds 4, fly 40/round, test 20, teacher share [0.5, 0.25, 0.0, 0.0]
+round 0  offline (teacher's held-out states): within 1 level 0.779, mean |err| 0.78
+round 1  flew 40 with teacher share 0.50 (success 1.00, median 114 ticks), +4692 ticks -> 24692 total; retrained (hires 177, dead 0); offline within 1 level 0.738, mean |err| 0.81   (42s)
+round 2  flew 40 with teacher share 0.25 (success 0.97, median 255 ticks), +12244 ticks -> 36936 total; retrained (hires 175, dead 0); offline within 1 level 0.715, mean |err| 0.89   (117s)
+round 3  flew 40 with teacher share 0.00 (success 0.05, median 800 ticks), +30910 ticks -> 67846 total; retrained (hires 194, dead 0); offline within 1 level 0.642, mean |err| 1.02   (292s)
+Traceback (most recent call last):
+  File "/home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/vision_drone/dagger.py", line 128, in <module>
+    main()
+  File "/home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/vision_drone/dagger.py", line 107, in main
+    Cn = V.encode_contrast(rig, W1, cp.asarray(Fn))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/vision_drone/vrig.py", line 57, in encode_contrast
+    n = len(X); C = cp.zeros((n, rig.K, rig.gg), cp.float32)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cupy/_creation/basic.py", line 252, in zeros
+    a = cupy.ndarray(shape, dtype, order=order)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 175, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 279, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 877, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1622, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1643, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1290, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1311, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1566, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File "cupy/cuda/memory.pyx", line 1569, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 819,200,000 bytes (allocated so far: 5,184,504,832 bytes).

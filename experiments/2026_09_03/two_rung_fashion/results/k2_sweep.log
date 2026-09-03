@@ -1,0 +1,36 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+Fashion 12000/3000, L1 9x9 x400 pooled 4x4 -> code 6400, L2 x400, L2 20 epochs/phase, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.8183  0.8170     0   4546  0.18/0.26   (5s)
+8       0.8017 |            0.8223  0.8240     0   4558  0.17/0.25   (5s)
+
+mean: L1 table 0.8023   joint L2 0.8203   code bits on 172/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+Fashion 12000/3000, L1 9x9 x400 pooled 4x4 -> code 6400, L2 x800, L2 20 epochs/phase, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8030 |            0.8153  0.8190     0   4476  0.18/0.25   (6s)
+8       0.8020 |            0.8247  0.8247     0   4449  0.17/0.25   (6s)
+
+mean: L1 table 0.8025   joint L2 0.8200   code bits on 172/6400
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+Fashion 12000/3000, L1 9x9 x400 pooled 4x4 -> code 6400, L2 x1600, L2 20 epochs/phase, seeds [7, 8]
+
+seed  L1 table |  JOINT L2 recount  online  dead  hires  res ok/bad
+7       0.8027 |            0.8130  0.8140     0   4147  0.17/0.25   (9s)
+8       0.8027 |            0.8217  0.8243     0   4153  0.17/0.26   (7s)
+
+mean: L1 table 0.8027   joint L2 0.8173   code bits on 172/6400

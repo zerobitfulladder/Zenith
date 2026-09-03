@@ -1,0 +1,11 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/cuda/pathfinder/_dynamic_libs/search_steps.py:187: UserWarning: Both CUDA_HOME and CUDA_PATH are set but differ:
+  CUDA_HOME=/usr/local/cuda
+  CUDA_PATH=/opt/cuda
+Using CUDA_HOME (higher priority).
+  cuda_home = get_cuda_home_or_path()
+28x28 MNIST, 20 epochs/phase, seeds [7, 8], ridge 0.001
+
+arm                    JOINT recount  online  dead  purity |  SPLIT after 5-9 old/new   final  online
+cosine winner                 0.9458  0.9438     0   0.894 |         0.8687/0.9315  0.9470  0.9472   (56s)
+partial-corr winner           0.6043  0.6030     0   0.860 |         0.5497/0.6291  0.5753  0.5572   (79s)
+wrote /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_03/purity_plasticity/results/loo_templates.png
