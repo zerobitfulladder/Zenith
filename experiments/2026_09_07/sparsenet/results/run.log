@@ -1,0 +1,160 @@
+Olshausen & Field 1996 on 8x8 MNIST patches from 2000 images, 1000 updates of 100
+
+  white_64  (S = log(1+x^2)):
+      44310 patches (92% of sites had contrast)
+      update     0  E   16.389  residual   7.7% of variance
+      update   200  E    0.810  residual   0.1% of variance
+      update   400  E    0.671  residual   0.1% of variance
+      update   600  E    0.567  residual   0.1% of variance
+      update   800  E    0.573  residual   0.1% of variance
+      update   999  E    0.534  residual   0.1% of variance
+      lam   0.14  residual   0.1%   55.3 of 64 active  25.3 hold 90%  pooled kurt    2.7  per-template kurt   1.4  dead 0
+      update     0  E   11.090  residual  20.0% of variance
+      update   200  E    4.926  residual   3.6% of variance
+      update   400  E    4.760  residual   3.7% of variance
+      update   600  E    4.185  residual   3.8% of variance
+      update   800  E    4.548  residual   3.8% of variance
+      update   999  E    4.290  residual   3.7% of variance
+      lam   1.00  residual   3.7%   53.2 of 64 active  21.5 hold 90%  pooled kurt    6.4  per-template kurt   3.1  dead 0
+      update     0  E   19.048  residual  28.7% of variance
+      update   200  E   10.218  residual  10.3% of variance
+      update   400  E    9.135  residual   8.4% of variance
+      update   600  E    7.881  residual   8.4% of variance
+      update   800  E    8.510  residual   8.4% of variance
+      update   999  E    8.135  residual   8.3% of variance
+      lam   2.00  residual   8.3%   51.7 of 64 active  18.5 hold 90%  pooled kurt   11.5  per-template kurt   2.4  dead 0
+      update     0  E   28.795  residual  39.8% of variance
+      update   200  E   23.978  residual  30.2% of variance
+      update   400  E   21.386  residual  25.7% of variance
+      update   600  E   18.411  residual  25.5% of variance
+      update   800  E   20.067  residual  25.4% of variance
+      update   999  E   18.470  residual  23.9% of variance
+      lam   4.00  residual  24.7%   51.8 of 64 active  20.0 hold 90%  pooled kurt   14.3  per-template kurt   1.8  dead 0
+      -> lambda/sigma = 2.0 (closest to 10% residual)
+      [revive] residual 8.2%, 0 dead, 51.7 of 64 active, 18.4 hold 90%, pooled kurtosis 11.4, per-template kurtosis 2.3, 0% exact zeros
+      update     0  E   19.048  residual  28.7% of variance
+      update   200  E   11.140  residual  12.2% of variance
+      update   400  E   11.674  residual  13.3% of variance
+      update   600  E   10.701  residual  14.7% of variance
+      update   800  E   11.369  residual  14.2% of variance
+      update   999  E   11.055  residual  14.5% of variance
+      [asis] residual 14.2%, 46 dead, 16.4 of 64 active, 7.4 hold 90%, pooled kurtosis 18.8, per-template kurtosis 2.6, 72% exact zeros
+  white_128  (S = log(1+x^2)):
+      44310 patches (92% of sites had contrast)
+      update     0  E    1.403  residual   0.3% of variance
+      update   200  E    0.781  residual   0.2% of variance
+      update   400  E    0.558  residual   0.1% of variance
+      update   600  E    0.490  residual   0.1% of variance
+      update   800  E    0.504  residual   0.1% of variance
+      update   999  E    0.514  residual   0.1% of variance
+      lam   0.14  residual   0.1%  106.4 of 128 active  38.1 hold 90%  pooled kurt    8.8  per-template kurt   1.5  dead 0
+      update     0  E    7.046  residual   7.2% of variance
+      update   200  E    4.034  residual   3.3% of variance
+      update   400  E    4.110  residual   3.2% of variance
+      update   600  E    3.777  residual   3.0% of variance
+      update   800  E    3.894  residual   3.2% of variance
+      update   999  E    4.031  residual   3.1% of variance
+      lam   1.00  residual   3.2%  102.8 of 128 active  32.7 hold 90%  pooled kurt   19.5  per-template kurt   2.1  dead 0
+      update     0  E   12.744  residual  15.9% of variance
+      update   200  E    8.323  residual   8.0% of variance
+      update   400  E    8.183  residual   8.0% of variance
+      update   600  E    7.685  residual   7.9% of variance
+      update   800  E    8.065  residual   8.6% of variance
+      update   999  E    8.150  residual   7.9% of variance
+      lam   2.00  residual   8.4%  101.7 of 128 active  31.4 hold 90%  pooled kurt   25.1  per-template kurt   1.8  dead 0
+      update     0  E   21.705  residual  29.3% of variance
+      update   200  E   43.865  residual  61.7% of variance
+      update   400  E   39.859  residual  60.2% of variance
+      update   600  E   39.588  residual  62.5% of variance
+      update   800  E   40.235  residual  63.3% of variance
+      update   999  E   41.835  residual  58.8% of variance
+      lam   4.00  residual  60.9%  106.7 of 128 active  52.1 hold 90%  pooled kurt    2.6  per-template kurt   2.4  dead 0
+      -> lambda/sigma = 2.0 (closest to 10% residual)
+      [revive] residual 8.4%, 0 dead, 101.7 of 128 active, 31.2 hold 90%, pooled kurtosis 25.0, per-template kurtosis 1.8, 0% exact zeros
+      update     0  E   12.744  residual  15.9% of variance
+      update   200  E    8.518  residual   9.1% of variance
+      update   400  E    9.803  residual  11.2% of variance
+      update   600  E    9.900  residual  12.8% of variance
+      update   800  E   10.999  residual  14.8% of variance
+      update   999  E   10.956  residual  13.4% of variance
+      [asis] residual 14.3%, 109 dead, 16.9 of 128 active, 7.3 hold 90%, pooled kurtosis 43.2, per-template kurtosis 3.0, 85% exact zeros
+  raw_64  (S = log(1+x^2)):
+      40171 patches (84% of sites had contrast)
+      update     0  E   23.042  residual   7.7% of variance
+      update   200  E    0.862  residual   0.2% of variance
+      update   400  E    0.808  residual   0.2% of variance
+      update   600  E    0.841  residual   0.3% of variance
+      update   800  E    0.802  residual   0.4% of variance
+      update   999  E    0.790  residual   0.4% of variance
+      lam   0.14  residual   0.4%   57.2 of 64 active  27.1 hold 90%  pooled kurt    1.4  per-template kurt   1.2  dead 0
+      update     0  E    9.530  residual  19.6% of variance
+      update   200  E    5.456  residual   5.6% of variance
+      update   400  E    5.504  residual   5.5% of variance
+      update   600  E    5.727  residual   5.6% of variance
+      update   800  E    5.255  residual   5.4% of variance
+      update   999  E    5.298  residual   5.5% of variance
+      lam   1.00  residual   5.6%   54.7 of 64 active  20.7 hold 90%  pooled kurt    6.5  per-template kurt   2.0  dead 0
+      update     0  E   15.689  residual  28.5% of variance
+      update   200  E    9.872  residual  11.4% of variance
+      update   400  E    9.329  residual  10.1% of variance
+      update   600  E    9.739  residual  10.5% of variance
+      update   800  E    9.250  residual  10.7% of variance
+      update   999  E    9.310  residual  10.8% of variance
+      lam   2.00  residual  10.7%   53.9 of 64 active  19.0 hold 90%  pooled kurt    9.3  per-template kurt   1.5  dead 0
+      update     0  E   24.741  residual  39.8% of variance
+      update   200  E   31.241  residual  44.0% of variance
+      update   400  E   31.373  residual  42.5% of variance
+      update   600  E   31.938  residual  41.5% of variance
+      update   800  E   29.897  residual  41.5% of variance
+      update   999  E   30.663  residual  42.5% of variance
+      lam   4.00  residual  41.8%   54.7 of 64 active  26.6 hold 90%  pooled kurt    2.1  per-template kurt   1.4  dead 0
+      -> lambda/sigma = 2.0 (closest to 10% residual)
+      [revive] residual 10.7%, 0 dead, 53.9 of 64 active, 19.0 hold 90%, pooled kurtosis 9.6, per-template kurtosis 1.6, 0% exact zeros
+      update     0  E   15.689  residual  28.5% of variance
+      update   200  E   10.638  residual  13.4% of variance
+      update   400  E   12.114  residual  15.4% of variance
+      update   600  E   13.020  residual  16.5% of variance
+      update   800  E   12.745  residual  17.6% of variance
+      update   999  E   12.692  residual  17.4% of variance
+      [asis] residual 17.2%, 51 dead, 11.2 of 64 active, 5.4 hold 90%, pooled kurtosis 20.3, per-template kurtosis 1.2, 80% exact zeros
+  white_64_abs  (S = |x|):
+      44310 patches (92% of sites had contrast)
+      update     0  E   15.225  residual   8.6% of variance
+      update   200  E    1.914  residual   0.5% of variance
+      update   400  E    1.629  residual   0.5% of variance
+      update   600  E    1.444  residual   0.5% of variance
+      update   800  E    1.527  residual   0.5% of variance
+      update   999  E    1.477  residual   0.6% of variance
+      lam   0.14  residual   0.6%   34.1 of 64 active  15.2 hold 90%  pooled kurt    5.2  per-template kurt   5.9  dead 0
+      update     0  E   21.952  residual  28.6% of variance
+      update   200  E    8.573  residual   6.7% of variance
+      update   400  E    9.635  residual   8.0% of variance
+      update   600  E    8.394  residual   7.9% of variance
+      update   800  E    8.753  residual   7.6% of variance
+      update   999  E    8.529  residual   7.7% of variance
+      lam   1.00  residual   7.7%   13.8 of 64 active   5.7 hold 90%  pooled kurt   20.9  per-template kurt  99.1  dead 0
+      update     0  E   37.133  residual  46.6% of variance
+      update   200  E   15.015  residual  13.6% of variance
+      update   400  E   15.695  residual  14.4% of variance
+      update   600  E   14.894  residual  16.5% of variance
+      update   800  E   16.303  residual  17.5% of variance
+      update   999  E   15.818  residual  17.6% of variance
+      lam   2.00  residual  17.6%    8.8 of 64 active   4.3 hold 90%  pooled kurt   35.3  per-template kurt 301.2  dead 0
+      update     0  E   54.566  residual  72.5% of variance
+      update   200  E   28.007  residual  31.0% of variance
+      update   400  E   30.177  residual  33.6% of variance
+      update   600  E   25.228  residual  30.3% of variance
+      update   800  E   27.748  residual  31.2% of variance
+      update   999  E   25.739  residual  29.1% of variance
+      lam   4.00  residual  28.7%    6.2 of 64 active   7.3 hold 90%  pooled kurt   52.6  per-template kurt  46.7  dead 19
+      -> lambda/sigma = 1.0 (closest to 10% residual)
+      [revive] residual 7.6%, 0 dead, 13.8 of 64 active, 5.7 hold 90%, pooled kurtosis 20.2, per-template kurtosis 103.9, 76% exact zeros
+      update     0  E   21.952  residual  28.6% of variance
+      update   200  E    8.954  residual   7.4% of variance
+      update   400  E    9.503  residual   8.2% of variance
+      update   600  E    8.431  residual   8.7% of variance
+      update   800  E    9.009  residual   8.5% of variance
+      update   999  E    8.664  residual   8.4% of variance
+      [asis] residual 8.2%, 40 dead, 13.3 of 64 active, 5.5 hold 90%, pooled kurtosis 19.8, per-template kurtosis 3.9, 77% exact zeros
+
+  473s -> /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_07/sparsenet/results

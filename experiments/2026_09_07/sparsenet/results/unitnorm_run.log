@@ -1,0 +1,52 @@
+unit-length 8x8 MNIST patches, 44310 of them (92% of sites passed the contrast gate)
+K=64 unit-length templates, S=|x|, rotation-only learning, 1000 updates of 100
+
+  lambda, on the recon-only arm:
+      lam   0.010  residual   0.6%   32.6 of 64 active  10.8 hold 90%  per-template kurt     6.3  dead 0
+      lam   0.030  residual   2.8%   20.0 of 64 active   7.0 hold 90%  per-template kurt    11.6  dead 0
+      lam   0.060  residual   6.4%   13.3 of 64 active   5.3 hold 90%  per-template kurt    18.1  dead 0
+      lam   0.120  residual  15.3%    8.4 of 64 active   3.7 hold 90%  per-template kurt    24.6  dead 0
+      -> lambda = 0.06
+
+  recon  (beta=0.0, gamma=0.0):
+      update     0  residual  37.3% of variance
+      update   200  residual  10.1% of variance
+      update   400  residual   8.1% of variance
+      update   600  residual   7.5% of variance
+      update   800  residual   6.7% of variance
+      update   999  residual   6.3% of variance
+      residual 6.3%, 0 dead, 13.4 of 64 active, 5.3 hold 90%, per-template kurtosis 18.3, pooled 22.1, 77% exact zeros, coherence 0.120 mean / 0.671 max
+  sparsity  (beta=0.3, gamma=0.0):
+      update     0  residual  37.3% of variance
+      update   200  residual  10.5% of variance
+      update   400  residual   8.5% of variance
+      update   600  residual   7.8% of variance
+      update   800  residual   7.1% of variance
+      update   999  residual   7.0% of variance
+      residual 6.9%, 0 dead, 13.8 of 64 active, 5.2 hold 90%, per-template kurtosis 15.7, pooled 21.8, 76% exact zeros, coherence 0.073 mean / 0.518 max
+  sparsity_hi  (beta=1.0, gamma=0.0):
+      update     0  residual  37.3% of variance
+      update   200  residual  15.8% of variance
+      update   400  residual  13.4% of variance
+      update   600  residual  11.4% of variance
+      update   800  residual   9.8% of variance
+      update   999  residual   9.3% of variance
+      residual 9.7%, 7 dead, 13.2 of 64 active, 5.2 hold 90%, per-template kurtosis 15.6, pooled 20.1, 77% exact zeros, coherence 0.069 mean / 0.736 max
+  independence  (beta=0.0, gamma=0.3):
+      update     0  residual  37.3% of variance
+      update   200  residual  10.5% of variance
+      update   400  residual   8.4% of variance
+      update   600  residual   7.7% of variance
+      update   800  residual   6.9% of variance
+      update   999  residual   6.9% of variance
+      residual 6.7%, 0 dead, 14.2 of 64 active, 5.3 hold 90%, per-template kurtosis 16.9, pooled 21.1, 75% exact zeros, coherence 0.077 mean / 0.567 max
+  both  (beta=0.3, gamma=0.3):
+      update     0  residual  37.3% of variance
+      update   200  residual  11.6% of variance
+      update   400  residual   9.4% of variance
+      update   600  residual   8.7% of variance
+      update   800  residual   7.8% of variance
+      update   999  residual   7.9% of variance
+      residual 7.9%, 0 dead, 14.1 of 64 active, 5.3 hold 90%, per-template kurtosis 19.1, pooled 19.7, 75% exact zeros, coherence 0.055 mean / 0.524 max
+
+  180s -> /home/lavender/Projects/Geodesique/experiments/experiments_2026_09_07/sparsenet/results/unitnorm

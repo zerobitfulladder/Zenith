@@ -1,0 +1,102 @@
+Olshausen & Field 1996 on 8x8 MNIST patches from 2000 images, 1000 updates of 100
+
+  raw_64:
+      40171 patches (84% of sites had contrast)
+      update     0  E   23.042  residual   7.7% of variance
+      update   200  E    0.862  residual   0.2% of variance
+      update   400  E    0.969  residual   0.5% of variance
+      update   600  E    1.411  residual   1.4% of variance
+      update   800  E    1.577  residual   1.9% of variance
+      update   999  E    1.838  residual   2.4% of variance
+      lam   0.14  residual   2.6%   37.2 of 64 active  17.7 hold 90% of the energy  kurtosis    3.5
+      update     0  E    9.530  residual  19.6% of variance
+      update   200  E    6.600  residual   8.0% of variance
+      update   400  E    8.136  residual  10.6% of variance
+      update   600  E    8.668  residual  11.0% of variance
+      update   800  E    7.803  residual  10.6% of variance
+      update   999  E    8.014  residual  10.9% of variance
+      lam   1.00  residual  10.7%   15.9 of 64 active   7.6 hold 90% of the energy  kurtosis   13.9
+      update     0  E   15.689  residual  28.5% of variance
+      update   200  E   10.638  residual  13.4% of variance
+      update   400  E   12.114  residual  15.4% of variance
+      update   600  E   13.020  residual  16.5% of variance
+      update   800  E   12.745  residual  17.6% of variance
+      update   999  E   12.692  residual  17.4% of variance
+      lam   2.00  residual  17.3%   11.2 of 64 active   5.4 hold 90% of the energy  kurtosis   19.6
+      update     0  E   24.741  residual  39.8% of variance
+      update   200  E   36.824  residual  57.6% of variance
+      update   400  E   35.859  residual  54.2% of variance
+      update   600  E   36.438  residual  52.9% of variance
+      update   800  E   34.313  residual  53.4% of variance
+      update   999  E   36.096  residual  56.0% of variance
+      lam   4.00  residual  52.8%    2.9 of 64 active   2.1 hold 90% of the energy  kurtosis   63.9
+      -> lambda/sigma = 1.0 (closest to 10% residual)
+      learned: residual 10.7% of variance, kurtosis 13.6, 15.9 of 64 active, 7.6 hold 90% of the energy, eq.5 residual 2.2e-03
+  white_64:
+      44310 patches (92% of sites had contrast)
+      update     0  E   16.389  residual   7.7% of variance
+      update   200  E    0.811  residual   0.1% of variance
+      update   400  E    0.699  residual   0.2% of variance
+      update   600  E    0.651  residual   0.3% of variance
+      update   800  E    0.786  residual   0.5% of variance
+      update   999  E    0.857  residual   0.7% of variance
+      lam   0.14  residual   0.8%   37.7 of 64 active  18.6 hold 90% of the energy  kurtosis    3.9
+      update     0  E   11.090  residual  20.0% of variance
+      update   200  E    5.250  residual   4.2% of variance
+      update   400  E    6.506  residual   7.1% of variance
+      update   600  E    5.607  residual   7.1% of variance
+      update   800  E    6.151  residual   7.1% of variance
+      update   999  E    6.071  residual   7.6% of variance
+      lam   1.00  residual   7.5%   21.5 of 64 active   9.8 hold 90% of the energy  kurtosis   12.3
+      update     0  E   19.048  residual  28.7% of variance
+      update   200  E   11.140  residual  12.2% of variance
+      update   400  E   11.674  residual  13.3% of variance
+      update   600  E   10.701  residual  14.7% of variance
+      update   800  E   11.369  residual  14.2% of variance
+      update   999  E   11.055  residual  14.5% of variance
+      lam   2.00  residual  14.3%   16.3 of 64 active   7.4 hold 90% of the energy  kurtosis   18.7
+      update     0  E   28.795  residual  39.8% of variance
+      update   200  E   23.800  residual  31.2% of variance
+      update   400  E   22.662  residual  28.3% of variance
+      update   600  E   21.150  residual  32.0% of variance
+      update   800  E   23.197  residual  32.3% of variance
+      update   999  E   21.370  residual  30.3% of variance
+      lam   4.00  residual  31.8%   10.2 of 64 active   5.0 hold 90% of the energy  kurtosis   30.1
+      -> lambda/sigma = 1.0 (closest to 10% residual)
+      learned: residual 7.5% of variance, kurtosis 12.0, 21.5 of 64 active, 9.8 hold 90% of the energy, eq.5 residual 1.1e-05
+  raw_128:
+      40171 patches (84% of sites had contrast)
+      update     0  E    1.778  residual   0.3% of variance
+      update   200  E    1.126  residual   0.6% of variance
+      update   400  E    1.560  residual   1.6% of variance
+      update   600  E    1.614  residual   2.1% of variance
+      update   800  E    2.000  residual   2.9% of variance
+      update   999  E    2.084  residual   3.0% of variance
+      lam   0.14  residual   3.1%   34.0 of 128 active  16.0 hold 90% of the energy  kurtosis   11.7
+      update     0  E    7.464  residual   7.6% of variance
+      update   200  E    7.641  residual   9.9% of variance
+      update   400  E    8.821  residual  11.1% of variance
+      update   600  E    7.371  residual  10.1% of variance
+      update   800  E    8.229  residual  12.0% of variance
+      update   999  E    7.481  residual  10.6% of variance
+      lam   1.00  residual  11.3%   15.3 of 128 active   7.2 hold 90% of the energy  kurtosis   33.3
+      update     0  E   12.309  residual  16.7% of variance
+      update   200  E   12.614  residual  17.2% of variance
+      update   400  E   15.404  residual  19.8% of variance
+      update   600  E   12.105  residual  17.0% of variance
+      update   800  E   12.914  residual  19.0% of variance
+      update   999  E   12.418  residual  18.0% of variance
+      lam   2.00  residual  18.6%   10.6 of 128 active   5.3 hold 90% of the energy  kurtosis   43.7
+      update     0  E   21.374  residual  30.3% of variance
+      update   200  E   67.286  residual 100.0% of variance
+      update   400  E   66.938  residual 100.0% of variance
+      update   600  E   62.032  residual 100.0% of variance
+      update   800  E   60.154  residual 100.0% of variance
+      update   999  E   60.298  residual 100.0% of variance
+      lam   4.00  residual 100.0%    0.0 of 128 active  129.0 hold 90% of the energy  kurtosis   -3.0
+      -> lambda/sigma = 1.0 (closest to 10% residual)
+      learned: residual 11.3% of variance, kurtosis 32.9, 15.4 of 128 active, 7.2 hold 90% of the energy, eq.5 residual 1.2e-04
+  white_128:
+      44310 patches (92% of sites had contrast)
+      update     0  E    1.403  residual   0.3% of variance
+      update   200  E    0.807  residual   0.2% of variance
