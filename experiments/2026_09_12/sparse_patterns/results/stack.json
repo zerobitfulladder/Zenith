@@ -1,0 +1,263 @@
+{
+  "learned floor 0": {
+    "0": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 15,
+      "floor1_vocab": [
+        "{CTX1,?10}",
+        "{?11,?12,?13,?14}",
+        "{A,B}",
+        "{F2,F4}",
+        "{CTX2,?6}",
+        "{C,A}",
+        "{C,B}"
+      ],
+      "unions_found": 3
+    },
+    "1": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{CTX2,?8}",
+        "{B,C}",
+        "{CTX1,?8}",
+        "{B,A}",
+        "{C,A}",
+        "{F2,F3}"
+      ],
+      "unions_found": 3
+    },
+    "2": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 20,
+      "floor1_vocab": [
+        "{?0,?11}",
+        "{CTX1,?15,?16}",
+        "{?3,?11}",
+        "{B,A}",
+        "{CTX2,?10}",
+        "{?0,?3}",
+        "{CTX1,?16,?17,?18}",
+        "{A,C}",
+        "{B,C}",
+        "{?13,CTX1}",
+        "{F1}"
+      ],
+      "unions_found": 3
+    },
+    "3": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{A,B}",
+        "{CTX2,?10}",
+        "{CTX1,?9}",
+        "{F1,F4}",
+        "{A,C}",
+        "{B,C}"
+      ],
+      "unions_found": 3
+    },
+    "4": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{C,A}",
+        "{CTX1,?8}",
+        "{C,B}",
+        "{A,B}"
+      ],
+      "unions_found": 3
+    }
+  },
+  "clean floor 0": {
+    "0": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{CTX2,H}",
+        "{A,C}",
+        "{A,B}",
+        "{CTX1,G}",
+        "{B,C}"
+      ],
+      "unions_found": 3
+    },
+    "1": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{B,C}",
+        "{A,B}",
+        "{A,C}",
+        "{G}"
+      ],
+      "unions_found": 3
+    },
+    "2": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{B}",
+        "{CTX2,H}",
+        "{F2,G}",
+        "{C}"
+      ],
+      "unions_found": 0
+    },
+    "3": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{A,B}",
+        "{CTX1,G}",
+        "{CTX2,H}",
+        "{A,C}",
+        "{B,C}"
+      ],
+      "unions_found": 3
+    },
+    "4": {
+      "one_floor": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "two_floor": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "floor0_patterns": 11,
+      "floor1_vocab": [
+        "{A,C}",
+        "{B,C}",
+        "{CTX2,H}",
+        "{A,B}",
+        "{CTX1,G}"
+      ],
+      "unions_found": 3
+    }
+  }
+}

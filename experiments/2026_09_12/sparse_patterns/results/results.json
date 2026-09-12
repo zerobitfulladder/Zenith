@@ -1,0 +1,2347 @@
+{
+  "seeds": {
+    "0": {
+      "bits": {
+        "vocab": {
+          "best_f1": null,
+          "recovered": null,
+          "coverage": null,
+          "covered": null,
+          "n_patterns": null,
+          "kinds": null
+        },
+        "comp_recall": 0.7539458640488051,
+        "comp_precision": 0.2875740284275245,
+        "secs": 0.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_willing_cue1": 1.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns": {
+        "vocab": {
+          "best_f1": 0.908455181182454,
+          "recovered": 7,
+          "coverage": 0.9090909090909091,
+          "covered": 9,
+          "n_patterns": 13,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 4
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.73,
+              0.67
+            ],
+            "H": [
+              0.73,
+              0.67
+            ],
+            "CTX1": [
+              0.77,
+              0.83
+            ],
+            "CTX2": [
+              0.77,
+              0.83
+            ]
+          },
+          "supports": [
+            [
+              3,
+              15,
+              18,
+              28,
+              66,
+              74,
+              87
+            ],
+            [
+              41,
+              56,
+              79,
+              95
+            ],
+            [
+              31,
+              48,
+              76,
+              77,
+              88,
+              89
+            ],
+            [
+              29,
+              33,
+              41,
+              56,
+              79,
+              95
+            ],
+            [
+              12,
+              32,
+              40,
+              61,
+              92,
+              99
+            ],
+            [
+              1,
+              2,
+              21,
+              30,
+              53,
+              55,
+              68
+            ],
+            [
+              14,
+              38,
+              46,
+              58,
+              73,
+              96
+            ],
+            [
+              35,
+              43,
+              80,
+              86
+            ],
+            [
+              7,
+              63,
+              69,
+              78
+            ],
+            [
+              7,
+              54,
+              59,
+              63,
+              69,
+              78
+            ],
+            [
+              26,
+              45,
+              49,
+              51,
+              84,
+              91
+            ],
+            [
+              17,
+              24,
+              35,
+              43,
+              86
+            ],
+            [
+              0,
+              6,
+              47,
+              60,
+              62,
+              67
+            ]
+          ]
+        },
+        "comp_recall": 0.636704315092086,
+        "comp_precision": 0.5611070745889868,
+        "secs": 3.4,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns+stats": {
+        "vocab": {
+          "best_f1": 0.908455181182454,
+          "recovered": 7,
+          "coverage": 0.9090909090909091,
+          "covered": 9,
+          "n_patterns": 15,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 6
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.73,
+              0.67
+            ],
+            "H": [
+              0.73,
+              0.67
+            ],
+            "CTX1": [
+              0.77,
+              0.83
+            ],
+            "CTX2": [
+              0.77,
+              0.83
+            ]
+          },
+          "supports": [
+            [
+              3,
+              15,
+              18,
+              28,
+              66,
+              74,
+              87
+            ],
+            [
+              31,
+              48,
+              76,
+              77,
+              88,
+              89
+            ],
+            [
+              29,
+              33,
+              41,
+              56,
+              79,
+              95
+            ],
+            [
+              12,
+              32,
+              40,
+              61,
+              92,
+              99
+            ],
+            [
+              1,
+              2,
+              21,
+              30,
+              53,
+              55,
+              68
+            ],
+            [
+              14,
+              38,
+              46,
+              58,
+              73,
+              96
+            ],
+            [
+              35,
+              43,
+              80,
+              86
+            ],
+            [
+              26,
+              45,
+              49,
+              51,
+              84,
+              91
+            ],
+            [
+              7,
+              54,
+              59,
+              63,
+              69,
+              78
+            ],
+            [
+              0,
+              6,
+              47,
+              60,
+              62,
+              67
+            ],
+            [
+              17,
+              24,
+              35,
+              43,
+              86
+            ],
+            [
+              17,
+              86
+            ],
+            [
+              17,
+              43,
+              80
+            ],
+            [
+              17,
+              35,
+              80
+            ],
+            [
+              17,
+              80,
+              86
+            ]
+          ]
+        },
+        "comp_recall": 0.6494608356040245,
+        "comp_precision": 0.5621843919177022,
+        "secs": 3.9,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      }
+    },
+    "1": {
+      "bits": {
+        "vocab": {
+          "best_f1": null,
+          "recovered": null,
+          "coverage": null,
+          "covered": null,
+          "n_patterns": null,
+          "kinds": null
+        },
+        "comp_recall": 0.7454730589614491,
+        "comp_precision": 0.3333280399081111,
+        "secs": 0.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_willing_cue1": 1.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns": {
+        "vocab": {
+          "best_f1": 0.9376623376623378,
+          "recovered": 11,
+          "coverage": 0.9393939393939393,
+          "covered": 9,
+          "n_patterns": 11,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 2
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.86,
+              1.0
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              10,
+              26,
+              40,
+              58,
+              92,
+              93
+            ],
+            [
+              13,
+              24,
+              33,
+              63,
+              64,
+              73,
+              88,
+              98
+            ],
+            [
+              7,
+              15,
+              21,
+              22,
+              31,
+              35,
+              39,
+              65
+            ],
+            [
+              36,
+              51,
+              69,
+              72,
+              74,
+              76
+            ],
+            [
+              2,
+              42,
+              50,
+              53,
+              91,
+              96
+            ],
+            [
+              1,
+              11,
+              12,
+              37,
+              83,
+              97
+            ],
+            [
+              32,
+              41,
+              46,
+              59,
+              77,
+              82
+            ],
+            [
+              3,
+              27,
+              52,
+              68
+            ],
+            [
+              0,
+              4,
+              18,
+              49,
+              57,
+              78
+            ],
+            [
+              9,
+              25,
+              86,
+              89,
+              90,
+              95
+            ],
+            [
+              3,
+              68,
+              98
+            ]
+          ]
+        },
+        "comp_recall": 0.645300873618985,
+        "comp_precision": 0.5514262644417746,
+        "secs": 3.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns+stats": {
+        "vocab": {
+          "best_f1": 0.9376623376623378,
+          "recovered": 11,
+          "coverage": 0.9393939393939393,
+          "covered": 9,
+          "n_patterns": 11,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 2
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.86,
+              1.0
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              10,
+              26,
+              40,
+              58,
+              92,
+              93
+            ],
+            [
+              13,
+              24,
+              33,
+              63,
+              64,
+              73,
+              88,
+              98
+            ],
+            [
+              7,
+              15,
+              21,
+              22,
+              31,
+              35,
+              39,
+              65
+            ],
+            [
+              36,
+              51,
+              69,
+              72,
+              74,
+              76
+            ],
+            [
+              2,
+              42,
+              50,
+              53,
+              91,
+              96
+            ],
+            [
+              1,
+              11,
+              12,
+              37,
+              83,
+              97
+            ],
+            [
+              32,
+              41,
+              46,
+              59,
+              77,
+              82
+            ],
+            [
+              0,
+              4,
+              18,
+              49,
+              57,
+              78
+            ],
+            [
+              3,
+              27,
+              52,
+              68
+            ],
+            [
+              9,
+              25,
+              86,
+              89,
+              90,
+              95
+            ],
+            [
+              3,
+              68,
+              98
+            ]
+          ]
+        },
+        "comp_recall": 0.645300873618985,
+        "comp_precision": 0.5504072269490529,
+        "secs": 3.6,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      }
+    },
+    "2": {
+      "bits": {
+        "vocab": {
+          "best_f1": null,
+          "recovered": null,
+          "coverage": null,
+          "covered": null,
+          "n_patterns": null,
+          "kinds": null
+        },
+        "comp_recall": 0.7511650469700005,
+        "comp_precision": 0.3852867550785041,
+        "secs": 0.1,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_willing_cue1": 1.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns": {
+        "vocab": {
+          "best_f1": 0.9189689098780008,
+          "recovered": 11,
+          "coverage": 0.893939393939394,
+          "covered": 9,
+          "n_patterns": 15,
+          "kinds": {
+            "atom": 10,
+            "union": 0,
+            "fragment": 5
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              0.91,
+              0.83
+            ],
+            "F4": [
+              0.91,
+              0.83
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.83,
+              0.83
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              20,
+              23,
+              26,
+              27,
+              49,
+              51
+            ],
+            [
+              4,
+              41,
+              82,
+              89,
+              99
+            ],
+            [
+              44,
+              58,
+              60,
+              62,
+              67,
+              74
+            ],
+            [
+              9,
+              20,
+              27,
+              49,
+              51,
+              97
+            ],
+            [
+              17,
+              37,
+              50,
+              75,
+              83,
+              96
+            ],
+            [
+              16,
+              24,
+              36,
+              46,
+              64,
+              98
+            ],
+            [
+              12,
+              15,
+              32,
+              33,
+              35,
+              38,
+              39,
+              54
+            ],
+            [
+              29,
+              30,
+              31,
+              65,
+              72,
+              85
+            ],
+            [
+              0,
+              43,
+              63,
+              70,
+              93
+            ],
+            [
+              1,
+              2,
+              22,
+              57,
+              77,
+              87
+            ],
+            [
+              3,
+              68,
+              95
+            ],
+            [
+              3,
+              8,
+              68
+            ],
+            [
+              3,
+              8,
+              68,
+              95
+            ],
+            [
+              9,
+              20,
+              23,
+              26,
+              27,
+              97
+            ],
+            [
+              9,
+              23,
+              26,
+              49,
+              51,
+              97
+            ]
+          ]
+        },
+        "comp_recall": 0.6517797796172409,
+        "comp_precision": 0.5574375367804598,
+        "secs": 3.6,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns+stats": {
+        "vocab": {
+          "best_f1": 0.9189689098780008,
+          "recovered": 11,
+          "coverage": 0.893939393939394,
+          "covered": 9,
+          "n_patterns": 20,
+          "kinds": {
+            "atom": 10,
+            "union": 0,
+            "fragment": 10
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              0.91,
+              0.83
+            ],
+            "F4": [
+              0.91,
+              0.83
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.83,
+              0.83
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              20,
+              23,
+              26,
+              27,
+              49,
+              51
+            ],
+            [
+              4,
+              41,
+              82,
+              89,
+              99
+            ],
+            [
+              44,
+              58,
+              60,
+              62,
+              67,
+              74
+            ],
+            [
+              9,
+              20,
+              27,
+              49,
+              51,
+              97
+            ],
+            [
+              17,
+              37,
+              50,
+              75,
+              83,
+              96
+            ],
+            [
+              16,
+              24,
+              36,
+              46,
+              64,
+              98
+            ],
+            [
+              12,
+              15,
+              32,
+              33,
+              35,
+              38,
+              39,
+              54
+            ],
+            [
+              29,
+              30,
+              31,
+              65,
+              72,
+              85
+            ],
+            [
+              0,
+              43,
+              63,
+              70,
+              93
+            ],
+            [
+              1,
+              2,
+              22,
+              57,
+              77,
+              87
+            ],
+            [
+              3,
+              68,
+              95
+            ],
+            [
+              3,
+              8,
+              68,
+              95
+            ],
+            [
+              9,
+              20,
+              23,
+              26,
+              27,
+              97
+            ],
+            [],
+            [
+              9,
+              23,
+              26,
+              49,
+              51,
+              97
+            ],
+            [],
+            [
+              3,
+              95
+            ],
+            [],
+            [
+              9,
+              68,
+              95
+            ],
+            []
+          ]
+        },
+        "comp_recall": 0.6594487191515055,
+        "comp_precision": 0.5584734697475142,
+        "secs": 4.3,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      }
+    },
+    "3": {
+      "bits": {
+        "vocab": {
+          "best_f1": null,
+          "recovered": null,
+          "coverage": null,
+          "covered": null,
+          "n_patterns": null,
+          "kinds": null
+        },
+        "comp_recall": 0.7545929849018085,
+        "comp_precision": 0.2760886358170534,
+        "secs": 0.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_willing_cue1": 1.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns": {
+        "vocab": {
+          "best_f1": 0.9296703296703298,
+          "recovered": 10,
+          "coverage": 0.9242424242424242,
+          "covered": 9,
+          "n_patterns": 13,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 4
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.77,
+              0.83
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              5,
+              19,
+              36,
+              54,
+              57,
+              71
+            ],
+            [
+              61,
+              65,
+              83,
+              85,
+              86,
+              94
+            ],
+            [
+              13,
+              20,
+              21,
+              32,
+              82,
+              90
+            ],
+            [
+              3,
+              12,
+              25,
+              30,
+              63,
+              79,
+              88
+            ],
+            [
+              47,
+              73,
+              74,
+              80,
+              92,
+              93
+            ],
+            [
+              6,
+              39,
+              43,
+              51,
+              52,
+              77
+            ],
+            [
+              7,
+              14,
+              16,
+              26,
+              33,
+              59
+            ],
+            [
+              10,
+              24,
+              31,
+              89
+            ],
+            [
+              4,
+              38,
+              55,
+              56,
+              64,
+              68,
+              76,
+              99
+            ],
+            [
+              8,
+              9,
+              29,
+              40,
+              50,
+              70
+            ],
+            [
+              10,
+              31,
+              69
+            ],
+            [
+              10,
+              24,
+              69
+            ],
+            [
+              24,
+              31,
+              69
+            ]
+          ]
+        },
+        "comp_recall": 0.6522269981122535,
+        "comp_precision": 0.5535059044100857,
+        "secs": 3.3,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns+stats": {
+        "vocab": {
+          "best_f1": 0.9246753246753247,
+          "recovered": 10,
+          "coverage": 0.9242424242424242,
+          "covered": 9,
+          "n_patterns": 11,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 2
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.71,
+              0.83
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              5,
+              19,
+              36,
+              54,
+              57,
+              71
+            ],
+            [
+              61,
+              65,
+              83,
+              85,
+              86,
+              94
+            ],
+            [
+              13,
+              20,
+              21,
+              32,
+              82,
+              90
+            ],
+            [
+              3,
+              12,
+              25,
+              30,
+              63,
+              79,
+              88,
+              89
+            ],
+            [
+              47,
+              73,
+              74,
+              80,
+              92,
+              93
+            ],
+            [
+              6,
+              39,
+              43,
+              51,
+              52,
+              77
+            ],
+            [
+              7,
+              14,
+              16,
+              26,
+              33,
+              59
+            ],
+            [
+              4,
+              38,
+              55,
+              56,
+              64,
+              68,
+              76,
+              99
+            ],
+            [
+              8,
+              9,
+              29,
+              40,
+              50,
+              70
+            ],
+            [
+              10,
+              24,
+              31,
+              69
+            ],
+            [
+              10,
+              24,
+              31,
+              89
+            ]
+          ]
+        },
+        "comp_recall": 0.6459109700856991,
+        "comp_precision": 0.5505729631698124,
+        "secs": 3.5,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      }
+    },
+    "4": {
+      "bits": {
+        "vocab": {
+          "best_f1": null,
+          "recovered": null,
+          "coverage": null,
+          "covered": null,
+          "n_patterns": null,
+          "kinds": null
+        },
+        "comp_recall": 0.779775065878394,
+        "comp_precision": 0.27857978765811475,
+        "secs": 0.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_willing_cue1": 1.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns": {
+        "vocab": {
+          "best_f1": 0.9376623376623378,
+          "recovered": 11,
+          "coverage": 0.9393939393939393,
+          "covered": 9,
+          "n_patterns": 12,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 3
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.86,
+              1.0
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              20,
+              60,
+              62,
+              68,
+              69,
+              98
+            ],
+            [
+              9,
+              15,
+              22,
+              25,
+              28,
+              80
+            ],
+            [
+              16,
+              32,
+              52,
+              57,
+              61,
+              77,
+              82,
+              99
+            ],
+            [
+              55,
+              74,
+              79,
+              81,
+              83,
+              87
+            ],
+            [
+              13,
+              23,
+              29,
+              40,
+              47,
+              73
+            ],
+            [
+              4,
+              53,
+              54,
+              67,
+              76,
+              78
+            ],
+            [
+              18,
+              21,
+              33,
+              36,
+              58,
+              71,
+              72,
+              94
+            ],
+            [
+              6,
+              17,
+              51,
+              63,
+              66,
+              95
+            ],
+            [
+              1,
+              5,
+              96
+            ],
+            [
+              19,
+              24,
+              48,
+              75,
+              85,
+              88
+            ],
+            [
+              1,
+              5,
+              46,
+              96
+            ],
+            [
+              5,
+              18,
+              96
+            ]
+          ]
+        },
+        "comp_recall": 0.6536315787612227,
+        "comp_precision": 0.5558709982768487,
+        "secs": 3.3,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      },
+      "patterns+stats": {
+        "vocab": {
+          "best_f1": 0.9376623376623378,
+          "recovered": 11,
+          "coverage": 0.9393939393939393,
+          "covered": 9,
+          "n_patterns": 11,
+          "kinds": {
+            "atom": 9,
+            "union": 0,
+            "fragment": 2
+          },
+          "per_atom": {
+            "A": [
+              1.0,
+              1.0
+            ],
+            "B": [
+              1.0,
+              1.0
+            ],
+            "C": [
+              1.0,
+              1.0
+            ],
+            "F1": [
+              1.0,
+              1.0
+            ],
+            "F2": [
+              1.0,
+              1.0
+            ],
+            "F3": [
+              1.0,
+              1.0
+            ],
+            "F4": [
+              1.0,
+              1.0
+            ],
+            "G": [
+              0.8,
+              0.67
+            ],
+            "H": [
+              0.8,
+              0.67
+            ],
+            "CTX1": [
+              0.86,
+              1.0
+            ],
+            "CTX2": [
+              0.86,
+              1.0
+            ]
+          },
+          "supports": [
+            [
+              20,
+              60,
+              62,
+              68,
+              69,
+              98
+            ],
+            [
+              9,
+              15,
+              22,
+              25,
+              28,
+              80
+            ],
+            [
+              16,
+              32,
+              52,
+              57,
+              61,
+              77,
+              82,
+              99
+            ],
+            [
+              55,
+              74,
+              79,
+              81,
+              83,
+              87
+            ],
+            [
+              13,
+              23,
+              29,
+              40,
+              47,
+              73
+            ],
+            [
+              4,
+              53,
+              54,
+              67,
+              76,
+              78
+            ],
+            [
+              18,
+              21,
+              33,
+              36,
+              58,
+              71,
+              72,
+              94
+            ],
+            [
+              6,
+              17,
+              51,
+              63,
+              66,
+              95
+            ],
+            [
+              1,
+              5,
+              46,
+              96
+            ],
+            [
+              19,
+              24,
+              48,
+              75,
+              85,
+              88
+            ],
+            [
+              5,
+              18,
+              96
+            ]
+          ]
+        },
+        "comp_recall": 0.6536315787612227,
+        "comp_precision": 0.5537376118205217,
+        "secs": 4.2,
+        "excl_violation": 0.0,
+        "tri_violation_cue2": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_willing_cue1": 0.0,
+        "ambiguity_acc": 1.0
+      }
+    }
+  },
+  "bit_price_sweep": {
+    "0.0": {
+      "comp_recall": 0.7539458640488051,
+      "comp_precision": 0.2875740284275245,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 1.0,
+      "tri_violation_cue1": 1.0,
+      "tri_willing_cue1": 1.0,
+      "ambiguity_acc": 1.0
+    },
+    "2.0": {
+      "comp_recall": 0.42878295970169034,
+      "comp_precision": 0.7576409703364027,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 1.0,
+      "tri_violation_cue1": 1.0,
+      "tri_willing_cue1": 1.0,
+      "ambiguity_acc": 1.0
+    },
+    "4.0": {
+      "comp_recall": 0.30178440055529837,
+      "comp_precision": 0.8463154116909922,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 1.0,
+      "tri_violation_cue1": 1.0,
+      "tri_willing_cue1": 1.0,
+      "ambiguity_acc": 1.0
+    },
+    "6.0": {
+      "comp_recall": 0.15261318792433343,
+      "comp_precision": 0.8768095274608432,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 1.0,
+      "tri_violation_cue1": 0.0,
+      "tri_willing_cue1": 0.0,
+      "ambiguity_acc": 1.0
+    },
+    "9.0": {
+      "comp_recall": 0.014378998767543661,
+      "comp_precision": 0.973563973063973,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 1.0,
+      "tri_violation_cue1": 0.0,
+      "tri_willing_cue1": 0.0,
+      "ambiguity_acc": 1.0
+    },
+    "13.0": {
+      "comp_recall": 0.0,
+      "comp_precision": 1.0,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 0.0,
+      "tri_violation_cue1": 0.0,
+      "tri_willing_cue1": 0.0,
+      "ambiguity_acc": 0.5
+    },
+    "18.0": {
+      "comp_recall": 0.0,
+      "comp_precision": 1.0,
+      "excl_violation": 0.0,
+      "tri_violation_cue2": 0.0,
+      "tri_violation_cue1": 0.0,
+      "tri_willing_cue1": 0.0,
+      "ambiguity_acc": 0.5
+    }
+  },
+  "read_price_sweep": {
+    "patterns": {
+      "3.0": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0
+      },
+      "1.0": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0
+      },
+      "0.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-1.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-2.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-4.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-8.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      }
+    },
+    "patterns+stats": {
+      "3.0": {
+        "tri_willing_cue1": 0.0,
+        "tri_violation_cue1": 0.0,
+        "tri_violation_cue2": 0.0,
+        "excl_violation": 0.0
+      },
+      "1.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "0.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-1.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-2.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-4.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      },
+      "-8.0": {
+        "tri_willing_cue1": 1.0,
+        "tri_violation_cue1": 1.0,
+        "tri_violation_cue2": 1.0,
+        "excl_violation": 0.0
+      }
+    }
+  },
+  "carving": {
+    "0": {
+      "atoms": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "atoms+stats": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions+stats": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        }
+      }
+    },
+    "1": {
+      "atoms": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "atoms+stats": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions+stats": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        }
+      }
+    },
+    "2": {
+      "atoms": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "atoms+stats": {
+        "3.0": {
+          "tri_willing_cue1": 0.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 1.0,
+          "tri_violation_cue2": 1.0,
+          "excl_violation": 0.0
+        }
+      },
+      "unions+stats": {
+        "3.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "1.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "0.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        },
+        "-2.0": {
+          "tri_willing_cue1": 1.0,
+          "tri_violation_cue1": 0.0,
+          "tri_violation_cue2": 0.0,
+          "excl_violation": 0.0
+        }
+      }
+    }
+  },
+  "mu_sweep": {
+    "1.0": {
+      "comp_recall": 0.8730072992309834,
+      "comp_precision": 0.5239647564198137,
+      "tri_violation_cue2": 1.0,
+      "excl_violation": 0.0,
+      "ambiguity_acc": 1.0,
+      "best_f1": 0.9001907183725367,
+      "coverage": 0.893939393939394,
+      "n_patterns": 14,
+      "recovered": 7,
+      "kinds": {
+        "atom": 9,
+        "union": 0,
+        "fragment": 5
+      }
+    },
+    "2.0": {
+      "comp_recall": 0.7826010321807536,
+      "comp_precision": 0.5668229629417126,
+      "tri_violation_cue2": 1.0,
+      "excl_violation": 0.0,
+      "ambiguity_acc": 1.0,
+      "best_f1": 0.908455181182454,
+      "coverage": 0.9090909090909091,
+      "n_patterns": 16,
+      "recovered": 7,
+      "kinds": {
+        "atom": 9,
+        "union": 0,
+        "fragment": 7
+      }
+    },
+    "3.0": {
+      "comp_recall": 0.6494608356040245,
+      "comp_precision": 0.5621843919177022,
+      "tri_violation_cue2": 0.0,
+      "excl_violation": 0.0,
+      "ambiguity_acc": 1.0,
+      "best_f1": 0.908455181182454,
+      "coverage": 0.9090909090909091,
+      "n_patterns": 15,
+      "recovered": 7,
+      "kinds": {
+        "atom": 9,
+        "union": 0,
+        "fragment": 6
+      }
+    },
+    "5.0": {
+      "comp_recall": 0.5261614291854231,
+      "comp_precision": 0.5133467493769772,
+      "tri_violation_cue2": 0.0,
+      "excl_violation": 0.0,
+      "ambiguity_acc": 1.0,
+      "best_f1": 0.9376623376623378,
+      "coverage": 0.9393939393939393,
+      "n_patterns": 11,
+      "recovered": 11,
+      "kinds": {
+        "atom": 9,
+        "union": 0,
+        "fragment": 2
+      }
+    },
+    "8.0": {
+      "comp_recall": 0.36639051150661056,
+      "comp_precision": 0.43817125004625,
+      "tri_violation_cue2": 0.0,
+      "excl_violation": 0.0,
+      "ambiguity_acc": 1.0,
+      "best_f1": 0.8467532467532468,
+      "coverage": 0.8484848484848484,
+      "n_patterns": 9,
+      "recovered": 10,
+      "kinds": {
+        "atom": 8,
+        "union": 0,
+        "fragment": 1
+      }
+    }
+  },
+  "config": {
+    "n_bits": 100,
+    "n_train": 8000,
+    "mu": 3.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}
