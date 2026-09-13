@@ -1,0 +1,21 @@
+  img  0  beam1 0.4295  beam4 0.4329 (11 on)  beam16 0.4242  best-first 0.4329 (11 on)  cap  3000 exp  0 viol  3000 trunc
+  img  1  beam1 0.4429  beam4 0.4429 (10 on)  beam16 0.4380  best-first 0.4429 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img  2  beam1 0.4373  beam4 0.4373 (10 on)  beam16 0.4373  best-first 0.4373 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img  3  beam1 0.5061  beam4 0.5017 (11 on)  beam16 0.5017  best-first 0.5017 (11 on)  cap  3000 exp  0 viol  3000 trunc
+  img  4  beam1 0.4390  beam4 0.4390 (11 on)  beam16 0.4390  best-first 0.4390 (11 on)  cap  3000 exp  0 viol  3000 trunc
+  img  5  beam1 0.3469  beam4 0.3469 (8 on)  beam16 0.3469  best-first 0.3469 (8 on)  cap  3000 exp  0 viol  3000 trunc
+  img  6  beam1 0.4887  beam4 0.4674 (12 on)  beam16 0.4674  best-first 0.4674 (12 on)  cap  3000 exp  0 viol  3000 trunc
+  img  7  beam1 0.4856  beam4 0.4515 (10 on)  beam16 0.4515  best-first 0.4515 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img  8  beam1 0.4147  beam4 0.4147 (10 on)  beam16 0.4147  best-first 0.4147 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img  9  beam1 0.4573  beam4 0.4198 (9 on)  beam16 0.4198  best-first 0.4198 (9 on)  cap  3000 exp  0 viol  3000 trunc
+  img 10  beam1 0.4482  beam4 0.4433 (9 on)  beam16 0.4433  best-first 0.4433 (9 on)  cap  3000 exp  0 viol  3000 trunc
+  img 11  beam1 0.4062  beam4 0.4062 (10 on)  beam16 0.4062  best-first 0.4062 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img 12  beam1 0.3448  beam4 0.3448 (7 on)  beam16 0.3448  best-first 0.3448 (7 on)  cap  3000 exp  0 viol  3000 trunc
+  img 13  beam1 0.4902  beam4 0.4830 (8 on)  beam16 0.4830  best-first 0.4830 (8 on)  cap  3000 exp  0 viol  3000 trunc
+  img 14  beam1 0.4182  beam4 0.4182 (10 on)  beam16 0.4182  best-first 0.4182 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img 15  beam1 0.4198  beam4 0.4198 (10 on)  beam16 0.4174  best-first 0.4198 (10 on)  cap  3000 exp  0 viol  3000 trunc
+  img 16  beam1 0.2381  beam4 0.2381 (5 on)  beam16 0.2381  best-first 0.2381 (5 on)  cap  3000 exp  0 viol  3000 trunc
+  img 17  beam1 0.3596  beam4 0.3596 (8 on)  beam16 0.3596  best-first 0.3596 (8 on)  cap  3000 exp  0 viol  3000 trunc
+  img 18  beam1 0.5100  beam4 0.5100 (9 on)  beam16 0.5100  best-first 0.5100 (9 on)  cap  3000 exp  0 viol  3000 trunc
+  img 19  beam1 0.4197  beam4 0.4197 (9 on)  beam16 0.4174  best-first 0.4197 (9 on)  cap  3000 exp  0 viol  3000 trunc
+beam4 == best-first on 100%; best-first better on 0% (mean gap 0.0000, max 0.0000); proved 0%; violations 0; truncated 60000; 3000 exp/img; mean cost beam1 0.4251 beam4 0.4198 beam16 0.4189; 651s

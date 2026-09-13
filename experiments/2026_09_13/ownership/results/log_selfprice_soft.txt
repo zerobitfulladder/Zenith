@@ -1,0 +1,5 @@
+  selfprice_soft_s0 step  20  on/img 11.30  price mean 0.0057 [0.0029, 0.0103]  sigma2*784 0.647  hired 80
+  selfprice_soft_s0 step  40  on/img 14.67  price mean 0.0044 [0.0017, 0.0093]  sigma2*784 0.512  hired 87
+  selfprice_soft_s0 step  60  on/img 16.53  price mean 0.0035 [0.0011, 0.0082]  sigma2*784 0.413  hired 89
+  selfprice_soft_s0 step  80  on/img 17.80  price mean 0.0028 [0.0008, 0.0072]  sigma2*784 0.341  hired 89
+selfprice_soft_s0: train 1341s | on/img 18.10  unexplained 0.187  price mean 0.0025 [0.0007,0.0067]  name bits/img 57.4  support 14px  wholes/strokes/dots 0/60/166  tally 0.835

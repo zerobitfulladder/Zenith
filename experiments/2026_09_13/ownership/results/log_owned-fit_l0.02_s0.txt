@@ -1,0 +1,5 @@
+  owned-fit_l0.02_s0 step  20  on/img 2.52  cost 0.425  hired 158
+  owned-fit_l0.02_s0 step  40  on/img 2.38  cost 0.435  hired 158
+  owned-fit_l0.02_s0 step  60  on/img 2.21  cost 0.420  hired 158
+  owned-fit_l0.02_s0 step  80  on/img 2.33  cost 0.406  hired 256
+owned-fit_l0.02_s0: train 411s  rounds 4.5 (cap hits 12)  live 256  hired 257 | test on/img 2.23 (max 5)  unexplained 0.360  support median 68px  overlap 0.208  tally 0.805  sel 0.68

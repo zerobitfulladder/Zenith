@@ -1,0 +1,16 @@
+  step   0  L1 on 21.6  L2 on 9.5  label_w 0.96  theta1 0.10 theta2 0.10  0s
+  step  20  L1 on 4.0  L2 on 1.2  label_w 1.77  theta1 3.70 theta2 5.11  5s
+  step  40  L1 on 1.4  L2 on 0.7  label_w 6.79  theta1 6.52 theta2 7.78  8s
+  step  60  L1 on 4.2  L2 on 2.4  label_w 4.31  theta1 2.44 theta2 2.86  12s
+  step  80  L1 on 5.0  L2 on 2.9  label_w 2.98  theta1 1.57 theta2 1.88  16s
+  step 100  L1 on 5.0  L2 on 3.1  label_w 2.94  theta1 1.58 theta2 2.04  19s
+  step 120  L1 on 5.0  L2 on 3.3  label_w 3.07  theta1 1.59 theta2 2.08  23s
+  phase two step 140  L1 on 5.7  L2 on 2.3  top label share 0.00  27s
+  phase two step 160  L1 on 4.5  L2 on 2.9  top label share 0.00  30s
+  phase two step 180  L1 on 4.7  L2 on 2.7  top label share 0.00  34s
+  phase two step 200  L1 on 4.6  L2 on 3.6  top label share 0.00  38s
+  phase two step 220  L1 on 5.0  L2 on 2.3  top label share 0.00  42s
+  phase two step 240  L1 on 4.7  L2 on 2.7  top label share 0.00  46s
+feedback    : label at top 0.466 (covered 81%, 0.579 when covered)  unexplained 0.257  L1 on 5.1 dead 1%  L2 on 1.2 dead 32%  L2 configs 321
+no_feedback : label at top 0.425 (covered 78%, 0.545 when covered)  unexplained 0.247  L1 on 5.4 dead 1%  L2 on 1.1 dead 29%  L2 configs 298
+L2: members median 10 (mean 10.2), wrappers 0%, top-1 line share median 0.08, label share median 0.76, L1 cells a top cell proposes (settled) median 3  |  49s

@@ -1,0 +1,5 @@
+  hard_l0.01_s0 step  20  on/img 13.22  cost 0.395  hired 98
+  hard_l0.01_s0 step  40  on/img 15.11  cost 0.403  hired 115
+  hard_l0.01_s0 step  60  on/img 16.59  cost 0.395  hired 120
+  hard_l0.01_s0 step  80  on/img 17.45  cost 0.398  hired 120
+hard_l0.01_s0: train 1172s  rounds 17.4 (cap hits 31)  live 241  hired 123 | test on/img 17.68 (max 20)  unexplained 0.221  support median 7px  overlap 0.008  tally 0.844  sel 0.39

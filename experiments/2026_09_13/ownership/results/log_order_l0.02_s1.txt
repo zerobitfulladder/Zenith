@@ -1,0 +1,5 @@
+  order_l0.02_s1 step  20  on/img 1.77  cost 0.326  hired 136
+  order_l0.02_s1 step  40  on/img 2.16  cost 0.339  hired 155
+  order_l0.02_s1 step  60  on/img 2.12  cost 0.333  hired 155
+  order_l0.02_s1 step  80  on/img 2.01  cost 0.317  hired 166
+order_l0.02_s1: train 403s  rounds 4.3 (cap hits 5)  live 256  hired 169 | test on/img 2.11 (max 6)  unexplained 0.275  support median 78px  overlap 0.209  tally 0.846  sel 0.66

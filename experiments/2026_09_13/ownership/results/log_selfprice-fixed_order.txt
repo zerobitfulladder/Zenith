@@ -1,0 +1,5 @@
+  selfprice-fixed_order_s0 step  20  on/img 2.27  price mean 0.0200 [0.0097, 0.0287]  sigma2*784 0.675  hired 129
+  selfprice-fixed_order_s0 step  40  on/img 2.55  price mean 0.0200 [0.0087, 0.0306]  sigma2*784 0.547  hired 160
+  selfprice-fixed_order_s0 step  60  on/img 2.50  price mean 0.0200 [0.0082, 0.0320]  sigma2*784 0.459  hired 160
+  selfprice-fixed_order_s0 step  80  on/img 2.57  price mean 0.0200 [0.0080, 0.0334]  sigma2*784 0.396  hired 172
+selfprice-fixed_order_s0: train 158s | on/img 2.63  unexplained 0.269  price mean 0.0200 [0.0080,0.0345]  name bits/img 15.3  support 76px  wholes/strokes/dots 158/59/39  tally 0.851

@@ -1,0 +1,5 @@
+  soft_l0.02_s0 step  20  on/img 4.53  cost 0.386  hired 144
+  soft_l0.02_s0 step  40  on/img 4.59  cost 0.388  hired 160
+  soft_l0.02_s0 step  60  on/img 4.65  cost 0.371  hired 160
+  soft_l0.02_s0 step  80  on/img 4.83  cost 0.369  hired 162
+soft_l0.02_s0: train 624s  rounds 6.7 (cap hits 27)  live 256  hired 162 | test on/img 4.77 (max 9)  unexplained 0.269  support median 41px  overlap 0.111  tally 0.861  sel 0.56

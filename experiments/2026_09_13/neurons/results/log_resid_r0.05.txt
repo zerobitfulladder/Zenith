@@ -1,0 +1,8 @@
+  resid_r0.05 step   0  on/img 19.84  unexpl 0.434  theta mean 0.050  cells firing this batch 201  0s
+  resid_r0.05 step  10  on/img 22.12  unexpl 0.283  theta mean 0.084  cells firing this batch 253  1s
+  resid_r0.05 step  20  on/img 10.77  unexpl 0.356  theta mean 0.140  cells firing this batch 246  2s
+  resid_r0.05 step  30  on/img 8.99  unexpl 0.348  theta mean 0.148  cells firing this batch 237  3s
+  resid_r0.05 step  40  on/img 10.43  unexpl 0.319  theta mean 0.126  cells firing this batch 242  3s
+  resid_r0.05 step  50  on/img 12.42  unexpl 0.285  theta mean 0.106  cells firing this batch 253  3s
+  resid_r0.05 step  60  on/img 13.06  unexpl 0.267  theta mean 0.097  cells firing this batch 256  3s
+resid_r0.05: unexplained 0.294  on/img 13.2  dead 0%  support 161px  wholes/strokes/dots 256/0/0  configs 1982  theta 0.096  4s

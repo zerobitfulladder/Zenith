@@ -1,0 +1,8 @@
+  pearson_r0.035_b1_h144 step   0  on/img 0.50  unexpl 0.987  theta 0.099  firing 24/144  0s
+  pearson_r0.035_b1_h144 step  20  on/img 6.04  unexpl 0.415  theta 0.188  firing 120/144  1s
+  pearson_r0.035_b1_h144 step  40  on/img 4.08  unexpl 0.385  theta 0.162  firing 93/144  2s
+  pearson_r0.035_b1_h144 step  60  on/img 4.40  unexpl 0.374  theta 0.111  firing 107/144  2s
+  pearson_r0.035_b1_h144 step  80  on/img 4.48  unexpl 0.339  theta 0.089  firing 114/144  2s
+  pearson_r0.035_b1_h144 step 100  on/img 4.58  unexpl 0.346  theta 0.083  firing 120/144  3s
+  pearson_r0.035_b1_h144 step 120  on/img 4.79  unexpl 0.363  theta 0.087  firing 116/144  4s
+pearson_r0.035_b1_h144: unexplained 0.420 (median 0.398, blow-ups 0%, silent 0%)  on/img 4.7  dead 7%  size 82px  wholes/strokes/dots 123/11/0  overlap 0.396 (nearest 5: 0.771)  smoothness 0.86  configs 1827  4s

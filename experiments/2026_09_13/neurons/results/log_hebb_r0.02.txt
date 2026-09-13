@@ -1,0 +1,8 @@
+  hebb_r0.02 step   0  on/img 19.84  unexpl 0.837  theta mean 0.052  cells firing this batch 201  0s
+  hebb_r0.02 step  10  on/img 5.05  unexpl 1.584  theta mean 0.077  cells firing this batch 213  1s
+  hebb_r0.02 step  20  on/img 6.80  unexpl 3.585  theta mean 0.101  cells firing this batch 235  1s
+  hebb_r0.02 step  30  on/img 5.74  unexpl 5.131  theta mean 0.112  cells firing this batch 231  1s
+  hebb_r0.02 step  40  on/img 5.23  unexpl 4.833  theta mean 0.115  cells firing this batch 234  2s
+  hebb_r0.02 step  50  on/img 4.47  unexpl 2.163  theta mean 0.108  cells firing this batch 243  2s
+  hebb_r0.02 step  60  on/img 5.34  unexpl 3.826  theta mean 0.097  cells firing this batch 243  2s
+hebb_r0.02: unexplained 3.314  on/img 5.4  dead 0%  support 152px  wholes/strokes/dots 249/7/0  configs 1163  theta 0.096  3s

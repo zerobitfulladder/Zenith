@@ -1,0 +1,8 @@
+  step   0  cells on/img 31.0  inked windows/img 24.4  best corr in inked windows 0.134  theta 0.100  cells firing this batch 282/300  0s
+  step  20  cells on/img 17.6  inked windows/img 24.4  best corr in inked windows 0.633  theta 0.132  cells firing this batch 249/300  1s
+  step  40  cells on/img 15.9  inked windows/img 24.3  best corr in inked windows 0.634  theta 0.115  cells firing this batch 265/300  2s
+  step  60  cells on/img 16.2  inked windows/img 24.5  best corr in inked windows 0.636  theta 0.097  cells firing this batch 273/300  3s
+  step  80  cells on/img 16.2  inked windows/img 24.4  best corr in inked windows 0.639  theta 0.093  cells firing this batch 275/300  4s
+  step 100  cells on/img 16.5  inked windows/img 24.3  best corr in inked windows 0.632  theta 0.094  cells firing this batch 268/300  5s
+  step 120  cells on/img 17.4  inked windows/img 24.4  best corr in inked windows 0.631  theta 0.095  cells firing this batch 271/300  6s
+held out: cells on/img 16.8 over 24.4 inked windows (0.69 per window, 13% with 2+, 48% silent)  unexplained patch variance 0.726  pixel unexplained 0.876  dead cells 1%  configs 1999  6s

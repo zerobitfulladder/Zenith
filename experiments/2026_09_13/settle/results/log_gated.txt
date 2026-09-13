@@ -1,0 +1,10 @@
+  gated step   0  L1 on 4.11  L2 on 0.00  live2 8  hired 8  settle delta 0.0000  0s
+  gated step  10  L1 on 4.02  L2 on 2.26  live2 88  hired 88  settle delta 0.0000  1s
+  gated step  20  L1 on 3.89  L2 on 2.39  live2 128  hired 128  settle delta 0.0000  1s
+  gated step  30  L1 on 3.90  L2 on 2.30  live2 128  hired 128  settle delta 0.0001  2s
+  gated step  40  L1 on 3.87  L2 on 2.31  live2 128  hired 128  settle delta 0.0001  2s
+  gated step  50  L1 on 3.86  L2 on 2.10  live2 128  hired 128  settle delta 0.0000  3s
+  gated step  60  L1 on 4.02  L2 on 2.29  live2 128  hired 128  settle delta 0.0000  3s
+gated  feedback    : label at top 0.749 (covered 100%)  tally L1 0.835 L2 0.779  probe L1 0.830 L2 0.791  unexpl 0.310  L1 on 3.8 L2 on 2.3  live2 128  configs L1 1731 L2 1286
+gated  no_feedback : label at top 0.736 (covered 99%)  tally L1 0.847 L2 0.782  probe L1 0.837 L2 0.786  unexpl 0.283  L1 on 4.2 L2 on 2.4  live2 128  configs L1 1812 L2 1399
+gated: L2 128 live, members median 2 (mean 1.7), wrappers 17%, label share 0.68, hired 128 | train 4s total 7s

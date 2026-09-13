@@ -1,0 +1,8 @@
+  em[hard] pass 0: cost 0.4319  unexplained 0.2527  on/img 8.96  templates that owned something 256  261s
+  em[hard] pass 1: cost 0.3767  unexplained 0.2336  on/img 7.15  templates that owned something 256  500s
+  em[hard] pass 2: cost 0.3517  unexplained 0.2233  on/img 6.42  templates that owned something 256  759s
+  em[hard] pass 3: cost 0.3410  unexplained 0.2185  on/img 6.12  templates that owned something 256  1008s
+  em[hard] pass 4: cost 0.3357  unexplained 0.2157  on/img 6.00  templates that owned something 256  1214s
+  em[hard] pass 5: cost 0.3328  unexplained 0.2138  on/img 5.95  templates that owned something 256  1353s
+  em[hard] pass 6: cost 0.3310  unexplained 0.2127  on/img 5.91  templates that owned something 256  1477s
+em[hard] test: cost 0.3427  unexplained 0.223  on/img 6.01  support 24px  wholes/strokes/dots 0/168/88  tally 0.875  1645s

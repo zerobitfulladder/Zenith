@@ -1,0 +1,25 @@
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+backprop       seed 0  train   0.9s  L1 tally 0.569 probe 0.928 act 0.814 dead 0.01 sel 0.14  L2 tally 0.599 probe 0.931 act 0.756 dead 0.12 sel 0.14  L3 tally 0.336 probe 0.933 act 0.738 dead 0.14 sel 0.15  head 0.913  tally-all 0.589
+search         seed 0  train   3.6s  L1 tally 0.839 probe 0.864 act 0.016 dead 0.32 sel 0.48  L2 tally 0.760 probe 0.783 act 0.020 dead 0.31 sel 0.50  L3 tally 0.695 probe 0.720 act 0.027 dead 0.17 sel 0.55  hired [173, 65, 40]  tally-all 0.820
+search+repel   seed 0  train   6.1s  L1 tally 0.822 probe 0.855 act 0.019 dead 0.44 sel 0.53  L2 tally 0.671 probe 0.714 act 0.020 dead 0.45 sel 0.65  L3 tally 0.466 probe 0.567 act 0.026 dead 0.56 sel 0.70  hired [413, 172, 68]  tally-all 0.806
+/home/lavender/Projects/Geodesique/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+backprop       seed 1  train   0.6s  L1 tally 0.497 probe 0.923 act 0.788 dead 0.02 sel 0.16  L2 tally 0.432 probe 0.926 act 0.779 dead 0.09 sel 0.15  L3 tally 0.421 probe 0.921 act 0.729 dead 0.14 sel 0.15  head 0.912  tally-all 0.481
+search         seed 1  train   3.5s  L1 tally 0.843 probe 0.845 act 0.016 dead 0.31 sel 0.46  L2 tally 0.741 probe 0.756 act 0.018 dead 0.38 sel 0.51  L3 tally 0.692 probe 0.709 act 0.027 dead 0.11 sel 0.57  hired [178, 59, 37]  tally-all 0.810
+search+repel   seed 1  train   6.2s  L1 tally 0.811 probe 0.844 act 0.018 dead 0.43 sel 0.54  L2 tally 0.667 probe 0.704 act 0.018 dead 0.46 sel 0.63  L3 tally 0.328 probe 0.414 act 0.021 dead 0.56 sel 0.71  hired [416, 180, 68]  tally-all 0.803
+saved /home/lavender/Projects/Geodesique/experiments/2026_09_13/search_mlp/results/results.json

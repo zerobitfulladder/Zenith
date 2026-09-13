@@ -1,0 +1,5 @@
+  owned-px_l0.02_s0 step  20  on/img 4.09  cost 0.373  hired 146
+  owned-px_l0.02_s0 step  40  on/img 4.12  cost 0.366  hired 160
+  owned-px_l0.02_s0 step  60  on/img 4.27  cost 0.346  hired 160
+  owned-px_l0.02_s0 step  80  on/img 4.40  cost 0.348  hired 169
+owned-px_l0.02_s0: train 225s  rounds 6.7 (cap hits 22)  live 256  hired 170 | test on/img 4.36 (max 8)  unexplained 0.255  support median 40px  overlap 0.122  tally 0.857  sel 0.59

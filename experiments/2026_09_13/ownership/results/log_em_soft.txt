@@ -1,0 +1,8 @@
+  em[soft] pass 0: cost 0.3598  unexplained 0.2663  on/img 4.68  templates that owned something 256  163s
+  em[soft] pass 1: cost 0.3319  unexplained 0.2392  on/img 4.64  templates that owned something 256  317s
+  em[soft] pass 2: cost 0.3246  unexplained 0.2313  on/img 4.67  templates that owned something 256  499s
+  em[soft] pass 3: cost 0.3208  unexplained 0.2268  on/img 4.70  templates that owned something 256  705s
+  em[soft] pass 4: cost 0.3186  unexplained 0.2240  on/img 4.73  templates that owned something 256  912s
+  em[soft] pass 5: cost 0.3172  unexplained 0.2223  on/img 4.75  templates that owned something 256  1112s
+  em[soft] pass 6: cost 0.3158  unexplained 0.2206  on/img 4.76  templates that owned something 256  1259s
+em[soft] test: cost 0.3300  unexplained 0.232  on/img 4.90  support 33px  wholes/strokes/dots 7/227/22  tally 0.876  1481s

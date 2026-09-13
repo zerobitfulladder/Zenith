@@ -1,0 +1,10 @@
+  avg step   0  L1 on 4.11  L2 on 0.00  live2 8  hired 8  settle delta 0.0000  0s
+  avg step  10  L1 on 4.02  L2 on 2.30  live2 88  hired 88  settle delta 0.0000  1s
+  avg step  20  L1 on 3.85  L2 on 2.46  live2 128  hired 128  settle delta 0.0000  2s
+  avg step  30  L1 on 3.80  L2 on 2.48  live2 128  hired 128  settle delta 0.0000  2s
+  avg step  40  L1 on 3.87  L2 on 2.48  live2 128  hired 128  settle delta 0.0000  3s
+  avg step  50  L1 on 3.88  L2 on 2.40  live2 128  hired 128  settle delta 0.0000  3s
+  avg step  60  L1 on 3.92  L2 on 2.30  live2 128  hired 128  settle delta 0.0000  4s
+avg    feedback    : label at top 0.749 (covered 100%)  tally L1 0.834 L2 0.788  probe L1 0.824 L2 0.789  unexpl 0.310  L1 on 3.8 L2 on 2.3  live2 127  configs L1 1732 L2 1324
+avg    no_feedback : label at top 0.741 (covered 99%)  tally L1 0.844 L2 0.780  probe L1 0.834 L2 0.781  unexpl 0.283  L1 on 4.2 L2 on 2.4  live2 128  configs L1 1812 L2 1405
+avg: L2 128 live, members median 1 (mean 1.6), wrappers 34%, label share 0.66, hired 128 | train 4s total 8s

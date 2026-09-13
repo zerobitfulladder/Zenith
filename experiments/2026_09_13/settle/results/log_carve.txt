@@ -1,0 +1,10 @@
+  carve step   0  L1 on 4.11  L2 on 0.00  live2 0  hired 0  settle delta 0.0000  0s
+  carve step  10  L1 on 4.24  L2 on 0.00  live2 0  hired 0  settle delta 0.0000  1s
+  carve step  20  L1 on 4.09  L2 on 2.00  live2 48  hired 48  settle delta 0.0000  1s
+  carve step  30  L1 on 3.91  L2 on 3.27  live2 116  hired 116  settle delta 0.0006  2s
+  carve step  40  L1 on 3.98  L2 on 3.35  live2 128  hired 128  settle delta 0.0005  3s
+  carve step  50  L1 on 3.96  L2 on 3.14  live2 128  hired 128  settle delta 0.0004  3s
+  carve step  60  L1 on 4.01  L2 on 3.32  live2 128  hired 128  settle delta 0.0005  4s
+carve  feedback    : label at top 0.620 (covered 100%)  tally L1 0.847 L2 0.784  probe L1 0.835 L2 0.801  unexpl 0.314  L1 on 3.8 L2 on 3.2  live2 128  configs L1 1753 L2 1607
+carve  no_feedback : label at top 0.620 (covered 100%)  tally L1 0.848 L2 0.779  probe L1 0.844 L2 0.806  unexpl 0.283  L1 on 4.2 L2 on 3.8  live2 128  configs L1 1812 L2 1721
+carve: L2 128 live, members median 2 (mean 2.4), wrappers 0%, label share 0.37, hired 128 | train 4s total 8s

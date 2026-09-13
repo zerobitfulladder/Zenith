@@ -1,0 +1,5 @@
+  owned_l0.02_s0 step  20  on/img 3.44  cost 0.378  hired 149
+  owned_l0.02_s0 step  40  on/img 3.32  cost 0.390  hired 160
+  owned_l0.02_s0 step  60  on/img 3.39  cost 0.370  hired 160
+  owned_l0.02_s0 step  80  on/img 3.45  cost 0.370  hired 180
+owned_l0.02_s0: train 534s  rounds 5.8 (cap hits 10)  live 256  hired 184 | test on/img 3.35 (max 7)  unexplained 0.298  support median 54px  overlap 0.201  tally 0.838  sel 0.67

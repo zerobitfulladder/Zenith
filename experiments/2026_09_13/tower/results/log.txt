@@ -1,0 +1,9 @@
+  step  10  L1 on 5.80  L2 on 5.20  tower cost 0.780  hired 0/28  recycled 0/0  61s
+  step  20  L1 on 5.91  L2 on 5.29  tower cost 0.684  hired 0/29  recycled 0/1  128s
+  step  30  L1 on 6.21  L2 on 5.73  tower cost 0.644  hired 0/29  recycled 0/1  189s
+  step  40  L1 on 6.01  L2 on 5.48  tower cost 0.656  hired 0/29  recycled 0/1  249s
+  step  50  L1 on 6.59  L2 on 5.88  tower cost 0.665  hired 0/29  recycled 0/1  311s
+  step  60  L1 on 6.17  L2 on 5.56  tower cost 0.683  hired 0/29  recycled 0/1  373s
+feedback    : label at top 0.611 (covered 100%, 0.611 when covered)  tally L1 0.843 L2 0.782  probe L1 0.861 L2 0.791  L1 on 6.2 L2 on 5.0  configs L1 1895 L2 1867
+no feedback : label at top 0.613 (covered 100%, 0.613 when covered)  tally L1 0.843 L2 0.783  probe L1 0.862 L2 0.790  L1 on 6.2 L2 on 5.0  configs L1 1890 L2 1860
+L2: 128 live, members median 1, wrappers 82%, label share median 0.08, hired 30, recycled 1 | L1: support 33px, wholes/strokes/dots 4/224/28, hired 0, recycled 0 | train 390s total 723s
