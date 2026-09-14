@@ -1,0 +1,12 @@
+{
+ "counted_scorecard": 0.8046,
+ "best_fit_scorecard": 0.9195,
+ "best_fit_scorecard_mean_conf": 0.8926,
+ "best_fit_scorecard_median_gap": 3.9,
+ "best_fit_scorecard_binarised": 0.9132,
+ "best_fit_scorecard_binarised_mean_conf": 0.8903,
+ "best_fit_scorecard_binarised_median_gap": 3.9,
+ "cost_of_counting_independently": 0.1149,
+ "whole_pattern_3x3_for_reference": 0.9251,
+ "seconds": 59.5
+}

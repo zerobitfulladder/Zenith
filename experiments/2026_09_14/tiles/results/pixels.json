@@ -1,0 +1,114 @@
+{
+ "1x1_windows_current_rules": {
+  "acc": 0.1173,
+  "note": "every grid is 1.0, every score 0, so the read falls back on the prior alone"
+ },
+ "per_pixel_counted_ink_and_blank": {
+  "acc": 0.8319,
+  "mean_conf": 0.9862,
+  "frac_conf_over_99": 0.9081,
+  "median_gap": 29.8,
+  "frac_gap_under_5": 0.0997,
+  "by_gap": {
+   "0-1": [
+    0.391,
+    184
+   ],
+   "1-2": [
+    0.414,
+    203
+   ],
+   "2-5": [
+    0.466,
+    610
+   ],
+   "5-10": [
+    0.588,
+    872
+   ],
+   "10-20": [
+    0.716,
+    1648
+   ],
+   "20-40": [
+    0.912,
+    2701
+   ],
+   "40-inf": [
+    0.984,
+    3782
+   ]
+  }
+ },
+ "per_pixel_counted_ink_only": {
+  "acc": 0.6887,
+  "mean_conf": 0.9691,
+  "frac_conf_over_99": 0.806,
+  "median_gap": 15.0,
+  "frac_gap_under_5": 0.2094,
+  "by_gap": {
+   "0-1": [
+    0.449,
+    443
+   ],
+   "1-2": [
+    0.396,
+    412
+   ],
+   "2-5": [
+    0.451,
+    1239
+   ],
+   "5-10": [
+    0.535,
+    1691
+   ],
+   "10-20": [
+    0.633,
+    2131
+   ],
+   "20-40": [
+    0.857,
+    2293
+   ],
+   "40-inf": [
+    0.977,
+    1791
+   ]
+  }
+ },
+ "same_form_fitted": {
+  "acc": 0.9132,
+  "mean_conf": 0.8903,
+  "frac_conf_over_99": 0.3063,
+  "median_gap": 3.9,
+  "frac_gap_under_5": 0.675,
+  "by_gap": {
+   "0-1": [
+    0.543,
+    1088
+   ],
+   "1-2": [
+    0.813,
+    1189
+   ],
+   "2-5": [
+    0.969,
+    4473
+   ],
+   "5-10": [
+    0.997,
+    3093
+   ],
+   "10-20": [
+    1.0,
+    157
+   ]
+  }
+ },
+ "cost_of_counting_not_fitting": 0.0813,
+ "blank_half_worth": 0.1432,
+ "tiles_4x4_for_reference": 0.8046,
+ "whole_pattern_3x3_for_reference": 0.9251,
+ "seconds": 37.5
+}

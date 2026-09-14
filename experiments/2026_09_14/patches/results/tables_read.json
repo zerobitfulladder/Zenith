@@ -1,0 +1,47 @@
+{
+ "tag": "tables",
+ "n_test": 10000,
+ "seconds": 3.48,
+ "reads": {
+  "ink  (sum x.logT)": 0.8397,
+  "shape  (sum x/ink . logT)": 0.8172,
+  "corr  (patch vs table)": 0.7964
+ },
+ "ink_mean_conf": 0.9982,
+ "ink_frac_conf_over_99": 0.9882,
+ "ink_median_gap_nats": 236.0,
+ "ink_frac_gap_under_5_nats": 0.0129,
+ "collapse_max_abs_diff": 0.024755562386417296,
+ "collapse_rel_diff": 2.965138686342322e-06,
+ "collapse_same_prediction": 1.0,
+ "acc_by_gap_ink": {
+  "0-1": [
+   0.429,
+   21
+  ],
+  "1-2": [
+   0.441,
+   34
+  ],
+  "2-5": [
+   0.311,
+   74
+  ],
+  "5-10": [
+   0.414,
+   128
+  ],
+  "10-20": [
+   0.414,
+   261
+  ],
+  "20-40": [
+   0.463,
+   471
+  ],
+  "40-inf": [
+   0.885,
+   9011
+  ]
+ }
+}

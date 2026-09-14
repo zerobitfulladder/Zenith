@@ -1,0 +1,37 @@
+{
+ "rows": [
+  {
+   "step": 1,
+   "pixels_kept": 784,
+   "counted": 0.8225,
+   "fitted": 0.9195,
+   "gap": 0.097,
+   "neighbour_corr_within_digit": 0.665
+  },
+  {
+   "step": 2,
+   "pixels_kept": 196,
+   "counted": 0.8096,
+   "fitted": 0.9032,
+   "gap": 0.0936,
+   "neighbour_corr_within_digit": 0.313
+  },
+  {
+   "step": 3,
+   "pixels_kept": 100,
+   "counted": 0.7725,
+   "fitted": 0.8393,
+   "gap": 0.0668,
+   "neighbour_corr_within_digit": 0.103
+  },
+  {
+   "step": 4,
+   "pixels_kept": 49,
+   "counted": 0.6751,
+   "fitted": 0.7348,
+   "gap": 0.0597,
+   "neighbour_corr_within_digit": 0.019
+  }
+ ],
+ "seconds": 73.1
+}
