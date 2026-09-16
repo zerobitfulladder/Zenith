@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tally Sheet Model</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f4f6f4;
+  --card:#ffffff;
+  --ink:#161a18;
+  --ink-2:#4a524d;
+  --ink-3:#78827b;
+  --rule:#d9ded9;
+  --rule-2:#e9ece9;
+  --accent:#0d5f54;
+  --accent-soft:#e3efec;
+  --warn:#9c6410;
+  --warn-soft:#f7eedd;
+  --bad:#a33223;
+  --bad-soft:#f8e5e2;
+  --good:#2c6e33;
+  --good-soft:#e4f0e2;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141714; --card:#1b201c; --ink:#eef2ee; --ink-2:#b3bcb5; --ink-3:#8b958d;
+    --rule:#2f3630; --rule-2:#242a25;
+    --accent:#5fc0ae; --accent-soft:#1b2f2c;
+    --warn:#d69f4c; --warn-soft:#2e2718;
+    --bad:#e08a7a; --bad-soft:#2f1e1b;
+    --good:#7fc184; --good-soft:#1d2a1e;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141714; --card:#1b201c; --ink:#eef2ee; --ink-2:#b3bcb5; --ink-3:#8b958d;
+  --rule:#2f3630; --rule-2:#242a25;
+  --accent:#5fc0ae; --accent-soft:#1b2f2c;
+  --warn:#d69f4c; --warn-soft:#2e2718;
+  --bad:#e08a7a; --bad-soft:#2f1e1b;
+  --good:#7fc184; --good-soft:#1d2a1e;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:18px; line-height:1.65;
+}
+.wrap{max-width:780px; margin:0 auto; padding-block:56px 96px; padding-left:20px; padding-right:20px;}
+h1,h2,h3{text-wrap:balance; line-height:1.2; margin:0;}
+h1{font-size:2.6rem; font-weight:700; letter-spacing:-.015em;}
+h2{font-size:1.7rem; font-weight:700; margin-top:3.2rem; letter-spacing:-.01em;}
+h3{font-size:1.18rem; font-weight:600; margin-top:2.2rem;}
+p{margin:1rem 0}
+ul,ol{margin:1rem 0; padding-left:1.3rem}
+li{margin:.45rem 0}
+strong{font-weight:600}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+code{font-size:.86em; background:var(--rule-2); padding:.12em .38em; border-radius:3px}
+a{color:var(--accent)}
+
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:.7rem;
+}
+.lede{font-size:1.2rem; color:var(--ink-2); margin-top:1.1rem}
+.rule{height:1px; background:var(--rule); border:0; margin:3rem 0}
+
+/* table of contents */
+.toc{
+  background:var(--card); border:1px solid var(--rule); border-radius:4px;
+  padding:1.2rem 1.4rem; margin:2.4rem 0;
+}
+.toc h4{
+  margin:0 0 .7rem; font-family:"IBM Plex Mono",monospace; font-size:.72rem;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); font-weight:600;
+}
+.toc ol{margin:0; padding-left:1.4rem; font-size:.95rem}
+.toc li{margin:.3rem 0}
+.toc a{text-decoration:none; color:var(--ink-2)}
+.toc a:hover{color:var(--accent); text-decoration:underline}
+
+/* data tables */
+.tablebox{overflow-x:auto; margin:1.5rem 0; border:1px solid var(--rule); border-radius:4px; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-family:"IBM Plex Mono",monospace;
+  font-size:.82rem; font-variant-numeric:tabular-nums}
+th,td{padding:.45rem .6rem; text-align:center; border-bottom:1px solid var(--rule-2); white-space:nowrap}
+th{font-weight:600; color:var(--ink-3); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase;
+  border-bottom:1px solid var(--rule)}
+tbody tr:last-child td{border-bottom:0}
+td.lbl,th.lbl{text-align:left; color:var(--ink-2)}
+.sep-l{border-left:1px solid var(--rule)}
+.on{color:var(--accent); font-weight:600}
+.off{color:var(--ink-3)}
+.hl-relevant{background:var(--accent-soft)}
+.hl-noise{background:var(--warn-soft)}
+.hl-row{background:var(--accent-soft)}
+
+.caption{font-size:.87rem; color:var(--ink-3); margin-top:-.6rem; margin-bottom:1.6rem; font-style:italic}
+
+/* callouts */
+.note{
+  border-left:3px solid var(--accent); background:var(--accent-soft);
+  padding:1rem 1.2rem; margin:1.6rem 0; border-radius:0 4px 4px 0;
+}
+.note.warn{border-left-color:var(--warn); background:var(--warn-soft)}
+.note.bad{border-left-color:var(--bad); background:var(--bad-soft)}
+.note.good{border-left-color:var(--good); background:var(--good-soft)}
+.note p{margin:.5rem 0}
+.note p:first-child{margin-top:0}
+.note p:last-child{margin-bottom:0}
+.note .tag{
+  display:block; font-family:"IBM Plex Mono",monospace; font-size:.68rem;
+  letter-spacing:.13em; text-transform:uppercase; font-weight:600; margin-bottom:.45rem; color:var(--accent);
+}
+.note.warn .tag{color:var(--warn)}
+.note.bad .tag{color:var(--bad)}
+.note.good .tag{color:var(--good)}
+
+/* math / arithmetic blocks */
+.calc{
+  font-family:"IBM Plex Mono",monospace; font-size:.85rem; line-height:1.9;
+  background:var(--card); border:1px solid var(--rule); border-radius:4px;
+  padding:1rem 1.2rem; margin:1.4rem 0; overflow-x:auto; white-space:pre;
+  font-variant-numeric:tabular-nums;
+}
+.calc .cmt{color:var(--ink-3)}
+.calc .res{color:var(--accent); font-weight:600}
+
+/* diagram */
+.diagram{
+  font-family:"IBM Plex Mono",monospace; font-size:.8rem; line-height:1.5;
+  background:var(--card); border:1px solid var(--rule); border-radius:4px;
+  padding:1.3rem; margin:1.6rem 0; overflow-x:auto; white-space:pre; color:var(--ink-2);
+}
+
+/* step markers */
+.step{display:flex; gap:1rem; margin:1.8rem 0; align-items:flex-start}
+.step-n{
+  flex:0 0 auto; width:2rem; height:2rem; border-radius:50%;
+  background:var(--accent); color:#fff; text-align:center; line-height:2rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.8rem; font-weight:600; margin-top:.15rem;
+}
+.step-body{flex:1; min-width:0}
+.step-body p:first-child{margin-top:0}
+.step-body h3{margin-top:0}
+
+/* glossary */
+.gloss{border-top:1px solid var(--rule); margin-top:1.6rem}
+.gloss dt{
+  font-family:"IBM Plex Mono",monospace; font-size:.83rem; font-weight:600;
+  color:var(--accent); margin-top:1.1rem;
+}
+.gloss dd{margin:.25rem 0 0; color:var(--ink-2); font-size:.97rem}
+
+.tally{letter-spacing:.06em; color:var(--accent)}
+.big-q{font-size:1.28rem; font-weight:600; color:var(--ink); margin:2rem 0 .4rem}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+@media (max-width:520px){
+  body{font-size:17px}
+  h1{font-size:2rem}
+  h2{font-size:1.45rem}
+  .wrap{padding-block:36px 64px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+@media print{
+  :root{
+    --paper:#ffffff; --card:#ffffff; --ink:#111; --ink-2:#333; --ink-3:#666;
+    --rule:#bbb; --rule-2:#ddd;
+    --accent:#0a4d44; --accent-soft:#eaf3f1;
+    --warn:#7d5210; --warn-soft:#f8f1e2;
+    --bad:#8a2a1d; --bad-soft:#faeae7;
+    --good:#255c2b; --good-soft:#eaf3e8;
+  }
+  body{font-size:10.5pt; line-height:1.5; background:#fff}
+  .wrap{max-width:none; padding:0 0 0 0}
+  h1{font-size:24pt; margin-bottom:0}
+  h2{font-size:15pt; margin-top:20pt; break-after:avoid; page-break-after:avoid}
+  h3{font-size:11.5pt; margin-top:12pt; break-after:avoid; page-break-after:avoid}
+  p,li{orphans:3; widows:3}
+  .toc{break-after:page; page-break-after:always}
+  .tablebox,.calc,.diagram,.note,.step{break-inside:avoid; page-break-inside:avoid}
+  .tablebox,.calc,.diagram{overflow:visible}
+  table{font-size:8.5pt}
+  .calc{font-size:8.5pt; line-height:1.65}
+  .diagram{font-size:8pt; line-height:1.4}
+  .gloss dt{break-after:avoid; page-break-after:avoid}
+  .gloss dd{break-inside:avoid; page-break-inside:avoid}
+  a{color:var(--accent); text-decoration:none}
+  .rule{margin:16pt 0}
+}
+@page{ margin:16mm 15mm; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">A ground-up explainer</div>
+<h1>The Tally Sheet Model</h1>
+<p class="lede">How a machine can learn to turn one list of bits into another — using nothing but counters that go up by one. No calculus, no neural networks, no jargon assumed.</p>
+
+<div class="toc">
+  <h4>What's in here</h4>
+  <ol>
+    <li><a href="#problem">The job we're trying to do</a></li>
+    <li><a href="#data">Our tiny worked example</a></li>
+    <li><a href="#fail">Two obvious approaches, and why both fail</a></li>
+    <li><a href="#idea">The idea: situations</a></li>
+    <li><a href="#slots">What a slot actually is (tally sheets)</a></li>
+    <li><a href="#counting">Learning, if life were easy: pure counting</a></li>
+    <li><a href="#reading">Reading the model: how it answers a question</a></li>
+    <li><a href="#noise">Why the useless bits get ignored automatically</a></li>
+    <li><a href="#hidden">The real problem: nobody labels the data</a></li>
+    <li><a href="#em">EM: counting when you don't know who's who</a></li>
+    <li><a href="#bayes">Is this a Bayesian network? Is this Bayesian inference?</a></li>
+    <li><a href="#explosion">Why this doesn't explode</a></li>
+    <li><a href="#stuck">Where it goes wrong, and split-merge</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+  </ol>
+</div>
+
+<hr class="rule">
+
+<h2 id="problem">1. The job we're trying to do</h2>
+
+<p>You have pairs of things. Each pair is an <strong>input</strong> and an <strong>output</strong>, and both of them are just lists of on/off switches — bits.</p>
+
+<p>You want a machine that, when you show it a new input, tells you what the output should be.</p>
+
+<p>Two things make this harder than a lookup table:</p>
+
+<ol>
+  <li><strong>Some input bits don't matter.</strong> Flip them and the answer stays the same. You don't know which ones in advance — you want the machine to work that out.</li>
+  <li><strong>One input can have several correct outputs.</strong> Not one answer — a small menu of valid answers. You want all of them, listed separately, not mashed together.</li>
+</ol>
+
+<p>Everything in this document is in service of those two requirements.</p>
+
+<h2 id="data">2. Our tiny worked example</h2>
+
+<p>Real versions of this have 100 bits on each side. That's impossible to follow by hand, so here is a miniature with <strong>4 input bits</strong> (call them A, B, C, D) and <strong>4 output bits</strong> (W, X, Y, Z), and only 8 examples.</p>
+
+<p>This is our entire training set:</p>
+
+<div class="tablebox">
+<table>
+<thead>
+<tr><th class="lbl">Example</th><th>A</th><th>B</th><th>C</th><th>D</th><th class="sep-l">W</th><th>X</th><th>Y</th><th>Z</th></tr>
+</thead>
+<tbody>
+<tr><td class="lbl">1</td><td class="on">1</td><td class="off">0</td><td class="off">0</td><td class="on">1</td><td class="sep-l on">1</td><td class="on">1</td><td class="off">0</td><td class="off">0</td></tr>
+<tr><td class="lbl">2</td><td class="on">1</td><td class="on">1</td><td class="off">0</td><td class="off">0</td><td class="sep-l on">1</td><td class="on">1</td><td class="off">0</td><td class="off">0</td></tr>
+<tr><td class="lbl">3</td><td class="on">1</td><td class="on">1</td><td class="off">0</td><td class="on">1</td><td class="sep-l off">0</td><td class="off">0</td><td class="on">1</td><td class="off">0</td></tr>
+<tr><td class="lbl">4</td><td class="on">1</td><td class="off">0</td><td class="off">0</td><td class="off">0</td><td class="sep-l off">0</td><td class="off">0</td><td class="on">1</td><td class="off">0</td></tr>
+<tr><td class="lbl">5</td><td class="off">0</td><td class="on">1</td><td class="on">1</td><td class="off">0</td><td class="sep-l off">0</td><td class="off">0</td><td class="off">0</td><td class="on">1</td></tr>
+<tr><td class="lbl">6</td><td class="off">0</td><td class="off">0</td><td class="on">1</td><td class="on">1</td><td class="sep-l off">0</td><td class="off">0</td><td class="off">0</td><td class="on">1</td></tr>
+<tr><td class="lbl">7</td><td class="off">0</td><td class="off">0</td><td class="on">1</td><td class="off">0</td><td class="sep-l off">0</td><td class="off">0</td><td class="off">0</td><td class="on">1</td></tr>
+<tr><td class="lbl">8</td><td class="off">0</td><td class="on">1</td><td class="on">1</td><td class="on">1</td><td class="sep-l off">0</td><td class="off">0</td><td class="off">0</td><td class="on">1</td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption">Eight training examples. This is all the machine ever sees — no labels, no explanations, no hints.</p>
+
+<p>Stare at it for a moment and you might spot the pattern. Here it is written out — but remember, <strong>the machine is never told any of this</strong>. This is the answer key, for your benefit only:</p>
+
+<div class="note">
+<span class="tag">The hidden truth</span>
+<p><strong>When A is on</strong> → the output is <em>either</em> <code>W,X</code> <em>or</em> <code>Y</code>. Both are correct. Which one you get is a coin flip.</p>
+<p><strong>When C is on</strong> → the output is always <code>Z</code>.</p>
+<p><strong>B and D are pure noise.</strong> They're on about half the time and mean absolutely nothing.</p>
+</div>
+
+<p>So this tiny dataset contains both of our hard requirements: two of the four input bits are useless, and one input pattern legitimately has two different correct answers.</p>
+
+<h2 id="fail">3. Two obvious approaches, and why both fail</h2>
+
+<h3>Approach one: memorize every input</h3>
+
+<p>Build a giant table. One row for every possible input, and in that row write down the output.</p>
+
+<p>With 4 input bits there are 16 possible inputs — fine. With 100 input bits there are 2<sup>100</sup> possible inputs. That number is about 1,000,000,000,000,000,000,000,000,000,000. You would need more rows than there are atoms in your body, and you'd have to <em>see</em> each input at least once to fill in its row.</p>
+
+<p>Dead on arrival. This is the "explosion" — and avoiding it is the reason everything else in this document exists.</p>
+
+<h3>Approach two: work out each output bit separately</h3>
+
+<p>Forget whole patterns. Just learn, for each output bit, how often it's on.</p>
+
+<p>Take our data. When A is on (examples 1–4), how often is each output bit on?</p>
+
+<div class="calc">W: on in 2 of 4  →  50%
+X: on in 2 of 4  →  50%
+Y: on in 2 of 4  →  50%
+Z: on in 0 of 4  →   0%</div>
+
+<p>Every one of those numbers is <strong>correct</strong>. And the machine is now useless.</p>
+
+<p>Because if you ask it "so what's the output?" it says <em>"W is 50% likely, X is 50% likely, Y is 50% likely."</em> Pick the most likely bits and you get <code>W,X,Y</code> — which is <strong>not a valid answer</strong>. It never appeared in the data. It's a blend of two real answers, and the blend is wrong.</p>
+
+<div class="note bad">
+<span class="tag">The core failure</span>
+<p>Three separate percentages cannot express <em>"W and X arrive together as a package, and Y arrives alone."</em></p>
+<p>The information about which bits <strong>travel together</strong> was thrown away the moment we started tracking bits one at a time. Averaging destroys exactly the thing we care about.</p>
+</div>
+
+<p>Think of a restaurant that only sells fixed combo meals. If I tell you "50% of our combos contain fries, 50% contain a milkshake," those are true statistics — but you can't reconstruct the menu from them, and if you pick items by flipping a coin for each, you'll order a combo that doesn't exist.</p>
+
+<h2 id="idea">4. The idea: situations</h2>
+
+<p>Here's the way out.</p>
+
+<p>Instead of memorizing every possible input, or tracking every bit separately, we assume something about the world:</p>
+
+<div class="note">
+<span class="tag">The assumption everything rests on</span>
+<p>There are a <strong>small number of underlying situations</strong>. Each situation produces a characteristic-looking input and one specific output pattern. Every example in your data came from one of them.</p>
+</div>
+
+<p>In our tiny dataset there are three:</p>
+
+<ul>
+  <li>Situation <strong>P</strong>: input has A on, output is <code>W,X</code> &nbsp;(examples 1, 2)</li>
+  <li>Situation <strong>Q</strong>: input has A on, output is <code>Y</code> &nbsp;(examples 3, 4)</li>
+  <li>Situation <strong>R</strong>: input has C on, output is <code>Z</code> &nbsp;(examples 5, 6, 7, 8)</li>
+</ul>
+
+<p>Notice that P and Q <strong>look identical on the input side</strong> — both have A on — but produce different outputs. That's not a bug. That's how the machine will represent "this input has two valid answers."</p>
+
+<p>The situation is called a <strong>hidden variable</strong>, usually written <code>z</code>. "Hidden" means exactly what it sounds like: it's not written anywhere in your data. Nobody stamped example 3 with a label saying "I'm situation Q." The machine has to figure out that situations exist at all, and which example belongs to which.</p>
+
+<div class="diagram">                       ┌─────────┐
+                       │    z    │   the hidden situation
+                       │  P Q R  │   (never observed)
+                       └─────────┘
+                    ╱   ╱  │  ╲   ╲
+                  ╱    ╱   │   ╲    ╲
+                ▼    ▼     ▼     ▼    ▼
+              A    B  C  D   │  W  X  Y  Z
+              └── input ─────┘  └── output ──┘</div>
+
+<p>Read the arrows as "causes" or "produces". The situation is upstream of everything you can see. Both the input bits and the output bits are consequences of it.</p>
+
+<p>This single picture is what solves the "bits travel together" problem. W and X go together <em>because they share a cause</em> — when the situation is P, it switches both of them on.</p>
+
+<h2 id="slots">5. What a slot actually is (tally sheets)</h2>
+
+<p>Now the concrete part. A <strong>slot</strong> is the machine's storage for one situation. It is nothing more exotic than <strong>a page of counters</strong>.</p>
+
+<p>Each slot has:</p>
+
+<ul>
+  <li>One counter for <strong>how many examples landed in this slot</strong>.</li>
+  <li>One counter <strong>per bit</strong>, for how many of those examples had that bit switched on.</li>
+</ul>
+
+<p>That's the whole thing. Nine counters per slot in our example (one total + eight bits). A slot is a tally sheet.</p>
+
+<p>Here's what the three slots look like once filled in. Read <code>2/2</code> as "2 out of the 2 examples in this slot."</p>
+
+<div class="tablebox">
+<table>
+<thead>
+<tr><th class="lbl">Slot</th><th>total</th><th>A</th><th>B</th><th>C</th><th>D</th><th class="sep-l">W</th><th>X</th><th>Y</th><th>Z</th></tr>
+</thead>
+<tbody>
+<tr><td class="lbl">P</td><td>2</td><td class="hl-relevant">2/2</td><td class="hl-noise">1/2</td><td class="hl-relevant">0/2</td><td class="hl-noise">1/2</td><td class="sep-l">2/2</td><td>2/2</td><td>0/2</td><td>0/2</td></tr>
+<tr><td class="lbl">Q</td><td>2</td><td class="hl-relevant">2/2</td><td class="hl-noise">1/2</td><td class="hl-relevant">0/2</td><td class="hl-noise">1/2</td><td class="sep-l">0/2</td><td>0/2</td><td>2/2</td><td>0/2</td></tr>
+<tr><td class="lbl">R</td><td>4</td><td class="hl-relevant">0/4</td><td class="hl-noise">2/4</td><td class="hl-relevant">4/4</td><td class="hl-noise">2/4</td><td class="sep-l">0/4</td><td>0/4</td><td>0/4</td><td>4/4</td></tr>
+</tbody>
+</table>
+</div>
+<p class="caption">Three tally sheets. Green columns are bits that matter; amber columns are the noise bits. Look at what's different about them.</p>
+
+<p>Two things are worth pausing on, because they're the entire point of the design.</p>
+
+<h3>The noise bits are visibly flat</h3>
+
+<p>Look down the <strong>B</strong> column: 1/2, 1/2, 2/4. That's 50%, 50%, 50%. Identical in every slot.</p>
+
+<p>Now look down the <strong>A</strong> column: 100%, 100%, 0%. Wildly different between slots.</p>
+
+<div class="note good">
+<span class="tag">Requirement 1, solved</span>
+<p>A bit that <strong>varies across slots</strong> is telling you something. A bit that is <strong>the same in every slot</strong> is telling you nothing.</p>
+<p>You never had to instruct the machine which bits matter. Fill in the tallies and it's sitting there in the table, readable by eye. Sort the columns by how much they vary and you have your relevance ranking.</p>
+</div>
+
+<h3>P and Q are twins on the input side</h3>
+
+<p>Slots P and Q have <em>exactly the same input tallies</em>. They only differ on the output side. So when an input with A on arrives, both slots match it equally well — and the machine will offer <strong>both</strong> of their outputs as options.</p>
+
+<div class="note good">
+<span class="tag">Requirement 2, solved</span>
+<p>A menu of several valid answers is stored as <strong>several slots that agree about the input and disagree about the output</strong>.</p>
+</div>
+
+<div class="note warn">
+<span class="tag">Important vocabulary</span>
+<p>A slot is <strong>one situation-and-output pair</strong>, not one situation. "When A is on" needed <em>two</em> slots (P and Q) because it has two possible outputs. Each slot can only hold one output pattern.</p>
+<p>You'll also see slots called <strong>states</strong>, <strong>components</strong>, or "values of <code>z</code>". Same thing.</p>
+</div>
+
+<h2 id="counting">6. Learning, if life were easy: pure counting</h2>
+
+<p>Suppose for a moment that every example came with a label saying which slot it belongs to. Then training the machine is this, and only this:</p>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div class="step-body"><p>Set every counter on every tally sheet to zero.</p></div>
+</div>
+<div class="step">
+  <div class="step-n">2</div>
+  <div class="step-body"><p>For each training example: look at its label, find that slot's tally sheet, add 1 to its <em>total</em>, and add 1 to the counter of every bit that's switched on.</p></div>
+</div>
+<div class="step">
+  <div class="step-n">3</div>
+  <div class="step-body"><p>There is no step 3. You're finished.</p></div>
+</div>
+
+<p>Watch it happen for slot P, which gets examples 1 and 2:</p>
+
+<div class="calc"><span class="cmt">start</span>          total=0   A=0  B=0  C=0  D=0  │  W=0  X=0  Y=0  Z=0
+
+<span class="cmt">example 1</span>      1 0 0 1 │ 1 1 0 0       <span class="cmt">← A and D on; W and X on</span>
+<span class="cmt">after</span>          total=1   A=1  B=0  C=0  D=1  │  W=1  X=1  Y=0  Z=0
+
+<span class="cmt">example 2</span>      1 1 0 0 │ 1 1 0 0       <span class="cmt">← A and B on; W and X on</span>
+<span class="res">after          total=2   A=2  B=1  C=0  D=1  │  W=2  X=2  Y=0  Z=0</span></div>
+
+<p>That's the finished tally sheet for slot P, matching the table above. <strong>This is what "learning by counting" means.</strong> No equations, no gradual adjustment, no training loop. Counters go up by one.</p>
+
+<div class="note">
+<span class="tag">Why we keep tallies, not percentages</span>
+<p>We could store "A is on 100% of the time" instead of "A: 2 out of 2." The percentage is what we actually use when answering questions — but the <strong>tally is what we store</strong>, for one big reason:</p>
+<p>Tallies can be <strong>added to</strong>. A new example arrives tomorrow? Add 1 to the relevant counters. Done — and every other slot's counters are untouched, exactly, provably. If you'd only kept "100%", you'd have no idea how much weight that percentage carried and no correct way to fold new data into it.</p>
+<p>This is what lets the machine learn a new thing without disturbing what it already knows.</p>
+</div>
+
+<h3>One wrinkle: never let a counter sit at zero</h3>
+
+<p>Look at slot P's counter for C: it's <code>0/2</code>. Taken literally that says <em>"in situation P, bit C is on 0% of the time — impossible, never, under any circumstances."</em></p>
+
+<p>That's too strong a claim from two examples, and it causes a nasty failure: anything with C switched on gets a score of exactly zero for slot P, forever, and can never be reconsidered.</p>
+
+<p>The fix is one line: <strong>start every counter at 1 instead of 0.</strong> Pretend you saw each bit on once and off once before you began. Now "never" becomes "very unlikely," which is honest and can be revised by evidence.</p>
+
+<p>This is called <em>smoothing</em> or <em>pseudo-counts</em>. It's also, quietly, the one genuinely Bayesian ingredient in the whole recipe — more on that in section 11.</p>
+
+<h2 id="reading">7. Reading the model: how it answers a question</h2>
+
+<p>The machine is trained. Now someone hands it a new input and wants an answer.</p>
+
+<p>New input: <strong>A=1, B=1, C=0, D=0</strong>.</p>
+
+<p>The question the machine asks itself is: <em>"which situation was I probably in?"</em> It scores every slot by asking how well that slot's tally sheet predicts what it's seeing.</p>
+
+<p>The rule for scoring is: <strong>go through the input bits one at a time and multiply.</strong> For a bit that's ON, multiply by how often that slot has it on. For a bit that's OFF, multiply by how often that slot has it off.</p>
+
+<p>Slot P's input tallies are A: 2/2, B: 1/2, C: 0/2, D: 1/2 — that's 100%, 50%, 0%, 50%.</p>
+
+<div class="calc"><span class="cmt">slot P</span>
+  A is on   → × 1.00   <span class="cmt">(P has A on 100% of the time)</span>
+  B is on   → × 0.50
+  C is off  → × 1.00   <span class="cmt">(P has C off 100% of the time)</span>
+  D is off  → × 0.50
+                         <span class="res">= 0.25</span>
+
+<span class="cmt">slot Q  — identical input tallies to P</span>
+  1.00 × 0.50 × 1.00 × 0.50 <span class="res">= 0.25</span>
+
+<span class="cmt">slot R  — has A on 0% of the time, so:</span>
+  0.00 × 0.50 × 0.00 × 0.50 <span class="res">= 0.00</span></div>
+
+<p>Then weight each score by how common that slot is overall (P and Q hold 2 of 8 examples each, R holds 4 of 8), and scale the three numbers so they add up to 100%:</p>
+
+<div class="calc">slot P:  0.25 × 2/8 = 0.0625   →   <span class="res">50%</span>
+slot Q:  0.25 × 2/8 = 0.0625   →   <span class="res">50%</span>
+slot R:  0.00 × 4/8 = 0.0000   →   <span class="res"> 0%</span></div>
+
+<p>Now read off the answer. Slot P says the output is <code>W,X</code>. Slot Q says the output is <code>Y</code>. Slot R isn't in the running.</p>
+
+<div class="note good">
+<span class="tag">The machine's answer</span>
+<p><strong>"Two possibilities. Either <code>W,X</code> — 50% likely. Or <code>Y</code> — 50% likely."</strong></p>
+<p>That's exactly right, and it's exactly what we wanted: a menu, with weights, not a blend. Compare it to the mush from section 3 that suggested <code>W,X,Y</code> — an answer that doesn't exist.</p>
+</div>
+
+<h2 id="noise">8. Why the useless bits get ignored automatically</h2>
+
+<p>This deserves its own section because it's the most elegant part, and it happens without anyone arranging it.</p>
+
+<p>Go back to the scoring. Bit B was switched on in our query. Look at what B contributed:</p>
+
+<div class="calc">slot P:   × 0.50     <span class="cmt">← B's contribution</span>
+slot Q:   × 0.50     <span class="cmt">← the same</span>
+slot R:   × 0.50     <span class="cmt">← the same</span></div>
+
+<p>B multiplied <strong>every slot by the same number</strong>. And in the final step we scaled everything so the scores add to 100% — which cancels out any factor that's common to all of them.</p>
+
+<p><strong>B had literally zero effect on the answer.</strong> Not a small effect. Zero. The same is true of D.</p>
+
+<div class="note good">
+<span class="tag">Requirement 1, mechanically</span>
+<p>A bit whose tallies are flat across all slots multiplies every slot equally, and equal factors vanish when you normalize. Useless bits <em>cancel themselves out</em>.</p>
+<p>Nobody wrote a rule to ignore B and D. Nobody tuned a knob. It falls out of counting honestly and then scoring by multiplication.</p>
+</div>
+
+<p>Meanwhile bit A, whose tallies are 100%/100%/0%, multiplied slot R by zero and the others by one. It did all the work of deciding the answer. The bits that carry information are precisely the bits that distinguish slots — which is why "how much does this bit vary across slots" is a genuine relevance score.</p>
+
+<h2 id="hidden">9. The real problem: nobody labels the data</h2>
+
+<p>Everything in section 6 assumed each example came with a tag saying which slot it belongs to.</p>
+
+<p>It doesn't. You have eight rows of bits. That's all. No tags, no situation names, not even the knowledge that there are three situations.</p>
+
+<p>And you're stuck in a loop:</p>
+
+<div class="diagram">   If you knew which slot each example belongs to
+                    │
+                    ▼
+        you could just count. Easy. (section 6)
+
+
+   If you knew what the slots look like
+                    │
+                    ▼
+        you could work out which one each example belongs to. Easy. (section 7)
+
+
+   You know NEITHER.
+   Each one would hand you the other, and you have no way in.</div>
+
+<p>This is a chicken-and-egg problem, and it is the <em>only</em> reason we need anything cleverer than counting.</p>
+
+<h2 id="em">10. EM: counting when you don't know who's who</h2>
+
+<p>EM stands for Expectation–Maximization. The name is unhelpful. Here's the entire idea:</p>
+
+<div class="note">
+<span class="tag">The whole trick</span>
+<p><strong>Make up an answer to one side of the loop, use it to work out the other side, then go back and redo the first with the improved information. Repeat until nothing changes.</strong></p>
+</div>
+
+<p>In the two steps:</p>
+
+<div class="step">
+  <div class="step-n">E</div>
+  <div class="step-body">
+    <h3>Guess the labels</h3>
+    <p>Using the current tally sheets (however bad), score every example against every slot — exactly the scoring from section 7 — and record the result as a <strong>fraction</strong>, not a hard choice.</p>
+  </div>
+</div>
+<div class="step">
+  <div class="step-n">M</div>
+  <div class="step-body">
+    <h3>Re-do the tallies</h3>
+    <p>Wipe the counters and count again, using those fractions. An example that's 70% slot P adds <strong>0.7</strong> to slot P's counters and <strong>0.3</strong> to slot Q's.</p>
+  </div>
+</div>
+
+<p>Then repeat. That's it. Both steps are things we've already built: E is section 7, M is section 6.</p>
+
+<h3>Why fractions?</h3>
+
+<p>Because forcing each example into exactly one slot makes the machine brittle — an ambiguous example gets shoved into a bucket it may not belong in, and that mistake poisons the tallies. Fractional counting lets uncertain examples hedge, contributing a bit to each candidate, and lets the whole arrangement drift smoothly instead of lurching.</p>
+
+<p>Yes, this means your counters hold numbers like 1.7 instead of 2. That's fine. They're still tallies; they're just tallies that accept partial credit.</p>
+
+<h3>Watching one round happen</h3>
+
+<p>Start with two slots and deliberately terrible made-up tally sheets. We'll write them as percentages for readability:</p>
+
+<div class="calc">                A     B     C     D   │   W     X     Y     Z
+slot 1        60%   50%   40%   50%  │  60%   50%   40%   50%
+slot 2        40%   50%   60%   50%  │  40%   50%   50%   60%</div>
+
+<p>These are nonsense — deliberately. Nobody looked at the data to produce them.</p>
+
+<p><strong>E step</strong>, for example 1, which is <code>A=1 B=0 C=0 D=1 │ W=1 X=1 Y=0 Z=0</code>. Score it against both slots, using all eight bits this time (input <em>and</em> output, because during training we can see both):</p>
+
+<div class="calc"><span class="cmt">slot 1:</span>
+  A on  ×0.60    B off ×0.50    C off ×0.60    D on  ×0.50
+  W on  ×0.60    X on  ×0.50    Y off ×0.60    Z off ×0.50
+                                              <span class="res">= 0.0081</span>
+
+<span class="cmt">slot 2:</span>
+  A on  ×0.40    B off ×0.50    C off ×0.40    D on  ×0.50
+  W on  ×0.40    X on  ×0.50    Y off ×0.50    Z off ×0.40
+                                              <span class="res">= 0.0016</span>
+
+<span class="cmt">scale so they add to 100%:</span>
+  slot 1:  0.0081 / 0.0097  =  <span class="res">83.5%</span>
+  slot 2:  0.0016 / 0.0097  =  <span class="res">16.5%</span></div>
+
+<p>So example 1 is labelled "83.5% slot 1, 16.5% slot 2." Not because anything knows that's right — the tally sheets were nonsense — but because example 1 happens to lean slightly toward slot 1's random numbers.</p>
+
+<p><strong>M step.</strong> Do that for all eight examples, then count with the fractions:</p>
+
+<div class="calc">example 1 is 83.5% slot 1, and has A switched on
+  →  add <span class="res">0.835</span> to slot 1's A counter
+  →  add <span class="res">0.835</span> to slot 1's total counter
+  →  add <span class="res">0.165</span> to slot 2's A counter
+  →  add <span class="res">0.165</span> to slot 2's total counter
+
+  ... and the same for every bit of every example.</div>
+
+<p>Now you have new tally sheets — slightly less random than before, because they were built from data instead of thin air. Go back to E and do it again with the improved sheets. The labels get slightly better. Then the sheets get slightly better. And so on.</p>
+
+<h3>Why starting from nonsense works</h3>
+
+<p>It seems like it shouldn't. But the random starting point is never <em>perfectly</em> balanced — some examples lean marginally toward slot 1, others toward slot 2. Counting sharpens that lean a little. The sharper sheets sort the examples a little more decisively. Which sharpens the sheets further. The whole thing bootstraps itself from an accidental wobble.</p>
+
+<p>After a handful of rounds, our eight examples sort themselves cleanly and the tally sheets converge to the ones in section 5 — the true situations, discovered from data that never mentioned them.</p>
+
+<div class="note good">
+<span class="tag">The guarantee, and its limit</span>
+<p>You can prove the model's fit to the data <strong>never gets worse</strong> from one round to the next. So it always settles. That's a real mathematical guarantee.</p>
+<p>What it does <em>not</em> guarantee is that it settles in the <em>best</em> place. Picture walking uphill in thick fog: every step goes up, so you certainly reach <em>a</em> summit — possibly a small hill with the real mountain hidden next door. Where you end up depends on where you started.</p>
+</div>
+
+<div class="note warn">
+<span class="tag">A free bug test</span>
+<p>Print the fit score every round. It is guaranteed not to go down — so <strong>if it ever goes down, you have a bug.</strong> Almost no algorithm hands you a correctness check this cheap.</p>
+</div>
+
+<h2 id="bayes">11. Is this a Bayesian network? Is this Bayesian inference?</h2>
+
+<p>Three separate questions that get tangled together. Let's untangle them.</p>
+
+<p class="big-q">Is this a Bayesian network?</p>
+
+<p><strong>Yes.</strong> A Bayesian network is just two things: a diagram showing what depends on what, and a table of numbers for each item saying how it behaves given whatever points at it.</p>
+
+<p>Ours is the diagram from section 4 — <code>z</code> at the top, arrows down to every bit — and the tables are the tally sheets. That's a Bayesian network. A very simple shape of one, sometimes called a <em>latent class model</em>, but a genuine one.</p>
+
+<p class="big-q">Do we do Bayesian inference?</p>
+
+<p><strong>Yes — every time the machine answers a question.</strong></p>
+
+<p>Bayes' rule is the formal name for one commonsense move: <em>you see some evidence, and you update your belief about the hidden cause behind it.</em></p>
+
+<p>That's precisely section 7. We saw evidence (the input bits), we asked "which hidden situation would have produced this?", we scored each candidate, and we ended up with belief spread across them: 50% / 50% / 0%. That <em>is</em> Bayes' rule. You've been doing Bayesian inference since section 7 without the label.</p>
+
+<p class="big-q">So is this a "Bayesian method"?</p>
+
+<p><strong>Only a little, and this is the part that usually confuses people.</strong></p>
+
+<p>When people say "Bayesian machine learning" they usually mean something more demanding: keeping track of <em>uncertainty about the model's own numbers</em>. Not just "A is on 100% of the time in slot P" but "I believe it's 100%, give or take, and here's my uncertainty about that belief."</p>
+
+<p>We don't do that. We commit to one set of tallies and use them. That's ordinary maximum-likelihood fitting, not full Bayesian learning.</p>
+
+<p>The one exception is the smoothing from section 6 — starting every counter at 1 instead of 0. That <em>is</em> a Bayesian prior: a belief held before seeing any data ("nothing is truly impossible"), expressed as a nudge to the numbers. Which illustrates a useful general point:</p>
+
+<div class="note">
+<span class="tag">Demystifying priors</span>
+<p>A prior sounds heavy. In practice it's almost always just <strong>a small adjustment added to your counts, or a penalty added to your objective</strong>. "I believe nothing is impossible" becomes "start the counters at 1." "I believe most bits are irrelevant" becomes "charge a fee per bit used."</p>
+<p>No integrals required. If someone tells you that you need heavy machinery to "be Bayesian" for a problem like this — you don't.</p>
+</div>
+
+<h2 id="explosion">12. Why this doesn't explode</h2>
+
+<p>Back to the 2<sup>100</sup> disaster from section 3. Why doesn't this design suffer it?</p>
+
+<p>The rule is simple and worth memorizing:</p>
+
+<div class="note">
+<span class="tag">The rule that governs cost</span>
+<p>In a diagram like this, a node needs <strong>one table row per combination of everything pointing at it.</strong></p>
+</div>
+
+<p>In the broken approach, each output bit had all 100 input bits pointing at it → 2<sup>100</sup> rows. Catastrophe.</p>
+
+<p>In our design, look at the arrows again. Every single observed bit — input and output alike — has <strong>exactly one</strong> thing pointing at it: <code>z</code>. So each bit needs one counter per slot. Not one per combination of other bits. One per slot.</p>
+
+<div class="calc"><span class="cmt">storage needed:</span>
+
+  number of slots  ×  number of bits
+       80          ×      200         =  16,000 numbers
+
+<span class="cmt">versus the table approach:</span>
+
+  2^100  ≈  1,000,000,000,000,000,000,000,000,000,000 rows</div>
+
+<p>And crucially, growth is now <strong>linear</strong>. Double the input bits and you double the storage. Under the old scheme, one extra input bit <em>doubled</em> the whole table.</p>
+
+<div class="note warn">
+<span class="tag">What the escape costs</span>
+<p>The saving comes from an assumption: <strong>once you know the situation, the bits don't influence each other.</strong> Given slot P, bit A and bit B are unrelated.</p>
+<p>That's a real restriction. Something like "bit 3 matters only when bit 7 is on" can't be said directly — you'd have to spend extra slots to cover the cases. So the explosion didn't vanish; it became a <strong>dial</strong> (the number of slots) that turns up as your data gets more tangled. For clustered, situation-shaped data it stays small. That's the bet.</p>
+</div>
+
+<h2 id="stuck">13. Where it goes wrong, and split-merge</h2>
+
+<p>Remember EM's limit: it always walks uphill, but it might climb the wrong hill. Here's what the wrong hill actually looks like.</p>
+
+<div class="diagram">   slot 12:  ████████████   absorbed TWO situations, blurring them together
+   slot 37:  ·              empty, never used</div>
+
+<p>One slot doing double duty; another idle. The blurred slot outputs the average of two real answers — which, as we know from section 3, is not a real answer.</p>
+
+<h3>Why EM can't fix this itself</h3>
+
+<p>EM only accepts changes that improve the fit <em>immediately</em>. To pull the two situations apart it would have to move examples out of slot 12 one at a time — and moving the first one makes the fit <strong>worse</strong>. It only becomes better once you've moved about half of them.</p>
+
+<p>There's a valley between where EM is and where it should be. EM walks uphill. It cannot cross valleys.</p>
+
+<h3>The fix: pick it up and move it</h3>
+
+<p><strong>Split-merge</strong> is surgery on a settled model:</p>
+
+<ul>
+  <li><strong>Split</strong> — take an overloaded slot, cut its examples in half at random, hand half to an empty slot.</li>
+  <li><strong>Merge</strong> — take two slots doing the same job, fuse them, freeing one up.</li>
+</ul>
+
+<p>Then run EM again from there. It doesn't walk across the valley; it <strong>teleports to the other side</strong> and lets EM climb from the new position.</p>
+
+<p>The random half-split is deliberately crude — it has no idea which examples belong to which situation. It doesn't need to. It just needs to break the tie so the two halves start out different. EM does the rest: examples drift to whichever half suits them, and within a few rounds they've separated cleanly.</p>
+
+<p>And if a split was pointless — the slot really was one situation — EM simply re-merges them, and you've lost nothing. <strong>Bad splits self-correct; good splits stick.</strong> That's why you can afford to be crude.</p>
+
+<div class="note good">
+<span class="tag">What this is worth</span>
+<p>On the full-scale experiment, plain EM recovered <strong>76.5%</strong> of the menus. Split-merge took it to <strong>99.7%</strong> — essentially perfect. For comparison, running plain EM twenty times from different random starts and keeping the best only reached 82.5%.</p>
+<p>Keeping what works and disturbing only what's broken beats re-rolling the dice, by a wide margin.</p>
+</div>
+
+<h2 id="glossary">14. Glossary</h2>
+
+<dl class="gloss">
+  <dt>bit</dt>
+  <dd>One on/off switch. A 1 or a 0. Our inputs and outputs are lists of them.</dd>
+
+  <dt>sparse</dt>
+  <dd>Most bits are off. Only a handful are on at a time.</dd>
+
+  <dt>slot &nbsp;<span style="color:var(--ink-3);font-weight:400">(also: state, component, a value of z)</span></dt>
+  <dd>One tally sheet. Stores one situation-and-output pair: counters for how many examples landed here and how many had each bit on.</dd>
+
+  <dt>hidden variable &nbsp;<span style="color:var(--ink-3);font-weight:400">(z, latent variable)</span></dt>
+  <dd>Which slot an example came from. Called hidden because it isn't in your data — the machine invents it because it explains the pattern.</dd>
+
+  <dt>tally / count</dt>
+  <dd>A counter that goes up. Learning here <em>is</em> updating these. During EM they go up by fractions rather than whole numbers.</dd>
+
+  <dt>smoothing / pseudo-counts</dt>
+  <dd>Starting every counter at 1 instead of 0, so nothing is ever recorded as flatly impossible.</dd>
+
+  <dt>prior</dt>
+  <dd>A belief you hold before seeing data. In practice, a small adjustment to your counts or an extra term in your objective. The smoothing above is one.</dd>
+
+  <dt>posterior</dt>
+  <dd>Your belief after seeing the evidence. The "50% / 50% / 0%" from section 7 is a posterior over slots.</dd>
+
+  <dt>Bayes' rule</dt>
+  <dd>The formal version of: see evidence, update your belief about the hidden cause. It's the scoring-and-scaling of section 7.</dd>
+
+  <dt>Bayesian network</dt>
+  <dd>A diagram of what depends on what, plus a table of numbers per item. Ours is z pointing at every bit.</dd>
+
+  <dt>latent class model</dt>
+  <dd>The specific name for our shape: one hidden variable causing a pile of independent bits.</dd>
+
+  <dt>E step</dt>
+  <dd>Using the current tally sheets, guess which slot each example belongs to (as fractions).</dd>
+
+  <dt>M step</dt>
+  <dd>Using those fractional guesses, re-do the tallies.</dd>
+
+  <dt>EM</dt>
+  <dd>Alternating E and M until nothing changes. Counting, in a loop, for when the labels are missing.</dd>
+
+  <dt>local optimum</dt>
+  <dd>A settling point that can't be improved by small steps but isn't the best one. The small hill in the fog.</dd>
+
+  <dt>split-merge</dt>
+  <dd>Deliberately rearranging a settled model — splitting overloaded slots, fusing redundant ones — then re-running EM, to escape a local optimum.</dd>
+
+  <dt>multimodal</dt>
+  <dd>One input has several distinct valid outputs. Stored as several slots agreeing on the input and disagreeing on the output.</dd>
+</dl>
+
+<hr class="rule">
+
+<p style="color:var(--ink-3); font-size:.92rem">Everything above is implemented in <code>latent_class.py</code> and <code>splitmerge.py</code> in this folder. The tiny 8-example dataset here is a hand-sized version of the 20,000-example synthetic world those scripts build.</p>
+
+</div>
+</body>
+</html>
