@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What We Are Building</title>
+<style>
+  :root { --ink:#1b1b1b; --muted:#666; --line:#ddd; --soft:#f4f4f2; --accent:#2a6fd6; --warn:#c0392b; --ok:#2e8b57; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background:#fff; margin:0; line-height:1.55; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 80px; }
+  h1 { font-size: 2rem; margin: 0 0 .2em; }
+  h2 { font-size: 1.4rem; margin: 2.2em 0 .5em; border-bottom: 1px solid var(--line); padding-bottom: .2em; }
+  h3 { font-size: 1.05rem; margin: 1.6em 0 .4em; }
+  p, li { font-size: 1.02rem; }
+  .lead { color: var(--muted); font-size: 1.05rem; }
+  .box { background: var(--soft); border-radius: 8px; padding: 14px 16px; margin: 14px 0; }
+  .note { border-left: 4px solid var(--accent); padding-left: 12px; color:#333; }
+  .warn { border-left: 4px solid var(--warn); padding-left: 12px; }
+  code { background: var(--soft); padding: 1px 5px; border-radius: 4px; font-size: .95em; }
+  table { border-collapse: collapse; margin: 10px 0; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; }
+  th { background: var(--soft); }
+  .widget { border: 1px solid var(--line); border-radius: 8px; padding: 14px; margin: 16px 0; background: #fff; }
+  .widget h4 { margin: 0 0 8px; font-size: 1rem; }
+  .blocks { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 6px 0; }
+  .block { display: grid; grid-template-columns: repeat(8, 16px); gap: 2px; }
+  .slot { width: 16px; height: 16px; border: 1px solid #ccc; border-radius: 3px; background: #fff; }
+  .slot.on { background: var(--accent); border-color: var(--accent); }
+  .slot.on2 { background: #f0a030; border-color: #f0a030; }
+  .slot.both { background: var(--ok); border-color: var(--ok); }
+  .label { width: 52px; font-size: .9rem; color: var(--muted); }
+  .row { display: flex; align-items: center; gap: 10px; margin: 4px 0; flex-wrap: wrap; }
+  button { font: inherit; font-size: .92rem; padding: 5px 10px; border: 1px solid #bbb; background: #fff; border-radius: 6px; cursor: pointer; }
+  button:hover { background: var(--soft); }
+  .counts { display: grid; grid-template-columns: repeat(8, 30px); gap: 2px; }
+  .cnt { width: 30px; height: 22px; border: 1px solid #ccc; border-radius: 3px; font-size: .8rem; text-align: center; line-height: 22px; background:#fff; }
+  .cnt.hot { background: #ffe9c7; }
+  .cnt.probe { outline: 2px solid var(--accent); }
+  .out { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9rem; background: var(--soft); padding: 8px 10px; border-radius: 6px; margin-top: 8px; white-space: pre-wrap; }
+  .flow { display: flex; flex-direction: column; gap: 6px; margin: 12px 0; }
+  .step { background: var(--soft); border-radius: 8px; padding: 10px 12px; }
+  .step b { color: var(--accent); }
+  .arrow { text-align: center; color: var(--muted); font-size: 1.2rem; line-height: 1; }
+  .grid13 { display: grid; grid-template-columns: repeat(13, 18px); gap: 1px; }
+  .cell { width: 18px; height: 18px; border: 1px solid #ddd; background: #fff; font-size: .6rem; text-align:center; line-height:18px; }
+  .cell.ink { background: #333; }
+  .cell.seen { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .cell.chunk { background: #7fb3ff; }
+  .cell.pred { background: #cfe0ff; }
+  .cell.blank { background: #f6f6f6; }
+  .small { font-size: .9rem; color: var(--muted); }
+  @media (max-width: 600px) { .block { grid-template-columns: repeat(8, 12px);} .slot{width:12px;height:12px} .counts{grid-template-columns: repeat(8, 24px);} .cnt{width:24px} .grid13{grid-template-columns: repeat(13, 14px);} .cell{width:14px;height:14px} }
+</style>
+</head>
+<body>
+<main>
+
+<h1>What We Are Building</h1>
+<p class="lead">A plain-words tour of the system in this folder: how it writes things down, how it remembers, how it looks, how it learns, how it searches, and what it has actually done so far. No equations. Where a number matters it is in a table.</p>
+
+<div class="box note">
+<b>The one-sentence version.</b> Instead of training a network to compute an answer, we keep a memory with strict rules about how things are written and how many things it can hold, and we let learning be nothing more than <i>counting what recurs and giving it a name</i>. Everything else — looking, guessing, checking, having ideas — is what that memory forces you to do.
+</div>
+
+<h2>1. How things are written down: fingerprints</h2>
+<p>Every thing the system knows — a stroke, a position, a chunk, a label, a tag like "I observed this" — is written as a <b>fingerprint</b>. A fingerprint is a row of switches, mostly off. In the real system it is 656 switches with 16 on; in the pictures below it is 32 switches with 4 on, which behaves the same way.</p>
+<p>The switches are arranged in <b>blocks</b>, and the rule is: <b>exactly one switch is on in each block</b>. So a fingerprint is really just "which switch, in each block". You can picture each block as a ring of notches with one notch marked.</p>
+<p>Two fingerprints are <b>similar</b> when they mark the same notch in many blocks. Two unrelated fingerprints agree on a block only by chance (1 in 8 here, 1 in 41 in the real system), so strangers overlap almost nowhere and relatives overlap a lot.</p>
+
+<h3>Moving a fingerprint: poses</h3>
+<p>To say "stroke A <i>at position P</i>" we do not write A and P side by side. We <b>walk</b> A's marked notch along each ring by an amount that P dictates: P is itself a fingerprint, and its marked notch in each block is the number of steps to walk. Walking wraps around the ring. The result looks like a brand-new fingerprint — it shares nothing with A and nothing with P — but walking back by the same amounts recovers A exactly.</p>
+<p>Two facts make this the heart of the design:</p>
+<ul>
+  <li><b>Walking keeps relatives related.</b> If A and B agree on three blocks, then A-at-P and B-at-P agree on the same three blocks. So a shape is recognisable wherever it is placed.</li>
+  <li><b>Two walks add up.</b> Walking by P and then by Q is the same as walking once by P+Q. So "position" and "offset inside a part" combine by the same operation. Moving the whole moves every part correctly for free.</li>
+</ul>
+
+<div class="widget" id="w1">
+  <h4>Try it: walk a fingerprint (4 blocks of 8 notches)</h4>
+  <div class="row"><span class="label">A</span><div class="blocks" id="w1A"></div></div>
+  <div class="row"><span class="label">B</span><div class="blocks" id="w1B"></div></div>
+  <div class="row"><span class="label">pose P</span><div class="blocks" id="w1P"></div></div>
+  <div class="row">
+    <button onclick="w1.randA()">new A</button>
+    <button onclick="w1.makeBsimilar()">make B a relative of A</button>
+    <button onclick="w1.randP()">new pose</button>
+    <button onclick="w1.walk()">walk both by P</button>
+    <button onclick="w1.reset()">walk back</button>
+  </div>
+  <div class="out" id="w1out"></div>
+  <p class="small">Green = a block where A and B agree. Watch: after walking, the marks all move, but the same blocks stay green.</p>
+</div>
+
+<h2>2. Holding many things at once: the pile</h2>
+<p>Memory needs to hold several fingerprints at the same time. We do that with a <b>pile</b>: a counter behind every switch. Adding an item adds 1 to its on-switches. Removing it subtracts 1. That is all.</p>
+<p>To ask "is item X in the pile?", look at X's on-switches: if every one of them has a count above zero, X is there. With a handful of items this is exact. But the pile has a limit: as more items go in, more counters are non-zero, and eventually some fingerprint that was <i>never added</i> has all its switches covered by other items' switches. The pile then says "yes" to a <b>ghost</b>.</p>
+<p>This is not a bug to be engineered away; it is the whole reason the system behaves the way it does. In the real system the pile holds about <b>20 items</b> before ghosts appear. That is the size of its working memory, and it forces everything downstream: it cannot hold a whole image as separate parts, so it must look at a few things, compress what it recognises into one item, and predict the rest.</p>
+
+<div class="widget" id="w2">
+  <h4>Try it: fill the pile until it lies (4 blocks of 8)</h4>
+  <div class="row"><span class="label">pile</span><div class="counts" id="w2pile"></div></div>
+  <div class="row">
+    <button onclick="w2.add()">add a random item</button>
+    <button onclick="w2.probeKnown()">probe an item that is in</button>
+    <button onclick="w2.probeGhost()">probe a stranger</button>
+    <button onclick="w2.clear()">empty</button>
+  </div>
+  <div class="out" id="w2out">pile is empty</div>
+  <p class="small">Add 4 or 5 items and probe strangers: they start to be found. The exact number depends on how full the counters are — that fullness is what the system measures as "pressure".</p>
+</div>
+
+<h2>3. The table: what the system knows for good</h2>
+<p>Long-term memory is a stack of <b>cards</b>. Every card has a fingerprint (its name) and, if it is a made thing, a list of <b>parts at offsets</b>:</p>
+<ul>
+  <li><b>Primitive cards</b> — the alphabet. In the toy world these are given. On MNIST they are stroke prototypes the system allocated itself: small image patches, kept only if a patch like that kept coming back.</li>
+  <li><b>Chunk cards</b> — a group of parts at fixed offsets from each other, with no position of its own. A part can be a primitive or another chunk, so cards nest. "The loop of a 6" could be a chunk of chunks of strokes.</li>
+  <li><b>Exemplar / class cards</b> — a whole thing with a label attached: a remembered digit, or (in the counting version) a class's table of what tends to sit where.</li>
+</ul>
+<p>Every made card starts <b>provisional</b> — cheap to write, allowed to be wrong, allowed to be forgotten. It becomes <b>consolidated</b> only by earning it. That earning step is the "click" (section 6).</p>
+
+<div class="box">
+<b>Why parts are stored relative to each other.</b> A chunk card says "stroke 12, and stroke 48 one cell to its right, and stroke 9 two cells below". It does not say where on the canvas. When the chunk is recognised in a picture it gets an <i>anchor</i> — the canvas position of its first cell — and then it is one ordinary item, "chunk C at anchor (4,7)". The same card serves every position.
+</div>
+
+<h2>4. Working memory: one pile with tags</h2>
+<p>During an episode (one object, one digit) everything the system currently believes sits in a single pile. Each item is <b>tag ⊗ name ⊗ position</b>, where the tag says where the belief came from:</p>
+<table>
+<tr><th>tag</th><th>meaning</th><th>who writes it</th></tr>
+<tr><td>observed</td><td>I looked here and saw this</td><td>the sensor</td></tr>
+<tr><td>inferred</td><td>I recognised these parts as this chunk</td><td>recognition (compaction)</td></tr>
+<tr><td>assumed</td><td>I am currently entertaining this hypothesis</td><td>the guessing step</td></tr>
+</table>
+<p>Because the tag is part of the fingerprint, "what have I actually seen?" and "what am I only assuming?" are the same kind of question as "what is at cell 12?": walk the pile back by the tag and read what lines up. The system reads its own beliefs through the same operation it uses for everything else, ghosts included.</p>
+
+<h2>5. The loop: one glimpse at a time</h2>
+<p>The system never sees a whole picture. It sees one cell per glimpse. Between glimpses it runs this loop:</p>
+<div class="flow">
+  <div class="step"><b>Read the pile.</b> What strokes have I seen where? What have I already inferred?</div>
+  <div class="arrow">↓</div>
+  <div class="step"><b>Vote.</b> Every stroke I have seen votes for every card that has a similar stroke at a compatible position. Each card, placed at each possible anchor, gets a score: how many cells agree, how many disagree. (Cards that disagree with something seen are out.)</div>
+  <div class="arrow">↓</div>
+  <div class="step"><b>Compress if you can.</b> If a chunk's cells are all seen and agree, replace those strokes in the pile by the single chunk item. Fewer items, more room. Recognition and compression are the same act.</div>
+  <div class="arrow">↓</div>
+  <div class="step"><b>Keep a few guesses in mind.</b> The strongest hypotheses go into the pile as "assumed" items — only a handful, because the pile is small. One slot is always reserved for the best <i>idea</i> (a provisional card), so ideas get tested instead of crowded out.</div>
+  <div class="arrow">↓</div>
+  <div class="step"><b>Under pressure?</b> If the pile is getting full: keep fewer guesses; then try to compress what is seen into a new provisional chunk; and if that still is not enough, stop looking — overwhelmed.</div>
+  <div class="arrow">↓</div>
+  <div class="step"><b>Decide or look.</b> Declare only when one hypothesis clearly dominates, explains everything seen, has evidence in more than one of its parts, and has made predictions about unseen cells that came true. Otherwise choose the next cell: where the guesses <i>disagree</i> most, or, if one guess leads alone, the cell where it is most exposed (a part of it with no evidence yet, far from what was seen).</div>
+</div>
+<p>The "where to look" rule matters a lot. On the toy world, looking where hypotheses disagree recognised objects in about 6 glimpses with no mistakes, while just exploring the frontier fell to 23% once the library was rich. On MNIST it saved about 1.4 glimpses per digit and no more; digits are less about pinpoint differences.</p>
+
+<h2>6. Learning: counting, naming, clicking</h2>
+<p>There are no weights and no error signal anywhere. Every piece of learning is one of three things.</p>
+
+<h3>6a. Counting</h3>
+<p>When the label is shown (the MNIST counting experiments), the system keeps a table: for class 7, at cell 12, how often each stroke appeared, and how often the cell was blank. That is the whole "model" of a class. Reading it back gives "how expected is this stroke here for a 7", and multiplying those over the cells you have seen gives an opinion about the class. Surprise is just how unexpected what you saw was. Pairs are counted too: "this item and that item, at this relative offset, occurred together".</p>
+
+<h3>6b. Naming what recurs: ideas</h3>
+<p>A new card appears when something recurs. Three ways:</p>
+<ul>
+  <li><b>A pair recurs.</b> Two items at the same relative offset seen together enough times become a provisional chunk. Chunks are items too, so pairs of chunks make bigger chunks, level by level.</li>
+  <li><b>A shared sub-pattern is noticed.</b> Part of what I see now is also part of something I remember, and that shared part shows up in at least two independent things. That is an <i>idea</i>: name the shared part. (This is how the toy world recovered its hidden sub-assemblies exactly.)</li>
+  <li><b>Pressure.</b> The pile is full and nothing known explains the scene: group what is seen into a new provisional chunk and collapse it. A guess, to be tested later.</li>
+</ul>
+
+<h3>6c. The click, and its opposite</h3>
+<p>A provisional card is written for good — it <b>clicks</b> — when two things are true:</p>
+<ol>
+  <li><b>It pays for itself.</b> Think of description length as "how many yes/no questions would I need to write all of this down". A card costs questions to store. It saves questions every time it stands in for several items: as one item in a scene, or as one part inside another card. When the questions saved exceed the questions spent, the card has paid for itself. Nobody sets a threshold; the arithmetic decides.</li>
+  <li><b>It has worked.</b> It was used as a hypothesis and predicted an unseen cell correctly at least once. An idea is a compaction the system tries; the click is the verdict after the test.</li>
+</ol>
+<p>The opposite happens too: a consolidated card whose savings evaporate (because a better card made its parents cheaper another way) is inlined back into its parents and forgotten. Same arithmetic, other direction.</p>
+
+<div class="box warn">
+<b>The lesson we learned the hard way.</b> The first version credited a chunk every time it was recognised, including inside a parent that was itself a card. That is fictitious: a fragment that only ever occurs inside one chunk saves nothing. Eight junk two-cell fragments consolidated. Counting savings structurally — once per scene it stands for alone, once per distinct card it sits inside — fixed it: zero junk afterwards.
+</div>
+
+<h3>6d. Usefulness, not frequency</h3>
+<p>Naming what recurs most gives you what every digit shares — a little cross, a bar — which tells you nothing about which digit it is. In the counting experiments that library <i>hurt</i> accuracy by 13 points. So the newer versions score a chunk by what it does: every time it is placed with some cells unseen, it predicts them, and when those cells arrive the prediction is scored in bits against the class table. Its label value is scored the same way. A chunk earns by removing surprise, not by being common.</p>
+
+<h2>7. Search: where the "OMG" comes from</h2>
+<p>Counting pairs only finds things that sit next to each other. It cannot discover that three strokes far apart, plus the label, go together. For that there is a small bounded <b>search</b>, run only when the current digit is still surprising after everything known has been applied — search when unexplained, not always.</p>
+<div class="flow">
+  <div class="step">Start from each seen stroke as a one-item candidate.</div>
+  <div class="arrow">↓</div>
+  <div class="step">Extend each candidate by a few more strokes. Which ones first? The ones the pair counts say have co-occurred with it most (the heuristic), plus <b>one random one</b> — the creative slot, the only way a genuinely new combination can enter.</div>
+  <div class="arrow">↓</div>
+  <div class="step">Score each candidate: among recent digits that contained this combination, how strongly did it point to the current label? Keep the best few (the beam), extend again, a few levels deep.</div>
+  <div class="arrow">↓</div>
+  <div class="step">If the best candidate explains a lot at once — "these three things are why this is a 7" — write it as a provisional card. Then it must earn its click like any other.</div>
+</div>
+<p>Honest status: the search is built and runs, but so far it has produced almost nothing, because its memory of recent digits was keyed by exact stroke identity, so a three-stroke combination rarely had three past digits in common. The newest version keys it by stroke <i>families</i> instead. Not yet measured.</p>
+
+<h2>8. The latest version: integrate as you go</h2>
+<p>This is the design from our last conversation. Cells arrive one at a time in random order, nearly the whole digit. After every cell the system may reorganise what it holds:</p>
+<ul>
+  <li>the new stroke votes for chunks; a chunk with at least half its cells present and none contradicted may be placed;</li>
+  <li>a placement may take cells that an existing chunk owns <b>if it explains more</b>; the displaced chunk dissolves back into its strokes; this repeats until nothing changes — so having grouped 1 and 2, when 3 arrives it can regroup 1 with 3 if that fits better, or build a chunk-of-chunks on top;</li>
+  <li>at most 20 top-level items. Over the cap it must compact, and if it cannot, it drops its oldest stroke. The opinion about the class forms from what is <i>held</i>, not from what was shown;</li>
+  <li>every placed chunk predicts its unseen cells, and when they arrive the prediction is scored — that is the natural, online test of a chunk.</li>
+</ul>
+<p>At the end it is asked the class, then asked to predict a few held-out cells, answering from the parse (the chunk covering the cell) before falling back to the class table.</p>
+
+<div class="widget" id="w3">
+  <h4>Try it: a parse forming, cell by cell</h4>
+  <p class="small">A 13×13 digit. Dark = ink. Click <i>show a cell</i> repeatedly (or auto). Blue outline = seen. Light blue = a chunk has been placed and is predicting cells it has not seen. The counter shows how many items are held versus the cap.</p>
+  <div class="row"><div class="grid13" id="w3grid"></div>
+    <div>
+      <div class="row"><button onclick="w3.step()">show a cell</button><button onclick="w3.auto()">auto</button><button onclick="w3.restart()">restart</button></div>
+      <div class="out" id="w3out"></div>
+    </div>
+  </div>
+  <p class="small">This demo uses two toy chunks (a vertical bar and a corner) and the same rules: a chunk is placed when half its cells are seen, it absorbs cells as they arrive, and over the cap the oldest loose stroke is dropped.</p>
+</div>
+
+<h2>9. What has actually happened</h2>
+
+<h3>Toy world (objects made of parts on a grid)</h3>
+<table>
+<tr><th>claim</th><th>result</th></tr>
+<tr><td>learns the hidden part library from glimpses, no labels</td><td>recovered exactly: 5 of 5 sub-assemblies, all 10 objects, zero junk chunks</td></tr>
+<tr><td>recognises fast</td><td>about 6 glimpses for a 7-cell object, zero wrong declarations</td></tr>
+<tr><td>looking where hypotheses disagree matters</td><td>87% vs 23% recognition once the library is rich</td></tr>
+<tr><td>working memory size bites</td><td>at 328 bits the library still forms but recognition falls to 47% for lack of room for hypotheses</td></tr>
+</table>
+
+<h3>MNIST, glimpse loop (4×4 grid of 7×7 strokes)</h3>
+<table>
+<tr><th>what</th><th>number</th></tr>
+<tr><td>stroke vocabulary allocated by recurrence, codes from counting</td><td>279 strokes; same-class strokes overlap 0.50 vs 0.07 in the label blocks</td></tr>
+<tr><td>whole-image bundle, nearest neighbour</td><td>86%</td></tr>
+<tr><td>glimpse loop, test accuracy</td><td>74.6% (confident declarations 93% right)</td></tr>
+<tr><td>self-model veto</td><td>confident-wrong 2.7% → 2.0%</td></tr>
+<tr><td>rotation as an operator</td><td>rotated digits 20% → 57–62%</td></tr>
+</table>
+
+<h3>MNIST, counting only (label shown, 5×5 strokes, 5,000 digits)</h3>
+<table>
+<tr><th>variant</th><th>class, table only</th><th>class, with library</th><th>predict unseen cells, table</th><th>with library</th></tr>
+<tr><td>hard stroke ids, 32 strokes seen</td><td>87.7%</td><td>87.3%</td><td>43.6%</td><td>50.5%</td></tr>
+<tr><td>graded (soft) codes</td><td>80.3%</td><td>85.3%</td><td>39.7%</td><td>44.0%</td></tr>
+<tr><td>frequency-built library (earlier version, 7×7)</td><td>84.3%</td><td>71.5%</td><td colspan="2">library hurt: it named what everything shares</td></tr>
+</table>
+<p>The usefulness-scored library builds itself seven levels deep in under a minute and helps predict unseen cells; on the label it mostly ties the plain table, because with 32 strokes seen the table is already strong. Soft codes lost twice; the likely reason is that the bumps were too fine to mean "a family of strokes", and that with 5,000 digits the plain counts are already well estimated.</p>
+
+<h3>Integrate-as-you-go (the newest script)</h3>
+<p>Runs correctly on 300 digits: the library answers about a third of held-out cells and improves completion. The full 5,000-digit run stalled: under memory pressure it minted a new provisional chunk almost every time it went over the cap, reached 5,000 provisional chunks after 300 digits, and the matching step drowned. The fix is a gate on pressure-born chunks; not applied yet.</p>
+
+<h2>10. What is honestly still missing</h2>
+<ul>
+  <li>The primitive codes are made by counting and clustering, not learned end to end; and the fixed patch grid has no translation invariance below a cell.</li>
+  <li>Poses compose exactly for translations only. Rotation is an operator applied outside the fingerprint arithmetic.</li>
+  <li>Search has not yet found anything worth keeping.</li>
+  <li>The library helps the self-supervised task (predict what you have not seen) more than the label. That may be the honest shape of this idea: it is a memory organiser, not a classifier.</li>
+  <li>Metacognition exists only as a small table of "situations where declaring went wrong". No language, no instruction.</li>
+</ul>
+
+<h2>Glossary</h2>
+<table>
+<tr><td><b>fingerprint</b></td><td>a sparse code: one switch on per block</td></tr>
+<tr><td><b>block / notch</b></td><td>a ring of switches; the marked notch is the value</td></tr>
+<tr><td><b>walk / bind</b></td><td>move each block's mark by a pose's amounts; exact inverse; poses add</td></tr>
+<tr><td><b>pile / bundle</b></td><td>counters behind switches; add, subtract, probe</td></tr>
+<tr><td><b>ghost</b></td><td>a probe that says "present" for something never added; the pile's capacity limit</td></tr>
+<tr><td><b>pressure</b></td><td>how likely the next probe is a ghost; drives compaction</td></tr>
+<tr><td><b>card</b></td><td>a table entry: a name plus parts at offsets</td></tr>
+<tr><td><b>chunk</b></td><td>a made card; parts relative to each other; nests</td></tr>
+<tr><td><b>anchor</b></td><td>where a chunk sits on the canvas when recognised</td></tr>
+<tr><td><b>provisional / consolidated</b></td><td>tried / earned</td></tr>
+<tr><td><b>click</b></td><td>the moment a card pays for itself and has worked</td></tr>
+<tr><td><b>idea</b></td><td>a provisional card born from noticing recurrence</td></tr>
+<tr><td><b>surprise</b></td><td>how unexpected an observation was under the current tables</td></tr>
+<tr><td><b>parse</b></td><td>the current set of top-level items held for a digit</td></tr>
+</table>
+
+<p class="small">Files: <code>sdr.py</code> fingerprints and poses · <code>memory.py</code> the table and the click · <code>world.py</code>, <code>agent.py</code>, <code>run.py</code> the toy world · <code>mnist.py</code>, <code>digits.py</code>, <code>run_mnist.py</code> the glimpse loop on digits · <code>tally.py</code>, <code>tally2.py</code>, <code>tally3.py</code> the counting versions · <code>DESIGN.md</code> the full record.</p>
+
+</main>
+<script>
+// ---------- widget 1: fingerprints and walking ----------
+const w1 = (() => {
+  const B = 4, L = 8;
+  let A = rand(), Bv = rand(), P = rand(), walked = false;
+  function rand() { return Array.from({length: B}, () => Math.floor(Math.random() * L)); }
+  function bind(x, p) { return x.map((v, i) => (v + p[i]) % L); }
+  function draw(id, code, other) {
+    const el = document.getElementById(id); el.innerHTML = "";
+    for (let b = 0; b < B; b++) {
+      const blk = document.createElement("div"); blk.className = "block";
+      for (let s = 0; s < L; s++) {
+        const d = document.createElement("div"); d.className = "slot";
+        if (code[b] === s) d.className += (other && other[b] === s) ? " both" : " on";
+        blk.appendChild(d);
+      }
+      el.appendChild(blk);
+    }
+  }
+  function overlap(x, y) { return x.reduce((n, v, i) => n + (v === y[i] ? 1 : 0), 0); }
+  function render() {
+    const a = walked ? bind(A, P) : A, b = walked ? bind(Bv, P) : Bv;
+    draw("w1A", a, b); draw("w1B", b, a); draw("w1P", P);
+    document.getElementById("w1out").textContent =
+      (walked ? "after walking by P:  " : "before walking:      ") +
+      `A and B agree on ${overlap(a, b)} of ${B} blocks` +
+      (walked ? `\nA-at-P shares ${overlap(a, A)} block(s) with the original A — it looks like a stranger, yet walking back recovers A exactly.` : "");
+  }
+  return {
+    randA() { A = rand(); walked = false; render(); },
+    makeBsimilar() { Bv = A.slice(); Bv[Math.floor(Math.random() * B)] = Math.floor(Math.random() * L); walked = false; render(); },
+    randP() { P = rand(); walked = false; render(); },
+    walk() { walked = true; render(); },
+    reset() { walked = false; render(); },
+    render
+  };
+})();
+w1.render();
+
+// ---------- widget 2: the pile and ghosts ----------
+const w2 = (() => {
+  const B = 4, L = 8;
+  let counts = Array.from({length: B}, () => Array(L).fill(0)), items = [], lastProbe = null;
+  function rand() { return Array.from({length: B}, () => Math.floor(Math.random() * L)); }
+  function present(code) { return code.every((v, b) => counts[b][v] > 0); }
+  function density() { let n = 0; counts.forEach(r => r.forEach(c => { if (c > 0) n++; })); return n / (B * L); }
+  function render(msg) {
+    const el = document.getElementById("w2pile"); el.innerHTML = "";
+    for (let b = 0; b < B; b++) for (let s = 0; s < L; s++) {
+      const d = document.createElement("div"); d.className = "cnt" + (counts[b][s] > 0 ? " hot" : "") + (lastProbe && lastProbe[b] === s ? " probe" : "");
+      d.textContent = counts[b][s]; el.appendChild(d);
+    }
+    const dens = density();
+    const pGhost = Math.pow(dens, B);
+    document.getElementById("w2out").textContent = (msg ? msg + "\n" : "") +
+      `${items.length} item(s) in the pile; ${(dens * 100).toFixed(0)}% of counters non-zero; chance a stranger is found: ${(pGhost * 100).toFixed(0)}%`;
+  }
+  return {
+    add() { const c = rand(); items.push(c); c.forEach((v, b) => counts[b][v]++); lastProbe = null; render("added item " + items.length); },
+    probeKnown() { if (!items.length) { render("nothing in the pile"); return; } lastProbe = items[Math.floor(Math.random() * items.length)]; render("probing an item that IS in the pile: " + (present(lastProbe) ? "found (correct)" : "not found")); },
+    probeGhost() { lastProbe = rand(); render("probing a stranger that was never added: " + (present(lastProbe) ? "FOUND — a ghost" : "not found (correct)")); },
+    clear() { counts = Array.from({length: B}, () => Array(L).fill(0)); items = []; lastProbe = null; render("emptied"); },
+    render
+  };
+})();
+w2.render();
+
+// ---------- widget 3: parse forming cell by cell ----------
+const w3 = (() => {
+  const N = 13, CAP = 12;
+  // a toy "digit": a 7-like shape
+  const ink = new Set();
+  for (let c = 3; c <= 9; c++) ink.add(`2,${c}`);
+  for (let r = 3; r <= 10; r++) ink.add(`${r},${9 - Math.floor((r - 2) / 3)}`);
+  for (let r = 2; r <= 4; r++) ink.add(`${r},3`);
+  const chunks = [
+    { name: "bar", cells: [[0,0],[0,1],[0,2],[0,3]] },
+    { name: "drop", cells: [[0,0],[1,0],[2,0],[3,-1]] },
+    { name: "corner", cells: [[0,0],[0,1],[1,0],[2,0]] },
+  ];
+  let order, seen, placed, held, t, timer = null, dropped = 0;
+  function key(r, c) { return `${r},${c}`; }
+  function restart() { if (timer) { clearInterval(timer); timer = null; }
+    order = []; for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) order.push([r, c]);
+    for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+    seen = new Map(); placed = []; held = []; t = 0; dropped = 0; render("start: click 'show a cell'");
+  }
+  function tryPlace() {
+    for (const ch of chunks) for (const [sr, sc] of seen.keys ? [...seen.keys()].map(k => k.split(",").map(Number)) : []) {
+      for (const [dr, dc] of ch.cells) {
+        const a = [sr - dr, sc - dc];
+        const cells = ch.cells.map(([r, c]) => [a[0] + r, a[1] + c]);
+        if (cells.some(([r, c]) => r < 0 || c < 0 || r >= N || c >= N)) continue;
+        if (cells.some(([r, c]) => seen.has(key(r, c)) && seen.get(key(r, c)) === 0)) continue; // a seen blank contradicts
+        const nSeen = cells.filter(([r, c]) => seen.get(key(r, c)) === 1).length;
+        if (nSeen * 2 < cells.length) continue;
+        const owned = cells.some(([r, c]) => placed.some(p => p.cells.some(([pr, pc]) => pr === r && pc === c)));
+        if (owned) continue;
+        placed.push({ name: ch.name, cells });
+        held = held.filter(([r, c]) => !cells.some(([pr, pc]) => pr === r && pc === c));
+        return `placed chunk "${ch.name}" from ${nSeen} of ${cells.length} cells — it now predicts the rest`;
+      }
+    }
+    return null;
+  }
+  function step() {
+    if (t >= order.length) { render("all cells shown"); return; }
+    const [r, c] = order[t++]; const isInk = ink.has(key(r, c)) ? 1 : 0; seen.set(key(r, c), isInk);
+    let msg = `cell (${r},${c}) is ${isInk ? "ink" : "blank"}`;
+    if (isInk) {
+      const covered = placed.some(p => p.cells.some(([pr, pc]) => pr === r && pc === c));
+      if (!covered) held.push([r, c]);
+      const m = tryPlace(); if (m) msg += "\n" + m;
+      while (held.length + placed.length > CAP) { held.shift(); dropped++; msg += "\nover the cap: dropped the oldest loose stroke"; }
+    } else {
+      // a blank contradicts a chunk predicting ink there: dissolve it
+      const bad = placed.filter(p => p.cells.some(([pr, pc]) => pr === r && pc === c));
+      if (bad.length) { placed = placed.filter(p => !bad.includes(p)); bad.forEach(p => p.cells.forEach(([pr, pc]) => { if (seen.get(key(pr, pc)) === 1) held.push([pr, pc]); })); msg += `\na blank contradicted "${bad[0].name}": dissolved back into strokes`; }
+    }
+    render(msg);
+  }
+  function render(msg) {
+    const el = document.getElementById("w3grid"); el.innerHTML = "";
+    for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
+      const d = document.createElement("div"); const k = key(r, c);
+      let cls = "cell"; if (ink.has(k)) cls += " ink"; else cls += " blank";
+      const p = placed.find(p => p.cells.some(([pr, pc]) => pr === r && pc === c));
+      if (p) cls += seen.get(k) === 1 ? " chunk" : " pred";
+      if (seen.has(k)) cls += " seen";
+      d.className = cls; el.appendChild(d);
+    }
+    document.getElementById("w3out").textContent = `${msg}\n\nheld: ${held.length} loose stroke(s) + ${placed.length} chunk(s) = ${held.length + placed.length} of ${CAP}   dropped so far: ${dropped}\nchunks placed: ${placed.map(p => p.name).join(", ") || "none"}`;
+  }
+  return { step, restart, auto() { if (timer) { clearInterval(timer); timer = null; return; } timer = setInterval(() => { if (t >= order.length) { clearInterval(timer); timer = null; } else step(); }, 250); } };
+})();
+w3.restart();
+</script>
+</body>
+</html>
