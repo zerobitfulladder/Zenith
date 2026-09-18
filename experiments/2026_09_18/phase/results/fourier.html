@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rings, Tori and Fourier</title>
+<style>
+  :root {
+    --bg:#14161a; --panel:#1b1e24; --panel2:#21252d; --ink:#e6e8ec; --muted:#98a2b3;
+    --line:#2b313b; --accent:#6aa6ff; --warm:#ffb454; --ok:#5fd3a0; --warn:#ff7b7b; --violet:#c08cff;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--ink); background: var(--bg); margin:0; line-height:1.6; }
+  main { max-width: 860px; margin: 0 auto; padding: 28px 18px 120px; }
+  h1 { font-size: 2.1rem; margin: 0 0 .15em; letter-spacing:-.02em; }
+  h2 { font-size: 1.45rem; margin: 2.6em 0 .5em; padding-bottom:.25em; border-bottom: 1px solid var(--line); }
+  h3 { font-size: 1.08rem; margin: 1.8em 0 .4em; color: var(--accent); }
+  p, li { font-size: 1.02rem; }
+  a { color: var(--accent); }
+  .lead { color: var(--muted); font-size: 1.06rem; }
+  code { background: var(--panel2); padding: 1px 6px; border-radius: 4px;
+         font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; color:#cfe1ff; }
+  .eq { background: var(--panel2); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 12px 0;
+        font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .95rem; overflow-x:auto; color:#d8e6ff; }
+  .note { border-left: 3px solid var(--warm); background: rgba(255,180,84,.07); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .warnbox { border-left: 3px solid var(--warn); background: rgba(255,123,123,.07); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .okbox { border-left: 3px solid var(--ok); background: rgba(95,211,160,.07); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; }
+  .w { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin: 20px 0; }
+  .w h4 { margin: 0 0 4px; font-size: 1rem; color: var(--ink); }
+  .w .cap { color: var(--muted); font-size: .92rem; margin: 0 0 12px; }
+  .ctl { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; margin:10px 0 2px; font-size:.9rem; color:var(--muted); }
+  .ctl label { display:flex; align-items:center; gap:7px; white-space:nowrap; }
+  input[type=range] { accent-color: var(--accent); width: 130px; }
+  button { font: inherit; font-size: .88rem; padding: 5px 11px; border:1px solid var(--line);
+           background: var(--panel2); color: var(--ink); border-radius:6px; cursor:pointer; }
+  button:hover { background:#2b313b; border-color:#3a4150; }
+  button.on { background: var(--accent); color:#0b1220; border-color: var(--accent); }
+  canvas { display:block; max-width:100%; border-radius:8px; background:#101216; touch-action:none; }
+  .out { font-family: ui-monospace, Menlo, Consolas, monospace; font-size:.88rem; color:#bcd3ff;
+         background:#101216; border-radius:6px; padding:8px 10px; margin-top:10px; white-space:pre-wrap; }
+  .cv-row { display:flex; gap:14px; flex-wrap:wrap; align-items:flex-start; }
+  table { border-collapse: collapse; width:100%; margin:14px 0; font-size:.94rem; }
+  th, td { border:1px solid var(--line); padding:7px 9px; text-align:left; }
+  th { background: var(--panel2); color: var(--muted); font-weight:600; }
+  .toc { background: var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px 18px; margin:24px 0; }
+  .toc ol { margin:6px 0 0; padding-left:22px; }
+  .toc li { margin:3px 0; font-size:.97rem; }
+  .k { color: var(--warm); }
+  .small { font-size:.9rem; color: var(--muted); }
+  hr { border:0; border-top:1px solid var(--line); margin:2.5em 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Rings, Tori and Fourier</h1>
+<p class="lead">A build-from-nothing tutorial for the space this project works in. Every idea is
+introduced with something you can drag. No prior maths assumed beyond knowing what a circle is.
+Written for the HelloInductor design record; the payoff sections connect each idea back to a
+specific mechanism in <code>DESIGN.md</code>.</p>
+
+<div class="toc">
+  <b>The path.</b> Each part depends on the one before it. Parts 1&ndash;4 are the space.
+  Parts 5&ndash;8 are Fourier. Parts 9&ndash;10 are why the two fit together.
+  <ol>
+    <li><a href="#p1">A number that wraps</a> &mdash; the ring</li>
+    <li><a href="#p2">Arrows, not angles</a> &mdash; how to add opinions</li>
+    <li><a href="#p3">Many rings at once</a> &mdash; the torus</li>
+    <li><a href="#p4">A ring can hold a crowd</a> &mdash; distributions</li>
+    <li><a href="#p5">Waves that fit</a> &mdash; what a harmonic is</li>
+    <li><a href="#p6">Every pattern is a pile of waves</a> &mdash; the Fourier idea</li>
+    <li><a href="#p7">Measuring one wave</a> &mdash; the k-th coefficient</li>
+    <li><a href="#p8">Keeping only a few</a> &mdash; truncation and blur</li>
+    <li><a href="#p9">Shifting is spinning</a> &mdash; why binding and Fourier agree</li>
+    <li><a href="#p10">Smearing and undoing it</a> &mdash; convolution</li>
+    <li><a href="#p11">Cheat sheet</a></li>
+  </ol>
+</div>
+
+<div class="note">
+<b>Where this is going.</b> In this project a <em>fingerprint</em> is a list of angles &mdash; one
+angle per block. A <em>pile</em> is several fingerprints superposed. Two questions decide how the
+whole architecture behaves: <em>how do you superpose angles</em>, and <em>how many separate
+opinions can one block hold at once</em>. Both are Fourier questions, and by the end of this page
+you will be able to answer them yourself.
+</div>
+
+<h2 id="p1">1. A number that wraps</h2>
+
+<p>Start with the most ordinary thing: a clock. Three hours after 11 o'clock is 2 o'clock, not 14.
+The numbers run out and start again. That is <b>wrapping</b>, and a set of numbers that wraps is a
+<b>ring</b>.</p>
+
+<p>Our blocks are rings with 41 positions. Position 40 plus 3 lands on position 2. That is the
+whole of it. But it is easier to think about if you stop drawing the positions in a line and draw
+them around a circle &mdash; because then "wrapping" stops being a special rule and becomes just
+"going all the way round".</p>
+
+<p>Once the positions are on a circle, a position <em>is</em> an angle. Position 0 is at the right,
+and each step counter-clockwise advances by one notch, which is <code>2&pi;/41</code> of a full
+turn. So <b>a block's value is an angle</b>, and the 41 notches are just where we happened to put
+tick marks. Nothing stops us from using the angles in between &mdash; that is exactly what
+"continuous blocks" means.</p>
+
+<div class="w">
+  <h4>Widget 1 &mdash; the ring</h4>
+  <p class="cap">Drag the dot. Watch the angle, the turn fraction and the nearest notch. Notice that
+  the notches are a choice, and the angle underneath is continuous.</p>
+  <div class="cv-row"><canvas id="c1" width="360" height="330"></canvas>
+  <div style="flex:1;min-width:230px"><div class="ctl">
+    <label>notches <input type="range" id="c1n" min="4" max="41" step="1" value="41"><span id="c1nv">41</span></label>
+    <label><input type="checkbox" id="c1snap"> snap to notch</label>
+  </div><div class="out" id="c1out"></div></div></div>
+</div>
+
+<h3>Adding angles: walking</h3>
+
+<p>Add two angles by adding the numbers and wrapping. On the circle this is <b>rotation</b>: start
+at angle <code>a</code>, turn by <code>b</code>, land at <code>a+b</code>. The project calls this
+<b>walking</b>, and it is what <b>binding</b> does to each block.</p>
+
+<p>Two properties come free and both matter enormously:</p>
+<ul>
+<li><b>Order does not matter.</b> Turning by <code>b</code> then <code>c</code> is the same as
+<code>c</code> then <code>b</code>. This is why a card's name built from its parts does not depend
+on the order the parts were integrated (<code>product.py</code>).</li>
+<li><b>Everything is undoable.</b> To undo a turn of <code>b</code>, turn by <code>&minus;b</code>.
+Exactly, with no loss. This is why "subtract what I have already seen" is one operation and not a
+mechanism that had to be invented.</li>
+</ul>
+
+<div class="w">
+  <h4>Widget 2 &mdash; walking, and why it scrambles</h4>
+  <p class="cap">Take one step size and keep applying it. If the step divides the circle evenly you
+  land on a few positions forever. If it does not, you scatter all over. <b>This is the only reason
+  a random walk acts like a random rotation:</b> not magic, just wrapping.</p>
+  <div class="cv-row"><canvas id="c2" width="360" height="330"></canvas>
+  <div style="flex:1;min-width:230px"><div class="ctl">
+    <label>step (notches of 41) <input type="range" id="c2s" min="1" max="40" step="1" value="7"><span id="c2sv">7</span></label>
+    <label>steps taken <input type="range" id="c2k" min="1" max="41" step="1" value="12"><span id="c2kv">12</span></label>
+  </div><div class="out" id="c2out"></div></div></div>
+</div>
+
+<div class="note"><b>Why 41 and why prime.</b> 41 is prime, so <em>every</em> non-zero step size
+eventually visits all 41 positions before repeating &mdash; there are no small cycles to get stuck
+in. It also means any repeated walk can be divided back out, which is what lets a card built from
+K parts be shifted by <code>t</code> (it moves by <code>K&middot;t</code>) and then un-shifted.</div>
+
+<h2 id="p2">2. Arrows, not angles</h2>
+
+<p>Here is the problem that forces everything else. Suppose three voters give opinions about one
+block: 10&deg;, 20&deg;, 30&deg;. The average is 20&deg;, fine. Now suppose they say 350&deg;,
+10&deg;, 30&deg;. The numerical average is 130&deg; &mdash; which is nowhere near any of them. The
+arithmetic broke, because the numbers wrap and averaging does not know that.</p>
+
+<p><b>You cannot average angles. You can average arrows.</b></p>
+
+<p>Write an angle <code>&theta;</code> as an arrow of length 1 pointing that way:
+<code>(cos &theta;, sin &theta;)</code>. Now "add the opinions" means putting the arrows nose to
+tail and seeing where you end up. This always works, never wraps wrongly, and it hands you
+something extra for free:</p>
+
+<div class="eq">direction of the sum  =  the consensus angle
+length    of the sum  =  how much they agreed   (0 = no agreement, 1 = perfect agreement)</div>
+
+<p>That second line is not an extra feature somebody designed in. It is the <em>leftover</em> when
+unit arrows point different ways. A pile block is therefore <b>two numbers</b>, not one: an angle
+and a length. The length is the confidence, and it arrives whether you want it or not.</p>
+
+<p class="small">Keep this arrow in mind. It has a proper name that we will not need until Part 7,
+and when it turns up there it will not be a new object &mdash; it will be this one.</p>
+
+<div class="w">
+  <h4>Widget 3 &mdash; adding arrows</h4>
+  <p class="cap">Left: the arrows laid nose to tail, with the resultant in orange. Right: the same
+  items as points on the ring. Try the presets. <b>Watch "two opposite" carefully</b> &mdash; the
+  sum is zero, meaning "no opinion", even though the voters were not confused at all. They were
+  split. A single arrow cannot tell those apart, and that limitation is the reason Part 5 exists.</p>
+  <canvas id="c3" width="700" height="300"></canvas>
+  <div class="ctl">
+    <label>items <input type="range" id="c3n" min="1" max="40" step="1" value="8"><span id="c3nv">8</span></label>
+    <label>spread <input type="range" id="c3s" min="0" max="100" step="1" value="20"><span id="c3sv">0.20</span></label>
+    <button data-p3="agree">all agree</button>
+    <button data-p3="two">two opposite</button>
+    <button data-p3="unif">spread evenly</button>
+    <button data-p3="rand">random</button>
+  </div>
+  <div class="out" id="c3out"></div>
+</div>
+
+<div class="okbox"><b>Capacity, in one sentence.</b> N arrows pointing in random directions sum to a
+length of about <code>1/&radic;N</code> &mdash; so a pile of 20 unrelated items leaves any single
+one at about a quarter strength. That <code>&radic;N</code> law <em>is</em> the capacity limit the
+design keeps running into, and you can watch it happen in the widget by raising "items" with spread
+at maximum.</div>
+
+<h2 id="p3">3. Many rings at once &mdash; the torus</h2>
+
+<p>One block is one ring. A fingerprint is 16 blocks, so it is 16 angles: one point on each of 16
+independent rings. The name for "several independent rings considered together" is a <b>torus</b>.</p>
+
+<p>Two rings make the familiar doughnut. Pick an angle around the big loop and an angle around the
+tube, and you have named a point on the surface. The important word is <b>independent</b>: moving
+around the tube does not change where you are around the big loop. Our 16 blocks are independent in
+exactly that way, which is why a code can satisfy 16 different constraints at once &mdash; block 3
+can carry "this predicts a 7" while block 9 carries "this sits next to a bar", and they do not
+fight.</p>
+
+<div class="w">
+  <h4>Widget 4 &mdash; two rings are a doughnut</h4>
+  <p class="cap">Drag either dial. The square is the same space cut open and flattened &mdash; when
+  the point leaves the right edge it comes back on the left, because the edges are glued. The
+  doughnut is that square rolled up so the gluing is real.</p>
+  <canvas id="c4" width="700" height="290"></canvas>
+  <div class="ctl"><label>ring A <input type="range" id="c4a" min="0" max="359" value="50"></label>
+  <label>ring B <input type="range" id="c4b" min="0" max="359" value="200"></label></div>
+  <div class="out" id="c4out"></div>
+</div>
+
+<h3>Binding, on the torus</h3>
+<p>To bind two fingerprints, add them ring by ring. Block 1 of the first plus block 1 of the second,
+block 2 plus block 2, and so on. Every block wraps on its own. Because each ring obeys the two
+properties from Part 1, so does the whole fingerprint: order does not matter, and it undoes exactly.</p>
+
+<div class="w">
+  <h4>Widget 5 &mdash; binding is walking every ring</h4>
+  <p class="cap">Eight blocks. <span style="color:#6aa6ff">Blue</span> is a stroke's code,
+  <span style="color:#c08cff">violet</span> is a pose, <span style="color:#ffb454">orange</span> is
+  the two bound together. Reroll and see that the result looks unrelated to either &mdash; and then
+  press <i>unbind the pose</i> and watch the blue come back exactly.</p>
+  <canvas id="c5" width="700" height="150"></canvas>
+  <div class="ctl">
+    <button id="c5roll">reroll</button>
+    <button id="c5bind">bind</button>
+    <button id="c5un">unbind the pose</button>
+    <span id="c5msg"></span>
+  </div>
+  <div class="out" id="c5out"></div>
+</div>
+
+<div class="note"><b>Holographic, since you asked yesterday.</b> Notice the bound code has no
+particular block "holding" the stroke and no block "holding" the pose &mdash; every block carries a
+little of both. That is what <em>holographic</em> means: the information is smeared over the whole
+thing rather than filed in one place. Lose some blocks and you still recover the item, just less
+certainly &mdash; like cutting a hologram in half and getting the whole picture, dimmer.</div>
+
+<h2 id="p4">4. A ring can hold a crowd</h2>
+
+<p>So far each block held one angle. But a pile is many items at once, so what a block really holds
+is <b>a weight at every position around the ring</b> &mdash; a histogram wrapped into a circle.
+Three voters at 20&deg; and one at 200&deg; is a tall bar at 20&deg; and a short one at 200&deg;.</p>
+
+<p>This is the honest picture of a block, and everything from here is about how to describe such a
+ring-shaped pattern <em>cheaply</em>.</p>
+
+<div class="w">
+  <h4>Widget 6 &mdash; a distribution on a ring</h4>
+  <p class="cap">Click anywhere on or near the circle to drop weight there; click again to add more.
+  The bars stick out from the circle. This is what a block is actually holding when several things
+  are piled into it.</p>
+  <div class="cv-row"><canvas id="c6" width="360" height="330"></canvas>
+  <div style="flex:1;min-width:230px">
+    <div class="ctl"><button id="c6clr">clear</button>
+      <button data-p6="one">one spike</button>
+      <button data-p6="two">two spikes</button>
+      <button data-p6="bump">one wide bump</button>
+      <button data-p6="noise">scatter</button></div>
+    <div class="out" id="c6out"></div></div></div>
+</div>
+
+<p>The single arrow of Part 2 is one way to summarise this histogram: it is the histogram's
+<b>centre of mass</b>. Cheap &mdash; two numbers instead of 41 &mdash; but lossy. Load the "two
+spikes" preset and watch the arrow collapse to nearly nothing, the same as if you had loaded
+"scatter". Two completely different situations, one summary.</p>
+
+<p>The fix is to summarise the histogram with <em>more than one</em> number-pair. Which pairs?
+That is Fourier's answer, and we can now build it.</p>
+
+<h2 id="p5">5. Waves that fit &mdash; what a harmonic is</h2>
+
+<p>Forget piles for a moment. Here is a pure question: <em>what are the natural shapes on a
+circle?</em></p>
+
+<p>On a circle, a pattern must join up with itself &mdash; go all the way round and you are back
+where you started, so the value has to match. The simplest patterns with that property are waves
+that fit a <b>whole number</b> of times around:</p>
+
+<ul>
+<li><b>k = 0</b> &mdash; flat. The same everywhere. "How much is there in total."</li>
+<li><b>k = 1</b> &mdash; one hump and one dip. High on one side, low on the other. "Which side."</li>
+<li><b>k = 2</b> &mdash; two humps opposite each other. "Is it split across a diameter."</li>
+<li><b>k = 3</b> &mdash; three humps. And so on.</li>
+</ul>
+
+<p>A wave that fits <code>k</code> whole times around is called the <b>k-th harmonic</b>. The word
+comes from music: pluck a string and it vibrates at one main frequency plus whole-number multiples
+of it, and those multiples are the harmonics that give the note its character. Same arithmetic here,
+bent into a circle. <span class="small">k is sometimes called the <i>frequency</i>: how many cycles
+per trip round.</span></p>
+
+<div class="w">
+  <h4>Widget 7 &mdash; the harmonics</h4>
+  <p class="cap">Left: the wave drawn as a deformation of the circle (pushed out where it is
+  positive, pulled in where negative). Right: the same wave unrolled into a flat line, which is the
+  picture people usually draw. The phase slider slides the wave around the ring.</p>
+  <canvas id="c7" width="700" height="280"></canvas>
+  <div class="ctl">
+    <label>k <input type="range" id="c7k" min="0" max="8" step="1" value="1"><span id="c7kv">1</span></label>
+    <label>phase <input type="range" id="c7p" min="0" max="359" step="1" value="0"><span id="c7pv">0&deg;</span></label>
+  </div>
+  <div class="out" id="c7out"></div>
+</div>
+
+<div class="note"><b>Fix the picture in your head now, because everything depends on it:</b>
+harmonic k answers one specific question about a ring-shaped pattern &mdash; <em>"how much does this
+pattern look like k humps arranged evenly around the circle, and where are those humps?"</em>
+k = 1 is "which side is it on". k = 2 is "is it two-sided".</div>
+
+<h2 id="p6">6. Every pattern is a pile of waves</h2>
+
+<p>Here is the claim that makes Fourier useful, and it is a genuinely surprising fact rather than a
+definition:</p>
+
+<div class="okbox"><b>Any pattern on a circle can be written as a sum of harmonics.</b> Give each
+harmonic an <em>amount</em> (how tall) and a <em>phase</em> (where its humps sit), add them all up,
+and you can reproduce any ring-shaped pattern exactly.</div>
+
+<p>Amount and phase together are just... an arrow. Length = amount, direction = phase. So the
+recipe for a pattern on a ring is <b>one arrow per harmonic</b>. Those arrows are the
+<b>Fourier coefficients</b>, usually written <code>c<sub>0</sub>, c<sub>1</sub>,
+c<sub>2</sub>, &hellip;</code>.</p>
+
+<p>Two directions, and both have names that sound harder than they are:</p>
+<table>
+<tr><th>Direction</th><th>Name</th><th>In words</th></tr>
+<tr><td>pattern &rarr; arrows</td><td><b>Fourier transform</b> (or <i>analysis</i>)</td><td>measure how much of each harmonic is in there</td></tr>
+<tr><td>arrows &rarr; pattern</td><td><b>inverse transform</b> (or <i>synthesis</i>)</td><td>add the harmonics back up</td></tr>
+</table>
+
+<p>That is all "taking a Fourier transform" means: <em>measuring the harmonic content</em>. It is a
+change of description, not a change of the thing. Same pattern, listed by "how much of each wave"
+instead of by "how much at each position".</p>
+
+<div class="w">
+  <h4>Widget 8 &mdash; build a shape out of waves</h4>
+  <p class="cap">Drag the amount sliders to add harmonics together and watch the shape form. Then
+  press a target button: the page <em>measures</em> that target's harmonics and sets the sliders for
+  you &mdash; that is the Fourier transform, done to something in front of you. Note how few
+  harmonics a smooth bump needs and how many a sharp spike needs.</p>
+  <canvas id="c8" width="700" height="300"></canvas>
+  <div class="ctl" id="c8ctl"></div>
+  <div class="ctl">
+    <button data-p8="bump">measure: wide bump</button>
+    <button data-p8="spike">measure: sharp spike</button>
+    <button data-p8="two">measure: two spikes</button>
+    <button data-p8="zero">clear</button>
+  </div>
+  <div class="out" id="c8out"></div>
+</div>
+
+<h2 id="p7">7. Measuring one wave &mdash; the k-th coefficient</h2>
+
+<p>How do you actually measure "how much of harmonic k is in this pattern"? The operation is so
+simple it is almost disappointing, and it is exactly what our code does.</p>
+
+<div class="eq">c_k  =  sum over items j of   (weight_j) &times; (arrow pointing at k &times; &theta;_j)</div>
+
+<p>In words: <b>take every item, spin its angle k times faster, and add up the arrows.</b></p>
+
+<p>Why does spinning k times faster measure harmonic k? Because if the items really are arranged in
+k humps, multiplying their angles by k brings all those humps around to the <em>same</em> place, so
+the arrows line up and the sum is long. If they are not arranged that way, the spun arrows point
+every which way and cancel to nothing.</p>
+
+<div class="okbox"><b>You have already computed one of these.</b> Put <code>k = 1</code> in that
+formula. Spinning every angle by 1 leaves it alone, so it reads: <em>take every item and add up the
+arrows</em> &mdash; which is exactly what you did in Part 2. <b>The pile's arrow is
+<code>c<sub>1</sub></code>.</b> It always was; we simply had no name for it yet.
+<p style="margin:.7em 0 0">This is worth being precise about, because it is easy to get backwards.
+Fourier is <em>not</em> something you do to the pile afterwards. The pile's arrow is already the
+first member of a family, and what Fourier adds is the rest of the family: the same
+add-up-the-arrows move, done with every angle spun twice, three times, and so on. It tells you
+what the next-cheapest summaries are, instead of leaving you to invent extra numbers by guesswork.</p></div>
+
+<p><span class="small">If you have seen <code>e<sup>i&theta;</sup></code> before: that is just
+notation for "the unit arrow at angle &theta;", and <code>c_k = &Sigma;<sub>j</sub> w<sub>j</sub>
+e<sup>&minus;ik&theta;<sub>j</sub></sup></code> is the line above written compactly. The minus sign
+is a bookkeeping convention about which way you spin. Nothing new is happening.</span></p>
+
+<div class="w">
+  <h4>Widget 9 &mdash; spin by k and add</h4>
+  <p class="cap">Top: your items on the ring. Bottom: each item's arrow after spinning k times, and
+  their sum in orange. Move k and watch the sum grow and shrink.
+  <b>The demonstration that matters: load "two opposite", then step k from 1 to 2.</b>
+  At k = 1 the arrows cancel &mdash; that is the "no opinion" reading. At k = 2 they line up
+  perfectly. The second coefficient sees a split that the first one is blind to.</p>
+  <canvas id="c9" width="700" height="340"></canvas>
+  <div class="ctl">
+    <label>k <input type="range" id="c9k" min="0" max="8" step="1" value="1"><span id="c9kv">1</span></label>
+    <button data-p9="one">one item</button>
+    <button data-p9="two">two opposite</button>
+    <button data-p9="three">three evenly</button>
+    <button data-p9="cluster">tight cluster</button>
+    <button data-p9="noise">scatter</button>
+  </div>
+  <div class="out" id="c9out"></div>
+</div>
+
+<div class="okbox"><b>This is the answer to "how many opinions can one block hold".</b>
+Keep only <code>c<sub>1</sub></code> and a block can hold one opinion plus a vagueness. Keep
+<code>c<sub>1</sub></code> and <code>c<sub>2</sub></code> and it can tell "torn between two things"
+from "no idea". Keep more and it can hold more. The design record's Part X.4 says ambiguity should
+be carried as superposition rather than resolved too early &mdash; the number of coefficients you
+keep is literally how much superposition a block is capable of.</div>
+
+<h2 id="p8">8. Keeping only a few &mdash; truncation and blur</h2>
+
+<p>A ring of 41 positions needs about 20 arrows to be described exactly. Keeping fewer is called
+<b>truncating</b>, and it has a very specific effect: <b>you get the pattern back, blurred</b>.</p>
+
+<div class="note"><b>The letter m, once and for all.</b> <code>m</code> is simply
+<b>how many coefficients you keep per block</b>. Nothing more.
+<table style="margin:10px 0 2px">
+<tr><td><code>m = 1</code></td><td>one arrow. One opinion plus a vagueness. <b>This is what the project actually runs.</b></td></tr>
+<tr><td><code>m = 2</code></td><td>enough to tell "split between two things" from "no idea".</td></tr>
+<tr><td><code>m &asymp; 20</code></td><td>the exact 41-slot histogram — the original substrate, recovered.</td></tr>
+</table></div>
+
+<p>The reason is that high harmonics are the wiggly ones. Harmonic 1 varies slowly around the
+circle; harmonic 15 wiggles fifteen times. Fine detail lives in the high harmonics, so dropping them
+drops the detail and keeps the broad shape. Keep the first <code>m</code> and the finest thing you
+can still see is about <code>1/m</code> of the way round the circle.</p>
+
+<div class="w">
+  <h4>Widget 10 &mdash; the blur dial</h4>
+  <p class="cap"><span style="color:#98a2b3">Grey</span>: the true histogram.
+  <span style="color:#6aa6ff">Blue</span>: what you get back from the first <span class="k">m</span>
+  coefficients. Slide m from 1 upward. At m = 1 everything is a single blob &mdash; load "two
+  spikes" and you will see the two merge into one lump in the wrong place. That is the failure mode
+  a single arrow has.</p>
+  <canvas id="c10" width="700" height="300"></canvas>
+  <div class="ctl">
+    <label>m <input type="range" id="c10m" min="1" max="20" step="1" value="1"><span id="c10mv">1</span></label>
+    <button data-p10="two">two spikes</button>
+    <button data-p10="one">one spike</button>
+    <button data-p10="bump">wide bump</button>
+    <button data-p10="three">three spikes</button>
+  </div>
+  <div class="out" id="c10out"></div>
+</div>
+
+<div class="warnbox"><b>Two different "more", easy to confuse.</b> Both sound like "give the
+system more room", and in our measurements they came out opposite ways.
+<table style="margin:10px 0 4px">
+<tr><th></th><th>more <b>blocks</b></th><th>more <b>coefficients</b> (m)</th></tr>
+<tr><td>what it adds</td><td>more independent rings, each with its own single opinion</td>
+    <td>finer resolution <em>inside</em> one ring, so it can hold two opinions at once</td></tr>
+<tr><td>costs</td><td>stored parameters, one angle per block per code</td><td>nothing stored &mdash; only the working pile gets bigger</td></tr>
+<tr><td>measured</td><td><span style="color:#5fd3a0">16 &rarr; 128 blocks: 38% &rarr; 64%</span></td>
+    <td><span style="color:#ff7b7b">m = 1 &rarr; 8: 38% &rarr; 24%</span></td></tr>
+</table>
+The free knob is the one that lost. The likely reason is not that a block cannot use the extra
+room, but that the extra harmonics make the learning problem rough &mdash; harmonic k wiggles k
+times as fast, so its slope flips sign k times as often, and the search gets lost. A block's
+inability to hold two opinions is real; it was just not what was hurting us.</div>
+
+<div class="note"><b>One knob between two substrates.</b> Our original block stored 41 slot counts.
+The angle version stores one arrow. Those are not two different designs &mdash; they are
+<code>m = 20</code> and <code>m = 1</code> of the same design. Everything in between is available,
+and it costs nothing in stored parameters, because the codes stay one angle per block; only the
+working pile carries the extra arrows.</div>
+
+<h3>Squinting, and what it does and does not clean up</h3>
+
+<p>Throwing away the high coefficients is a <b>low-pass filter</b> &mdash; it keeps the broad shape
+and discards the fine wiggle. That sounds like noise removal, and sometimes it is. Whether it helps
+depends entirely on where the noise lives, and our two kinds sit in opposite places.</p>
+
+<table>
+<tr><th>kind of noise</th><th>where it lands</th><th>does low-passing help?</th></tr>
+<tr><td><b>position error</b> &mdash; an item sits a notch off from where you expected</td>
+    <td>harmonic k gets a phase error of <code>k&middot;&epsilon;</code>, so the 8th is eight times as wrong as the 1st</td>
+    <td><span style="color:#5fd3a0">yes, a lot</span> &mdash; the damage is concentrated exactly where you are cutting</td></tr>
+<tr><td><b>crosstalk</b> &mdash; the other items in the pile interfering</td>
+    <td>every item is a spike, and a spike has every harmonic at full strength, so crosstalk is flat across k</td>
+    <td><span style="color:#ff7b7b">no, it hurts</span> &mdash; signal is flat too, so you discard both equally and are left with fewer measurements</td></tr>
+</table>
+
+<p>Crosstalk is the noise a pile actually suffers from, so "squinting removes noise" does not
+transfer there. But the position row matters, and it lands somewhere useful:
+<b>m = 1 is already maximally low-passed</b>. The phase error in <code>c<sub>1</sub></code> is
+<code>1&middot;&epsilon;</code>, the smallest it can be. So the setting the project runs is also the
+most position-robust setting available &mdash; an independent reason for m = 1, alongside the
+measured one.</p>
+
+<p class="small">Two different things get called squinting, worth keeping apart. Dropping harmonics
+makes each ring blurrier about <em>position</em>. Using only some of the blocks &mdash; 4 of 16 for a
+cheap first pass, then all 16 &mdash; makes the code coarser about <em>identity</em>. The design
+record means the second one, and it is still unused.</p>
+
+<h2 id="p9">9. Shifting is spinning &mdash; why binding and Fourier agree</h2>
+
+<p>Now the fact that makes all of this more than a nice way to draw things.</p>
+
+<p><b>Binding shifts a block's whole pattern around the ring.</b> If every item walks by the same
+amount <code>t</code>, the histogram rotates by <code>t</code>. What happens to the coefficients?</p>
+
+<div class="eq">shift the pattern by t   &rarr;   every arrow c_k spins by k&middot;t
+                                     and NO arrow changes length</div>
+
+<p>The lengths are untouched. Only the directions move &mdash; and the k-th one moves
+<code>k</code> times as fast, because harmonic k goes round k times per trip.</p>
+
+<div class="w">
+  <h4>Widget 11 &mdash; shift the pattern, watch the arrows spin</h4>
+  <p class="cap">Drag the shift. Top: the histogram rotating. Bottom: its first five coefficient
+  arrows. Watch <code>c<sub>3</sub></code> go round three times while <code>c<sub>1</sub></code>
+  goes round once, and watch every length stay frozen.</p>
+  <canvas id="c11" width="700" height="300"></canvas>
+  <div class="ctl">
+    <label>shift t <input type="range" id="c11t" min="0" max="359" step="1" value="0"><span id="c11tv">0&deg;</span></label>
+    <button data-p11="two">two spikes</button>
+    <button data-p11="bump">wide bump</button>
+    <button data-p11="one">one spike</button>
+  </div>
+  <div class="out" id="c11out"></div>
+</div>
+
+<p>Three consequences, all of which the project already ran into:</p>
+
+<ul>
+<li><b>"Binding is linear after all."</b> In the slot picture, binding looked like a weird
+combinatorial shuffle. In the arrow picture it is multiplication by a fixed arrow, per block. Same
+operation, and the second description is the one you can do calculus on.</li>
+<li><b>A card knows how many leaves it has.</b> Bind K things and shift them all by
+<code>t</code>, and the card's own arrows spin by <code>K&middot;t</code>. The leaf count is
+readable from how fast the name moves. Above 40 leaves it wraps past itself and the count becomes
+ambiguous &mdash; which is the limit <code>product.py</code> measured.</li>
+<li><b>The lengths are a shift-proof signature.</b> Anything computed from the lengths alone does
+not care where the object sits. That is translation invariance, available for free, and not yet
+used anywhere in the codebase.</li>
+</ul>
+
+<h2 id="p10">10. Smearing, and whether you can undo it</h2>
+
+<p>Last piece. So far binding moved everything by one exact amount. What if instead of "shift by
+exactly t" you want "shift by roughly t" &mdash; a soft, graded pose? Then each item spreads into a
+little bump instead of landing on a point. Spreading every item by the same bump and adding up the
+results is called <b>convolution</b>. It is just controlled smearing.</p>
+
+<p>In the arrow description, convolution becomes almost trivially simple:</p>
+
+<div class="eq">smear a pattern with a bump   &rarr;   multiply each c_k by the bump's own c_k</div>
+
+<p>Every harmonic is scaled by however much of that harmonic the bump contains. Which immediately
+tells you when the smearing can be undone: <b>divide</b>. And division works fine &mdash; unless you
+are dividing by zero.</p>
+
+<div class="warnbox"><b>A smear is undoable exactly when none of its coefficients is zero.</b>
+A sharp point has every coefficient at full length, so exact binding always undoes. A narrow bump
+has small but non-zero coefficients, so it undoes in principle but amplifies noise where they are
+smallest. A wide bump genuinely kills some harmonics, and what is killed is gone. That is why the
+record says graded binding is "invertible exactly when no wave amplitude is zero", and why the
+recommendation is to keep the product exact and let graded similarity act only in cleanup.</div>
+
+<div class="w">
+  <h4>Widget 12 &mdash; which smears are reversible</h4>
+  <p class="cap">Left: the smearing bump. Middle: its coefficient lengths as bars &mdash;
+  <span style="color:#ff7b7b">red</span> marks any that have effectively hit zero. Right: a pattern
+  smeared and then un-smeared. Widen the bump until bars go red, and watch the recovery fall apart.</p>
+  <canvas id="c12" width="700" height="300"></canvas>
+  <div class="ctl">
+    <label>bump width <input type="range" id="c12w" min="1" max="60" step="1" value="6"><span id="c12wv">6</span></label>
+    <label>noise <input type="range" id="c12n" min="0" max="30" step="1" value="0"><span id="c12nv">0%</span></label>
+  </div>
+  <div class="out" id="c12out"></div>
+</div>
+
+<h2 id="p11">11. Cheat sheet</h2>
+
+<table>
+<tr><th>Word</th><th>What it actually is</th></tr>
+<tr><td><b>ring</b></td><td>numbers that wrap, drawn as a circle. One block.</td></tr>
+<tr><td><b>angle</b></td><td>a position on the ring. What a block holds.</td></tr>
+<tr><td><b>phasor / arrow</b></td><td>an angle written as a unit arrow, so arrows can be added when angles cannot.</td></tr>
+<tr><td><b>torus</b></td><td>several independent rings considered together. 16 blocks = a 16-torus.</td></tr>
+<tr><td><b>binding</b></td><td>adding angles ring by ring. Order-free, exactly undoable. Shifts the whole pattern.</td></tr>
+<tr><td><b>bundling</b></td><td>adding the arrows. Direction = consensus, length = agreement.</td></tr>
+<tr><td><b>harmonic k</b></td><td>a wave that fits exactly k times around the circle. k=1 "which side", k=2 "is it split".</td></tr>
+<tr><td><b>Fourier coefficient c<sub>k</sub></b></td><td>one arrow: how much of harmonic k is present, and where its humps sit.</td></tr>
+<tr><td><b>Fourier transform</b></td><td>measuring all those arrows. Spin every item by k, add. A change of description, not of the thing.</td></tr>
+<tr><td><b>truncation (keep m)</b></td><td>keeping the first m arrows = the pattern blurred to detail no finer than 1/m of the circle.</td></tr>
+<tr><td><b>convolution</b></td><td>smearing every item by the same bump. In arrows: multiply coefficient by coefficient.</td></tr>
+<tr><td><b>invertible</b></td><td>undoable by dividing. Possible exactly when no coefficient is zero.</td></tr>
+<tr><td><b>holographic</b></td><td>information spread over all blocks rather than filed in one. Lose some, get a dimmer whole.</td></tr>
+</table>
+
+<h3>If you want to go further</h3>
+<p>You now have the working half of a subject that does go deep. Reasonable next stops, in order of
+how much they would pay us back:</p>
+<ol>
+<li><b>Why the harmonics are the right shapes</b> &mdash; they are the patterns that shifting cannot
+mix up (shift a harmonic and you get the same harmonic, spun). That "unmixable under shifting" property
+is the real definition, and everything else follows from it.</li>
+<li><b>The uncertainty trade</b> &mdash; narrow in position means spread out in harmonics, and the
+other way round. A sharp spike needs every harmonic; a wide smooth bump needs a few. You already saw
+this in Widget 8.</li>
+<li><b>The FFT</b> &mdash; a way of computing all the coefficients at once in <code>n log n</code>
+steps instead of <code>n&sup2;</code>. Purely an efficiency trick; it changes nothing conceptual.</li>
+</ol>
+<p class="small">Nothing beyond those three is needed for anything in this project.</p>
+
+<hr>
+<p class="small">Part of the HelloInductor design record. The mechanisms referenced here are in
+<code>DESIGN.md</code>: the substrate in Part XIII.1, product names in Part XVI, angle codes and the
+learning rule in Part XVII. Nothing on this page is published anywhere; it is a local file.</p>
+
+</main>
+<script>
+"use strict";
+const TAU = Math.PI * 2;
+const C = { ink:'#e6e8ec', muted:'#98a2b3', line:'#2b313b', acc:'#6aa6ff', warm:'#ffb454',
+            ok:'#5fd3a0', warn:'#ff7b7b', vio:'#c08cff', bg:'#101216' };
+
+function setup(id) {
+  const cv = document.getElementById(id), g = cv.getContext('2d');
+  const w = cv.width, h = cv.height, dp = window.devicePixelRatio || 1;
+  cv.width = w * dp; cv.height = h * dp; cv.style.width = w + 'px'; cv.style.height = h + 'px';
+  g.scale(dp, dp); g.W = w; g.H = h;
+  g.clr = () => { g.fillStyle = C.bg; g.fillRect(0, 0, w, h); };
+  return g;
+}
+function pos(cv, e) {
+  const r = cv.getBoundingClientRect();
+  return [e.clientX - r.left, e.clientY - r.top];
+}
+function circle(g, cx, cy, r, col, lw) {
+  g.beginPath(); g.arc(cx, cy, r, 0, TAU); g.strokeStyle = col; g.lineWidth = lw || 1; g.stroke();
+}
+function dot(g, x, y, r, col) { g.beginPath(); g.arc(x, y, r, 0, TAU); g.fillStyle = col; g.fill(); }
+function arrow(g, x0, y0, x1, y1, col, lw) {
+  const a = Math.atan2(y1 - y0, x1 - x0), L = Math.hypot(x1 - x0, y1 - y0);
+  g.strokeStyle = col; g.fillStyle = col; g.lineWidth = lw || 2;
+  g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke();
+  if (L < 4) return;
+  const s = Math.min(8, L * .4);
+  g.beginPath(); g.moveTo(x1, y1);
+  g.lineTo(x1 - s * Math.cos(a - .4), y1 - s * Math.sin(a - .4));
+  g.lineTo(x1 - s * Math.cos(a + .4), y1 - s * Math.sin(a + .4));
+  g.closePath(); g.fill();
+}
+function txt(g, s, x, y, col, size, align) {
+  g.fillStyle = col || C.muted; g.font = (size || 11) + 'px ui-monospace, Menlo, monospace';
+  g.textAlign = align || 'left'; g.fillText(s, x, y);
+}
+// screen coords for angle a on a ring (y flipped so counter-clockwise looks right)
+const px = (cx, r, a) => cx + r * Math.cos(a);
+const py = (cy, r, a) => cy - r * Math.sin(a);
+
+// --- discrete Fourier over N bins -------------------------------------------------
+function coeffs(h, M) {
+  const N = h.length, out = [];
+  for (let k = 0; k <= M; k++) {
+    let re = 0, im = 0;
+    for (let j = 0; j < N; j++) { const a = TAU * k * j / N; re += h[j] * Math.cos(a); im += h[j] * Math.sin(a); }
+    out.push([re, im]);
+  }
+  return out;
+}
+function recon(cs, N, m) {
+  const out = new Array(N).fill(0);
+  for (let j = 0; j < N; j++) {
+    let v = cs[0][0];
+    for (let k = 1; k <= m && k < cs.length; k++) {
+      const a = TAU * k * j / N; v += 2 * (cs[k][0] * Math.cos(a) + cs[k][1] * Math.sin(a));
+    }
+    out[j] = v / N;
+  }
+  return out;
+}
+const NB = 41;
+function preset(name) {
+  const h = new Array(NB).fill(0);
+  if (name === 'one') h[5] = 1;
+  else if (name === 'two') { h[3] = 1; h[23] = 1; }
+  else if (name === 'three') { h[2] = 1; h[15] = 1; h[28] = 1; }
+  else if (name === 'bump') for (let j = -5; j <= 5; j++) h[(10 + j + NB) % NB] = Math.exp(-j * j / 12);
+  else if (name === 'noise') for (let j = 0; j < NB; j++) h[j] = Math.random() * .7;
+  return h;
+}
+// draw a ring histogram: bars sticking outward from a circle of radius r0
+function ringHist(g, cx, cy, r0, h, col, scale) {
+  const mx = Math.max(1e-9, ...h.map(Math.abs));
+  circle(g, cx, cy, r0, C.line, 1);
+  for (let j = 0; j < h.length; j++) {
+    const a = TAU * j / h.length, L = (h[j] / mx) * (scale || 46);
+    g.strokeStyle = col; g.lineWidth = 3;
+    g.beginPath(); g.moveTo(px(cx, r0, a), py(cy, r0, a));
+    g.lineTo(px(cx, r0 + L, a), py(cy, r0 + L, a)); g.stroke();
+  }
+}
+
+// ===================================================================== W1: the ring
+(function () {
+  const g = setup('c1'), cv = document.getElementById('c1');
+  const out = document.getElementById('c1out'), sN = document.getElementById('c1n'),
+        vN = document.getElementById('c1nv'), snap = document.getElementById('c1snap');
+  let a = 0.9, cx = 175, cy = 160, r = 120;
+  function draw() {
+    const n = +sN.value; vN.textContent = n;
+    g.clr(); circle(g, cx, cy, r, C.line, 1.5);
+    for (let j = 0; j < n; j++) {
+      const t = TAU * j / n, R1 = r - 7;
+      g.strokeStyle = (j % 5 === 0) ? '#43506a' : '#2b313b'; g.lineWidth = 1;
+      g.beginPath(); g.moveTo(px(cx, R1, t), py(cy, R1, t)); g.lineTo(px(cx, r, t), py(cy, r, t)); g.stroke();
+    }
+    let sh = a;
+    if (snap.checked) sh = Math.round(a / (TAU / n)) * (TAU / n);
+    g.strokeStyle = C.acc; g.lineWidth = 3;
+    g.beginPath(); g.arc(cx, cy, 26, 0, -sh, true); g.stroke();
+    arrow(g, cx, cy, px(cx, r, sh), py(cy, r, sh), C.acc, 2);
+    dot(g, px(cx, r, sh), py(cy, r, sh), 7, C.warm);
+    dot(g, px(cx, r, 0), py(cy, r, 0), 4, C.muted);
+    txt(g, 'notch 0', px(cx, r + 12, 0), py(cy, r + 12, 0) + 4, C.muted, 11);
+    txt(g, 'drag the orange dot', cx, 22, C.muted, 12, 'center');
+    const nn = ((Math.round(sh / (TAU / n)) % n) + n) % n;
+    out.textContent =
+      'angle      ' + sh.toFixed(3) + ' rad   (' + (sh * 180 / Math.PI).toFixed(1) + '°)\n' +
+      'turn       ' + (sh / TAU).toFixed(3) + ' of a full circle\n' +
+      'notch      ' + nn + ' of ' + n + '   (one notch = ' + (TAU / n).toFixed(3) + ' rad)\n' +
+      'as arrow   (' + Math.cos(sh).toFixed(3) + ', ' + Math.sin(sh).toFixed(3) + ')';
+  }
+  let drag = false;
+  const upd = e => { const [x, y] = pos(cv, e); a = (Math.atan2(cy - y, x - cx) + TAU) % TAU; draw(); };
+  cv.addEventListener('pointerdown', e => { drag = true; cv.setPointerCapture(e.pointerId); upd(e); });
+  cv.addEventListener('pointermove', e => { if (drag) upd(e); });
+  cv.addEventListener('pointerup', () => drag = false);
+  sN.oninput = draw; snap.onchange = draw; draw();
+})();
+
+// ===================================================================== W2: walking
+(function () {
+  const g = setup('c2'), out = document.getElementById('c2out');
+  const sS = document.getElementById('c2s'), vS = document.getElementById('c2sv'),
+        sK = document.getElementById('c2k'), vK = document.getElementById('c2kv');
+  const cx = 175, cy = 165, r = 118;
+  function draw() {
+    const s = +sS.value, k = +sK.value; vS.textContent = s; vK.textContent = k;
+    g.clr(); circle(g, cx, cy, r, C.line, 1.5);
+    for (let j = 0; j < NB; j++) {
+      const t = TAU * j / NB; dot(g, px(cx, r, t), py(cy, r, t), 2.5, '#3a4356');
+    }
+    const seen = new Set(); let p = 0;
+    for (let i = 0; i <= k; i++) {
+      const t = TAU * p / NB, x = px(cx, r, t), y = py(cy, r, t);
+      if (i > 0) {
+        const tp = TAU * ((p - s + NB * 2) % NB) / NB;
+        g.strokeStyle = 'rgba(106,166,255,.30)'; g.lineWidth = 1;
+        g.beginPath(); g.moveTo(px(cx, r, tp), py(cy, r, tp)); g.lineTo(x, y); g.stroke();
+      }
+      dot(g, x, y, i === k ? 7 : 4, i === k ? C.warm : C.acc);
+      seen.add(p); p = (p + s) % NB;
+    }
+    const gcd = (a, b) => b ? gcd(b, a % b) : a, per = NB / gcd(NB, s);
+    txt(g, 'start', px(cx, r + 14, 0), py(cy, r + 14, 0) + 4, C.muted, 11);
+    out.textContent =
+      'step ' + s + ' notches, ' + k + ' steps taken\n' +
+      'distinct positions visited: ' + seen.size + ' of ' + NB + '\n' +
+      'returns to the start after ' + per + ' steps\n' +
+      (per === NB ? '→ this step visits every position before repeating.'
+                  : '→ this step is stuck in a cycle of ' + per + '.');
+  }
+  sS.oninput = draw; sK.oninput = draw; draw();
+})();
+
+// ===================================================================== W3: adding arrows
+(function () {
+  const g = setup('c3'), out = document.getElementById('c3out');
+  const sN = document.getElementById('c3n'), vN = document.getElementById('c3nv'),
+        sS = document.getElementById('c3s'), vS = document.getElementById('c3sv');
+  let mode = 'agree';
+  function angles() {
+    const n = +sN.value, sp = +sS.value / 100, A = [];
+    for (let i = 0; i < n; i++) {
+      if (mode === 'two') A.push((i % 2) * Math.PI + (Math.random() - .5) * sp);
+      else if (mode === 'unif') A.push(TAU * i / n + (Math.random() - .5) * sp);
+      else if (mode === 'rand') A.push(Math.random() * TAU);
+      else A.push(1.0 + (Math.random() - .5) * sp * TAU);
+    }
+    return A;
+  }
+  let A = angles();
+  function draw() {
+    vN.textContent = sN.value; vS.textContent = (+sS.value / 100).toFixed(2);
+    g.clr();
+    const cx = 175, cy = 150, r = 105;
+    // right: items on the ring
+    const cx2 = 520, cy2 = 150, r2 = 105;
+    circle(g, cx2, cy2, r2, C.line, 1.5);
+    A.forEach(a => dot(g, px(cx2, r2, a), py(cy2, r2, a), 5, C.acc));
+    txt(g, 'the items, as positions on the ring', cx2, 28, C.muted, 12, 'center');
+    // left: nose to tail
+    txt(g, 'the same items, as arrows added nose to tail', cx, 28, C.muted, 12, 'center');
+    circle(g, cx, cy, r, '#232935', 1);
+    const u = r / Math.max(1, A.length);
+    let x = cx, y = cy;
+    A.forEach(a => {
+      const nx = x + u * Math.cos(a), ny = y - u * Math.sin(a);
+      arrow(g, x, y, nx, ny, 'rgba(106,166,255,.85)', 1.6); x = nx; y = ny;
+    });
+    let re = 0, im = 0; A.forEach(a => { re += Math.cos(a); im += Math.sin(a); });
+    re /= A.length; im /= A.length;
+    arrow(g, cx, cy, cx + re * r, cy - im * r, C.warm, 3);
+    dot(g, cx, cy, 3, C.muted);
+    const L = Math.hypot(re, im), ang = (Math.atan2(im, re) + TAU) % TAU;
+    arrow(g, cx2, cy2, px(cx2, L * r2, ang), py(cy2, L * r2, ang), C.warm, 3);
+    out.textContent =
+      'resultant length   ' + L.toFixed(3) + '   ← the agreement\n' +
+      'resultant angle    ' + (ang * 180 / Math.PI).toFixed(1) + '°   ← the consensus\n' +
+      'items              ' + A.length + '\n' +
+      (L < .12 ? '→ near zero. "No opinion" — but note this reads the same whether the\n' +
+                 '  voters were split between two answers or scattered at random.'
+               : L > .9 ? '→ near one. They all say the same thing.'
+                        : '→ partial agreement; 1/√N for random items is ' + (1 / Math.sqrt(A.length)).toFixed(3) + '.');
+  }
+  sN.oninput = () => { A = angles(); draw(); };
+  sS.oninput = () => { A = angles(); draw(); };
+  document.querySelectorAll('[data-p3]').forEach(b => b.onclick = () => {
+    mode = b.dataset.p3;
+    document.querySelectorAll('[data-p3]').forEach(x => x.classList.toggle('on', x === b));
+    if (mode === 'two' && +sN.value % 2) sN.value = +sN.value + 1;
+    A = angles(); draw();
+  });
+  document.querySelector('[data-p3="agree"]').classList.add('on');
+  draw();
+})();
+
+// ===================================================================== W4: the torus
+(function () {
+  const g = setup('c4'), out = document.getElementById('c4out');
+  const sA = document.getElementById('c4a'), sB = document.getElementById('c4b');
+  function dial(cx, cy, r, a, col, lab) {
+    circle(g, cx, cy, r, C.line, 1.5);
+    arrow(g, cx, cy, px(cx, r, a), py(cy, r, a), col, 2);
+    dot(g, px(cx, r, a), py(cy, r, a), 5, col);
+    txt(g, lab, cx, cy + r + 18, C.muted, 11, 'center');
+  }
+  function draw() {
+    const u = +sA.value * Math.PI / 180, v = +sB.value * Math.PI / 180;
+    g.clr();
+    dial(62, 110, 44, u, C.acc, 'ring A');
+    dial(62, 225, 44, v, C.vio, 'ring B');
+    // flat torus
+    const X0 = 150, Y0 = 55, S = 170;
+    g.strokeStyle = C.line; g.lineWidth = 1; g.strokeRect(X0, Y0, S, S);
+    g.setLineDash([3, 4]); g.strokeStyle = '#3d4658';
+    for (let i = 1; i < 4; i++) {
+      g.beginPath(); g.moveTo(X0 + S * i / 4, Y0); g.lineTo(X0 + S * i / 4, Y0 + S); g.stroke();
+      g.beginPath(); g.moveTo(X0, Y0 + S * i / 4); g.lineTo(X0 + S, Y0 + S * i / 4); g.stroke();
+    }
+    g.setLineDash([]);
+    dot(g, X0 + S * u / TAU, Y0 + S - S * v / TAU, 6, C.warm);
+    txt(g, 'cut open and flattened', X0 + S / 2, Y0 - 12, C.muted, 11, 'center');
+    txt(g, 'left edge = right edge,  top = bottom', X0 + S / 2, Y0 + S + 16, C.muted, 10, 'center');
+    txt(g, 'ring A →', X0 + S / 2, Y0 + S + 32, C.acc, 10, 'center');
+    // doughnut
+    const DX = 520, DY = 145, R = 78, rr = 30;
+    const P = (uu, vv) => {
+      const x = (R + rr * Math.cos(vv)) * Math.cos(uu),
+            y = (R + rr * Math.cos(vv)) * Math.sin(uu),
+            z = rr * Math.sin(vv);
+      return [DX + x, DY + y * .42 - z * .88];
+    };
+    g.strokeStyle = '#2b313b'; g.lineWidth = 1;
+    for (let i = 0; i < 16; i++) {
+      g.beginPath();
+      for (let j = 0; j <= 40; j++) { const p = P(TAU * i / 16, TAU * j / 40); j ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]); }
+      g.stroke();
+    }
+    for (let j = 0; j < 8; j++) {
+      g.beginPath();
+      for (let i = 0; i <= 80; i++) { const p = P(TAU * i / 80, TAU * j / 8); i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]); }
+      g.stroke();
+    }
+    g.strokeStyle = 'rgba(106,166,255,.75)'; g.lineWidth = 2;
+    g.beginPath();
+    for (let i = 0; i <= 80; i++) { const p = P(TAU * i / 80, v); i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]); }
+    g.stroke();
+    g.strokeStyle = 'rgba(192,140,255,.75)';
+    g.beginPath();
+    for (let j = 0; j <= 40; j++) { const p = P(u, TAU * j / 40); j ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]); }
+    g.stroke();
+    const p = P(u, v); dot(g, p[0], p[1], 6, C.warm);
+    txt(g, 'the same point on the doughnut', DX, 26, C.muted, 11, 'center');
+    out.textContent =
+      'ring A = ' + sA.value + '°,  ring B = ' + sB.value + '°\n' +
+      'Two angles name one point. Moving one ring never changes where you are on the other —\n' +
+      'that independence is why 16 blocks can carry 16 unrelated pieces of information at once.';
+  }
+  sA.oninput = draw; sB.oninput = draw; draw();
+})();
+
+// ===================================================================== W5: binding
+(function () {
+  const g = setup('c5'), out = document.getElementById('c5out'), msg = document.getElementById('c5msg');
+  const NBK = 8;
+  let a = [], p = [], bound = null, back = null;
+  function roll() {
+    a = []; p = [];
+    for (let i = 0; i < NBK; i++) { a.push(Math.floor(Math.random() * NB)); p.push(Math.floor(Math.random() * NB)); }
+    bound = null; back = null; msg.textContent = '';
+  }
+  function row(vals, y, col, lab) {
+    txt(g, lab, 8, y + 4, C.muted, 11);
+    for (let i = 0; i < NBK; i++) {
+      const cx = 92 + i * 74, r = 17;
+      circle(g, cx, y, r, '#242a35', 1);
+      if (vals) {
+        const t = TAU * vals[i] / NB;
+        g.strokeStyle = col; g.lineWidth = 2;
+        g.beginPath(); g.moveTo(cx, y); g.lineTo(px(cx, r, t), py(y, r, t)); g.stroke();
+        dot(g, px(cx, r, t), py(y, r, t), 3.5, col);
+      }
+    }
+  }
+  function draw() {
+    g.clr();
+    row(a, 30, C.acc, 'stroke');
+    row(p, 75, C.vio, 'pose');
+    row(back || bound, 120, back ? C.acc : C.warm, back ? 'recovered' : 'bound');
+    out.textContent = bound
+      ? 'stroke   ' + a.join(' ') + '\npose     ' + p.join(' ') + '\nbound    ' + bound.join(' ') +
+        (back ? '\nrecovered ' + back.join(' ') + '   ← identical to the stroke, exactly' : '')
+      : 'press "bind" to add the pose into the stroke, ring by ring.';
+  }
+  document.getElementById('c5roll').onclick = () => { roll(); draw(); };
+  document.getElementById('c5bind').onclick = () => {
+    bound = a.map((v, i) => (v + p[i]) % NB); back = null;
+    msg.textContent = 'each ring advanced by its pose'; msg.style.color = C.muted; draw();
+  };
+  document.getElementById('c5un').onclick = () => {
+    if (!bound) return;
+    back = bound.map((v, i) => (v - p[i] + NB) % NB);
+    msg.textContent = 'exact — nothing was lost'; msg.style.color = C.ok; draw();
+  };
+  roll(); draw();
+})();
+
+// ===================================================================== W6: ring histogram
+(function () {
+  const g = setup('c6'), cv = document.getElementById('c6'), out = document.getElementById('c6out');
+  const cx = 175, cy = 160, r0 = 82;
+  let h = preset('two');
+  function draw() {
+    g.clr();
+    ringHist(g, cx, cy, r0, h, C.acc, 60);
+    let re = 0, im = 0, tot = 0;
+    for (let j = 0; j < NB; j++) { const t = TAU * j / NB; re += h[j] * Math.cos(t); im += h[j] * Math.sin(t); tot += h[j]; }
+    if (tot > 0) { re /= tot; im /= tot; }
+    const L = Math.hypot(re, im);
+    arrow(g, cx, cy, cx + re * r0, cy - im * r0, C.warm, 3);
+    txt(g, 'click to add weight', cx, 20, C.muted, 12, 'center');
+    txt(g, 'orange = the single arrow', cx, cy + 150, C.warm, 11, 'center');
+    out.textContent =
+      'total weight        ' + tot.toFixed(2) + '\n' +
+      'single-arrow length ' + L.toFixed(3) + '\n' +
+      'single-arrow angle  ' + ((Math.atan2(im, re) + TAU) % TAU * 180 / Math.PI).toFixed(1) + '°\n' +
+      (L < .15 && tot > 0 ? '→ the arrow says "nothing here". Look at the bars: plainly untrue.' : '');
+  }
+  cv.addEventListener('pointerdown', e => {
+    const [x, y] = pos(cv, e), a = (Math.atan2(cy - y, x - cx) + TAU) % TAU;
+    h[Math.round(a / TAU * NB) % NB] += .5; draw();
+  });
+  document.getElementById('c6clr').onclick = () => { h = new Array(NB).fill(0); draw(); };
+  document.querySelectorAll('[data-p6]').forEach(b => b.onclick = () => { h = preset(b.dataset.p6); draw(); });
+  draw();
+})();
+
+// ===================================================================== W7: harmonics
+(function () {
+  const g = setup('c7'), out = document.getElementById('c7out');
+  const sK = document.getElementById('c7k'), vK = document.getElementById('c7kv'),
+        sP = document.getElementById('c7p'), vP = document.getElementById('c7pv');
+  function draw() {
+    const k = +sK.value, ph = +sP.value * Math.PI / 180;
+    vK.textContent = k; vP.textContent = sP.value + '°';
+    g.clr();
+    const cx = 150, cy = 148, r0 = 78, amp = 44;
+    circle(g, cx, cy, r0, '#242a35', 1);
+    g.beginPath();
+    for (let i = 0; i <= 360; i++) {
+      const t = TAU * i / 360, v = Math.cos(k * t - ph), R = r0 + v * amp;
+      const x = px(cx, R, t), y = py(cy, R, t); i ? g.lineTo(x, y) : g.moveTo(x, y);
+    }
+    g.closePath(); g.strokeStyle = C.acc; g.lineWidth = 2.5; g.stroke();
+    txt(g, 'as a deformation of the circle', cx, 22, C.muted, 11, 'center');
+    txt(g, 'dashed = flat (no wave)', cx, 286, C.muted, 10, 'center');
+    // flat plot
+    const X0 = 330, Y0 = 148, W = 330, A = 62;
+    g.strokeStyle = '#242a35'; g.setLineDash([3, 4]);
+    g.beginPath(); g.moveTo(X0, Y0); g.lineTo(X0 + W, Y0); g.stroke(); g.setLineDash([]);
+    g.beginPath();
+    for (let i = 0; i <= 360; i++) {
+      const t = TAU * i / 360, x = X0 + W * i / 360, y = Y0 - Math.cos(k * t - ph) * A;
+      i ? g.lineTo(x, y) : g.moveTo(x, y);
+    }
+    g.strokeStyle = C.acc; g.lineWidth = 2.5; g.stroke();
+    g.strokeStyle = C.line; g.lineWidth = 1;
+    g.beginPath(); g.moveTo(X0, Y0 - A - 12); g.lineTo(X0, Y0 + A + 12); g.stroke();
+    g.beginPath(); g.moveTo(X0 + W, Y0 - A - 12); g.lineTo(X0 + W, Y0 + A + 12); g.stroke();
+    txt(g, 'unrolled: once around the circle, left to right', X0 + W / 2, 22, C.muted, 11, 'center');
+    txt(g, '0', X0, Y0 + A + 28, C.muted, 10, 'center');
+    txt(g, 'all the way round', X0 + W, Y0 + A + 28, C.muted, 10, 'center');
+    out.textContent = k === 0
+      ? 'k = 0 — flat. No variation at all: this harmonic only carries "how much in total".'
+      : 'k = ' + k + ' — ' + k + ' hump' + (k > 1 ? 's' : '') + ' evenly spaced around the circle.\n' +
+        'It fits exactly ' + k + ' time' + (k > 1 ? 's' : '') + ' round, so the two ends join up perfectly.\n' +
+        (k === 1 ? 'k = 1 answers "which side of the circle is the weight on?"'
+                 : k === 2 ? 'k = 2 answers "is the weight split across a diameter?"' : '');
+  }
+  sK.oninput = draw; sP.oninput = draw; draw();
+})();
+
+// ===================================================================== W8: build from waves
+(function () {
+  const g = setup('c8'), out = document.getElementById('c8out'), ctl = document.getElementById('c8ctl');
+  const KM = 6;
+  let amp = [0, 1, 0, 0, 0, 0, 0], ph = [0, 0, 0, 0, 0, 0, 0], target = null;
+  for (let k = 0; k <= KM; k++) {
+    const l = document.createElement('label');
+    l.innerHTML = 'k' + k + ' <input type="range" min="0" max="100" value="' + (k === 1 ? 100 : 0) + '" data-k="' + k + '">';
+    ctl.appendChild(l);
+    l.querySelector('input').oninput = e => { amp[+e.target.dataset.k] = +e.target.value / 100; target = null; draw(); };
+  }
+  function f(t) { let v = 0; for (let k = 0; k <= KM; k++) v += amp[k] * Math.cos(k * t - ph[k]); return v; }
+  function draw() {
+    g.clr();
+    const X0 = 40, Y0 = 158, W = 620, A = 70;
+    g.strokeStyle = '#242a35'; g.setLineDash([3, 4]);
+    g.beginPath(); g.moveTo(X0, Y0); g.lineTo(X0 + W, Y0); g.stroke(); g.setLineDash([]);
+    if (target) {
+      g.beginPath();
+      for (let j = 0; j <= NB; j++) {
+        const x = X0 + W * j / NB, y = Y0 - (target[j % NB] / Math.max(...target)) * A;
+        j ? g.lineTo(x, y) : g.moveTo(x, y);
+      }
+      g.strokeStyle = C.muted; g.lineWidth = 1.5; g.stroke();
+      txt(g, 'grey = the target', X0 + W, 42, C.muted, 11, 'right');
+    }
+    let mx = 1e-9;
+    for (let i = 0; i <= 360; i++) mx = Math.max(mx, Math.abs(f(TAU * i / 360)));
+    g.beginPath();
+    for (let i = 0; i <= 360; i++) {
+      const x = X0 + W * i / 360, y = Y0 - f(TAU * i / 360) / mx * A;
+      i ? g.lineTo(x, y) : g.moveTo(x, y);
+    }
+    g.strokeStyle = C.acc; g.lineWidth = 2.5; g.stroke();
+    txt(g, 'blue = your sum of harmonics', X0, 42, C.acc, 11, 'left');
+    txt(g, 'one trip around the circle, unrolled', X0 + W / 2, 272, C.muted, 11, 'center');
+    let s = 'amounts:  ';
+    for (let k = 0; k <= KM; k++) s += 'k' + k + '=' + amp[k].toFixed(2) + '  ';
+    out.textContent = s + '\n' + (target
+      ? 'measured from the target. Fewer harmonics are needed when the target is smooth;\n' +
+        'a sharp spike needs every harmonic there is, which is why it never fits with only 6.'
+      : 'drag the sliders to pile harmonics on top of each other, or press a "measure" button.');
+  }
+  document.querySelectorAll('[data-p8]').forEach(b => b.onclick = () => {
+    const n = b.dataset.p8;
+    if (n === 'zero') { amp = amp.map(() => 0); ph = ph.map(() => 0); target = null; }
+    else {
+      target = preset(n === 'spike' ? 'one' : n);
+      const cs = coeffs(target, KM), sc = 2 / NB;
+      for (let k = 0; k <= KM; k++) {
+        amp[k] = Math.hypot(cs[k][0], cs[k][1]) * sc * (k === 0 ? .5 : 1);
+        ph[k] = -Math.atan2(cs[k][1], cs[k][0]);
+      }
+      const m = Math.max(...amp) || 1; amp = amp.map(v => v / m);
+    }
+    ctl.querySelectorAll('input').forEach(i => i.value = Math.round(amp[+i.dataset.k] * 100));
+    draw();
+  });
+  draw();
+})();
+
+// ===================================================================== W9: spin by k and add
+(function () {
+  const g = setup('c9'), out = document.getElementById('c9out');
+  const sK = document.getElementById('c9k'), vK = document.getElementById('c9kv');
+  let A = [0.4, 0.4 + Math.PI];
+  function draw() {
+    const k = +sK.value; vK.textContent = k;
+    g.clr();
+    const cx = 160, cy = 100, r = 66;
+    circle(g, cx, cy, r, C.line, 1.5);
+    A.forEach(a => { dot(g, px(cx, r, a), py(cy, r, a), 5.5, C.acc); });
+    txt(g, 'the items', cx, 22, C.muted, 11, 'center');
+    const cx2 = 470, cy2 = 100;
+    circle(g, cx2, cy2, r, C.line, 1.5);
+    A.forEach(a => {
+      const b = k * a;
+      arrow(g, cx2, cy2, px(cx2, r, b), py(cy2, r, b), 'rgba(106,166,255,.6)', 1.6);
+      dot(g, px(cx2, r, b), py(cy2, r, b), 4.5, C.acc);
+    });
+    txt(g, 'each angle multiplied by k = ' + k, cx2, 22, C.muted, 11, 'center');
+    let re = 0, im = 0; A.forEach(a => { re += Math.cos(k * a); im += Math.sin(k * a); });
+    re /= A.length; im /= A.length;
+    const L = Math.hypot(re, im);
+    arrow(g, cx2, cy2, cx2 + re * r, cy2 - im * r, C.warm, 3);
+    // bar chart of |c_k| for k = 0..8
+    const BX = 70, BY = 300, BW = 560;
+    txt(g, 'length of c_k for every k', BX + BW / 2, 208, C.muted, 11, 'center');
+    for (let kk = 0; kk <= 8; kk++) {
+      let r2 = 0, i2 = 0; A.forEach(a => { r2 += Math.cos(kk * a); i2 += Math.sin(kk * a); });
+      const LL = Math.hypot(r2, i2) / A.length, x = BX + kk * (BW / 9), w = BW / 9 - 14;
+      g.fillStyle = kk === k ? C.warm : '#33507e';
+      g.fillRect(x, BY - LL * 62, w, LL * 62);
+      txt(g, 'k' + kk, x + w / 2, BY + 14, kk === k ? C.warm : C.muted, 10, 'center');
+      txt(g, LL.toFixed(2), x + w / 2, BY - LL * 62 - 5, C.muted, 9, 'center');
+    }
+    g.strokeStyle = C.line; g.beginPath(); g.moveTo(BX - 6, BY); g.lineTo(BX + BW, BY); g.stroke();
+    out.textContent =
+      'c_' + k + ' length ' + L.toFixed(3) + ', angle ' + ((Math.atan2(im, re) + TAU) % TAU * 180 / Math.PI).toFixed(0) + '°\n' +
+      (L > .9 ? '→ spinning by ' + k + ' brought them all into line: this pattern IS ' + k + '-fold.'
+              : L < .15 ? '→ they cancel: this pattern has almost no ' + k + '-fold structure.'
+                        : '→ partial.');
+  }
+  document.querySelectorAll('[data-p9]').forEach(b => b.onclick = () => {
+    const n = b.dataset.p9;
+    A = n === 'one' ? [0.4]
+      : n === 'two' ? [0.4, 0.4 + Math.PI]
+      : n === 'three' ? [0.4, 0.4 + TAU / 3, 0.4 + 2 * TAU / 3]
+      : n === 'cluster' ? [0.3, 0.42, 0.5, 0.38]
+      : Array.from({ length: 12 }, () => Math.random() * TAU);
+    document.querySelectorAll('[data-p9]').forEach(x => x.classList.toggle('on', x === b));
+    draw();
+  });
+  document.querySelector('[data-p9="two"]').classList.add('on');
+  sK.oninput = draw; draw();
+})();
+
+// ===================================================================== W10: truncation
+(function () {
+  const g = setup('c10'), out = document.getElementById('c10out');
+  const sM = document.getElementById('c10m'), vM = document.getElementById('c10mv');
+  let h = preset('two');
+  function draw() {
+    const m = +sM.value; vM.textContent = m;
+    g.clr();
+    const cs = coeffs(h, 20), rc = recon(cs, NB, m);
+    const cx = 175, cy = 150, r0 = 72;
+    ringHist(g, cx, cy, r0, h, '#59627a', 52);
+    txt(g, 'true histogram (grey)', cx, 22, C.muted, 11, 'center');
+    // flat comparison
+    const X0 = 350, Y0 = 210, W = 310, A = 130;
+    const mx = Math.max(...h.map(Math.abs), ...rc.map(Math.abs), 1e-9);
+    g.strokeStyle = C.line; g.beginPath(); g.moveTo(X0, Y0); g.lineTo(X0 + W, Y0); g.stroke();
+    g.strokeStyle = '#59627a'; g.lineWidth = 1.5; g.beginPath();
+    for (let j = 0; j <= NB; j++) { const x = X0 + W * j / NB, y = Y0 - h[j % NB] / mx * A; j ? g.lineTo(x, y) : g.moveTo(x, y); }
+    g.stroke();
+    g.strokeStyle = C.acc; g.lineWidth = 2.5; g.beginPath();
+    for (let j = 0; j <= NB; j++) { const x = X0 + W * j / NB, y = Y0 - rc[j % NB] / mx * A; j ? g.lineTo(x, y) : g.moveTo(x, y); }
+    g.stroke();
+    // blue reconstruction on the ring too
+    const rp = rc.map(v => Math.max(0, v));
+    ringHist(g, cx, cy, r0, rp, C.acc, 52);
+    txt(g, 'grey = truth,  blue = from the first ' + m + ' coefficient' + (m > 1 ? 's' : ''), X0 + W / 2, 30, C.muted, 11, 'center');
+    let err = 0; for (let j = 0; j < NB; j++) err += (h[j] - rc[j]) ** 2;
+    out.textContent =
+      'keeping m = ' + m + ' of about 20 coefficients\n' +
+      'error ' + Math.sqrt(err / NB).toFixed(4) + '\n' +
+      (m === 1 ? '→ one coefficient can only ever draw ONE blob. If the truth has two peaks,\n' +
+                 '  it reports a single lump halfway between them — in a place with nothing in it.'
+               : m >= 12 ? '→ essentially exact: this is the 41-slot histogram again.'
+                         : '→ the broad shape survives; detail finer than about 1/' + m + ' of the circle does not.');
+  }
+  sM.oninput = draw;
+  document.querySelectorAll('[data-p10]').forEach(b => b.onclick = () => { h = preset(b.dataset.p10); draw(); });
+  draw();
+})();
+
+// ===================================================================== W11: shift = spin
+(function () {
+  const g = setup('c11'), out = document.getElementById('c11out');
+  const sT = document.getElementById('c11t'), vT = document.getElementById('c11tv');
+  let h = preset('two');
+  function draw() {
+    const deg = +sT.value, sh = Math.round(deg / 360 * NB); vT.textContent = deg + '°';
+    const hs = h.map((_, j) => h[(j - sh + NB * 2) % NB]);
+    g.clr();
+    const cx = 150, cy = 150, r0 = 66;
+    ringHist(g, cx, cy, r0, hs, C.acc, 52);
+    txt(g, 'the pattern, shifted', cx, 22, C.muted, 11, 'center');
+    const cs = coeffs(hs, 5), c0 = coeffs(h, 5);
+    const BX = 330, BY = 150, R = 52;
+    for (let k = 1; k <= 5; k++) {
+      const x = BX + (k - 1) * 72;
+      circle(g, x, BY, R, '#242a35', 1);
+      const L = Math.hypot(cs[k][0], cs[k][1]), L0 = Math.hypot(c0[k][0], c0[k][1]);
+      const a = Math.atan2(cs[k][1], cs[k][0]), mx = Math.max(...c0.slice(1).map(c => Math.hypot(c[0], c[1])), 1e-9);
+      const len = L / mx * R;
+      arrow(g, x, BY, px(x, len, a), py(BY, len, a), k === 1 ? C.warm : C.acc, 2);
+      txt(g, 'c' + k, x, BY + R + 16, C.muted, 11, 'center');
+      txt(g, L.toFixed(2), x, BY + R + 30, Math.abs(L - L0) < 1e-6 ? C.ok : C.warn, 10, 'center');
+    }
+    txt(g, 'the first five coefficient arrows — lengths in green never change', BX + 144, 22, C.muted, 11, 'center');
+    txt(g, 'c3 spins three times while c1 spins once', BX + 144, 278, C.muted, 11, 'center');
+    out.textContent =
+      'shift ' + deg + '° (' + sh + ' notches)\n' +
+      'c_k has spun by k × ' + deg + '°:  c1 ' + (deg % 360) + '°,  c2 ' + (2 * deg % 360) +
+      '°,  c3 ' + (3 * deg % 360) + '°,  c4 ' + (4 * deg % 360) + '°,  c5 ' + (5 * deg % 360) + '°\n' +
+      'every length unchanged — shifting moves directions only, never amounts.';
+  }
+  sT.oninput = draw;
+  document.querySelectorAll('[data-p11]').forEach(b => b.onclick = () => { h = preset(b.dataset.p11); draw(); });
+  draw();
+})();
+
+// ===================================================================== W12: convolution
+(function () {
+  const g = setup('c12'), out = document.getElementById('c12out');
+  const sW = document.getElementById('c12w'), vW = document.getElementById('c12wv'),
+        sN = document.getElementById('c12n'), vN = document.getElementById('c12nv');
+  const base = preset('two');
+  function draw() {
+    const wd = +sW.value / 10, nz = +sN.value / 100;
+    vW.textContent = sW.value; vN.textContent = sN.value + '%';
+    // the bump
+    const bump = new Array(NB).fill(0);
+    for (let j = 0; j < NB; j++) {
+      const d = Math.min(j, NB - j);
+      bump[j] = Math.exp(-(d * d) / (2 * wd * wd + 1e-9));
+    }
+    const bs = bump.reduce((a, b) => a + b, 0);
+    for (let j = 0; j < NB; j++) bump[j] /= bs;
+    // convolve, add noise, deconvolve
+    const M = 20, cb = coeffs(bump, M), ch = coeffs(base, M);
+    const sm = new Array(NB).fill(0);
+    for (let j = 0; j < NB; j++) for (let i = 0; i < NB; i++) sm[j] += base[i] * bump[(j - i + NB * 2) % NB];
+    for (let j = 0; j < NB; j++) sm[j] += (Math.random() - .5) * nz * Math.max(...sm);
+    const cs = coeffs(sm, M), rec = [];
+    for (let k = 0; k <= M; k++) {
+      const d = cb[k][0] * cb[k][0] + cb[k][1] * cb[k][1];
+      rec.push(d < 1e-7 ? [0, 0]
+        : [(cs[k][0] * cb[k][0] + cs[k][1] * cb[k][1]) / d, (cs[k][1] * cb[k][0] - cs[k][0] * cb[k][1]) / d]);
+    }
+    const back = recon(rec, NB, M);
+    g.clr();
+    // left: the bump
+    const cx = 105, cy = 140, r0 = 50;
+    ringHist(g, cx, cy, r0, bump, C.vio, 42);
+    txt(g, 'the smearing bump', cx, 22, C.muted, 11, 'center');
+    txt(g, wd < .6 ? 'a sharp point' : wd < 2.2 ? 'a narrow bump' : 'a wide bump', cx, 262, C.vio, 11, 'center');
+    // middle: coefficient bars
+    const BX = 215, BY = 235, BW = 210; let dead = 0;
+    const mx = Math.hypot(cb[1][0], cb[1][1]) || 1;
+    for (let k = 1; k <= 14; k++) {
+      const L = Math.hypot(cb[k][0], cb[k][1]) / mx, x = BX + (k - 1) * (BW / 14), w = BW / 14 - 3;
+      const zero = L < .03; if (zero) dead++;
+      g.fillStyle = zero ? C.warn : '#33507e';
+      g.fillRect(x, BY - Math.max(L * 150, zero ? 2 : 0), w, Math.max(L * 150, zero ? 2 : 0));
+    }
+    g.strokeStyle = C.line; g.beginPath(); g.moveTo(BX, BY); g.lineTo(BX + BW, BY); g.stroke();
+    txt(g, "the bump's coefficients", BX + BW / 2, 22, C.muted, 11, 'center');
+    txt(g, 'k = 1 … 14', BX + BW / 2, BY + 16, C.muted, 10, 'center');
+    txt(g, dead ? dead + ' harmonic(s) wiped out' : 'none wiped out', BX + BW / 2, BY + 32,
+        dead ? C.warn : C.ok, 11, 'center');
+    // right: recovery
+    const X0 = 460, Y0 = 200, W = 210, A = 110;
+    const s1 = Math.max(...base), s2 = Math.max(...back.map(Math.abs), 1e-9);
+    g.strokeStyle = C.line; g.beginPath(); g.moveTo(X0, Y0); g.lineTo(X0 + W, Y0); g.stroke();
+    g.strokeStyle = '#59627a'; g.lineWidth = 1.5; g.beginPath();
+    for (let j = 0; j <= NB; j++) { const x = X0 + W * j / NB, y = Y0 - base[j % NB] / s1 * A; j ? g.lineTo(x, y) : g.moveTo(x, y); }
+    g.stroke();
+    g.strokeStyle = C.ok; g.lineWidth = 2; g.beginPath();
+    for (let j = 0; j <= NB; j++) { const x = X0 + W * j / NB, y = Y0 - back[j % NB] / s2 * A; j ? g.lineTo(x, y) : g.moveTo(x, y); }
+    g.stroke();
+    txt(g, 'smeared, then un-smeared', X0 + W / 2, 22, C.muted, 11, 'center');
+    txt(g, 'grey = original,  green = recovered', X0 + W / 2, Y0 + 20, C.muted, 10, 'center');
+    let err = 0; for (let j = 0; j < NB; j++) err += (base[j] / s1 - back[j] / s2) ** 2;
+    err = Math.sqrt(err / NB);
+    out.textContent =
+      'bump width ' + wd.toFixed(1) + ' notches, noise ' + sN.value + '%\n' +
+      'harmonics driven to zero: ' + dead + '\n' +
+      'recovery error ' + err.toFixed(3) + '\n' +
+      (dead === 0 && err < .12 ? '→ fully reversible: no coefficient was zero, so every one could be divided out.'
+       : dead > 0 ? '→ those harmonics are gone. No amount of cleverness brings them back.'
+                  : '→ reversible in principle, but the small coefficients amplified the noise.');
+  }
+  sW.oninput = draw; sN.oninput = draw; draw();
+})();
+</script>
+</body>
+</html>
