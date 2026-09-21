@@ -1,0 +1,32 @@
+diagnowraplr1e3clip1   616225 params   cuda
+  ep   1  loss 0.3925  train 0.9608  test 0.9559  kappa  12.2  wrapped/layer 0.00 0.00 0.13 0.18  turns/layer 0.1 0.1 0.2 0.2
+  ep   2  loss 0.1873  train 0.9720  test 0.9651  kappa  14.6  wrapped/layer 0.01 0.00 0.13 0.20  turns/layer 0.2 0.1 0.2 0.2
+  ep   3  loss 0.1359  train 0.9825  test 0.9742  kappa  17.1  wrapped/layer 0.01 0.00 0.12 0.19  turns/layer 0.2 0.1 0.2 0.2
+  ep   4  loss 0.1035  train 0.9859  test 0.9752  kappa  19.9  wrapped/layer 0.01 0.00 0.12 0.21  turns/layer 0.2 0.2 0.2 0.2
+  ep   5  loss 0.0807  train 0.9915  test 0.9791  kappa  22.8  wrapped/layer 0.01 0.00 0.12 0.21  turns/layer 0.2 0.2 0.2 0.2
+  ep   6  loss 0.0650  train 0.9920  test 0.9754  kappa  25.9  wrapped/layer 0.01 0.00 0.11 0.22  turns/layer 0.2 0.2 0.2 0.2
+  ep   7  loss 0.0517  train 0.9926  test 0.9765  kappa  29.3  wrapped/layer 0.01 0.00 0.11 0.21  turns/layer 0.2 0.2 0.2 0.3
+  ep   8  loss 0.0417  train 0.9959  test 0.9753  kappa  32.8  wrapped/layer 0.01 0.00 0.11 0.24  turns/layer 0.2 0.2 0.2 0.3
+  ep   9  loss 0.0356  train 0.9966  test 0.9771  kappa  36.6  wrapped/layer 0.01 0.00 0.12 0.27  turns/layer 0.2 0.2 0.2 0.3
+  ep  10  loss 0.0293  train 0.9980  test 0.9775  kappa  40.6  wrapped/layer 0.01 0.00 0.11 0.25  turns/layer 0.2 0.2 0.2 0.3
+  ep  11  loss 0.0313  train 0.9934  test 0.9714  kappa  45.4  wrapped/layer 0.01 0.00 0.11 0.29  turns/layer 0.2 0.2 0.2 0.3
+  ep  12  loss 0.0545  train 0.9796  test 0.9610  kappa  52.8  wrapped/layer 0.01 0.01 0.11 0.36  turns/layer 0.2 0.2 0.2 0.4
+  ep  13  loss 0.0980  train 0.9707  test 0.9536  kappa  62.0  wrapped/layer 0.01 0.01 0.13 0.49  turns/layer 0.2 0.2 0.2 0.6
+  ep  14  loss 0.1051  train 0.9753  test 0.9529  kappa  69.4  wrapped/layer 0.01 0.01 0.12 0.52  turns/layer 0.2 0.2 0.2 0.7
+  ep  15  loss 0.1082  train 0.9772  test 0.9557  kappa  75.1  wrapped/layer 0.00 0.01 0.13 0.58  turns/layer 0.2 0.2 0.2 0.8
+  ep  16  loss 0.1108  train 0.9653  test 0.9488  kappa  79.5  wrapped/layer 0.01 0.01 0.14 0.63  turns/layer 0.2 0.2 0.2 1.0
+  ep  17  loss 0.1151  train 0.9563  test 0.9426  kappa  83.8  wrapped/layer 0.01 0.01 0.14 0.63  turns/layer 0.2 0.2 0.2 1.0
+  ep  18  loss 0.1154  train 0.9748  test 0.9520  kappa  86.4  wrapped/layer 0.01 0.01 0.15 0.67  turns/layer 0.2 0.2 0.2 1.2
+  ep  19  loss 0.1205  train 0.9658  test 0.9440  kappa  88.8  wrapped/layer 0.01 0.01 0.15 0.69  turns/layer 0.2 0.2 0.2 1.2
+  ep  20  loss 0.1223  train 0.9631  test 0.9430  kappa  90.3  wrapped/layer 0.01 0.01 0.14 0.69  turns/layer 0.2 0.2 0.2 1.2
+  ep  21  loss 0.1272  train 0.9558  test 0.9368  kappa  90.9  wrapped/layer 0.01 0.01 0.15 0.71  turns/layer 0.2 0.2 0.2 1.3
+  ep  22  loss 0.1320  train 0.9574  test 0.9416  kappa  92.1  wrapped/layer 0.01 0.01 0.18 0.76  turns/layer 0.2 0.2 0.2 1.7
+  ep  23  loss 0.1399  train 0.9621  test 0.9448  kappa  92.0  wrapped/layer 0.01 0.01 0.15 0.74  turns/layer 0.2 0.2 0.2 1.4
+  ep  24  loss 0.1309  train 0.9442  test 0.9258  kappa  92.9  wrapped/layer 0.01 0.01 0.20 0.79  turns/layer 0.2 0.2 0.2 1.9
+  ep  25  loss 0.1370  train 0.9562  test 0.9376  kappa  92.9  wrapped/layer 0.00 0.01 0.13 0.73  turns/layer 0.2 0.2 0.2 1.3
+  ep  26  loss 0.1456  train 0.9574  test 0.9407  kappa  92.9  wrapped/layer 0.01 0.01 0.18 0.81  turns/layer 0.2 0.2 0.2 1.9
+  ep  27  loss 0.1468  train 0.9466  test 0.9284  kappa  92.1  wrapped/layer 0.01 0.01 0.14 0.76  turns/layer 0.2 0.2 0.2 1.5
+  ep  28  loss 0.1512  train 0.9469  test 0.9278  kappa  91.6  wrapped/layer 0.01 0.01 0.13 0.75  turns/layer 0.2 0.2 0.2 1.4
+  ep  29  loss 0.1486  train 0.9635  test 0.9465  kappa  91.4  wrapped/layer 0.00 0.01 0.14 0.77  turns/layer 0.2 0.2 0.2 1.6
+  ep  30  loss 0.1477  train 0.9527  test 0.9317  kappa  91.7  wrapped/layer 0.01 0.01 0.19 0.82  turns/layer 0.2 0.2 0.2 2.2
+  -> 0.9317 test   (wrap switched off after training: 0.9317)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   97s

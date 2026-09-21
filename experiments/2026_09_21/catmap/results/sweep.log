@@ -1,0 +1,67 @@
+  -> 0.5716 test   (wrap switched off after training: 0.4360)   roundtrip f32 max 1.1e-05 bad 0.0e+00  f64 max 6.0e-14 bad 0.0e+00   9s
+  -> 0.9144 test   (wrap switched off after training: nan)   15s
+  -> 0.9599 test   (wrap switched off after training: 0.9599)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 5.3e-15 bad 0.0e+00   16s
+  -> 0.4302 test   (wrap switched off after training: 0.1021)   roundtrip f32 max 1.4e-03 bad 2.0e-04  f64 max 4.7e-12 bad 0.0e+00   17s
+  -> 0.9684 test   (wrap switched off after training: 0.7117)   roundtrip f32 max 1.7e-06 bad 0.0e+00  f64 max 5.3e-15 bad 0.0e+00   25s
+  -> 0.9655 test   (wrap switched off after training: 0.9655)   roundtrip f32 max 3.1e+00 bad 9.2e-01  f64 max 3.1e+00 bad 9.2e-01   28s
+  -> 0.9800 test   (wrap switched off after training: 0.9743)   roundtrip f32 max 2.4e-06 bad 0.0e+00  f64 max 3.6e-15 bad 0.0e+00   56s
+  -> 0.9731 test   (wrap switched off after training: 0.6753)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 7.1e-15 bad 0.0e+00   57s
+  -> 0.9717 test   (wrap switched off after training: 0.9717)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   54s
+  -> 0.9798 test   (wrap switched off after training: 0.9704)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 4.4e-15 bad 0.0e+00   113s
+  -> 0.9729 test   (wrap switched off after training: 0.9729)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   117s
+  -> 0.9734 test   (wrap switched off after training: 0.7064)   roundtrip f32 max 2.6e-06 bad 0.0e+00  f64 max 7.1e-15 bad 0.0e+00   118s
+  -> 0.3038 test   (wrap switched off after training: 0.2899)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   7s
+  -> 0.9705 test   (wrap switched off after training: 0.7910)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 6.2e-15 bad 0.0e+00   51s
+  -> 0.9175 test   (wrap switched off after training: nan)   18s
+  -> 0.1456 test   (wrap switched off after training: 0.1022)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   3s
+  -> 0.2485 test   (wrap switched off after training: 0.1075)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   7s
+  -> 0.9635 test   (wrap switched off after training: 0.9635)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   19s
+  -> 0.1843 test   (wrap switched off after training: 0.0951)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   8s
+  -> 0.5879 test   (wrap switched off after training: 0.1396)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   11s
+  -> 0.9671 test   (wrap switched off after training: 0.9671)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   26s
+  -> 0.1963 test   (wrap switched off after training: 0.1009)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   15s
+  -> 0.1287 test   (wrap switched off after training: 0.0903)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   23s
+  -> 0.9789 test   (wrap switched off after training: 0.9459)   roundtrip f32 max 2.6e-06 bad 0.0e+00  f64 max 5.3e-15 bad 0.0e+00   182s
+  -> 0.9708 test   (wrap switched off after training: 0.9708)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   53s
+  -> 0.1705 test   (wrap switched off after training: 0.1014)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   27s
+  -> 0.9629 test   (wrap switched off after training: 0.1112)   roundtrip f32 max 3.1e+00 bad 9.8e-01  f64 max 3.1e+00 bad 9.9e-01   57s
+  -> 0.0986 test   (wrap switched off after training: 0.1059)   roundtrip f32 max 1.3e-05 bad 0.0e+00  f64 max 3.0e-14 bad 0.0e+00   56s
+  -> 0.9726 test   (wrap switched off after training: 0.7107)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 4.9e-15 bad 0.0e+00   55s
+  -> 0.9713 test   (wrap switched off after training: 0.9713)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   106s
+  -> 0.9721 test   (wrap switched off after training: 0.9721)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   49s
+  -> 0.9721 test   (wrap switched off after training: 0.7302)   roundtrip f32 max 2.1e-06 bad 0.0e+00  f64 max 4.9e-15 bad 0.0e+00   42s
+  -> 0.9702 test   (wrap switched off after training: 0.9702)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   32s
+run                                            params    test   train  wrap off  wrapped/layer (last epoch)
+linear_checker_L16_pi_init0_s0                2464897  0.9734  0.9900    0.7064  0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.01 0.03 0.17 0.17
+linear_checker_L16_tau_init0_s0               2464897  0.1287  0.1357    0.0903  0.60 0.45 0.19 0.17 0.12 0.12 0.09 0.09 0.07 0.07 0.06 0.06 0.05 0.06 0.05 0.06  COLLAPSED ep 3
+linear_checker_L2_pi_init0_s0                  308113  0.5716  0.5913    0.4360  0.84 0.05  COLLAPSED ep 8
+linear_checker_L2_tau_init0_s0                 308113  0.3038  0.3147    0.2899  0.75 0.45  COLLAPSED ep 5
+linear_checker_L4_pi_init0_s0                  616225  0.9684  0.9819    0.7117  0.01 0.06 0.17 0.17
+linear_checker_L4_tau_init0_s0                 616225  0.2485  0.2592    0.1075  0.77 0.45 0.23 0.24  COLLAPSED ep 4
+linear_checker_L8_pi_init0_s0                 1232449  0.9731  0.9872    0.6753  0.00 0.00 0.00 0.00 0.02 0.04 0.16 0.17
+linear_checker_L8_pi_init0_s1                 1232449  0.9726  0.9879    0.7107  0.00 0.00 0.01 0.00 0.02 0.04 0.16 0.18
+linear_checker_L8_pi_init0_s2                 1232449  0.9721  0.9868    0.7302  0.00 0.00 0.01 0.00 0.02 0.04 0.16 0.18
+linear_checker_L8_pi_init1_s0                 1232449  0.0986  0.0961    0.1059  0.37 0.21 0.24 0.23 0.23 0.23 0.23 0.23
+linear_checker_L8_tau_init0_s0                1232449  0.5879  0.5780    0.1396  0.55 0.45 0.13 0.16 0.10 0.11 0.10 0.11  COLLAPSED ep 3
+linear_nowrap_checker_L16_pi_init0_s0         2464897  0.9729  0.9868    0.9729  0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.01 0.01 0.02 0.02 0.04 0.06 0.18 0.19
+linear_nowrap_checker_L16_tau_init0_s0        2464897  0.9713  0.9887    0.9713  0.08 0.07 0.08 0.08 0.09 0.08 0.09 0.08 0.10 0.09 0.12 0.12 0.18 0.20 0.44 0.45
+linear_nowrap_checker_L2_pi_init0_s0           308113  0.9599  0.9647    0.9599  0.17 0.20
+linear_nowrap_checker_L2_tau_init0_s0          308113  0.9635  0.9714    0.9635  0.47 0.46
+linear_nowrap_checker_L4_pi_init0_s0           616225  0.9655  0.9744    0.9655  0.00 0.01 0.19 0.20
+linear_nowrap_checker_L4_tau_init0_s0          616225  0.9671  0.9793    0.9671  0.18 0.20 0.47 0.47
+linear_nowrap_checker_L8_pi_init0_s0          1232449  0.9717  0.9819    0.9717  0.00 0.00 0.00 0.00 0.03 0.04 0.19 0.19
+linear_nowrap_checker_L8_pi_init0_s1          1232449  0.9721  0.9820    0.9721  0.00 0.00 0.00 0.00 0.03 0.03 0.18 0.20
+linear_nowrap_checker_L8_pi_init0_s2          1232449  0.9702  0.9803    0.9702  0.00 0.00 0.00 0.00 0.03 0.03 0.19 0.19
+linear_nowrap_checker_L8_tau_init0_s0         1232449  0.9708  0.9842    0.9708  0.10 0.09 0.12 0.11 0.19 0.20 0.46 0.46
+linear_shuffle_L8_pi_init0_s0                 1232449  0.9705  0.9874    0.7910  0.00 0.01 0.02 0.02 0.04 0.06 0.11 0.15
+linear_shuffle_L8_tau_init0_s0                1232449  0.9629  0.9806    0.1112  0.48 0.27 0.16 0.10 0.11 0.15 0.17 0.17
+logreg_pi                                        7850  0.9144  0.9137       nan  
+logreg_tau                                       7850  0.9175  0.9182       nan  
+mlp_checker_L16_pi_init0_s0                  12867713  0.9789  0.9979    0.9459  0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.01 0.21 0.23
+mlp_checker_L16_tau_init0_s0                 12867713  0.1705  0.1747    0.1014  0.91 0.46 0.15 0.09 0.09 0.07 0.08 0.06 0.07 0.04 0.05 0.04 0.04 0.03 0.04 0.03  COLLAPSED ep 2
+mlp_checker_L2_pi_init0_s0                    1608465  0.4302  0.4263    0.1021  1.00 0.25
+mlp_checker_L2_tau_init0_s0                   1608465  0.1456  0.1472    0.1022  0.97 0.49  COLLAPSED ep 2
+mlp_checker_L4_pi_init0_s0                    3216929  0.9800  0.9956    0.9743  0.00 0.00 0.19 0.25
+mlp_checker_L4_tau_init0_s0                   3216929  0.1843  0.1780    0.0951  0.94 0.49 0.29 0.08  COLLAPSED ep 2
+mlp_checker_L8_pi_init0_s0                    6433857  0.9798  0.9966    0.9704  0.00 0.00 0.00 0.00 0.00 0.01 0.21 0.24
+mlp_checker_L8_tau_init0_s0                   6433857  0.1963  0.2016    0.1009  0.87 0.48 0.13 0.09 0.07 0.05 0.06 0.05  COLLAPSED ep 2

@@ -1,0 +1,864 @@
+logreg_pi   7850 params   cuda
+  ep   1  loss 0.5881  train 0.8997  test 0.9015
+  ep   2  loss 0.3495  train 0.9072  test 0.9071
+  ep   3  loss 0.3201  train 0.9136  test 0.9128
+  ep   4  loss 0.3072  train 0.9197  test 0.9174
+  ep   5  loss 0.3009  train 0.9185  test 0.9158
+  ep   6  loss 0.2940  train 0.9241  test 0.9197
+  ep   7  loss 0.2919  train 0.9231  test 0.9201
+  ep   8  loss 0.2844  train 0.9223  test 0.9185
+  ep   9  loss 0.2854  train 0.9282  test 0.9220
+  ep  10  loss 0.2828  train 0.9294  test 0.9222
+  ep  11  loss 0.2796  train 0.9181  test 0.9126
+  ep  12  loss 0.2765  train 0.9289  test 0.9198
+  ep  13  loss 0.2760  train 0.9284  test 0.9199
+  ep  14  loss 0.2736  train 0.9228  test 0.9160
+  ep  15  loss 0.2707  train 0.9309  test 0.9183
+  ep  16  loss 0.2706  train 0.9247  test 0.9168
+  ep  17  loss 0.2706  train 0.9257  test 0.9171
+  ep  18  loss 0.2686  train 0.9330  test 0.9223
+  ep  19  loss 0.2688  train 0.9299  test 0.9231
+  ep  20  loss 0.2669  train 0.9314  test 0.9211
+  ep  21  loss 0.2657  train 0.9307  test 0.9186
+  ep  22  loss 0.2657  train 0.9320  test 0.9225
+  ep  23  loss 0.2642  train 0.9200  test 0.9138
+  ep  24  loss 0.2647  train 0.9310  test 0.9224
+  ep  25  loss 0.2627  train 0.9311  test 0.9217
+  ep  26  loss 0.2642  train 0.9275  test 0.9219
+  ep  27  loss 0.2616  train 0.9299  test 0.9201
+  ep  28  loss 0.2614  train 0.9297  test 0.9199
+  ep  29  loss 0.2602  train 0.9293  test 0.9210
+  ep  30  loss 0.2614  train 0.9334  test 0.9200
+  -> 0.9200 test   (wrap switched off after training: nan)   4s
+linear_checker_L2_pi_init0_s0   308113 params   cuda
+  ep   1  loss 1.2178  train 0.2094  test 0.1967  wrapped/layer 0.89 0.07  turns/layer 2.7 0.1
+  ep   2  loss 2.3061  train 0.1622  test 0.1584  wrapped/layer 0.97 0.11  turns/layer 8.9 0.2
+  ep   3  loss 2.2629  train 0.1817  test 0.1810  wrapped/layer 0.98 0.13  turns/layer 13.8 0.2
+  ep   4  loss 2.2324  train 0.2076  test 0.2065  wrapped/layer 0.99 0.14  turns/layer 17.6 0.2
+  ep   5  loss 2.2106  train 0.2202  test 0.2207  wrapped/layer 0.99 0.16  turns/layer 20.4 0.2
+  ep   6  loss 2.1904  train 0.2358  test 0.2353  wrapped/layer 0.99 0.17  turns/layer 22.7 0.2
+  ep   7  loss 2.1767  train 0.2466  test 0.2389  wrapped/layer 0.99 0.18  turns/layer 24.4 0.2
+  ep   8  loss 2.1574  train 0.2446  test 0.2549  wrapped/layer 0.99 0.20  turns/layer 25.6 0.2
+  ep   9  loss 2.1409  train 0.2585  test 0.2508  wrapped/layer 0.99 0.21  turns/layer 26.4 0.3
+  ep  10  loss 2.1292  train 0.2657  test 0.2550  wrapped/layer 0.99 0.22  turns/layer 27.1 0.3
+  ep  11  loss 2.1181  train 0.2682  test 0.2505  wrapped/layer 0.99 0.23  turns/layer 27.6 0.3
+  ep  12  loss 2.1082  train 0.2543  test 0.2556  wrapped/layer 0.99 0.24  turns/layer 27.9 0.3
+  ep  13  loss 2.1070  train 0.2591  test 0.2578  wrapped/layer 0.99 0.25  turns/layer 28.0 0.3
+  ep  14  loss 2.1033  train 0.2633  test 0.2586  wrapped/layer 0.99 0.26  turns/layer 28.0 0.3
+  ep  15  loss 2.0993  train 0.2595  test 0.2570  wrapped/layer 0.99 0.26  turns/layer 28.3 0.3
+  ep  16  loss 2.0951  train 0.2546  test 0.2657  wrapped/layer 0.99 0.27  turns/layer 28.6 0.3
+  ep  17  loss 2.0968  train 0.2641  test 0.2670  wrapped/layer 0.99 0.27  turns/layer 28.8 0.3
+  ep  18  loss 2.0976  train 0.2682  test 0.2555  wrapped/layer 0.99 0.28  turns/layer 28.9 0.3
+  ep  19  loss 2.0967  train 0.2655  test 0.2613  wrapped/layer 0.99 0.28  turns/layer 28.9 0.3
+  ep  20  loss 2.0953  train 0.2674  test 0.2652  wrapped/layer 0.99 0.28  turns/layer 28.9 0.3
+  ep  21  loss 2.0936  train 0.2679  test 0.2605  wrapped/layer 0.99 0.29  turns/layer 29.1 0.3
+  ep  22  loss 2.0925  train 0.2651  test 0.2655  wrapped/layer 0.99 0.29  turns/layer 29.2 0.3
+  ep  23  loss 2.0935  train 0.2667  test 0.2614  wrapped/layer 0.99 0.29  turns/layer 29.3 0.3
+  ep  24  loss 2.0869  train 0.2698  test 0.2621  wrapped/layer 0.99 0.30  turns/layer 29.3 0.3
+  ep  25  loss 2.0900  train 0.2669  test 0.2607  wrapped/layer 0.99 0.30  turns/layer 29.4 0.3
+  ep  26  loss 2.0893  train 0.2686  test 0.2660  wrapped/layer 0.99 0.30  turns/layer 29.4 0.3
+  ep  27  loss 2.0861  train 0.2726  test 0.2669  wrapped/layer 0.99 0.30  turns/layer 29.6 0.4
+  ep  28  loss 2.0838  train 0.2738  test 0.2633  wrapped/layer 0.99 0.31  turns/layer 29.7 0.4
+  ep  29  loss 2.0883  train 0.2650  test 0.2689  wrapped/layer 0.99 0.31  turns/layer 29.8 0.4
+  ep  30  loss 2.0861  train 0.2667  test 0.2678  wrapped/layer 0.99 0.31  turns/layer 29.9 0.4
+  -> 0.2678 test   (wrap switched off after training: 0.0981)   roundtrip f32 max 1.8e-04 bad 0.0e+00  f64 max 1.2e-12 bad 0.0e+00   13s
+linear_nowrap_checker_L2_pi_init0_s0   308113 params   cuda
+  ep   1  loss 0.4679  train 0.9459  test 0.9435  wrapped/layer 0.12 0.18  turns/layer 0.2 0.2
+  ep   2  loss 0.2134  train 0.9646  test 0.9598  wrapped/layer 0.13 0.20  turns/layer 0.2 0.2
+  ep   3  loss 0.1526  train 0.9752  test 0.9673  wrapped/layer 0.13 0.21  turns/layer 0.2 0.3
+  ep   4  loss 0.1176  train 0.9821  test 0.9725  wrapped/layer 0.13 0.22  turns/layer 0.2 0.3
+  ep   5  loss 0.0911  train 0.9867  test 0.9770  wrapped/layer 0.13 0.23  turns/layer 0.2 0.3
+  ep   6  loss 0.0724  train 0.9901  test 0.9773  wrapped/layer 0.13 0.23  turns/layer 0.2 0.3
+  ep   7  loss 0.0593  train 0.9926  test 0.9789  wrapped/layer 0.13 0.25  turns/layer 0.2 0.3
+  ep   8  loss 0.0458  train 0.9955  test 0.9795  wrapped/layer 0.13 0.25  turns/layer 0.2 0.3
+  ep   9  loss 0.0353  train 0.9972  test 0.9791  wrapped/layer 0.13 0.26  turns/layer 0.2 0.3
+  ep  10  loss 0.0287  train 0.9974  test 0.9772  wrapped/layer 0.13 0.27  turns/layer 0.2 0.3
+  ep  11  loss 0.0226  train 0.9977  test 0.9795  wrapped/layer 0.12 0.26  turns/layer 0.2 0.3
+  ep  12  loss 0.0170  train 0.9977  test 0.9798  wrapped/layer 0.12 0.26  turns/layer 0.2 0.3
+  ep  13  loss 0.0127  train 0.9994  test 0.9812  wrapped/layer 0.12 0.28  turns/layer 0.2 0.3
+  ep  14  loss 0.0148  train 0.9954  test 0.9741  wrapped/layer 0.13 0.29  turns/layer 0.2 0.3
+  ep  15  loss 0.0348  train 0.9842  test 0.9661  wrapped/layer 0.18 0.42  turns/layer 0.3 0.5
+  ep  16  loss 0.1033  train 0.9510  test 0.9415  wrapped/layer 0.31 0.85  turns/layer 0.4 2.5
+  ep  17  loss 0.1618  train 0.9569  test 0.9369  wrapped/layer 0.46 0.95  turns/layer 0.7 6.7
+  ep  18  loss 0.1465  train 0.9594  test 0.9455  wrapped/layer 0.53 0.98  turns/layer 0.9 12.0
+  ep  19  loss 0.1438  train 0.9667  test 0.9469  wrapped/layer 0.56 0.98  turns/layer 1.0 14.3
+  ep  20  loss 0.1400  train 0.9701  test 0.9516  wrapped/layer 0.54 0.97  turns/layer 0.9 13.7
+  ep  21  loss 0.1352  train 0.9665  test 0.9502  wrapped/layer 0.59 0.98  turns/layer 1.2 20.5
+  ep  22  loss 0.1237  train 0.9660  test 0.9492  wrapped/layer 0.59 0.99  turns/layer 1.2 20.6
+  ep  23  loss 0.1552  train 0.9669  test 0.9447  wrapped/layer 0.61 0.99  turns/layer 1.2 22.5
+  ep  24  loss 0.1421  train 0.9622  test 0.9421  wrapped/layer 0.61 0.99  turns/layer 1.4 26.7
+  ep  25  loss 0.1220  train 0.9677  test 0.9520  wrapped/layer 0.62 0.99  turns/layer 1.3 26.6
+  ep  26  loss 0.1202  train 0.9686  test 0.9512  wrapped/layer 0.64 0.99  turns/layer 1.3 27.1
+  ep  27  loss 0.1088  train 0.9685  test 0.9522  wrapped/layer 0.65 0.99  turns/layer 1.3 27.6
+  ep  28  loss 0.1225  train 0.9603  test 0.9420  wrapped/layer 0.62 0.99  turns/layer 1.2 23.6
+  ep  29  loss 0.1148  train 0.9666  test 0.9512  wrapped/layer 0.64 0.99  turns/layer 1.2 24.7
+  ep  30  loss 0.1138  train 0.9712  test 0.9526  wrapped/layer 0.64 0.99  turns/layer 1.3 26.4
+  -> 0.9526 test   (wrap switched off after training: 0.9526)   roundtrip f32 max 1.1e-04 bad 0.0e+00  f64 max 5.7e-14 bad 0.0e+00   11s
+mlp_checker_L2_pi_init0_s0   1608465 params   cuda
+  ep   1  loss 1.9678  train 0.3559  test 0.3486  wrapped/layer 1.00 0.31  turns/layer 112.7 0.3
+  ep   2  loss 2.0648  train 0.3578  test 0.3535  wrapped/layer 1.00 0.36  turns/layer 700.9 0.4
+  ep   3  loss 2.0292  train 0.3598  test 0.3617  wrapped/layer 1.00 0.41  turns/layer 1719.6 0.5
+  ep   4  loss 1.9919  train 0.3527  test 0.3544  wrapped/layer 1.00 0.41  turns/layer 3733.3 0.5
+  ep   5  loss 1.9577  train 0.3416  test 0.3525  wrapped/layer 1.00 0.40  turns/layer 7142.7 0.5
+  ep   6  loss 1.9301  train 0.3430  test 0.3419  wrapped/layer 1.00 0.42  turns/layer 11925.9 0.6
+  ep   7  loss 1.9258  train 0.3356  test 0.3463  wrapped/layer 1.00 0.44  turns/layer 18566.7 0.6
+  ep   8  loss 1.9266  train 0.3390  test 0.3543  wrapped/layer 1.00 0.46  turns/layer 27185.4 0.7
+  ep   9  loss 1.9282  train 0.3384  test 0.3285  wrapped/layer 1.00 0.45  turns/layer 38179.8 0.7
+  ep  10  loss 1.9269  train 0.3394  test 0.3439  wrapped/layer 1.00 0.47  turns/layer 49908.1 0.7
+  ep  11  loss 1.9262  train 0.3389  test 0.3376  wrapped/layer 1.00 0.48  turns/layer 61548.7 0.8
+  ep  12  loss 1.9184  train 0.3460  test 0.3384  wrapped/layer 1.00 0.48  turns/layer 71963.9 0.8
+  ep  13  loss 1.9292  train 0.3446  test 0.3343  wrapped/layer 1.00 0.49  turns/layer 83170.8 0.9
+  ep  14  loss 1.9255  train 0.3413  test 0.3400  wrapped/layer 1.00 0.49  turns/layer 94007.2 0.9
+  ep  15  loss 1.9280  train 0.3425  test 0.3422  wrapped/layer 1.00 0.48  turns/layer 105097.4 0.9
+  ep  16  loss 1.9300  train 0.3279  test 0.3448  wrapped/layer 1.00 0.50  turns/layer 116036.3 0.9
+  ep  17  loss 1.9326  train 0.3377  test 0.3357  wrapped/layer 1.00 0.51  turns/layer 124605.6 1.0
+  ep  18  loss 1.9351  train 0.3414  test 0.3394  wrapped/layer 1.00 0.51  turns/layer 134608.5 1.0
+  ep  19  loss 1.9376  train 0.3203  test 0.3280  wrapped/layer 1.00 0.52  turns/layer 147118.4 1.0
+  ep  20  loss 1.9341  train 0.3320  test 0.3321  wrapped/layer 1.00 0.52  turns/layer 159248.2 1.0
+  ep  21  loss 1.9363  train 0.3276  test 0.3291  wrapped/layer 1.00 0.51  turns/layer 170673.3 1.0
+  ep  22  loss 1.9371  train 0.3385  test 0.3432  wrapped/layer 1.00 0.52  turns/layer 181523.8 1.1
+  ep  23  loss 1.9344  train 0.3280  test 0.3270  wrapped/layer 1.00 0.52  turns/layer 192002.4 1.1
+  ep  24  loss 1.9468  train 0.3292  test 0.3326  wrapped/layer 1.00 0.52  turns/layer 199904.1 1.1
+  ep  25  loss 1.9410  train 0.3346  test 0.3334  wrapped/layer 1.00 0.51  turns/layer 210748.2 1.2
+  ep  26  loss 1.9439  train 0.3314  test 0.3295  wrapped/layer 1.00 0.52  turns/layer 217626.2 1.2
+  ep  27  loss 1.9484  train 0.3230  test 0.3202  wrapped/layer 1.00 0.52  turns/layer 228064.7 1.2
+  ep  28  loss 1.9569  train 0.3303  test 0.3338  wrapped/layer 1.00 0.53  turns/layer 239264.0 1.3
+  ep  29  loss 1.9510  train 0.3311  test 0.3310  wrapped/layer 1.00 0.53  turns/layer 249787.7 1.3
+  ep  30  loss 1.9497  train 0.3311  test 0.3226  wrapped/layer 1.00 0.54  turns/layer 256804.8 1.3
+  -> 0.3226 test   (wrap switched off after training: 0.1011)   roundtrip f32 max 3.0e+00 bad 5.0e-01  f64 max 5.5e-09 bad 0.0e+00   17s
+linear_checker_L4_pi_init0_s0   616225 params   cuda
+  ep   1  loss 0.3743  train 0.9571  test 0.9525  wrapped/layer 0.01 0.02 0.14 0.14  turns/layer 0.2 0.1 0.2 0.1
+  ep   2  loss 0.1605  train 0.9633  test 0.9562  wrapped/layer 0.01 0.01 0.17 0.15  turns/layer 0.2 0.1 0.2 0.2
+  ep   3  loss 0.1580  train 0.9669  test 0.9626  wrapped/layer 0.04 0.03 0.19 0.16  turns/layer 0.2 0.2 0.2 0.2
+  ep   4  loss 0.1614  train 0.8952  test 0.8835  wrapped/layer 0.15 0.11 0.28 0.14  turns/layer 0.3 0.2 0.3 0.1
+  ep   5  loss 2.2250  train 0.1131  test 0.1141  wrapped/layer 0.99 0.22 0.60 0.19  turns/layer 22.8 0.2 0.8 0.2
+  ep   6  loss 2.3507  train 0.1112  test 0.1139  wrapped/layer 0.99 0.26 0.58 0.21  turns/layer 31.7 0.3 0.8 0.2
+  ep   7  loss 2.3309  train 0.1173  test 0.1127  wrapped/layer 1.00 0.28 0.57 0.23  turns/layer 36.0 0.3 0.7 0.2
+  ep   8  loss 2.3226  train 0.1154  test 0.1171  wrapped/layer 1.00 0.29 0.56 0.23  turns/layer 39.1 0.3 0.7 0.2
+  ep   9  loss 2.3150  train 0.1185  test 0.1188  wrapped/layer 1.00 0.30 0.56 0.24  turns/layer 41.2 0.3 0.7 0.2
+  ep  10  loss 2.3058  train 0.1183  test 0.1217  wrapped/layer 1.00 0.31 0.55 0.25  turns/layer 42.3 0.3 0.7 0.2
+  ep  11  loss 2.3044  train 0.1211  test 0.1196  wrapped/layer 1.00 0.31 0.54 0.25  turns/layer 41.5 0.3 0.6 0.3
+  ep  12  loss 2.3006  train 0.1182  test 0.1185  wrapped/layer 1.00 0.32 0.53 0.26  turns/layer 42.3 0.3 0.6 0.3
+  ep  13  loss 2.2976  train 0.1252  test 0.1248  wrapped/layer 1.00 0.32 0.53 0.26  turns/layer 42.7 0.3 0.6 0.3
+  ep  14  loss 2.2994  train 0.1219  test 0.1250  wrapped/layer 1.00 0.33 0.53 0.27  turns/layer 42.7 0.3 0.6 0.3
+  ep  15  loss 2.2954  train 0.1240  test 0.1307  wrapped/layer 1.00 0.33 0.52 0.27  turns/layer 43.0 0.3 0.6 0.3
+  ep  16  loss 2.2947  train 0.1273  test 0.1270  wrapped/layer 1.00 0.35 0.51 0.28  turns/layer 43.1 0.3 0.6 0.3
+  ep  17  loss 2.2942  train 0.1274  test 0.1253  wrapped/layer 1.00 0.34 0.51 0.28  turns/layer 43.3 0.3 0.6 0.3
+  ep  18  loss 2.2938  train 0.1232  test 0.1251  wrapped/layer 1.00 0.35 0.50 0.29  turns/layer 43.3 0.3 0.6 0.3
+  ep  19  loss 2.2919  train 0.1276  test 0.1256  wrapped/layer 1.00 0.35 0.50 0.29  turns/layer 43.1 0.3 0.6 0.3
+  ep  20  loss 2.2928  train 0.1301  test 0.1204  wrapped/layer 1.00 0.36 0.50 0.30  turns/layer 43.0 0.3 0.6 0.3
+  ep  21  loss 2.2913  train 0.1283  test 0.1238  wrapped/layer 0.99 0.36 0.50 0.30  turns/layer 42.6 0.4 0.6 0.3
+  ep  22  loss 2.2923  train 0.1239  test 0.1241  wrapped/layer 0.99 0.36 0.49 0.31  turns/layer 42.3 0.4 0.5 0.3
+  ep  23  loss 2.2913  train 0.1260  test 0.1309  wrapped/layer 0.99 0.37 0.49 0.31  turns/layer 41.9 0.4 0.5 0.3
+  ep  24  loss 2.2922  train 0.1259  test 0.1218  wrapped/layer 0.99 0.38 0.49 0.32  turns/layer 41.4 0.4 0.5 0.3
+  ep  25  loss 2.2926  train 0.1266  test 0.1262  wrapped/layer 0.99 0.38 0.49 0.32  turns/layer 41.3 0.4 0.5 0.3
+  ep  26  loss 2.2913  train 0.1177  test 0.1182  wrapped/layer 0.99 0.38 0.49 0.33  turns/layer 41.9 0.4 0.5 0.3
+  ep  27  loss 2.2925  train 0.1272  test 0.1218  wrapped/layer 0.99 0.39 0.49 0.33  turns/layer 42.2 0.4 0.5 0.3
+  ep  28  loss 2.2915  train 0.1233  test 0.1232  wrapped/layer 0.99 0.39 0.49 0.33  turns/layer 42.4 0.4 0.5 0.3
+  ep  29  loss 2.2927  train 0.1262  test 0.1245  wrapped/layer 0.99 0.40 0.49 0.34  turns/layer 42.4 0.4 0.5 0.3
+  ep  30  loss 2.2929  train 0.1221  test 0.1242  wrapped/layer 0.99 0.40 0.49 0.35  turns/layer 42.5 0.4 0.5 0.4
+  -> 0.1242 test   (wrap switched off after training: 0.0997)   roundtrip f32 max 1.4e-03 bad 6.6e-04  f64 max 2.4e-12 bad 0.0e+00   19s
+linear_nowrap_checker_L4_pi_init0_s0   616225 params   cuda
+  ep   1  loss 0.4066  train 0.9573  test 0.9536  wrapped/layer 0.01 0.00 0.12 0.17  turns/layer 0.1 0.1 0.1 0.2
+  ep   2  loss 0.1933  train 0.9713  test 0.9649  wrapped/layer 0.01 0.00 0.13 0.19  turns/layer 0.2 0.1 0.2 0.2
+  ep   3  loss 0.1395  train 0.9807  test 0.9738  wrapped/layer 0.01 0.00 0.12 0.19  turns/layer 0.2 0.1 0.2 0.2
+  ep   4  loss 0.1068  train 0.9856  test 0.9738  wrapped/layer 0.01 0.00 0.12 0.21  turns/layer 0.2 0.2 0.2 0.2
+  ep   5  loss 0.0835  train 0.9913  test 0.9798  wrapped/layer 0.01 0.00 0.12 0.21  turns/layer 0.2 0.1 0.2 0.2
+  ep   6  loss 0.0675  train 0.9913  test 0.9762  wrapped/layer 0.01 0.00 0.12 0.22  turns/layer 0.2 0.2 0.2 0.2
+  ep   7  loss 0.0551  train 0.9929  test 0.9772  wrapped/layer 0.01 0.00 0.11 0.22  turns/layer 0.2 0.2 0.2 0.2
+  ep   8  loss 0.0427  train 0.9960  test 0.9772  wrapped/layer 0.01 0.00 0.11 0.21  turns/layer 0.2 0.2 0.1 0.3
+  ep   9  loss 0.0347  train 0.9962  test 0.9773  wrapped/layer 0.01 0.00 0.12 0.25  turns/layer 0.2 0.2 0.2 0.3
+  ep  10  loss 0.0295  train 0.9975  test 0.9770  wrapped/layer 0.01 0.00 0.11 0.24  turns/layer 0.2 0.2 0.2 0.3
+  ep  11  loss 0.0305  train 0.9933  test 0.9731  wrapped/layer 0.01 0.00 0.11 0.25  turns/layer 0.2 0.2 0.2 0.3
+  ep  12  loss 0.0495  train 0.9708  test 0.9512  wrapped/layer 0.01 0.00 0.11 0.32  turns/layer 0.2 0.2 0.2 0.3
+  ep  13  loss 0.1219  train 0.9363  test 0.9162  wrapped/layer 0.01 0.01 0.11 0.46  turns/layer 0.2 0.2 0.2 0.5
+  ep  14  loss 0.2766  train 0.8572  test 0.8484  wrapped/layer 0.04 0.04 0.26 0.75  turns/layer 0.2 0.2 0.3 1.2
+  ep  15  loss 1.9032  train 0.1002  test 0.0945  wrapped/layer 0.77 0.99 1.00 1.00  turns/layer 1.4 17.7 264.7 2944.8
+  ep  16  loss 2.6984  train 0.1034  test 0.1040  wrapped/layer 0.80 1.00 1.00 1.00  turns/layer 2.1 40.1 695.6 11643.5
+  ep  17  loss 2.5442  train 0.0986  test 0.0983  wrapped/layer 0.54 0.99 1.00 1.00  turns/layer 0.9 8.7 123.4 1918.8
+  ep  18  loss 2.4713  train 0.0990  test 0.1036  wrapped/layer 0.67 0.97 1.00 1.00  turns/layer 1.1 9.5 136.3 2240.5
+  ep  19  loss 2.4344  train 0.0976  test 0.1006  wrapped/layer 0.65 0.94 0.99 1.00  turns/layer 1.0 6.4 64.5 679.5
+  ep  20  loss 2.4021  train 0.1030  test 0.1051  wrapped/layer 0.74 0.97 1.00 1.00  turns/layer 1.2 10.5 120.0 1362.4
+  ep  21  loss 2.3896  train 0.1017  test 0.1013  wrapped/layer 0.93 0.99 1.00 1.00  turns/layer 2.3 31.0 493.8 7564.6
+  ep  22  loss 2.3709  train 0.0996  test 0.0972  wrapped/layer 0.80 0.98 1.00 1.00  turns/layer 1.4 16.3 231.8 2916.3
+  ep  23  loss 2.3614  train 0.0945  test 0.1021  wrapped/layer 0.93 0.99 1.00 1.00  turns/layer 2.6 44.5 787.0 11079.9
+  ep  24  loss 2.3508  train 0.0980  test 0.0973  wrapped/layer 0.80 0.99 1.00 1.00  turns/layer 1.6 20.0 328.7 4542.3
+  ep  25  loss 2.3433  train 0.1017  test 0.1012  wrapped/layer 0.76 0.97 1.00 1.00  turns/layer 1.4 16.4 273.1 3924.8
+  ep  26  loss 2.3373  train 0.0978  test 0.0977  wrapped/layer 0.86 0.98 1.00 1.00  turns/layer 1.9 26.0 469.0 7119.2
+  ep  27  loss 2.3366  train 0.0965  test 0.1006  wrapped/layer 0.78 0.98 1.00 1.00  turns/layer 1.5 17.9 312.2 4783.5
+  ep  28  loss 2.3310  train 0.0978  test 0.0950  wrapped/layer 0.78 0.97 1.00 1.00  turns/layer 1.5 18.1 305.8 5072.8
+  ep  29  loss 2.3271  train 0.0984  test 0.1031  wrapped/layer 0.67 0.97 1.00 1.00  turns/layer 1.2 13.2 210.0 3045.9
+  ep  30  loss 2.3240  train 0.0987  test 0.1033  wrapped/layer 0.65 0.97 1.00 1.00  turns/layer 1.1 12.3 187.9 2502.8
+  -> 0.1033 test   (wrap switched off after training: 0.1033)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   18s
+mlp_checker_L4_pi_init0_s0   3216929 params   cuda
+  ep   1  loss 0.2875  train 0.9695  test 0.9613  wrapped/layer 0.00 0.01 0.13 0.17  turns/layer 0.1 0.1 0.2 0.2
+  ep   2  loss 0.1203  train 0.9777  test 0.9696  wrapped/layer 0.00 0.02 0.18 0.16  turns/layer 0.1 0.2 0.2 0.2
+  ep   3  loss 1.9267  train 0.1006  test 0.1005  wrapped/layer 0.99 0.88 0.83 0.77  turns/layer 27.7 3.1 2.2 1.5
+  ep   4  loss 2.3379  train 0.1022  test 0.1022  wrapped/layer 0.96 0.94 0.86 0.83  turns/layer 9.1 6.4 2.9 2.1
+  ep   5  loss 2.3304  train 0.0976  test 0.1011  wrapped/layer 0.77 0.96 0.93 0.86  turns/layer 1.4 8.5 6.2 2.8
+  ep   6  loss 2.3263  train 0.0970  test 0.0972  wrapped/layer 0.94 0.95 0.91 0.88  turns/layer 5.5 8.4 5.4 3.1
+  ep   7  loss 2.3209  train 0.1039  test 0.1015  wrapped/layer 0.93 0.95 0.93 0.88  turns/layer 4.6 8.3 6.3 3.3
+  ep   8  loss 2.3171  train 0.0997  test 0.0964  wrapped/layer 0.91 0.96 0.93 0.90  turns/layer 3.9 8.7 6.9 3.7
+  ep   9  loss 2.3149  train 0.1000  test 0.1000  wrapped/layer 0.93 0.95 0.94 0.89  turns/layer 4.3 8.3 7.6 4.0
+  ep  10  loss 2.3124  train 0.0954  test 0.1019  wrapped/layer 0.96 0.96 0.94 0.90  turns/layer 7.3 9.3 8.0 4.2
+  ep  11  loss 2.3119  train 0.1004  test 0.0977  wrapped/layer 0.97 0.96 0.94 0.91  turns/layer 6.7 9.6 8.0 4.5
+  ep  12  loss 2.3095  train 0.0998  test 0.1043  wrapped/layer 0.97 0.96 0.94 0.91  turns/layer 9.7 9.7 7.7 4.6
+  ep  13  loss 2.3090  train 0.1021  test 0.1024  wrapped/layer 0.97 0.96 0.93 0.91  turns/layer 10.9 10.1 7.2 4.6
+  ep  14  loss 2.3091  train 0.0969  test 0.0979  wrapped/layer 0.97 0.96 0.95 0.91  turns/layer 9.3 10.2 8.6 4.5
+  ep  15  loss 2.3072  train 0.0961  test 0.0946  wrapped/layer 0.98 0.96 0.93 0.91  turns/layer 12.6 10.2 7.6 4.9
+  ep  16  loss 2.3064  train 0.1001  test 0.0967  wrapped/layer 0.97 0.96 0.93 0.92  turns/layer 12.4 10.4 7.5 5.0
+  ep  17  loss 2.3060  train 0.1027  test 0.1011  wrapped/layer 0.97 0.96 0.95 0.91  turns/layer 11.2 10.7 8.3 5.0
+  ep  18  loss 2.3061  train 0.1077  test 0.1020  wrapped/layer 0.97 0.97 0.95 0.92  turns/layer 10.6 12.1 8.7 5.2
+  ep  19  loss 2.3056  train 0.0933  test 0.0958  wrapped/layer 0.97 0.96 0.95 0.92  turns/layer 6.4 11.6 9.6 5.4
+  ep  20  loss 2.3056  train 0.1034  test 0.0966  wrapped/layer 0.98 0.97 0.95 0.92  turns/layer 12.2 13.4 8.9 5.6
+  ep  21  loss 2.3046  train 0.0982  test 0.0982  wrapped/layer 0.97 0.97 0.95 0.93  turns/layer 9.2 12.4 9.0 5.7
+  ep  22  loss 2.3044  train 0.0958  test 0.1031  wrapped/layer 0.97 0.97 0.94 0.93  turns/layer 9.1 12.3 8.7 6.1
+  ep  23  loss 2.3043  train 0.1036  test 0.1039  wrapped/layer 0.97 0.97 0.95 0.93  turns/layer 9.6 13.3 8.9 6.3
+  ep  24  loss 2.3038  train 0.0973  test 0.1023  wrapped/layer 0.95 0.97 0.95 0.93  turns/layer 8.3 12.8 9.7 6.4
+  ep  25  loss 2.3040  train 0.1012  test 0.1025  wrapped/layer 0.97 0.97 0.94 0.94  turns/layer 10.0 13.2 8.7 6.8
+  ep  26  loss 2.3041  train 0.0917  test 0.1026  wrapped/layer 0.98 0.97 0.95 0.94  turns/layer 11.4 13.5 9.1 7.1
+  ep  27  loss 2.3036  train 0.1007  test 0.1058  wrapped/layer 0.98 0.97 0.95 0.94  turns/layer 11.1 14.1 9.8 7.4
+  ep  28  loss 2.3037  train 0.1000  test 0.0982  wrapped/layer 0.98 0.97 0.95 0.94  turns/layer 13.3 14.4 9.5 7.6
+  ep  29  loss 2.3040  train 0.1000  test 0.0986  wrapped/layer 0.98 0.97 0.95 0.94  turns/layer 11.3 14.8 9.9 7.9
+  ep  30  loss 2.3034  train 0.1015  test 0.0955  wrapped/layer 0.97 0.98 0.95 0.95  turns/layer 11.3 15.5 9.7 8.1
+  -> 0.0955 test   (wrap switched off after training: 0.1015)   roundtrip f32 max 3.1e+00 bad 7.5e-01  f64 max 5.7e-10 bad 0.0e+00   32s
+linear_checker_L8_pi_init0_s0   1232449 params   cuda
+  ep   1  loss 0.3711  train 0.9633  test 0.9582  wrapped/layer 0.15 0.00 0.01 0.00 0.03 0.04 0.19 0.11  turns/layer 0.2 0.2 0.1 0.0 0.1 0.1 0.2 0.1
+  ep   2  loss 0.1700  train 0.9519  test 0.9470  wrapped/layer 0.16 0.00 0.01 0.00 0.02 0.02 0.24 0.12  turns/layer 0.3 0.1 0.1 0.1 0.1 0.1 0.2 0.1
+  ep   3  loss 0.2105  train 0.7383  test 0.7279  wrapped/layer 0.24 0.01 0.15 0.03 0.13 0.06 0.23 0.08  turns/layer 0.3 0.1 0.2 0.1 0.1 0.1 0.2 0.1
+  ep   4  loss 2.3613  train 0.0988  test 0.1005  wrapped/layer 0.98 0.32 0.86 0.24 0.63 0.17 0.24 0.17  turns/layer 10.6 0.3 3.2 0.2 0.9 0.2 0.2 0.2
+  ep   5  loss 2.3576  train 0.0944  test 0.1001  wrapped/layer 0.98 0.36 0.86 0.27 0.65 0.19 0.24 0.19  turns/layer 11.1 0.4 3.1 0.3 1.0 0.2 0.2 0.2
+  ep   6  loss 2.3464  train 0.0995  test 0.0960  wrapped/layer 0.98 0.34 0.86 0.29 0.63 0.21 0.24 0.20  turns/layer 11.1 0.4 3.3 0.3 0.9 0.2 0.2 0.2
+  ep   7  loss 2.3381  train 0.0964  test 0.0961  wrapped/layer 0.98 0.37 0.86 0.30 0.63 0.22 0.25 0.21  turns/layer 10.5 0.4 3.1 0.3 0.9 0.2 0.2 0.2
+  ep   8  loss 2.3309  train 0.0988  test 0.1020  wrapped/layer 0.98 0.38 0.85 0.32 0.62 0.23 0.25 0.22  turns/layer 10.5 0.4 3.0 0.3 0.9 0.2 0.3 0.2
+  ep   9  loss 2.3271  train 0.1014  test 0.1009  wrapped/layer 0.98 0.38 0.85 0.32 0.62 0.24 0.26 0.23  turns/layer 10.7 0.4 3.0 0.3 0.9 0.2 0.3 0.2
+  ep  10  loss 2.3213  train 0.1044  test 0.1042  wrapped/layer 0.98 0.38 0.85 0.33 0.62 0.25 0.26 0.24  turns/layer 10.7 0.4 2.9 0.3 0.9 0.3 0.3 0.2
+  ep  11  loss 2.3203  train 0.0965  test 0.1029  wrapped/layer 0.98 0.39 0.85 0.34 0.60 0.26 0.27 0.24  turns/layer 11.3 0.4 2.9 0.3 0.8 0.3 0.3 0.2
+  ep  12  loss 2.3168  train 0.1003  test 0.1016  wrapped/layer 0.97 0.40 0.85 0.34 0.59 0.27 0.28 0.25  turns/layer 11.6 0.4 2.9 0.3 0.8 0.3 0.3 0.2
+  ep  13  loss 2.3162  train 0.0989  test 0.1021  wrapped/layer 0.98 0.39 0.85 0.35 0.58 0.27 0.28 0.25  turns/layer 10.9 0.4 2.9 0.4 0.7 0.3 0.3 0.3
+  ep  14  loss 2.3140  train 0.0965  test 0.0985  wrapped/layer 0.98 0.42 0.85 0.35 0.58 0.28 0.29 0.26  turns/layer 10.8 0.4 2.9 0.4 0.7 0.3 0.3 0.3
+  ep  15  loss 2.3126  train 0.1022  test 0.1005  wrapped/layer 0.98 0.41 0.85 0.36 0.58 0.28 0.29 0.26  turns/layer 10.9 0.4 2.7 0.4 0.7 0.3 0.3 0.3
+  ep  16  loss 2.3111  train 0.1007  test 0.0979  wrapped/layer 0.98 0.41 0.84 0.36 0.57 0.29 0.29 0.27  turns/layer 10.7 0.4 2.7 0.4 0.7 0.3 0.3 0.3
+  ep  17  loss 2.3101  train 0.1026  test 0.0975  wrapped/layer 0.98 0.41 0.84 0.37 0.57 0.30 0.30 0.27  turns/layer 10.6 0.4 2.6 0.4 0.7 0.3 0.3 0.3
+  ep  18  loss 2.3089  train 0.1061  test 0.1058  wrapped/layer 0.97 0.41 0.84 0.38 0.57 0.30 0.30 0.28  turns/layer 10.5 0.4 2.6 0.4 0.7 0.3 0.3 0.3
+  ep  19  loss 2.3080  train 0.1022  test 0.1009  wrapped/layer 0.98 0.43 0.84 0.39 0.56 0.31 0.31 0.28  turns/layer 10.6 0.5 2.6 0.4 0.7 0.3 0.3 0.3
+  ep  20  loss 2.3072  train 0.1009  test 0.0996  wrapped/layer 0.98 0.43 0.84 0.38 0.56 0.31 0.31 0.29  turns/layer 10.7 0.5 2.6 0.4 0.7 0.3 0.3 0.3
+  ep  21  loss 2.3068  train 0.1034  test 0.0995  wrapped/layer 0.98 0.44 0.84 0.39 0.55 0.32 0.32 0.29  turns/layer 10.8 0.5 2.5 0.4 0.7 0.3 0.3 0.3
+  ep  22  loss 2.3067  train 0.0951  test 0.0986  wrapped/layer 0.98 0.43 0.84 0.39 0.55 0.32 0.32 0.29  turns/layer 11.2 0.5 2.5 0.4 0.7 0.3 0.3 0.3
+  ep  23  loss 2.3061  train 0.1017  test 0.1027  wrapped/layer 0.98 0.45 0.83 0.39 0.55 0.33 0.33 0.30  turns/layer 11.4 0.5 2.4 0.4 0.7 0.3 0.3 0.3
+  ep  24  loss 2.3059  train 0.1028  test 0.1016  wrapped/layer 0.98 0.46 0.84 0.40 0.54 0.33 0.33 0.30  turns/layer 11.0 0.5 2.6 0.4 0.6 0.3 0.3 0.3
+  ep  25  loss 2.3053  train 0.1040  test 0.1008  wrapped/layer 0.98 0.45 0.84 0.40 0.54 0.34 0.33 0.31  turns/layer 11.0 0.5 2.5 0.4 0.6 0.3 0.3 0.3
+  ep  26  loss 2.3049  train 0.1010  test 0.0946  wrapped/layer 0.97 0.45 0.84 0.41 0.54 0.34 0.34 0.31  turns/layer 10.4 0.5 2.5 0.4 0.6 0.3 0.3 0.3
+  ep  27  loss 2.3055  train 0.1021  test 0.0939  wrapped/layer 0.98 0.46 0.84 0.41 0.54 0.34 0.34 0.31  turns/layer 10.6 0.5 2.6 0.4 0.6 0.3 0.3 0.3
+  ep  28  loss 2.3045  train 0.0994  test 0.1028  wrapped/layer 0.98 0.47 0.84 0.41 0.54 0.35 0.34 0.32  turns/layer 10.8 0.5 2.6 0.4 0.6 0.4 0.3 0.3
+  ep  29  loss 2.3042  train 0.1019  test 0.1015  wrapped/layer 0.98 0.47 0.84 0.42 0.53 0.35 0.35 0.32  turns/layer 10.6 0.5 2.7 0.4 0.6 0.4 0.4 0.3
+  ep  30  loss 2.3042  train 0.0998  test 0.1058  wrapped/layer 0.98 0.46 0.84 0.43 0.53 0.36 0.35 0.33  turns/layer 10.4 0.5 2.6 0.4 0.6 0.4 0.4 0.3
+  -> 0.1058 test   (wrap switched off after training: 0.0972)   roundtrip f32 max 3.1e+00 bad 7.5e-01  f64 max 1.5e-09 bad 0.0e+00   35s
+linear_nowrap_checker_L8_pi_init0_s0   1232449 params   cuda
+  ep   1  loss 0.4453  train 0.9545  test 0.9495  wrapped/layer 0.00 0.00 0.03 0.03 0.10 0.16 0.35 0.52  turns/layer 0.1 0.1 0.1 0.1 0.1 0.1 0.3 0.5
+  ep   2  loss 0.2125  train 0.9655  test 0.9580  wrapped/layer 0.00 0.00 0.02 0.02 0.06 0.12 0.34 0.53  turns/layer 0.1 0.1 0.0 0.1 0.1 0.1 0.3 0.6
+  ep   3  loss 0.1606  train 0.9800  test 0.9696  wrapped/layer 0.00 0.00 0.02 0.01 0.05 0.10 0.35 0.54  turns/layer 0.2 0.2 0.0 0.1 0.1 0.1 0.3 0.7
+  ep   4  loss 0.1289  train 0.9812  test 0.9686  wrapped/layer 0.01 0.00 0.02 0.01 0.04 0.09 0.35 0.55  turns/layer 0.2 0.2 0.0 0.0 0.0 0.1 0.3 0.7
+  ep   5  loss 0.1101  train 0.9828  test 0.9674  wrapped/layer 0.01 0.00 0.02 0.01 0.03 0.07 0.33 0.55  turns/layer 0.2 0.2 0.0 0.0 0.0 0.1 0.3 0.7
+  ep   6  loss 0.1035  train 0.9808  test 0.9674  wrapped/layer 0.01 0.00 0.01 0.00 0.02 0.06 0.33 0.59  turns/layer 0.2 0.2 0.0 0.0 0.0 0.1 0.3 0.8
+  ep   7  loss 0.1135  train 0.9711  test 0.9604  wrapped/layer 0.01 0.00 0.02 0.00 0.02 0.06 0.33 0.66  turns/layer 0.2 0.2 0.0 0.1 0.0 0.1 0.4 1.1
+  ep   8  loss 0.1658  train 0.9448  test 0.9296  wrapped/layer 0.02 0.00 0.02 0.00 0.03 0.07 0.31 0.72  turns/layer 0.2 0.2 0.0 0.1 0.1 0.1 0.3 1.7
+  ep   9  loss 1.5292  train 0.0980  test 0.1031  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.4 112.6 3079.8 83112.9 1754508.4 36595748.0 649156672.0 7167732224.0
+  ep  10  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.1 2705.0 70529.5 1474099.1 33177758.0 634023168.0 6330886656.0
+  ep  11  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2707.0 70597.1 1475724.0 33215184.0 634744192.0 6339499008.0
+  ep  12  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2707.3 70607.9 1475981.2 33221114.0 634858752.0 6341180416.0
+  ep  13  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2706.9 70595.7 1475689.5 33214396.0 634729536.0 6340003328.0
+  ep  14  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2708.8 70660.5 1477249.2 33250292.0 635418624.0 6347893248.0
+  ep  15  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2706.7 70588.6 1475517.9 33210350.0 634646848.0 6339784192.0
+  ep  16  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.2 2705.7 70555.4 1474719.6 33191978.0 634293312.0 6334417920.0
+  ep  17  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.1 2705.1 70532.2 1474159.8 33179076.0 634043456.0 6330115584.0
+  ep  18  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.1 2702.2 70432.6 1471762.9 33123850.0 632979520.0 6317313024.0
+  ep  19  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 103.0 2697.7 70281.3 1468128.0 33040090.0 631364224.0 6299338752.0
+  ep  20  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 102.9 2694.3 70163.8 1465306.6 32975114.0 630112704.0 6283974144.0
+  ep  21  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.3 102.9 2696.4 70233.6 1466987.8 33013872.0 630859968.0 6291858944.0
+  ep  22  loss 2.3027  train 0.1001  test 0.0980  wrapped/layer 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 134.9 3995.1 114462.6 2897522.5 70241272.0 1468803456.0 17083000832.0
+  ep  23  loss 2.3027  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.6 76.8 1781.2 41157.1 1100177.9 29190226.0 657660160.0 8745049088.0
+  ep  24  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.6 76.9 1782.4 41191.8 1101123.2 29215480.0 658232192.0 8754870272.0
+  ep  25  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.6 77.1 1789.1 41383.1 1106337.1 29354338.0 661363136.0 8797015040.0
+  ep  26  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.6 78.1 1825.6 42434.4 1134997.5 30117882.0 678586368.0 9043444736.0
+  ep  27  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.6 78.3 1831.7 42613.6 1139890.9 30248298.0 681528128.0 9078603776.0
+  ep  28  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.7 79.5 1872.6 43798.2 1172217.4 31109662.0 700957632.0 9362695168.0
+  ep  29  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.7 80.2 1894.4 44431.6 1189512.8 31570474.0 711350080.0 9524100096.0
+  ep  30  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 3.7 79.9 1886.0 44186.1 1182804.0 31391662.0 707316736.0 9468144640.0
+  -> 0.0980 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   32s
+mlp_checker_L8_pi_init0_s0   6433857 params   cuda
+  ep   1  loss 0.2720  train 0.9760  test 0.9667  wrapped/layer 0.00 0.00 0.00 0.01 0.01 0.01 0.12 0.19  turns/layer 0.1 0.1 0.0 0.0 0.1 0.1 0.1 0.2
+  ep   2  loss 0.7701  train 0.1000  test 0.1020  wrapped/layer 0.99 0.83 0.80 0.71 0.76 0.77 0.68 0.62  turns/layer 19.6 2.0 1.6 1.2 1.5 1.9 1.1 0.8
+  ep   3  loss 2.3378  train 0.1045  test 0.0964  wrapped/layer 0.99 0.94 0.92 0.92 0.89 0.90 0.87 0.80  turns/layer 27.1 6.2 4.6 4.5 3.7 5.3 3.5 1.6
+  ep   4  loss 2.3306  train 0.0967  test 0.1015  wrapped/layer 0.92 0.96 0.95 0.94 0.94 0.93 0.90 0.83  turns/layer 4.8 10.4 8.0 7.1 7.5 9.9 5.5 2.0
+  ep   5  loss 2.3242  train 0.0987  test 0.0969  wrapped/layer 0.04 0.84 0.96 0.96 0.95 0.96 0.92 0.84  turns/layer 0.1 2.7 10.1 10.1 10.0 15.2 6.9 2.2
+  ep   6  loss 2.3195  train 0.0981  test 0.0969  wrapped/layer 0.03 0.83 0.96 0.96 0.95 0.95 0.91 0.85  turns/layer 0.1 2.7 11.0 9.7 9.4 14.5 6.7 2.5
+  ep   7  loss 2.3166  train 0.0995  test 0.1025  wrapped/layer 0.02 0.93 0.96 0.95 0.94 0.94 0.91 0.88  turns/layer 0.1 6.5 11.3 9.4 8.6 12.4 6.1 2.9
+  ep   8  loss 2.3141  train 0.1050  test 0.1039  wrapped/layer 0.01 0.96 0.97 0.95 0.94 0.95 0.93 0.91  turns/layer 0.0 11.4 11.4 9.2 8.3 12.9 6.5 3.4
+  ep   9  loss 2.3122  train 0.1069  test 0.0964  wrapped/layer 0.01 0.98 0.97 0.95 0.95 0.94 0.93 0.89  turns/layer 0.0 20.5 11.6 9.2 8.8 12.7 6.6 3.4
+  ep  10  loss 2.3116  train 0.1050  test 0.1042  wrapped/layer 0.01 0.97 0.97 0.96 0.94 0.94 0.93 0.89  turns/layer 0.0 16.9 11.4 9.5 8.4 12.6 7.2 3.6
+  ep  11  loss 2.3101  train 0.0994  test 0.1012  wrapped/layer 0.01 0.99 0.97 0.95 0.94 0.94 0.93 0.91  turns/layer 0.0 28.3 11.5 9.4 8.3 13.0 7.7 3.8
+  ep  12  loss 2.3091  train 0.1011  test 0.0951  wrapped/layer 0.00 0.99 0.97 0.96 0.94 0.96 0.94 0.91  turns/layer 0.0 33.7 11.7 9.6 8.4 15.6 8.9 3.8
+  ep  13  loss 2.3078  train 0.1008  test 0.1005  wrapped/layer 0.00 1.00 0.97 0.96 0.94 0.95 0.94 0.91  turns/layer 0.0 49.7 12.4 9.8 8.5 15.0 9.3 4.0
+  ep  14  loss 2.3076  train 0.0989  test 0.1048  wrapped/layer 0.01 0.99 0.97 0.96 0.95 0.95 0.94 0.91  turns/layer 0.0 66.1 12.6 9.9 9.1 14.3 7.9 4.4
+  ep  15  loss 2.3069  train 0.1001  test 0.0984  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.93 0.91  turns/layer 0.0 64.2 12.7 9.8 9.4 14.2 8.2 4.5
+  ep  16  loss 2.3062  train 0.0934  test 0.1025  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.92  turns/layer 0.0 59.1 12.6 10.0 9.5 14.4 8.2 4.7
+  ep  17  loss 2.3053  train 0.1042  test 0.0992  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.92  turns/layer 0.0 55.7 12.7 9.9 9.6 14.6 8.4 4.9
+  ep  18  loss 2.3053  train 0.1021  test 0.0995  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.92  turns/layer 0.0 57.3 12.8 9.8 9.3 14.1 8.5 5.0
+  ep  19  loss 2.3054  train 0.0969  test 0.1015  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.93  turns/layer 0.0 45.4 12.6 10.3 9.4 14.2 9.4 5.3
+  ep  20  loss 2.3050  train 0.0997  test 0.0995  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.93  turns/layer 0.0 49.4 13.1 10.0 9.7 13.3 9.3 5.5
+  ep  21  loss 2.3048  train 0.0958  test 0.1019  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.93  turns/layer 0.0 52.3 13.5 10.1 9.9 13.3 9.0 5.6
+  ep  22  loss 2.3043  train 0.1013  test 0.0970  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.95 0.94 0.93  turns/layer 0.0 47.8 13.2 10.3 10.2 13.6 8.9 5.7
+  ep  23  loss 2.3038  train 0.0982  test 0.0954  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.95 0.94 0.93  turns/layer 0.0 49.2 13.2 10.1 10.2 13.2 9.1 5.9
+  ep  24  loss 2.3036  train 0.1050  test 0.0979  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.95 0.94 0.94  turns/layer 0.0 50.0 13.4 10.1 10.7 14.0 9.2 6.0
+  ep  25  loss 2.3038  train 0.0937  test 0.0975  wrapped/layer 0.00 0.99 0.97 0.96 0.95 0.95 0.94 0.93  turns/layer 0.0 55.6 13.1 10.0 10.1 13.8 9.3 5.9
+  ep  26  loss 2.3037  train 0.0996  test 0.1005  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.95 0.94 0.94  turns/layer 0.0 64.9 13.9 10.2 10.4 14.1 9.1 6.2
+  ep  27  loss 2.3037  train 0.1013  test 0.1065  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.95 0.94 0.93  turns/layer 0.0 69.6 13.9 10.3 10.2 14.4 9.1 6.4
+  ep  28  loss 2.3036  train 0.0962  test 0.1030  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.96 0.94 0.94  turns/layer 0.0 72.8 13.7 10.1 10.2 14.7 9.3 6.8
+  ep  29  loss 2.3035  train 0.0995  test 0.1057  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.96 0.94 0.94  turns/layer 0.0 57.7 13.4 10.1 10.8 14.9 9.1 7.0
+  ep  30  loss 2.3033  train 0.0984  test 0.1007  wrapped/layer 0.00 0.99 0.97 0.96 0.96 0.96 0.94 0.94  turns/layer 0.0 50.5 13.2 10.4 11.0 15.7 9.3 7.1
+  -> 0.1007 test   (wrap switched off after training: 0.0472)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e-04 bad 0.0e+00   60s
+linear_checker_L16_pi_init0_s0   2464897 params   cuda
+  ep   1  loss 2.2575  train 0.1122  test 0.1040  wrapped/layer 0.97 0.16 0.93 0.15 0.91 0.15 0.91 0.15 0.92 0.14 0.90 0.09 0.69 0.07 0.43 0.07  turns/layer 10.1 0.2 7.1 0.1 6.1 0.1 6.5 0.1 6.6 0.1 4.8 0.1 1.3 0.1 0.5 0.1
+  ep   2  loss 2.3345  train 0.1076  test 0.1013  wrapped/layer 0.97 0.27 0.90 0.27 0.86 0.25 0.88 0.24 0.90 0.21 0.89 0.19 0.82 0.10 0.38 0.09  turns/layer 9.3 0.3 3.9 0.3 3.4 0.2 4.3 0.2 5.5 0.2 5.1 0.2 2.4 0.1 0.4 0.1
+  ep   3  loss 2.3229  train 0.0996  test 0.0938  wrapped/layer 0.98 0.34 0.89 0.29 0.84 0.28 0.84 0.28 0.87 0.26 0.89 0.21 0.84 0.12 0.35 0.11  turns/layer 9.2 0.4 3.3 0.3 2.7 0.3 3.3 0.3 4.1 0.3 4.3 0.2 2.8 0.1 0.4 0.1
+  ep   4  loss 2.3195  train 0.1025  test 0.0974  wrapped/layer 0.97 0.35 0.87 0.31 0.80 0.30 0.82 0.31 0.84 0.29 0.86 0.24 0.83 0.14 0.31 0.12  turns/layer 9.2 0.4 2.9 0.3 2.2 0.3 2.7 0.3 3.2 0.3 3.5 0.2 2.5 0.1 0.3 0.1
+  ep   5  loss 2.3161  train 0.1035  test 0.0990  wrapped/layer 0.97 0.36 0.87 0.33 0.78 0.31 0.80 0.32 0.83 0.31 0.85 0.25 0.81 0.16 0.29 0.14  turns/layer 9.1 0.4 2.7 0.3 2.0 0.3 2.3 0.3 2.8 0.3 3.0 0.3 2.2 0.2 0.3 0.1
+  ep   6  loss 2.3146  train 0.0965  test 0.1021  wrapped/layer 0.96 0.33 0.86 0.34 0.77 0.33 0.77 0.33 0.80 0.32 0.82 0.27 0.79 0.17 0.28 0.15  turns/layer 9.1 0.3 2.5 0.3 1.8 0.3 2.0 0.3 2.3 0.3 2.6 0.3 1.9 0.2 0.3 0.1
+  ep   7  loss 2.3125  train 0.0995  test 0.0984  wrapped/layer 0.99 0.34 0.85 0.34 0.76 0.34 0.76 0.36 0.78 0.33 0.79 0.28 0.76 0.18 0.27 0.16  turns/layer 9.2 0.4 2.4 0.3 1.6 0.3 1.8 0.4 2.0 0.3 2.1 0.3 1.7 0.2 0.3 0.2
+  ep   8  loss 2.3111  train 0.0976  test 0.1008  wrapped/layer 0.98 0.35 0.84 0.35 0.74 0.34 0.74 0.36 0.76 0.35 0.78 0.29 0.75 0.19 0.27 0.16  turns/layer 9.3 0.4 2.3 0.3 1.5 0.3 1.6 0.4 1.8 0.4 2.0 0.3 1.5 0.2 0.3 0.2
+  ep   9  loss 2.3104  train 0.0981  test 0.1027  wrapped/layer 0.98 0.35 0.83 0.36 0.73 0.35 0.72 0.36 0.75 0.36 0.76 0.30 0.72 0.20 0.27 0.17  turns/layer 9.5 0.4 2.2 0.4 1.4 0.4 1.5 0.4 1.6 0.4 1.8 0.3 1.4 0.2 0.3 0.2
+  ep  10  loss 2.3090  train 0.1005  test 0.1016  wrapped/layer 0.97 0.37 0.84 0.37 0.71 0.35 0.71 0.38 0.73 0.37 0.76 0.30 0.72 0.21 0.27 0.18  turns/layer 9.6 0.4 2.2 0.4 1.3 0.4 1.4 0.4 1.5 0.4 1.7 0.3 1.3 0.2 0.3 0.2
+  ep  11  loss 2.3076  train 0.0984  test 0.1025  wrapped/layer 0.98 0.37 0.83 0.37 0.70 0.36 0.70 0.36 0.72 0.35 0.74 0.31 0.70 0.21 0.28 0.19  turns/layer 9.5 0.4 2.1 0.4 1.2 0.4 1.3 0.4 1.4 0.4 1.6 0.3 1.2 0.2 0.3 0.2
+  ep  12  loss 2.3068  train 0.0994  test 0.1038  wrapped/layer 0.97 0.37 0.83 0.38 0.70 0.36 0.69 0.37 0.72 0.36 0.74 0.31 0.70 0.22 0.28 0.19  turns/layer 9.7 0.4 2.1 0.4 1.2 0.4 1.2 0.4 1.4 0.4 1.5 0.3 1.2 0.2 0.3 0.2
+  ep  13  loss 2.3060  train 0.1006  test 0.0997  wrapped/layer 0.98 0.39 0.82 0.38 0.69 0.37 0.68 0.37 0.70 0.37 0.73 0.32 0.69 0.23 0.29 0.20  turns/layer 9.6 0.4 2.0 0.4 1.1 0.4 1.2 0.4 1.3 0.4 1.5 0.3 1.2 0.2 0.3 0.2
+  ep  14  loss 2.3062  train 0.0985  test 0.1010  wrapped/layer 0.98 0.39 0.82 0.40 0.67 0.37 0.67 0.39 0.70 0.37 0.72 0.33 0.68 0.24 0.29 0.21  turns/layer 9.4 0.4 2.0 0.4 1.1 0.4 1.1 0.4 1.3 0.4 1.4 0.3 1.1 0.2 0.3 0.2
+  ep  15  loss 2.3055  train 0.0930  test 0.0998  wrapped/layer 0.98 0.38 0.82 0.39 0.67 0.38 0.66 0.38 0.70 0.38 0.72 0.33 0.68 0.24 0.29 0.21  turns/layer 9.4 0.4 1.9 0.4 1.1 0.4 1.1 0.4 1.3 0.4 1.4 0.3 1.1 0.2 0.3 0.2
+  ep  16  loss 2.3056  train 0.0993  test 0.1004  wrapped/layer 0.98 0.40 0.81 0.40 0.66 0.38 0.66 0.38 0.69 0.38 0.71 0.33 0.68 0.25 0.30 0.22  turns/layer 9.4 0.4 1.9 0.4 1.0 0.4 1.0 0.4 1.2 0.4 1.4 0.3 1.1 0.2 0.3 0.2
+  ep  17  loss 2.3044  train 0.1053  test 0.0987  wrapped/layer 0.98 0.40 0.81 0.41 0.65 0.39 0.64 0.40 0.69 0.40 0.70 0.33 0.67 0.26 0.30 0.22  turns/layer 9.5 0.4 1.8 0.4 1.0 0.4 1.0 0.4 1.2 0.4 1.3 0.3 1.1 0.3 0.3 0.2
+  ep  18  loss 2.3044  train 0.0997  test 0.1026  wrapped/layer 0.98 0.42 0.80 0.41 0.64 0.40 0.64 0.40 0.69 0.39 0.70 0.34 0.66 0.26 0.31 0.23  turns/layer 9.5 0.4 1.8 0.4 0.9 0.4 1.0 0.4 1.2 0.4 1.3 0.3 1.0 0.3 0.3 0.2
+  ep  19  loss 2.3050  train 0.0993  test 0.0987  wrapped/layer 0.98 0.41 0.80 0.43 0.63 0.40 0.63 0.41 0.69 0.39 0.70 0.35 0.66 0.27 0.31 0.23  turns/layer 9.4 0.4 1.7 0.4 0.9 0.4 0.9 0.4 1.2 0.4 1.2 0.4 1.0 0.3 0.3 0.2
+  ep  20  loss 2.3041  train 0.0998  test 0.0996  wrapped/layer 0.98 0.41 0.79 0.42 0.63 0.40 0.63 0.40 0.68 0.39 0.71 0.36 0.67 0.27 0.32 0.24  turns/layer 9.5 0.4 1.6 0.4 0.9 0.4 0.9 0.4 1.1 0.4 1.3 0.4 1.0 0.3 0.3 0.2
+  ep  21  loss 2.3038  train 0.1032  test 0.0979  wrapped/layer 0.98 0.42 0.79 0.42 0.62 0.41 0.64 0.41 0.67 0.40 0.71 0.35 0.66 0.28 0.32 0.24  turns/layer 9.4 0.4 1.6 0.4 0.8 0.4 0.9 0.4 1.1 0.4 1.3 0.4 1.0 0.3 0.3 0.2
+  ep  22  loss 2.3037  train 0.1021  test 0.0955  wrapped/layer 0.98 0.43 0.78 0.43 0.62 0.41 0.63 0.40 0.68 0.40 0.70 0.36 0.67 0.28 0.32 0.25  turns/layer 9.4 0.5 1.6 0.4 0.8 0.4 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.3 0.2
+  ep  23  loss 2.3041  train 0.1067  test 0.0960  wrapped/layer 0.98 0.44 0.78 0.44 0.61 0.40 0.63 0.41 0.68 0.40 0.71 0.36 0.66 0.29 0.33 0.25  turns/layer 9.4 0.5 1.6 0.5 0.8 0.4 0.9 0.4 1.1 0.4 1.3 0.4 1.0 0.3 0.3 0.3
+  ep  24  loss 2.3037  train 0.0959  test 0.0927  wrapped/layer 0.99 0.43 0.78 0.43 0.60 0.43 0.63 0.40 0.68 0.41 0.71 0.36 0.67 0.30 0.33 0.26  turns/layer 9.4 0.5 1.5 0.5 0.8 0.4 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.3 0.3
+  ep  25  loss 2.3036  train 0.0974  test 0.0977  wrapped/layer 0.98 0.44 0.77 0.44 0.61 0.42 0.63 0.42 0.68 0.41 0.70 0.37 0.66 0.30 0.34 0.26  turns/layer 9.4 0.5 1.5 0.5 0.8 0.4 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.3 0.3
+  ep  26  loss 2.3035  train 0.0982  test 0.0981  wrapped/layer 0.98 0.45 0.76 0.44 0.61 0.42 0.63 0.43 0.68 0.42 0.70 0.37 0.66 0.31 0.34 0.27  turns/layer 9.4 0.5 1.5 0.5 0.8 0.4 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.3 0.3
+  ep  27  loss 2.3034  train 0.0949  test 0.1006  wrapped/layer 0.98 0.45 0.75 0.44 0.61 0.43 0.62 0.43 0.68 0.42 0.70 0.38 0.67 0.31 0.35 0.27  turns/layer 9.4 0.5 1.4 0.5 0.8 0.5 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.4 0.3
+  ep  28  loss 2.3032  train 0.0977  test 0.1021  wrapped/layer 0.98 0.45 0.74 0.45 0.61 0.43 0.64 0.43 0.69 0.43 0.70 0.38 0.67 0.32 0.35 0.28  turns/layer 9.4 0.5 1.4 0.5 0.8 0.4 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.4 0.3
+  ep  29  loss 2.3032  train 0.0989  test 0.1015  wrapped/layer 0.98 0.45 0.74 0.46 0.60 0.44 0.63 0.43 0.68 0.41 0.71 0.39 0.67 0.32 0.35 0.28  turns/layer 9.4 0.5 1.3 0.5 0.8 0.5 0.9 0.4 1.1 0.4 1.3 0.4 1.0 0.3 0.4 0.3
+  ep  30  loss 2.3033  train 0.1033  test 0.1007  wrapped/layer 0.98 0.45 0.73 0.46 0.61 0.45 0.64 0.43 0.68 0.43 0.70 0.38 0.67 0.33 0.36 0.29  turns/layer 9.6 0.5 1.3 0.5 0.8 0.5 0.9 0.4 1.1 0.4 1.2 0.4 1.0 0.3 0.4 0.3
+  -> 0.1007 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 6.0e-01   66s
+linear_nowrap_checker_L16_pi_init0_s0   2464897 params   cuda
+  ep   1  loss 2.3285  train 0.1005  test 0.0960  wrapped/layer 0.08 0.17 0.49 0.56 0.73 0.85 0.86 0.92 0.96 0.97 0.98 0.99 1.00 1.00 1.00 1.00  turns/layer 0.3 0.3 0.5 0.6 0.9 1.6 1.9 2.4 5.4 10.1 13.9 20.1 43.9 112.4 255.9 557.9
+  ep   2  loss 2.3088  train 0.1001  test 0.0980  wrapped/layer 0.68 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 18.8 242.2 4311.2 83093.6 1657152.2 32538922.0 543588416.0 7085903872.0 94717050880.0 1120368984064.0 9822419288064.0 99581970874368.0 831831012278272.0 7386056869543936.0 70649295736406016.0
+  ep   3  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.7 220.0 3805.9 71564.4 1392275.2 26655216.0 432954336.0 5507152896.0 71877042176.0 825550045184.0 7069533995008.0 68510499733504.0 553179473248256.0 4801392795451392.0 45103027828293632.0
+  ep   4  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.67 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.8 223.0 3875.0 73071.1 1425557.6 27364986.0 445950560.0 5689977344.0 74547699712.0 860217344000.0 7414546432000.0 73558487203840.0 600913504894976.0 5262321169465344.0 49536808467300352.0
+  ep   5  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.67 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 18.0 226.0 3942.4 74548.5 1458312.5 28065828.0 458832480.0 5872084480.0 77213958144.0 895265865728.0 7755550687232.0 78367088967680.0 645638207307776.0 5711917272268800.0 54180363898978304.0
+  ep   6  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.6 219.6 3799.1 71416.6 1389018.1 26585912.0 431689216.0 5488935936.0 71615545344.0 821991571456.0 7035387641856.0 68379415150592.0 552733803282432.0 4800067261169664.0 44839157922529280.0
+  ep   7  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.5 216.8 3734.6 70015.5 1358197.0 25931096.0 419750880.0 5321741312.0 69181448192.0 790572302336.0 6733556088832.0 63968211107840.0 513139405750272.0 4403456290848768.0 40617149235986432.0
+  ep   8  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.67 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.8 222.2 3856.2 72653.2 1416200.5 27163412.0 442223040.0 5636423680.0 73765814272.0 849763041280.0 7305533325312.0 72394978885632.0 592086139142144.0 5186795243307008.0 48589497595592704.0
+  ep   9  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.5 216.7 3734.0 69996.5 1357686.0 25918776.0 419500576.0 5317361664.0 69118984192.0 789553741824.0 6715069693952.0 64220519464960.0 516253491920896.0 4443780396613632.0 41084149620015104.0
+  ep  10  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.5 216.4 3727.8 69864.1 1354829.6 25859014.0 418428224.0 5302332928.0 68906213376.0 786777636864.0 6703726198784.0 64163774726144.0 517682608734208.0 4432409739132928.0 40519683543138304.0
+  ep  11  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.67 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 18.3 231.3 4060.0 77130.7 1515666.6 29295714.0 481506432.0 6192968704.0 81936080896.0 957309190144.0 8360452685824.0 86840791007232.0 727938370633728.0 6542491469742080.0 62397181797072896.0
+  ep  12  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.67 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.9 224.3 3905.7 73731.5 1439977.8 27670104.0 451502144.0 5764226560.0 75650916352.0 874388258816.0 7508449034240.0 76374719070208.0 628850522324992.0 5588414950801408.0 53447440614817792.0
+  ep  13  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.3 213.8 3673.7 68673.4 1328424.8 25295078.0 408104672.0 5153594368.0 66770837504.0 759170727936.0 6392522473472.0 61969763663872.0 497914988199936.0 4296543548997632.0 39895710694375424.0
+  ep  14  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.66 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.5 216.4 3731.7 69926.8 1355847.1 25875016.0 418624896.0 5299591680.0 68887846912.0 786423414784.0 6633749479424.0 65491397771264.0 528099515039744.0 4620175240331264.0 43892925087612928.0
+  ep  15  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.65 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 17.1 210.4 3599.2 67063.0 1293169.9 24549684.0 394596832.0 4964220928.0 64044785664.0 724350271488.0 6031313731584.0 57830400851968.0 458180433805312.0 3949990422511616.0 37296276227751936.0
+  ep  16  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.65 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 16.9 206.1 3504.5 65013.9 1248347.6 23603204.0 377477568.0 4725888000.0 60625211392.0 680534081536.0 5609538715648.0 52580730273792.0 410034789941248.0 3490202630750208.0 32960371450970112.0
+  ep  17  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.64 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 16.6 201.1 3395.1 62674.1 1197612.5 22539886.0 358404896.0 4462836224.0 56872505344.0 632756764672.0 5167240970240.0 46953161293824.0 360958111252480.0 3010476795494400.0 27889653604417536.0
+  ep  18  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.64 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 16.3 195.3 3265.9 59923.1 1138263.5 21302100.0 336333888.0 4160854784.0 52578361344.0 578364702720.0 4657760436224.0 40267231002624.0 302346571612160.0 2470984879702016.0 22736667806793728.0
+  ep  19  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.64 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 16.4 196.2 3286.2 60330.6 1146669.9 21471338.0 339243296.0 4198340352.0 53108973568.0 585129328640.0 4702759550976.0 41387919671296.0 312656573497344.0 2593356014157824.0 24278801584226304.0
+  ep  20  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.64 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 16.3 193.8 3235.2 59252.1 1123545.2 20991676.0 330744160.0 4081879808.0 51473268736.0 564735967232.0 4510473781248.0 39306051715072.0 294704952377344.0 2442518104899584.0 22935675116453888.0
+  ep  21  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.63 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.9 186.7 3078.9 55968.5 1053522.0 19546376.0 305281568.0 3738027008.0 46647218176.0 504015290368.0 3965424238592.0 32220620259328.0 234561501921280.0 1866743916003328.0 16983340070469632.0
+  ep  22  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.63 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.5 180.1 2934.6 52963.8 989962.1 18244330.0 282548576.0 3434486016.0 42402127872.0 451177447424.0 3504115023872.0 26325341437952.0 185940173651968.0 1424053046870016.0 12450765519978496.0
+  ep  23  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.62 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.3 177.1 2869.0 51612.2 961637.1 17668754.0 272591168.0 3302981632.0 40568762368.0 428417056768.0 3299004121088.0 23920604348416.0 166234494599168.0 1249673348120576.0 10780620242288640.0
+  ep  24  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.63 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.5 179.9 2929.0 52838.4 987161.7 18184742.0 281470208.0 3419012352.0 42188378112.0 448338657280.0 3483889565696.0 27034252214272.0 193289382789120.0 1477025160232960.0 12628743596015616.0
+  ep  25  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.63 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.5 180.8 2949.8 53264.0 996063.6 18365434.0 284594432.0 3459328512.0 42763931648.0 455555252224.0 3558226001920.0 28715264245760.0 208523396907008.0 1599437231095808.0 13506787382657024.0
+  ep  26  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.62 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.3 177.4 2882.9 51892.7 967436.1 17785446.0 274592736.0 3325379840.0 40943734784.0 433826627584.0 3372227231744.0 27317952839680.0 199146023682048.0 1515680402767872.0 12345083554693120.0
+  ep  27  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.62 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.5 179.6 2930.7 52867.6 987730.8 18195776.0 281656768.0 3417606144.0 42225627136.0 449792114688.0 3484688580608.0 28952401805312.0 212619419975680.0 1681103752527872.0 14402099085312000.0
+  ep  28  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.62 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.3 176.6 2865.9 51511.6 958982.4 17606546.0 271376800.0 3279669248.0 40322043904.0 426617962496.0 3278590443520.0 26884758831104.0 195693473955840.0 1522394913046528.0 12954304264536064.0
+  ep  29  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.61 0.99 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.3 14.6 164.0 2604.4 46166.2 847907.3 15367961.0 233045232.0 2775619840.0 33454950400.0 344364711936.0 2566428557312.0 19029236383744.0 132250171604992.0 953042371346432.0 7675551623938048.0
+  ep  30  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.62 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 1.4 15.6 183.4 3016.1 54664.2 1025974.5 18982860.0 295469312.0 3600387840.0 44809318400.0 482568601600.0 3762197364736.0 33332517666816.0 250644996816896.0 2067922465849344.0 19218295022419968.0
+  -> 0.0980 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   62s
+mlp_checker_L16_pi_init0_s0   12867713 params   cuda
+  ep   1  loss 2.0574  train 0.1036  test 0.0978  wrapped/layer 0.01 0.11 0.81 0.84 0.80 0.81 0.74 0.79 0.74 0.75 0.75 0.66 0.62 0.51 0.51 0.46  turns/layer 0.1 0.2 1.8 2.2 1.8 1.8 1.3 1.8 1.3 1.3 1.3 1.0 0.8 0.6 0.6 0.5
+  ep   2  loss 2.3291  train 0.1002  test 0.1069  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.93 0.94 0.95 0.93 0.92 0.85 0.90 0.87 0.83 0.69 0.64  turns/layer 0.2 0.4 2.5 4.9 5.6 6.9 6.7 8.0 6.8 4.8 2.8 5.5 3.8 2.1 1.1 0.9
+  ep   3  loss 2.3266  train 0.1022  test 0.1031  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.94 0.94 0.96 0.96 0.96 0.91 0.92 0.93 0.89 0.85 0.75  turns/layer 0.2 0.4 2.5 4.7 5.7 9.2 9.7 12.5 15.2 11.5 4.9 8.1 6.4 3.4 2.5 1.4
+  ep   4  loss 2.3228  train 0.0983  test 0.0988  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.96 0.96 0.96 0.93 0.94 0.95 0.93 0.87 0.78  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 11.7 18.2 19.3 16.2 6.5 10.1 8.7 5.4 2.9 1.7
+  ep   5  loss 2.3207  train 0.0990  test 0.1013  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.96 0.96 0.96 0.94 0.94 0.96 0.95 0.92 0.79  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 11.8 18.3 18.9 16.7 7.3 10.3 10.3 6.6 5.3 1.9
+  ep   6  loss 2.3160  train 0.1000  test 0.1024  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.95 0.96 0.96 0.96 0.97 0.95 0.96 0.95 0.90 0.84  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 11.9 17.0 17.5 17.3 10.8 11.1 13.9 7.0 4.6 2.3
+  ep   7  loss 2.3152  train 0.0978  test 0.0992  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.97 0.96 0.97 0.97 0.96 0.97 0.96 0.92 0.84  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.5 23.6 22.1 19.3 13.0 11.9 14.7 7.8 5.2 2.6
+  ep   8  loss 2.3136  train 0.0987  test 0.1008  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.97 0.97 0.98 0.97 0.96 0.96 0.96 0.93 0.87  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.8 25.5 26.1 25.4 16.8 13.4 14.3 8.6 5.8 2.9
+  ep   9  loss 2.3121  train 0.1013  test 0.0998  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.97 0.97 0.97 0.98 0.98 0.96 0.97 0.96 0.94 0.88  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 29.6 27.2 24.8 21.7 13.1 16.0 9.2 7.3 3.3
+  ep  10  loss 2.3107  train 0.1019  test 0.1023  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.97 0.97 0.97 0.98 0.97 0.96 0.97 0.97 0.95 0.90  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 30.0 26.2 26.3 19.3 14.1 15.3 12.0 10.4 3.6
+  ep  11  loss 2.3108  train 0.1028  test 0.1038  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.97 0.97 0.97 0.98 0.97 0.96 0.97 0.96 0.94 0.89  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 28.6 26.8 27.1 18.6 15.4 16.2 11.2 8.1 3.8
+  ep  12  loss 2.3092  train 0.1032  test 0.0988  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.97 0.97 0.97 0.98 0.98 0.97 0.97 0.97 0.94 0.90  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 28.8 26.2 26.3 19.7 15.1 17.2 11.6 8.0 4.1
+  ep  13  loss 2.3074  train 0.1034  test 0.1001  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.97 0.97 0.98 0.98 0.98 0.97 0.97 0.97 0.94 0.90  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 30.4 27.3 27.7 21.1 15.4 17.3 12.9 8.7 4.4
+  ep  14  loss 2.3074  train 0.1014  test 0.1039  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.97 0.97 0.97 0.95 0.90  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 45.7 31.5 29.5 19.9 16.4 17.3 14.4 10.2 4.8
+  ep  15  loss 2.3062  train 0.1055  test 0.0915  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.97 0.97 0.97 0.95 0.90  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 42.0 32.3 30.9 21.6 16.8 18.4 15.1 9.4 4.8
+  ep  16  loss 2.3063  train 0.1009  test 0.1029  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.97 0.98 0.97 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 45.7 37.7 35.8 19.7 20.0 17.5 19.1 13.2 5.5
+  ep  17  loss 2.3058  train 0.1019  test 0.0966  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.98 0.97 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 56.4 39.5 36.8 23.4 25.5 17.3 20.2 14.0 5.7
+  ep  18  loss 2.3056  train 0.1022  test 0.1035  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.98 0.97 0.98 0.97 0.92  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 51.3 38.8 40.3 24.3 27.2 17.9 20.8 15.9 6.1
+  ep  19  loss 2.3053  train 0.1021  test 0.1016  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.99 0.99 0.98 0.98 0.98 0.98 0.97 0.92  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 53.3 45.1 44.7 24.7 30.1 18.4 21.7 15.4 6.1
+  ep  20  loss 2.3049  train 0.1043  test 0.0977  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.98 0.98 0.98 0.96 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 52.5 43.5 42.6 24.9 28.3 19.2 20.2 13.9 6.2
+  ep  21  loss 2.3045  train 0.1017  test 0.1010  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.99 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 55.9 45.2 45.1 26.6 31.7 19.0 20.2 15.0 6.6
+  ep  22  loss 2.3045  train 0.0993  test 0.0977  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.96 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 46.5 42.8 44.3 26.5 28.5 20.6 20.8 15.7 6.5
+  ep  23  loss 2.3047  train 0.0999  test 0.0992  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 45.9 39.3 41.6 27.8 25.0 20.9 19.4 17.3 6.7
+  ep  24  loss 2.3037  train 0.1038  test 0.1018  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 48.6 39.2 42.1 28.3 28.2 20.6 19.4 18.2 7.0
+  ep  25  loss 2.3035  train 0.0980  test 0.1003  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 50.3 41.1 44.4 29.6 27.4 20.3 20.4 19.5 7.1
+  ep  26  loss 2.3038  train 0.1006  test 0.1008  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.99 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 53.8 44.7 46.1 29.1 29.3 21.1 20.7 21.0 7.6
+  ep  27  loss 2.3036  train 0.1020  test 0.1020  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 54.5 44.9 45.3 28.0 27.9 21.9 19.7 19.8 7.8
+  ep  28  loss 2.3037  train 0.0977  test 0.0993  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.99 0.99 0.99 0.98 0.98 0.98 0.98 0.97 0.93  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 58.8 49.3 46.4 28.0 29.9 21.9 20.0 19.5 7.9
+  ep  29  loss 2.3035  train 0.1033  test 0.0956  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.99 0.99 0.99 0.98 0.98 0.98 0.98 0.97 0.94  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 63.3 48.2 45.4 28.4 29.7 22.0 20.2 19.0 8.2
+  ep  30  loss 2.3036  train 0.0959  test 0.0970  wrapped/layer 0.15 0.22 0.86 0.92 0.93 0.95 0.96 0.99 0.98 0.99 0.98 0.98 0.98 0.98 0.97 0.94  turns/layer 0.2 0.4 2.5 4.7 5.7 10.9 13.9 62.6 45.7 46.5 29.0 28.4 23.2 21.0 19.2 8.3
+  -> 0.0970 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   117s
+linear_shuffle_L8_pi_init0_s0   1232449 params   cuda
+  ep   1  loss 0.3636  train 0.9565  test 0.9480  wrapped/layer 0.08 0.05 0.02 0.04 0.06 0.09 0.11 0.11  turns/layer 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+  ep   2  loss 0.1939  train 0.9654  test 0.9547  wrapped/layer 0.10 0.06 0.02 0.03 0.05 0.08 0.12 0.14  turns/layer 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+  ep   3  loss 0.1757  train 0.9578  test 0.9522  wrapped/layer 0.15 0.08 0.03 0.04 0.06 0.09 0.13 0.15  turns/layer 0.3 0.2 0.1 0.1 0.1 0.1 0.2 0.1
+  ep   4  loss 0.1367  train 0.9729  test 0.9628  wrapped/layer 0.15 0.08 0.03 0.03 0.05 0.07 0.12 0.15  turns/layer 0.3 0.2 0.1 0.1 0.1 0.1 0.1 0.2
+  ep   5  loss 0.1159  train 0.9740  test 0.9611  wrapped/layer 0.16 0.07 0.04 0.04 0.06 0.09 0.14 0.16  turns/layer 0.3 0.2 0.1 0.1 0.1 0.1 0.2 0.2
+  ep   6  loss 0.1152  train 0.9721  test 0.9579  wrapped/layer 0.17 0.09 0.05 0.05 0.07 0.09 0.14 0.17  turns/layer 0.3 0.2 0.1 0.1 0.1 0.1 0.2 0.2
+  ep   7  loss 0.1554  train 0.9548  test 0.9449  wrapped/layer 0.23 0.12 0.08 0.08 0.09 0.12 0.16 0.17  turns/layer 0.4 0.2 0.2 0.1 0.1 0.1 0.2 0.2
+  ep   8  loss 0.9664  train 0.1280  test 0.1332  wrapped/layer 0.85 0.67 0.42 0.28 0.24 0.21 0.21 0.20  turns/layer 1.9 0.9 0.5 0.3 0.2 0.2 0.2 0.2
+  ep   9  loss 2.4574  train 0.1301  test 0.1271  wrapped/layer 0.89 0.80 0.61 0.39 0.30 0.26 0.25 0.24  turns/layer 2.9 1.5 0.7 0.4 0.3 0.3 0.2 0.2
+  ep  10  loss 2.3600  train 0.1361  test 0.1335  wrapped/layer 0.91 0.84 0.66 0.43 0.33 0.28 0.26 0.25  turns/layer 3.4 1.8 0.8 0.5 0.3 0.3 0.3 0.3
+  ep  11  loss 2.3172  train 0.1471  test 0.1433  wrapped/layer 0.91 0.86 0.68 0.45 0.34 0.29 0.27 0.26  turns/layer 3.6 1.9 0.9 0.5 0.3 0.3 0.3 0.3
+  ep  12  loss 2.2837  train 0.1597  test 0.1555  wrapped/layer 0.91 0.86 0.68 0.46 0.35 0.30 0.28 0.27  turns/layer 3.7 2.0 0.9 0.5 0.4 0.3 0.3 0.3
+  ep  13  loss 2.2615  train 0.1636  test 0.1660  wrapped/layer 0.91 0.87 0.69 0.47 0.36 0.31 0.29 0.28  turns/layer 3.8 2.0 1.0 0.5 0.4 0.3 0.3 0.3
+  ep  14  loss 2.2478  train 0.1698  test 0.1680  wrapped/layer 0.92 0.86 0.69 0.48 0.37 0.31 0.29 0.28  turns/layer 4.0 2.1 1.0 0.5 0.4 0.3 0.3 0.3
+  ep  15  loss 2.2439  train 0.1765  test 0.1787  wrapped/layer 0.93 0.86 0.69 0.49 0.38 0.32 0.30 0.29  turns/layer 4.4 2.2 1.0 0.5 0.4 0.3 0.3 0.3
+  ep  16  loss 2.2381  train 0.1770  test 0.1746  wrapped/layer 0.93 0.85 0.69 0.50 0.39 0.33 0.31 0.29  turns/layer 4.6 2.3 1.0 0.6 0.4 0.3 0.3 0.3
+  ep  17  loss 2.2378  train 0.1854  test 0.1746  wrapped/layer 0.93 0.86 0.71 0.51 0.39 0.33 0.31 0.30  turns/layer 4.6 2.3 1.1 0.6 0.4 0.3 0.3 0.3
+  ep  18  loss 2.2390  train 0.1789  test 0.1784  wrapped/layer 0.93 0.86 0.72 0.53 0.40 0.34 0.32 0.31  turns/layer 4.7 2.3 1.1 0.6 0.4 0.3 0.3 0.3
+  ep  19  loss 2.2360  train 0.1739  test 0.1781  wrapped/layer 0.92 0.86 0.72 0.53 0.41 0.35 0.33 0.31  turns/layer 4.4 2.3 1.1 0.6 0.4 0.4 0.3 0.3
+  ep  20  loss 2.2387  train 0.1752  test 0.1745  wrapped/layer 0.93 0.86 0.73 0.55 0.42 0.35 0.33 0.32  turns/layer 5.1 2.5 1.2 0.6 0.4 0.4 0.3 0.3
+  ep  21  loss 2.2381  train 0.1789  test 0.1658  wrapped/layer 0.94 0.87 0.72 0.55 0.42 0.36 0.34 0.32  turns/layer 5.1 2.5 1.1 0.6 0.4 0.4 0.3 0.3
+  ep  22  loss 2.2395  train 0.1761  test 0.1757  wrapped/layer 0.93 0.87 0.73 0.55 0.43 0.36 0.35 0.33  turns/layer 5.1 2.5 1.2 0.6 0.5 0.4 0.4 0.3
+  ep  23  loss 2.2394  train 0.1749  test 0.1776  wrapped/layer 0.94 0.88 0.73 0.56 0.44 0.37 0.35 0.34  turns/layer 5.1 2.6 1.2 0.7 0.5 0.4 0.4 0.3
+  ep  24  loss 2.2437  train 0.1702  test 0.1733  wrapped/layer 0.94 0.88 0.75 0.57 0.44 0.38 0.36 0.34  turns/layer 5.4 2.7 1.3 0.7 0.5 0.4 0.4 0.3
+  ep  25  loss 2.2408  train 0.1787  test 0.1738  wrapped/layer 0.93 0.88 0.75 0.58 0.45 0.39 0.36 0.35  turns/layer 5.5 2.7 1.3 0.7 0.5 0.4 0.4 0.4
+  ep  26  loss 2.2394  train 0.1797  test 0.1779  wrapped/layer 0.95 0.88 0.76 0.58 0.46 0.39 0.37 0.35  turns/layer 5.5 2.8 1.3 0.7 0.5 0.4 0.4 0.4
+  ep  27  loss 2.2386  train 0.1812  test 0.1682  wrapped/layer 0.94 0.88 0.76 0.59 0.46 0.40 0.37 0.36  turns/layer 5.4 2.7 1.3 0.7 0.5 0.4 0.4 0.4
+  ep  28  loss 2.2435  train 0.1693  test 0.1745  wrapped/layer 0.94 0.89 0.77 0.60 0.47 0.40 0.38 0.37  turns/layer 5.4 2.8 1.4 0.7 0.5 0.4 0.4 0.4
+  ep  29  loss 2.2425  train 0.1751  test 0.1760  wrapped/layer 0.94 0.88 0.77 0.60 0.47 0.41 0.38 0.37  turns/layer 5.5 2.8 1.3 0.7 0.5 0.4 0.4 0.4
+  ep  30  loss 2.2430  train 0.1688  test 0.1794  wrapped/layer 0.94 0.88 0.77 0.60 0.48 0.42 0.39 0.38  turns/layer 5.6 2.8 1.4 0.7 0.5 0.4 0.4 0.4
+  -> 0.1794 test   (wrap switched off after training: 0.0977)   roundtrip f32 max 4.0e-04 bad 0.0e+00  f64 max 8.2e-13 bad 0.0e+00   35s
+logreg_tau   7850 params   cuda
+  ep   1  loss 0.5422  train 0.9023  test 0.9036
+  ep   2  loss 0.3388  train 0.9062  test 0.9050
+  ep   3  loss 0.3179  train 0.9140  test 0.9100
+  ep   4  loss 0.3070  train 0.9185  test 0.9163
+  ep   5  loss 0.3013  train 0.9153  test 0.9113
+  ep   6  loss 0.2970  train 0.9191  test 0.9143
+  ep   7  loss 0.2984  train 0.9179  test 0.9107
+  ep   8  loss 0.2893  train 0.9153  test 0.9144
+  ep   9  loss 0.2902  train 0.9232  test 0.9114
+  ep  10  loss 0.2901  train 0.9265  test 0.9179
+  ep  11  loss 0.2840  train 0.9304  test 0.9219
+  ep  12  loss 0.2797  train 0.9301  test 0.9205
+  ep  13  loss 0.2866  train 0.9295  test 0.9202
+  ep  14  loss 0.2789  train 0.9250  test 0.9176
+  ep  15  loss 0.2773  train 0.9298  test 0.9135
+  ep  16  loss 0.2786  train 0.9246  test 0.9168
+  ep  17  loss 0.2766  train 0.9305  test 0.9200
+  ep  18  loss 0.2752  train 0.9290  test 0.9215
+  ep  19  loss 0.2742  train 0.9227  test 0.9181
+  ep  20  loss 0.2766  train 0.9289  test 0.9183
+  ep  21  loss 0.2770  train 0.9267  test 0.9150
+  ep  22  loss 0.2745  train 0.9323  test 0.9215
+  ep  23  loss 0.2699  train 0.9091  test 0.9059
+  ep  24  loss 0.2727  train 0.9290  test 0.9192
+  ep  25  loss 0.2695  train 0.9295  test 0.9176
+  ep  26  loss 0.2738  train 0.9302  test 0.9253
+  ep  27  loss 0.2686  train 0.9333  test 0.9234
+  ep  28  loss 0.2715  train 0.9261  test 0.9134
+  ep  29  loss 0.2684  train 0.9324  test 0.9219
+  ep  30  loss 0.2705  train 0.9304  test 0.9174
+  -> 0.9174 test   (wrap switched off after training: nan)   4s
+linear_checker_L2_tau_init0_s0   308113 params   cuda
+  ep   1  loss 1.9822  train 0.1020  test 0.1086  wrapped/layer 0.93 0.45  turns/layer 4.5 0.1
+  ep   2  loss 2.3594  train 0.1091  test 0.1086  wrapped/layer 0.97 0.46  turns/layer 9.3 0.1
+  ep   3  loss 2.3216  train 0.1191  test 0.1138  wrapped/layer 0.98 0.46  turns/layer 12.2 0.1
+  ep   4  loss 2.3101  train 0.1217  test 0.1155  wrapped/layer 0.98 0.46  turns/layer 15.0 0.1
+  ep   5  loss 2.3051  train 0.1198  test 0.1216  wrapped/layer 0.98 0.46  turns/layer 17.8 0.1
+  ep   6  loss 2.3024  train 0.1162  test 0.1183  wrapped/layer 0.99 0.46  turns/layer 20.5 0.1
+  ep   7  loss 2.2979  train 0.1306  test 0.1230  wrapped/layer 0.99 0.47  turns/layer 22.7 0.1
+  ep   8  loss 2.2972  train 0.1252  test 0.1280  wrapped/layer 0.99 0.47  turns/layer 24.8 0.2
+  ep   9  loss 2.2958  train 0.1251  test 0.1208  wrapped/layer 0.99 0.47  turns/layer 26.8 0.2
+  ep  10  loss 2.2936  train 0.1368  test 0.1345  wrapped/layer 0.99 0.47  turns/layer 28.4 0.2
+  ep  11  loss 2.2926  train 0.1254  test 0.1282  wrapped/layer 0.99 0.47  turns/layer 29.7 0.2
+  ep  12  loss 2.2921  train 0.1326  test 0.1348  wrapped/layer 0.99 0.47  turns/layer 31.6 0.2
+  ep  13  loss 2.2929  train 0.1301  test 0.1280  wrapped/layer 0.99 0.47  turns/layer 33.1 0.2
+  ep  14  loss 2.2910  train 0.1337  test 0.1374  wrapped/layer 0.99 0.47  turns/layer 34.5 0.2
+  ep  15  loss 2.2921  train 0.1387  test 0.1259  wrapped/layer 0.99 0.47  turns/layer 35.5 0.2
+  ep  16  loss 2.2919  train 0.1442  test 0.1326  wrapped/layer 0.99 0.47  turns/layer 36.4 0.2
+  ep  17  loss 2.2913  train 0.1314  test 0.1305  wrapped/layer 0.99 0.47  turns/layer 37.1 0.2
+  ep  18  loss 2.2910  train 0.1311  test 0.1367  wrapped/layer 0.99 0.48  turns/layer 37.8 0.2
+  ep  19  loss 2.2923  train 0.1359  test 0.1329  wrapped/layer 0.99 0.48  turns/layer 38.6 0.2
+  ep  20  loss 2.2894  train 0.1350  test 0.1366  wrapped/layer 0.99 0.48  turns/layer 39.0 0.3
+  ep  21  loss 2.2915  train 0.1317  test 0.1325  wrapped/layer 0.99 0.48  turns/layer 39.7 0.3
+  ep  22  loss 2.2914  train 0.1342  test 0.1317  wrapped/layer 0.99 0.48  turns/layer 40.3 0.3
+  ep  23  loss 2.2909  train 0.1375  test 0.1278  wrapped/layer 0.99 0.48  turns/layer 40.9 0.3
+  ep  24  loss 2.2909  train 0.1425  test 0.1272  wrapped/layer 0.99 0.48  turns/layer 41.3 0.3
+  ep  25  loss 2.2909  train 0.1318  test 0.1320  wrapped/layer 0.99 0.48  turns/layer 41.8 0.3
+  ep  26  loss 2.2908  train 0.1342  test 0.1209  wrapped/layer 0.99 0.48  turns/layer 42.4 0.3
+  ep  27  loss 2.2909  train 0.1390  test 0.1269  wrapped/layer 0.99 0.48  turns/layer 42.7 0.3
+  ep  28  loss 2.2912  train 0.1346  test 0.1326  wrapped/layer 0.99 0.48  turns/layer 43.3 0.3
+  ep  29  loss 2.2909  train 0.1378  test 0.1345  wrapped/layer 0.99 0.49  turns/layer 43.6 0.3
+  ep  30  loss 2.2910  train 0.1356  test 0.1296  wrapped/layer 0.99 0.49  turns/layer 44.0 0.3
+  -> 0.1296 test   (wrap switched off after training: 0.0970)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   12s
+linear_nowrap_checker_L2_tau_init0_s0   308113 params   cuda
+  ep   1  loss 0.4326  train 0.9527  test 0.9471  wrapped/layer 0.40 0.46  turns/layer 0.2 0.2
+  ep   2  loss 0.2082  train 0.9680  test 0.9613  wrapped/layer 0.39 0.46  turns/layer 0.2 0.2
+  ep   3  loss 0.1519  train 0.9796  test 0.9705  wrapped/layer 0.39 0.47  turns/layer 0.2 0.2
+  ep   4  loss 0.1163  train 0.9852  test 0.9719  wrapped/layer 0.39 0.47  turns/layer 0.3 0.3
+  ep   5  loss 0.0907  train 0.9897  test 0.9749  wrapped/layer 0.38 0.47  turns/layer 0.3 0.3
+  ep   6  loss 0.0724  train 0.9917  test 0.9741  wrapped/layer 0.38 0.48  turns/layer 0.3 0.3
+  ep   7  loss 0.0603  train 0.9930  test 0.9740  wrapped/layer 0.38 0.49  turns/layer 0.3 0.3
+  ep   8  loss 0.0491  train 0.9910  test 0.9719  wrapped/layer 0.38 0.50  turns/layer 0.3 0.4
+  ep   9  loss 0.0468  train 0.9936  test 0.9728  wrapped/layer 0.40 0.53  turns/layer 0.4 0.4
+  ep  10  loss 0.0591  train 0.9831  test 0.9617  wrapped/layer 0.44 0.65  turns/layer 0.5 0.9
+  ep  11  loss 0.1075  train 0.9588  test 0.9396  wrapped/layer 0.53 0.85  turns/layer 0.7 3.1
+  ep  12  loss 0.2226  train 0.9244  test 0.9081  wrapped/layer 0.71 0.97  turns/layer 1.4 15.2
+  ep  13  loss 0.2721  train 0.9385  test 0.9231  wrapped/layer 0.74 0.99  turns/layer 1.8 22.2
+  ep  14  loss 0.2774  train 0.9135  test 0.9046  wrapped/layer 0.80 0.99  turns/layer 2.6 44.9
+  ep  15  loss 0.2623  train 0.9302  test 0.9143  wrapped/layer 0.76 0.99  turns/layer 2.8 54.1
+  ep  16  loss 0.2567  train 0.9079  test 0.8919  wrapped/layer 0.80 1.00  turns/layer 2.9 58.4
+  ep  17  loss 0.2716  train 0.9199  test 0.9097  wrapped/layer 0.78 0.99  turns/layer 2.8 55.6
+  ep  18  loss 0.2907  train 0.9190  test 0.9071  wrapped/layer 0.78 0.99  turns/layer 2.7 53.7
+  ep  19  loss 0.2518  train 0.9370  test 0.9242  wrapped/layer 0.80 1.00  turns/layer 3.0 62.8
+  ep  20  loss 0.2492  train 0.9203  test 0.9066  wrapped/layer 0.81 1.00  turns/layer 2.7 54.9
+  ep  21  loss 0.2664  train 0.9399  test 0.9247  wrapped/layer 0.78 1.00  turns/layer 2.6 47.6
+  ep  22  loss 0.2429  train 0.9158  test 0.8995  wrapped/layer 0.79 0.99  turns/layer 2.8 57.0
+  ep  23  loss 0.2854  train 0.8842  test 0.8739  wrapped/layer 0.84 1.00  turns/layer 3.8 85.6
+  ep  24  loss 0.2724  train 0.9187  test 0.9021  wrapped/layer 0.84 1.00  turns/layer 4.0 94.7
+  ep  25  loss 0.2507  train 0.9000  test 0.8889  wrapped/layer 0.85 1.00  turns/layer 4.5 110.5
+  ep  26  loss 0.2589  train 0.9295  test 0.9149  wrapped/layer 0.81 1.00  turns/layer 5.0 128.5
+  ep  27  loss 0.2656  train 0.9240  test 0.9072  wrapped/layer 0.85 1.00  turns/layer 5.2 136.1
+  ep  28  loss 0.3035  train 0.9171  test 0.8992  wrapped/layer 0.85 1.00  turns/layer 5.5 148.7
+  ep  29  loss 0.2519  train 0.9315  test 0.9170  wrapped/layer 0.84 1.00  turns/layer 5.1 139.7
+  ep  30  loss 0.2603  train 0.9082  test 0.8945  wrapped/layer 0.82 1.00  turns/layer 5.0 132.6
+  -> 0.8945 test   (wrap switched off after training: 0.8945)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   11s
+mlp_checker_L2_tau_init0_s0   1608465 params   cuda
+  ep   1  loss 1.6647  train 0.1540  test 0.1490  wrapped/layer 0.99 0.58  turns/layer 39.8 0.6
+  ep   2  loss 2.2733  train 0.1613  test 0.1600  wrapped/layer 1.00 0.59  turns/layer 388.1 0.6
+  ep   3  loss 2.2713  train 0.1542  test 0.1543  wrapped/layer 1.00 0.60  turns/layer 979.7 0.6
+  ep   4  loss 2.2719  train 0.1512  test 0.1436  wrapped/layer 1.00 0.62  turns/layer 1622.5 0.7
+  ep   5  loss 2.2770  train 0.1525  test 0.1455  wrapped/layer 1.00 0.62  turns/layer 2793.0 0.7
+  ep   6  loss 2.2798  train 0.1367  test 0.1348  wrapped/layer 1.00 0.65  turns/layer 3811.4 0.8
+  ep   7  loss 2.2843  train 0.1391  test 0.1441  wrapped/layer 1.00 0.65  turns/layer 5655.0 0.9
+  ep   8  loss 2.2855  train 0.1401  test 0.1405  wrapped/layer 1.00 0.66  turns/layer 7632.9 0.9
+  ep   9  loss 2.2900  train 0.1369  test 0.1292  wrapped/layer 1.00 0.68  turns/layer 8684.8 1.1
+  ep  10  loss 2.2921  train 0.1309  test 0.1305  wrapped/layer 1.00 0.70  turns/layer 10251.8 1.3
+  ep  11  loss 2.2951  train 0.1300  test 0.1309  wrapped/layer 1.00 0.74  turns/layer 11031.5 1.5
+  ep  12  loss 2.2967  train 0.1329  test 0.1325  wrapped/layer 1.00 0.75  turns/layer 11981.8 1.7
+  ep  13  loss 2.2971  train 0.1314  test 0.1272  wrapped/layer 1.00 0.77  turns/layer 13566.2 1.7
+  ep  14  loss 2.2958  train 0.1191  test 0.1216  wrapped/layer 1.00 0.77  turns/layer 14438.5 1.9
+  ep  15  loss 2.2977  train 0.1233  test 0.1202  wrapped/layer 1.00 0.76  turns/layer 16075.7 1.9
+  ep  16  loss 2.2972  train 0.1215  test 0.1233  wrapped/layer 1.00 0.77  turns/layer 16923.9 2.1
+  ep  17  loss 2.2983  train 0.1239  test 0.1196  wrapped/layer 1.00 0.79  turns/layer 17885.1 2.3
+  ep  18  loss 2.2986  train 0.1165  test 0.1201  wrapped/layer 1.00 0.80  turns/layer 18422.1 2.4
+  ep  19  loss 2.2998  train 0.1235  test 0.1203  wrapped/layer 1.00 0.80  turns/layer 18599.0 2.6
+  ep  20  loss 2.2984  train 0.1187  test 0.1159  wrapped/layer 1.00 0.81  turns/layer 19464.6 2.7
+  ep  21  loss 2.2987  train 0.1133  test 0.1220  wrapped/layer 1.00 0.83  turns/layer 18697.3 3.1
+  ep  22  loss 2.3005  train 0.1140  test 0.1146  wrapped/layer 1.00 0.84  turns/layer 18935.2 3.3
+  ep  23  loss 2.3011  train 0.1085  test 0.1131  wrapped/layer 1.00 0.84  turns/layer 19800.8 3.4
+  ep  24  loss 2.3006  train 0.1083  test 0.1143  wrapped/layer 1.00 0.86  turns/layer 20071.4 3.6
+  ep  25  loss 2.3006  train 0.1166  test 0.1157  wrapped/layer 1.00 0.86  turns/layer 21057.9 3.6
+  ep  26  loss 2.3008  train 0.1122  test 0.1163  wrapped/layer 1.00 0.86  turns/layer 22427.1 3.7
+  ep  27  loss 2.3003  train 0.1161  test 0.1168  wrapped/layer 1.00 0.86  turns/layer 23179.1 3.8
+  ep  28  loss 2.3011  train 0.1137  test 0.1093  wrapped/layer 1.00 0.87  turns/layer 22459.1 4.0
+  ep  29  loss 2.3006  train 0.1097  test 0.1053  wrapped/layer 1.00 0.88  turns/layer 22883.9 4.2
+  ep  30  loss 2.3013  train 0.1135  test 0.1150  wrapped/layer 1.00 0.88  turns/layer 22328.6 4.4
+  -> 0.1150 test   (wrap switched off after training: 0.1025)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   17s
+linear_checker_L4_tau_init0_s0   616225 params   cuda
+  ep   1  loss 2.2101  train 0.1036  test 0.1024  wrapped/layer 0.99 0.46 0.56 0.20  turns/layer 12.4 0.1 0.7 0.1
+  ep   2  loss 2.3484  train 0.1121  test 0.1085  wrapped/layer 0.99 0.46 0.66 0.23  turns/layer 18.7 0.1 1.0 0.1
+  ep   3  loss 2.3279  train 0.1119  test 0.1078  wrapped/layer 0.99 0.46 0.70 0.24  turns/layer 23.3 0.1 1.1 0.1
+  ep   4  loss 2.3166  train 0.1170  test 0.1190  wrapped/layer 0.99 0.46 0.72 0.25  turns/layer 26.6 0.1 1.2 0.1
+  ep   5  loss 2.3114  train 0.1143  test 0.1223  wrapped/layer 0.99 0.47 0.73 0.26  turns/layer 28.6 0.1 1.2 0.1
+  ep   6  loss 2.3083  train 0.1105  test 0.1169  wrapped/layer 0.99 0.47 0.74 0.26  turns/layer 30.3 0.1 1.3 0.1
+  ep   7  loss 2.3056  train 0.1163  test 0.1157  wrapped/layer 0.99 0.47 0.74 0.27  turns/layer 31.3 0.1 1.2 0.2
+  ep   8  loss 2.3045  train 0.1186  test 0.1087  wrapped/layer 0.99 0.47 0.73 0.27  turns/layer 32.8 0.1 1.2 0.2
+  ep   9  loss 2.3042  train 0.1140  test 0.1105  wrapped/layer 0.99 0.47 0.73 0.27  turns/layer 33.5 0.1 1.2 0.2
+  ep  10  loss 2.3031  train 0.1100  test 0.1114  wrapped/layer 0.99 0.47 0.73 0.27  turns/layer 33.8 0.2 1.2 0.2
+  ep  11  loss 2.3029  train 0.1099  test 0.1119  wrapped/layer 0.99 0.47 0.72 0.27  turns/layer 35.2 0.2 1.2 0.2
+  ep  12  loss 2.3024  train 0.1157  test 0.1111  wrapped/layer 0.99 0.47 0.72 0.27  turns/layer 36.0 0.2 1.1 0.2
+  ep  13  loss 2.3024  train 0.1111  test 0.1097  wrapped/layer 0.99 0.47 0.71 0.27  turns/layer 36.6 0.2 1.1 0.2
+  ep  14  loss 2.3021  train 0.1115  test 0.1053  wrapped/layer 0.99 0.47 0.70 0.27  turns/layer 37.4 0.2 1.1 0.2
+  ep  15  loss 2.3028  train 0.1100  test 0.1077  wrapped/layer 0.99 0.47 0.69 0.27  turns/layer 38.3 0.2 1.0 0.2
+  ep  16  loss 2.3022  train 0.1077  test 0.1086  wrapped/layer 0.99 0.47 0.68 0.28  turns/layer 39.1 0.2 1.0 0.2
+  ep  17  loss 2.3024  train 0.1092  test 0.1077  wrapped/layer 0.99 0.47 0.67 0.28  turns/layer 40.3 0.2 1.0 0.2
+  ep  18  loss 2.3034  train 0.1058  test 0.1062  wrapped/layer 0.99 0.47 0.66 0.28  turns/layer 41.0 0.2 0.9 0.2
+  ep  19  loss 2.3034  train 0.1110  test 0.1090  wrapped/layer 0.99 0.47 0.65 0.28  turns/layer 41.0 0.2 0.9 0.2
+  ep  20  loss 2.3036  train 0.1086  test 0.1015  wrapped/layer 0.99 0.48 0.64 0.28  turns/layer 41.4 0.2 0.9 0.3
+  ep  21  loss 2.3034  train 0.1036  test 0.1072  wrapped/layer 0.99 0.48 0.63 0.29  turns/layer 41.3 0.2 0.8 0.3
+  ep  22  loss 2.3029  train 0.1030  test 0.1064  wrapped/layer 0.99 0.48 0.62 0.29  turns/layer 41.3 0.2 0.8 0.3
+  ep  23  loss 2.3030  train 0.1028  test 0.1020  wrapped/layer 0.99 0.48 0.61 0.29  turns/layer 41.4 0.2 0.8 0.3
+  ep  24  loss 2.3028  train 0.1084  test 0.1065  wrapped/layer 0.99 0.48 0.60 0.29  turns/layer 41.7 0.3 0.8 0.3
+  ep  25  loss 2.3023  train 0.1046  test 0.1026  wrapped/layer 0.99 0.48 0.59 0.29  turns/layer 42.3 0.3 0.7 0.3
+  ep  26  loss 2.3030  train 0.1055  test 0.1021  wrapped/layer 0.99 0.48 0.58 0.30  turns/layer 42.2 0.3 0.7 0.3
+  ep  27  loss 2.3028  train 0.0977  test 0.1094  wrapped/layer 0.99 0.48 0.57 0.30  turns/layer 42.2 0.3 0.7 0.3
+  ep  28  loss 2.3033  train 0.1005  test 0.1099  wrapped/layer 0.99 0.48 0.56 0.30  turns/layer 42.3 0.3 0.7 0.3
+  ep  29  loss 2.3029  train 0.1013  test 0.1036  wrapped/layer 0.99 0.48 0.55 0.30  turns/layer 42.5 0.3 0.7 0.3
+  ep  30  loss 2.3028  train 0.1103  test 0.1017  wrapped/layer 0.99 0.48 0.54 0.31  turns/layer 42.4 0.3 0.6 0.3
+  -> 0.1017 test   (wrap switched off after training: 0.1063)   roundtrip f32 max 3.1e+00 bad 5.0e-01  f64 max 3.1e+00 bad 5.0e-01   19s
+linear_nowrap_checker_L4_tau_init0_s0   616225 params   cuda
+  ep   1  loss 0.4197  train 0.9549  test 0.9506  wrapped/layer 0.18 0.15 0.49 0.46  turns/layer 0.3 0.2 0.3 0.3
+  ep   2  loss 0.2106  train 0.9693  test 0.9610  wrapped/layer 0.16 0.11 0.48 0.45  turns/layer 0.3 0.2 0.3 0.3
+  ep   3  loss 0.1567  train 0.9828  test 0.9716  wrapped/layer 0.15 0.10 0.48 0.47  turns/layer 0.3 0.2 0.3 0.3
+  ep   4  loss 0.1226  train 0.9853  test 0.9714  wrapped/layer 0.14 0.08 0.47 0.48  turns/layer 0.3 0.3 0.3 0.4
+  ep   5  loss 0.1016  train 0.9871  test 0.9700  wrapped/layer 0.14 0.08 0.46 0.49  turns/layer 0.3 0.3 0.3 0.4
+  ep   6  loss 0.0909  train 0.9861  test 0.9691  wrapped/layer 0.15 0.08 0.43 0.50  turns/layer 0.3 0.3 0.3 0.5
+  ep   7  loss 0.0887  train 0.9833  test 0.9664  wrapped/layer 0.14 0.09 0.45 0.59  turns/layer 0.4 0.3 0.3 0.7
+  ep   8  loss 0.1134  train 0.9652  test 0.9492  wrapped/layer 0.13 0.10 0.45 0.69  turns/layer 0.4 0.3 0.4 1.2
+  ep   9  loss 0.5546  train 0.1002  test 0.0991  wrapped/layer 0.73 0.94 0.99 1.00  turns/layer 1.3 5.6 29.0 179.6
+  ep  10  loss 2.6823  train 0.0997  test 0.1039  wrapped/layer 0.99 1.00 1.00 1.00  turns/layer 14.8 535.5 14902.4 328401.9
+  ep  11  loss 2.5141  train 0.1030  test 0.1030  wrapped/layer 0.99 1.00 1.00 1.00  turns/layer 14.6 516.8 14446.5 324754.0
+  ep  12  loss 2.4461  train 0.0988  test 0.0993  wrapped/layer 0.99 1.00 1.00 1.00  turns/layer 13.8 465.6 12643.9 282122.5
+  ep  13  loss 2.4058  train 0.0988  test 0.1022  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 11.4 311.7 7232.3 160046.6
+  ep  14  loss 2.3873  train 0.0983  test 0.1040  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.5 208.0 3946.3 82188.1
+  ep  15  loss 2.3717  train 0.1005  test 0.1030  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.0 185.5 3234.8 66950.2
+  ep  16  loss 2.3580  train 0.0958  test 0.1002  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.3 200.5 3753.2 76646.5
+  ep  17  loss 2.3486  train 0.0976  test 0.0978  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.7 215.6 4265.1 88726.0
+  ep  18  loss 2.3419  train 0.1003  test 0.0948  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 10.4 252.5 5331.5 113908.3
+  ep  19  loss 2.3381  train 0.0953  test 0.1010  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 10.7 269.7 5952.2 128005.4
+  ep  20  loss 2.3324  train 0.1026  test 0.0987  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 10.4 253.5 5503.3 115281.0
+  ep  21  loss 2.3295  train 0.1004  test 0.1015  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 10.4 253.1 5532.9 119756.8
+  ep  22  loss 2.3231  train 0.1029  test 0.0970  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 10.4 255.0 5644.8 121809.2
+  ep  23  loss 2.3214  train 0.0930  test 0.0975  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.9 232.8 4958.7 104398.4
+  ep  24  loss 2.3191  train 0.1020  test 0.0998  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.9 230.9 4892.6 104753.8
+  ep  25  loss 2.3183  train 0.0931  test 0.0986  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 9.6 217.5 4507.5 94296.1
+  ep  26  loss 2.3158  train 0.1044  test 0.1003  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 8.3 163.8 3008.7 57477.8
+  ep  27  loss 2.3149  train 0.1008  test 0.0977  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 7.7 142.4 2400.0 42511.9
+  ep  28  loss 2.3136  train 0.1018  test 0.0971  wrapped/layer 0.98 1.00 1.00 1.00  turns/layer 8.6 176.0 3413.7 66067.2
+  ep  29  loss 2.3128  train 0.1013  test 0.0979  wrapped/layer 0.97 1.00 1.00 1.00  turns/layer 7.9 147.6 2671.5 51203.9
+  ep  30  loss 2.3104  train 0.0984  test 0.0982  wrapped/layer 0.97 1.00 1.00 1.00  turns/layer 8.4 166.5 3240.0 64289.0
+  -> 0.0982 test   (wrap switched off after training: 0.0982)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   18s
+mlp_checker_L4_tau_init0_s0   3216929 params   cuda
+  ep   1  loss 1.9143  train 0.1190  test 0.1152  wrapped/layer 0.78 0.89 0.67 0.57  turns/layer 1.3 2.8 0.8 0.6
+  ep   2  loss 2.3279  train 0.0985  test 0.1004  wrapped/layer 0.84 0.89 0.76 0.65  turns/layer 2.0 3.4 1.2 0.9
+  ep   3  loss 2.3333  train 0.1037  test 0.0994  wrapped/layer 0.89 0.92 0.82 0.74  turns/layer 2.6 4.3 1.9 1.2
+  ep   4  loss 2.3285  train 0.1009  test 0.0952  wrapped/layer 0.90 0.91 0.85 0.73  turns/layer 3.6 4.6 2.4 1.4
+  ep   5  loss 2.3243  train 0.0969  test 0.0991  wrapped/layer 0.77 0.91 0.90 0.77  turns/layer 1.6 9.9 4.1 1.7
+  ep   6  loss 2.3206  train 0.1020  test 0.0978  wrapped/layer 0.64 0.97 0.93 0.80  turns/layer 0.9 13.0 5.5 1.9
+  ep   7  loss 2.3182  train 0.0970  test 0.1002  wrapped/layer 0.66 0.93 0.95 0.81  turns/layer 0.8 6.8 8.6 2.1
+  ep   8  loss 2.3170  train 0.1012  test 0.0990  wrapped/layer 0.49 0.95 0.95 0.81  turns/layer 0.2 7.9 9.0 2.4
+  ep   9  loss 2.3145  train 0.1036  test 0.0957  wrapped/layer 0.81 0.96 0.94 0.84  turns/layer 1.7 11.4 8.8 2.6
+  ep  10  loss 2.3127  train 0.1031  test 0.1000  wrapped/layer 0.94 0.96 0.96 0.85  turns/layer 5.5 13.4 11.9 2.7
+  ep  11  loss 2.3113  train 0.1013  test 0.0965  wrapped/layer 0.98 0.97 0.97 0.86  turns/layer 14.0 16.3 15.3 2.8
+  ep  12  loss 2.3100  train 0.1013  test 0.0973  wrapped/layer 0.97 0.97 0.96 0.88  turns/layer 9.3 16.3 13.8 3.1
+  ep  13  loss 2.3081  train 0.1010  test 0.0942  wrapped/layer 0.98 0.97 0.97 0.88  turns/layer 13.7 16.8 16.4 3.2
+  ep  14  loss 2.3081  train 0.1001  test 0.1004  wrapped/layer 0.96 0.96 0.96 0.89  turns/layer 7.6 12.2 14.2 3.6
+  ep  15  loss 2.3083  train 0.1001  test 0.1082  wrapped/layer 0.96 0.97 0.96 0.88  turns/layer 7.1 15.8 13.7 3.7
+  ep  16  loss 2.3069  train 0.0984  test 0.1005  wrapped/layer 0.96 0.96 0.96 0.89  turns/layer 6.9 12.3 14.3 4.0
+  ep  17  loss 2.3060  train 0.0952  test 0.1011  wrapped/layer 0.96 0.97 0.96 0.91  turns/layer 7.3 14.9 15.9 4.2
+  ep  18  loss 2.3063  train 0.0957  test 0.1058  wrapped/layer 0.96 0.97 0.96 0.92  turns/layer 7.4 18.5 16.4 4.4
+  ep  19  loss 2.3061  train 0.1038  test 0.0965  wrapped/layer 0.96 0.97 0.96 0.92  turns/layer 7.3 16.3 15.8 4.6
+  ep  20  loss 2.3053  train 0.1054  test 0.0998  wrapped/layer 0.98 0.97 0.96 0.92  turns/layer 6.9 19.3 16.2 4.7
+  ep  21  loss 2.3050  train 0.0995  test 0.0977  wrapped/layer 0.97 0.97 0.96 0.92  turns/layer 6.7 15.6 16.0 4.9
+  ep  22  loss 2.3052  train 0.0962  test 0.1014  wrapped/layer 0.97 0.96 0.96 0.92  turns/layer 6.5 15.2 15.8 5.0
+  ep  23  loss 2.3046  train 0.0980  test 0.0969  wrapped/layer 0.96 0.96 0.96 0.93  turns/layer 6.5 15.9 16.7 5.4
+  ep  24  loss 2.3048  train 0.0949  test 0.0984  wrapped/layer 0.96 0.95 0.96 0.93  turns/layer 6.5 14.9 17.3 5.7
+  ep  25  loss 2.3039  train 0.1024  test 0.0973  wrapped/layer 0.95 0.97 0.96 0.93  turns/layer 5.8 16.6 16.5 5.9
+  ep  26  loss 2.3037  train 0.0995  test 0.1004  wrapped/layer 0.95 0.97 0.96 0.93  turns/layer 6.0 17.6 15.5 6.0
+  ep  27  loss 2.3040  train 0.1026  test 0.0969  wrapped/layer 0.95 0.97 0.96 0.93  turns/layer 5.9 16.3 15.7 6.2
+  ep  28  loss 2.3039  train 0.0952  test 0.0992  wrapped/layer 0.96 0.97 0.96 0.93  turns/layer 5.9 14.5 15.8 6.7
+  ep  29  loss 2.3034  train 0.1008  test 0.0957  wrapped/layer 0.96 0.97 0.96 0.94  turns/layer 6.1 14.4 16.1 6.8
+  ep  30  loss 2.3036  train 0.0944  test 0.0992  wrapped/layer 0.95 0.96 0.96 0.94  turns/layer 6.7 13.6 16.2 7.1
+  -> 0.0992 test   (wrap switched off after training: 0.0995)   roundtrip f32 max 3.1e+00 bad 7.9e-01  f64 max 3.1e+00 bad 5.0e-01   32s
+linear_checker_L8_tau_init0_s0   1232449 params   cuda
+  ep   1  loss 2.3294  train 0.1021  test 0.1057  wrapped/layer 0.97 0.45 0.94 0.20 0.91 0.11 0.64 0.10  turns/layer 8.0 0.1 6.1 0.1 4.4 0.1 1.0 0.1
+  ep   2  loss 2.3378  train 0.0926  test 0.1112  wrapped/layer 0.99 0.47 0.95 0.22 0.93 0.11 0.68 0.10  turns/layer 27.2 0.2 8.5 0.2 7.2 0.1 1.3 0.1
+  ep   3  loss 2.3279  train 0.1005  test 0.0980  wrapped/layer 1.00 0.48 0.94 0.22 0.94 0.12 0.71 0.11  turns/layer 37.2 0.2 9.2 0.2 9.4 0.1 1.4 0.1
+  ep   4  loss 2.3188  train 0.1064  test 0.1024  wrapped/layer 0.99 0.48 0.95 0.23 0.96 0.13 0.74 0.12  turns/layer 44.4 0.3 10.4 0.2 11.8 0.1 1.5 0.1
+  ep   5  loss 2.3140  train 0.1025  test 0.0983  wrapped/layer 1.00 0.48 0.96 0.25 0.96 0.15 0.74 0.13  turns/layer 53.9 0.3 10.9 0.2 14.4 0.1 1.6 0.1
+  ep   6  loss 2.3129  train 0.1022  test 0.1035  wrapped/layer 1.00 0.49 0.95 0.27 0.97 0.16 0.75 0.14  turns/layer 60.8 0.3 11.0 0.3 17.4 0.2 1.6 0.1
+  ep   7  loss 2.3117  train 0.1067  test 0.0951  wrapped/layer 1.00 0.49 0.95 0.29 0.98 0.17 0.76 0.15  turns/layer 64.4 0.3 10.9 0.3 19.3 0.2 1.7 0.2
+  ep   8  loss 2.3093  train 0.0969  test 0.1040  wrapped/layer 1.00 0.50 0.95 0.30 0.97 0.18 0.76 0.16  turns/layer 67.1 0.4 10.8 0.3 21.0 0.2 1.7 0.2
+  ep   9  loss 2.3077  train 0.1008  test 0.1004  wrapped/layer 1.00 0.50 0.95 0.32 0.97 0.20 0.75 0.17  turns/layer 67.6 0.4 11.1 0.3 22.2 0.2 1.7 0.2
+  ep  10  loss 2.3076  train 0.0955  test 0.0986  wrapped/layer 1.00 0.50 0.95 0.34 0.97 0.20 0.76 0.18  turns/layer 68.3 0.4 10.9 0.3 22.6 0.2 1.7 0.2
+  ep  11  loss 2.3060  train 0.1002  test 0.0940  wrapped/layer 1.00 0.51 0.95 0.34 0.97 0.21 0.76 0.18  turns/layer 70.3 0.4 11.0 0.3 23.2 0.2 1.7 0.2
+  ep  12  loss 2.3063  train 0.0972  test 0.1025  wrapped/layer 1.00 0.51 0.95 0.34 0.98 0.22 0.75 0.19  turns/layer 72.1 0.4 10.7 0.3 24.0 0.2 1.7 0.2
+  ep  13  loss 2.3052  train 0.1017  test 0.1027  wrapped/layer 1.00 0.51 0.95 0.35 0.98 0.23 0.75 0.20  turns/layer 72.1 0.4 10.6 0.4 24.6 0.2 1.6 0.2
+  ep  14  loss 2.3060  train 0.0996  test 0.1034  wrapped/layer 1.00 0.51 0.95 0.37 0.98 0.24 0.75 0.20  turns/layer 72.4 0.4 10.2 0.4 24.5 0.2 1.6 0.2
+  ep  15  loss 2.3049  train 0.1022  test 0.1018  wrapped/layer 1.00 0.52 0.95 0.38 0.98 0.24 0.74 0.21  turns/layer 72.0 0.4 10.0 0.4 24.2 0.2 1.5 0.2
+  ep  16  loss 2.3044  train 0.1003  test 0.0998  wrapped/layer 1.00 0.52 0.95 0.39 0.98 0.25 0.74 0.22  turns/layer 73.6 0.4 9.9 0.4 24.2 0.3 1.5 0.2
+  ep  17  loss 2.3044  train 0.1038  test 0.1016  wrapped/layer 1.00 0.52 0.95 0.39 0.98 0.27 0.73 0.23  turns/layer 73.8 0.4 9.9 0.4 24.5 0.3 1.4 0.2
+  ep  18  loss 2.3042  train 0.0979  test 0.1007  wrapped/layer 1.00 0.52 0.95 0.40 0.98 0.27 0.73 0.23  turns/layer 72.9 0.4 9.6 0.4 24.6 0.3 1.4 0.2
+  ep  19  loss 2.3040  train 0.0991  test 0.1042  wrapped/layer 1.00 0.52 0.95 0.41 0.98 0.28 0.72 0.24  turns/layer 73.2 0.4 9.5 0.4 24.4 0.3 1.3 0.2
+  ep  20  loss 2.3039  train 0.0978  test 0.1018  wrapped/layer 1.00 0.52 0.95 0.41 0.98 0.28 0.71 0.24  turns/layer 73.2 0.4 9.5 0.4 24.4 0.3 1.3 0.2
+  ep  21  loss 2.3036  train 0.0961  test 0.1027  wrapped/layer 1.00 0.53 0.94 0.41 0.98 0.28 0.71 0.25  turns/layer 73.3 0.4 9.0 0.4 24.0 0.3 1.3 0.2
+  ep  22  loss 2.3036  train 0.1023  test 0.1010  wrapped/layer 1.00 0.53 0.95 0.42 0.98 0.30 0.70 0.25  turns/layer 72.9 0.4 9.1 0.4 23.6 0.3 1.2 0.3
+  ep  23  loss 2.3038  train 0.0992  test 0.0950  wrapped/layer 1.00 0.53 0.95 0.40 0.98 0.30 0.68 0.26  turns/layer 72.2 0.4 8.9 0.4 23.6 0.3 1.2 0.3
+  ep  24  loss 2.3033  train 0.0995  test 0.1026  wrapped/layer 1.00 0.53 0.95 0.43 0.98 0.30 0.67 0.26  turns/layer 72.5 0.5 8.8 0.4 22.8 0.3 1.1 0.3
+  ep  25  loss 2.3033  train 0.1022  test 0.0996  wrapped/layer 1.00 0.54 0.94 0.44 0.98 0.31 0.66 0.27  turns/layer 71.7 0.5 8.5 0.5 22.0 0.3 1.0 0.3
+  ep  26  loss 2.3034  train 0.1026  test 0.1002  wrapped/layer 1.00 0.53 0.95 0.43 0.97 0.32 0.65 0.27  turns/layer 70.6 0.5 8.5 0.4 21.1 0.3 1.0 0.3
+  ep  27  loss 2.3033  train 0.0985  test 0.0996  wrapped/layer 1.00 0.53 0.94 0.43 0.98 0.32 0.64 0.28  turns/layer 69.7 0.5 8.3 0.5 21.3 0.3 1.0 0.3
+  ep  28  loss 2.3033  train 0.0993  test 0.0967  wrapped/layer 1.00 0.53 0.95 0.43 0.98 0.33 0.63 0.28  turns/layer 69.3 0.5 8.3 0.4 21.0 0.3 0.9 0.3
+  ep  29  loss 2.3034  train 0.1027  test 0.0971  wrapped/layer 1.00 0.54 0.94 0.44 0.97 0.33 0.61 0.29  turns/layer 68.9 0.5 8.3 0.5 20.2 0.3 0.9 0.3
+  ep  30  loss 2.3031  train 0.1037  test 0.0958  wrapped/layer 1.00 0.54 0.94 0.43 0.97 0.34 0.62 0.29  turns/layer 68.2 0.5 8.0 0.5 20.4 0.3 0.9 0.3
+  -> 0.0958 test   (wrap switched off after training: 0.1008)   roundtrip f32 max 3.1e+00 bad 9.9e-01  f64 max 3.1e+00 bad 5.0e-01   35s
+linear_nowrap_checker_L8_tau_init0_s0   1232449 params   cuda
+  ep   1  loss 0.4939  train 0.9519  test 0.9469  wrapped/layer 0.15 0.11 0.20 0.16 0.29 0.35 0.62 0.73  turns/layer 0.3 0.2 0.1 0.1 0.1 0.2 0.6 1.0
+  ep   2  loss 0.2447  train 0.9658  test 0.9568  wrapped/layer 0.14 0.08 0.16 0.13 0.23 0.29 0.61 0.73  turns/layer 0.3 0.3 0.1 0.1 0.1 0.2 0.6 1.2
+  ep   3  loss 0.1975  train 0.9754  test 0.9616  wrapped/layer 0.13 0.06 0.14 0.10 0.19 0.25 0.59 0.74  turns/layer 0.3 0.3 0.1 0.1 0.1 0.2 0.6 1.2
+  ep   4  loss 0.1740  train 0.9735  test 0.9599  wrapped/layer 0.11 0.06 0.12 0.08 0.16 0.22 0.60 0.75  turns/layer 0.3 0.3 0.1 0.1 0.1 0.2 0.7 1.5
+  ep   5  loss 0.1791  train 0.9627  test 0.9484  wrapped/layer 0.11 0.04 0.11 0.07 0.14 0.21 0.60 0.77  turns/layer 0.4 0.4 0.1 0.1 0.1 0.2 0.7 2.0
+  ep   6  loss 0.4989  train 0.0999  test 0.1000  wrapped/layer 0.79 0.97 0.97 0.99 1.00 1.00 1.00 1.00  turns/layer 1.2 4.3 12.7 59.6 290.9 1082.0 4457.1 18078.4
+  ep   7  loss 2.5060  train 0.0994  test 0.0982  wrapped/layer 0.92 0.87 0.95 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 2.4 7.1 38.5 194.0 930.0 2076.8 10499.8
+  ep   8  loss 2.4372  train 0.0998  test 0.1016  wrapped/layer 0.94 0.98 0.98 0.99 0.99 1.00 1.00 1.00  turns/layer 1.5 4.1 13.8 29.7 86.2 292.9 1174.8 7096.1
+  ep   9  loss 2.3998  train 0.0969  test 0.0952  wrapped/layer 0.90 0.82 0.95 0.98 1.00 1.00 1.00 1.00  turns/layer 1.4 2.1 6.9 19.5 77.8 379.1 1096.6 4860.6
+  ep  10  loss 2.3785  train 0.1023  test 0.1015  wrapped/layer 0.87 0.77 0.97 0.99 1.00 1.00 1.00 1.00  turns/layer 1.3 1.8 8.5 30.1 140.2 758.4 2017.7 13116.5
+  ep  11  loss 2.3630  train 0.1016  test 0.1011  wrapped/layer 0.94 0.99 0.99 1.00 1.00 1.00 1.00 1.00  turns/layer 1.5 6.4 35.8 211.3 1208.3 7832.8 45934.0 365206.2
+  ep  12  loss 2.3132  train 0.1001  test 0.0979  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.5 2306.0 54112.7 1003784.3 21471068.0 335116480.0 3075728128.0
+  ep  13  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2309.7 54221.7 1006213.1 21528758.0 335956352.0 3083527680.0
+  ep  14  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.3 54238.0 1006588.7 21537556.0 336099808.0 3084927488.0
+  ep  15  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.6 54247.2 1006799.3 21542488.0 336180352.0 3085722624.0
+  ep  16  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.7 54250.8 1006884.1 21544482.0 336212800.0 3086047744.0
+  ep  17  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.0 54258.8 1007068.4 21548794.0 336283552.0 3086733056.0
+  ep  18  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.4 54242.0 1006681.8 21539736.0 336135872.0 3085284352.0
+  ep  19  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.5 54246.6 1006786.9 21542196.0 336175168.0 3085670144.0
+  ep  20  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.6 54249.4 1006850.1 21543662.0 336199968.0 3085941760.0
+  ep  21  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.8 54253.5 1006943.6 21545842.0 336235424.0 3086313984.0
+  ep  22  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.1 54262.9 1007160.9 21550946.0 336318176.0 3087141376.0
+  ep  23  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2312.2 54295.2 1007902.2 21568280.0 336600640.0 3089885184.0
+  ep  24  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.2 54267.3 1007263.4 21553344.0 336356192.0 3087362816.0
+  ep  25  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.6 54276.8 1007478.1 21558376.0 336436544.0 3088131072.0
+  ep  26  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.3 54269.3 1007306.6 21554352.0 336371776.0 3087603456.0
+  ep  27  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2312.0 54290.7 1007798.0 21565834.0 336558848.0 3089464064.0
+  ep  28  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2311.7 54281.6 1007587.2 21560874.0 336480544.0 3088659712.0
+  ep  29  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.5 54244.9 1006744.1 21541140.0 336156544.0 3085499136.0
+  ep  30  loss 2.3026  train 0.1001  test 0.0980  wrapped/layer 0.97 1.00 1.00 1.00 1.00 1.00 1.00 1.00  turns/layer 4.9 106.7 2310.1 54234.6 1006511.3 21535702.0 336067424.0 3084779008.0
+  -> 0.0980 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   32s
+mlp_checker_L8_tau_init0_s0   6433857 params   cuda
+  ep   1  loss 2.1185  train 0.0962  test 0.1014  wrapped/layer 0.98 0.84 0.73 0.69 0.59 0.47 0.49 0.44  turns/layer 17.8 2.0 1.5 1.1 0.8 0.5 0.5 0.5
+  ep   2  loss 2.3312  train 0.1003  test 0.1015  wrapped/layer 0.99 0.93 0.90 0.93 0.88 0.89 0.75 0.57  turns/layer 59.7 5.9 5.4 6.6 4.1 4.0 1.9 0.7
+  ep   3  loss 2.3241  train 0.0986  test 0.1017  wrapped/layer 0.99 0.92 0.90 0.92 0.89 0.86 0.78 0.71  turns/layer 49.5 5.6 5.4 5.9 4.2 3.7 2.0 1.2
+  ep   4  loss 2.3224  train 0.1020  test 0.0935  wrapped/layer 0.99 0.92 0.90 0.92 0.90 0.89 0.82 0.76  turns/layer 49.5 5.6 5.4 6.1 4.5 4.3 2.4 1.4
+  ep   5  loss 2.3200  train 0.1005  test 0.1010  wrapped/layer 0.99 0.91 0.89 0.92 0.92 0.92 0.85 0.78  turns/layer 50.0 5.4 5.3 6.6 5.3 5.3 2.8 1.8
+  ep   6  loss 2.3163  train 0.1007  test 0.0990  wrapped/layer 0.59 0.95 0.93 0.94 0.95 0.93 0.89 0.84  turns/layer 0.7 10.6 7.2 7.7 7.9 6.7 4.6 2.3
+  ep   7  loss 2.3144  train 0.1041  test 0.1002  wrapped/layer 0.42 0.99 0.95 0.95 0.96 0.93 0.90 0.84  turns/layer 0.0 53.4 9.9 9.0 9.7 7.1 5.6 2.5
+  ep   8  loss 2.3128  train 0.1030  test 0.0943  wrapped/layer 0.66 0.99 0.96 0.95 0.96 0.95 0.92 0.86  turns/layer 0.7 39.1 11.4 10.1 10.6 8.7 6.5 2.9
+  ep   9  loss 2.3112  train 0.1003  test 0.0943  wrapped/layer 0.92 0.98 0.97 0.96 0.97 0.96 0.94 0.85  turns/layer 2.8 18.9 16.4 11.5 12.0 12.6 8.2 3.2
+  ep  10  loss 2.3104  train 0.0964  test 0.0984  wrapped/layer 0.91 0.98 0.98 0.96 0.97 0.95 0.91 0.86  turns/layer 2.4 29.9 17.2 12.3 12.2 10.2 6.8 3.3
+  ep  11  loss 2.3096  train 0.0968  test 0.1064  wrapped/layer 0.89 0.99 0.97 0.96 0.97 0.95 0.92 0.87  turns/layer 1.8 48.9 17.3 12.6 12.6 10.1 5.9 3.4
+  ep  12  loss 2.3082  train 0.1026  test 0.0967  wrapped/layer 0.89 0.99 0.97 0.96 0.97 0.95 0.92 0.89  turns/layer 1.8 48.0 16.5 12.7 12.8 10.1 6.1 3.7
+  ep  13  loss 2.3078  train 0.0988  test 0.0983  wrapped/layer 0.86 0.99 0.97 0.96 0.97 0.95 0.92 0.89  turns/layer 1.6 74.4 17.1 12.7 13.1 10.1 6.7 3.8
+  ep  14  loss 2.3074  train 0.1030  test 0.0998  wrapped/layer 0.83 0.99 0.97 0.97 0.97 0.95 0.93 0.88  turns/layer 1.4 57.7 17.6 13.3 13.1 10.3 7.6 4.0
+  ep  15  loss 2.3066  train 0.1020  test 0.0948  wrapped/layer 0.82 0.99 0.97 0.96 0.97 0.95 0.93 0.89  turns/layer 1.2 52.3 17.9 13.1 13.5 10.4 7.1 4.2
+  ep  16  loss 2.3058  train 0.1021  test 0.1019  wrapped/layer 0.83 0.99 0.97 0.97 0.97 0.96 0.93 0.89  turns/layer 1.3 54.9 18.1 13.6 13.5 10.7 7.4 4.4
+  ep  17  loss 2.3051  train 0.0969  test 0.1026  wrapped/layer 0.86 0.99 0.97 0.97 0.97 0.96 0.93 0.90  turns/layer 1.6 69.5 17.8 13.2 13.8 10.9 7.6 4.7
+  ep  18  loss 2.3048  train 0.0974  test 0.1008  wrapped/layer 0.85 0.99 0.97 0.97 0.97 0.96 0.94 0.90  turns/layer 1.5 63.5 17.9 13.5 13.5 11.4 7.4 4.8
+  ep  19  loss 2.3047  train 0.1004  test 0.0992  wrapped/layer 0.76 1.00 0.97 0.97 0.97 0.96 0.94 0.92  turns/layer 1.0 73.6 18.2 14.2 14.3 11.8 7.6 5.1
+  ep  20  loss 2.3054  train 0.1019  test 0.0960  wrapped/layer 0.79 0.99 0.98 0.97 0.97 0.96 0.94 0.91  turns/layer 1.1 63.9 18.9 14.4 14.6 11.7 7.5 5.1
+  ep  21  loss 2.3040  train 0.0988  test 0.1001  wrapped/layer 0.73 0.99 0.97 0.97 0.97 0.96 0.94 0.92  turns/layer 0.9 56.5 18.3 14.8 15.1 11.6 8.4 5.5
+  ep  22  loss 2.3044  train 0.1024  test 0.0973  wrapped/layer 0.61 0.98 0.98 0.97 0.98 0.96 0.95 0.91  turns/layer 0.7 37.6 18.5 16.7 16.1 11.9 8.5 5.6
+  ep  23  loss 2.3041  train 0.1030  test 0.0996  wrapped/layer 0.56 0.99 0.98 0.98 0.98 0.96 0.95 0.92  turns/layer 0.5 71.2 18.7 20.2 17.5 11.9 9.0 5.8
+  ep  24  loss 2.3037  train 0.0987  test 0.1026  wrapped/layer 0.60 0.99 0.98 0.98 0.98 0.96 0.95 0.93  turns/layer 0.6 33.1 19.8 20.0 17.2 12.2 8.9 5.9
+  ep  25  loss 2.3036  train 0.0983  test 0.1033  wrapped/layer 0.66 0.99 0.98 0.98 0.98 0.96 0.95 0.93  turns/layer 0.8 30.4 20.0 20.3 16.9 12.2 9.2 6.1
+  ep  26  loss 2.3038  train 0.1087  test 0.1004  wrapped/layer 0.82 0.99 0.98 0.97 0.98 0.96 0.95 0.94  turns/layer 1.2 59.7 21.6 17.4 16.8 12.4 10.1 6.3
+  ep  27  loss 2.3035  train 0.1000  test 0.0984  wrapped/layer 0.77 0.99 0.98 0.97 0.98 0.97 0.95 0.95  turns/layer 1.0 67.6 22.7 17.9 16.9 13.2 10.6 6.9
+  ep  28  loss 2.3033  train 0.0988  test 0.1008  wrapped/layer 0.79 0.99 0.98 0.97 0.97 0.97 0.95 0.95  turns/layer 1.1 38.7 22.7 18.0 16.0 14.4 12.1 7.2
+  ep  29  loss 2.3038  train 0.0949  test 0.0991  wrapped/layer 0.76 0.99 0.98 0.97 0.98 0.97 0.96 0.94  turns/layer 1.0 72.3 23.9 18.6 17.8 14.0 12.4 7.2
+  ep  30  loss 2.3033  train 0.1048  test 0.0967  wrapped/layer 0.69 0.99 0.98 0.98 0.98 0.97 0.95 0.94  turns/layer 0.8 58.3 23.0 20.1 18.9 14.8 11.3 7.4
+  -> 0.0967 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 5.0e-01   60s
+linear_checker_L16_tau_init0_s0   2464897 params   cuda
+  ep   1  loss 2.3450  train 0.1046  test 0.1050  wrapped/layer 0.98 0.47 0.71 0.17 0.64 0.14 0.65 0.13 0.65 0.11 0.63 0.09 0.48 0.07 0.24 0.06  turns/layer 8.3 0.2 1.1 0.1 0.8 0.1 0.9 0.1 0.9 0.1 0.9 0.1 0.5 0.1 0.2 0.1
+  ep   2  loss 2.3247  train 0.0990  test 0.1004  wrapped/layer 0.98 0.46 0.68 0.21 0.55 0.18 0.47 0.17 0.43 0.15 0.40 0.11 0.26 0.09 0.13 0.09  turns/layer 7.9 0.2 1.0 0.2 0.7 0.2 0.5 0.2 0.5 0.1 0.4 0.1 0.3 0.1 0.1 0.1
+  ep   3  loss 2.3170  train 0.0997  test 0.0963  wrapped/layer 0.96 0.46 0.65 0.23 0.42 0.20 0.33 0.19 0.30 0.18 0.27 0.13 0.17 0.11 0.11 0.10  turns/layer 8.0 0.2 0.9 0.2 0.5 0.2 0.3 0.2 0.3 0.2 0.3 0.1 0.2 0.1 0.1 0.1
+  ep   4  loss 2.3165  train 0.1020  test 0.1022  wrapped/layer 0.95 0.48 0.62 0.26 0.35 0.23 0.28 0.22 0.28 0.20 0.26 0.16 0.17 0.12 0.12 0.12  turns/layer 8.7 0.3 0.8 0.2 0.4 0.2 0.3 0.2 0.3 0.2 0.3 0.2 0.2 0.1 0.1 0.1
+  ep   5  loss 2.3135  train 0.0993  test 0.1051  wrapped/layer 0.96 0.49 0.52 0.30 0.33 0.26 0.30 0.25 0.29 0.22 0.27 0.17 0.18 0.14 0.14 0.13  turns/layer 8.8 0.3 0.6 0.3 0.3 0.3 0.3 0.2 0.3 0.2 0.3 0.2 0.2 0.1 0.1 0.1
+  ep   6  loss 2.3104  train 0.1001  test 0.1004  wrapped/layer 0.96 0.50 0.49 0.33 0.34 0.30 0.33 0.28 0.31 0.25 0.30 0.19 0.19 0.15 0.15 0.14  turns/layer 9.0 0.4 0.5 0.3 0.3 0.3 0.3 0.3 0.3 0.2 0.3 0.2 0.2 0.1 0.1 0.1
+  ep   7  loss 2.3099  train 0.1008  test 0.1000  wrapped/layer 0.97 0.51 0.47 0.36 0.37 0.32 0.35 0.30 0.34 0.27 0.31 0.21 0.21 0.16 0.16 0.15  turns/layer 10.4 0.4 0.5 0.4 0.4 0.3 0.4 0.3 0.3 0.3 0.3 0.2 0.2 0.2 0.2 0.2
+  ep   8  loss 2.3089  train 0.1006  test 0.0988  wrapped/layer 0.97 0.52 0.47 0.38 0.39 0.35 0.37 0.32 0.35 0.29 0.32 0.22 0.21 0.17 0.17 0.16  turns/layer 10.5 0.4 0.5 0.4 0.4 0.4 0.4 0.3 0.4 0.3 0.3 0.2 0.2 0.2 0.2 0.2
+  ep   9  loss 2.3080  train 0.1021  test 0.0978  wrapped/layer 0.97 0.53 0.47 0.39 0.40 0.36 0.38 0.34 0.36 0.30 0.33 0.23 0.23 0.18 0.18 0.17  turns/layer 11.0 0.5 0.5 0.4 0.4 0.4 0.4 0.3 0.4 0.3 0.3 0.2 0.2 0.2 0.2 0.2
+  ep  10  loss 2.3073  train 0.0971  test 0.1018  wrapped/layer 0.97 0.53 0.47 0.41 0.42 0.38 0.40 0.36 0.37 0.32 0.34 0.25 0.23 0.19 0.18 0.18  turns/layer 11.2 0.5 0.5 0.4 0.4 0.4 0.4 0.4 0.4 0.3 0.3 0.2 0.2 0.2 0.2 0.2
+  ep  11  loss 2.3061  train 0.1040  test 0.1027  wrapped/layer 0.97 0.53 0.47 0.42 0.42 0.39 0.41 0.37 0.38 0.32 0.35 0.25 0.24 0.20 0.19 0.18  turns/layer 11.1 0.5 0.5 0.4 0.4 0.4 0.4 0.4 0.4 0.3 0.4 0.3 0.2 0.2 0.2 0.2
+  ep  12  loss 2.3059  train 0.0969  test 0.1015  wrapped/layer 0.97 0.53 0.48 0.43 0.43 0.40 0.42 0.38 0.40 0.34 0.37 0.27 0.25 0.21 0.20 0.19  turns/layer 11.0 0.5 0.5 0.4 0.4 0.4 0.4 0.4 0.4 0.3 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  13  loss 2.3056  train 0.0946  test 0.1015  wrapped/layer 0.97 0.54 0.48 0.44 0.45 0.41 0.43 0.39 0.40 0.35 0.37 0.28 0.26 0.21 0.21 0.20  turns/layer 11.8 0.5 0.5 0.5 0.5 0.4 0.4 0.4 0.4 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  14  loss 2.3055  train 0.1008  test 0.0909  wrapped/layer 0.98 0.55 0.48 0.45 0.46 0.43 0.44 0.40 0.41 0.36 0.38 0.29 0.26 0.22 0.21 0.20  turns/layer 11.8 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.4 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  15  loss 2.3050  train 0.0981  test 0.1012  wrapped/layer 0.98 0.55 0.49 0.46 0.47 0.44 0.45 0.41 0.42 0.37 0.39 0.29 0.27 0.23 0.22 0.21  turns/layer 11.8 0.5 0.5 0.5 0.5 0.5 0.5 0.4 0.4 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  16  loss 2.3046  train 0.0984  test 0.1030  wrapped/layer 0.97 0.56 0.49 0.48 0.48 0.45 0.46 0.42 0.43 0.38 0.39 0.30 0.28 0.24 0.23 0.21  turns/layer 12.0 0.5 0.5 0.5 0.5 0.5 0.5 0.4 0.4 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  17  loss 2.3044  train 0.0972  test 0.0968  wrapped/layer 0.98 0.57 0.50 0.48 0.48 0.46 0.46 0.42 0.44 0.38 0.39 0.31 0.29 0.24 0.23 0.22  turns/layer 11.9 0.6 0.5 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  18  loss 2.3043  train 0.0973  test 0.0971  wrapped/layer 0.98 0.57 0.51 0.49 0.49 0.46 0.47 0.43 0.44 0.38 0.40 0.31 0.29 0.25 0.24 0.22  turns/layer 12.5 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.4 0.3 0.3 0.2 0.2 0.2
+  ep  19  loss 2.3039  train 0.1012  test 0.1011  wrapped/layer 0.98 0.57 0.51 0.49 0.49 0.47 0.47 0.43 0.44 0.39 0.41 0.32 0.30 0.26 0.24 0.23  turns/layer 14.4 0.6 0.6 0.5 0.5 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3 0.2 0.2
+  ep  20  loss 2.3037  train 0.0985  test 0.0984  wrapped/layer 0.98 0.58 0.52 0.50 0.50 0.47 0.47 0.44 0.45 0.39 0.41 0.32 0.30 0.26 0.25 0.23  turns/layer 14.1 0.6 0.6 0.5 0.5 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3 0.3 0.2
+  ep  21  loss 2.3036  train 0.0988  test 0.0999  wrapped/layer 0.98 0.58 0.52 0.50 0.50 0.48 0.48 0.45 0.45 0.40 0.42 0.33 0.31 0.27 0.26 0.24  turns/layer 14.5 0.6 0.6 0.5 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3 0.3 0.2
+  ep  22  loss 2.3035  train 0.0999  test 0.0968  wrapped/layer 0.98 0.58 0.52 0.50 0.51 0.48 0.48 0.45 0.46 0.41 0.42 0.34 0.31 0.28 0.26 0.24  turns/layer 14.3 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3 0.3 0.2
+  ep  23  loss 2.3034  train 0.0971  test 0.1006  wrapped/layer 0.98 0.59 0.53 0.51 0.51 0.48 0.49 0.46 0.46 0.42 0.43 0.34 0.32 0.28 0.27 0.25  turns/layer 14.7 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3 0.3 0.2
+  ep  24  loss 2.3032  train 0.0985  test 0.0981  wrapped/layer 0.98 0.59 0.53 0.51 0.51 0.49 0.49 0.45 0.46 0.42 0.43 0.36 0.33 0.29 0.27 0.25  turns/layer 14.9 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.4 0.3 0.3 0.3 0.3
+  ep  25  loss 2.3032  train 0.1018  test 0.1007  wrapped/layer 0.98 0.59 0.54 0.52 0.52 0.49 0.50 0.46 0.47 0.42 0.43 0.36 0.33 0.29 0.28 0.26  turns/layer 14.8 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.3 0.3 0.3 0.3
+  ep  26  loss 2.3033  train 0.1014  test 0.0976  wrapped/layer 0.98 0.59 0.54 0.52 0.52 0.50 0.50 0.46 0.47 0.43 0.44 0.36 0.34 0.30 0.28 0.26  turns/layer 14.9 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.3 0.3 0.3 0.3
+  ep  27  loss 2.3029  train 0.0998  test 0.1010  wrapped/layer 0.98 0.60 0.54 0.53 0.52 0.50 0.50 0.47 0.48 0.43 0.45 0.36 0.35 0.31 0.29 0.27  turns/layer 14.8 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.5 0.4 0.4 0.3 0.3 0.3
+  ep  28  loss 2.3031  train 0.1014  test 0.0985  wrapped/layer 0.98 0.60 0.55 0.53 0.53 0.51 0.51 0.48 0.48 0.44 0.44 0.38 0.35 0.31 0.29 0.27  turns/layer 15.0 0.6 0.6 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3
+  ep  29  loss 2.3032  train 0.1041  test 0.1046  wrapped/layer 0.98 0.60 0.55 0.53 0.53 0.51 0.51 0.48 0.48 0.45 0.45 0.37 0.36 0.32 0.30 0.28  turns/layer 14.4 0.6 0.6 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3
+  ep  30  loss 2.3029  train 0.1012  test 0.1030  wrapped/layer 0.98 0.61 0.56 0.54 0.54 0.51 0.51 0.49 0.49 0.45 0.46 0.38 0.36 0.32 0.30 0.28  turns/layer 14.3 0.7 0.6 0.6 0.6 0.6 0.6 0.5 0.5 0.5 0.5 0.4 0.4 0.3 0.3 0.3
+  -> 0.1030 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 5.0e-01   66s
+linear_nowrap_checker_L16_tau_init0_s0   2464897 params   cuda
+  ep   1  loss 2.3245  train 0.0980  test 0.1002  wrapped/layer 0.61 0.45 0.54 0.52 0.74 0.77 0.75 0.79 0.79 0.79 0.85 0.90 0.96 0.98 0.99 1.00  turns/layer 0.5 0.4 0.5 0.4 1.1 1.6 1.4 1.1 1.8 1.6 1.5 3.3 7.9 14.8 40.7 106.0
+  ep   2  loss 2.3193  train 0.0974  test 0.0992  wrapped/layer 0.62 0.39 0.53 0.36 0.59 0.67 0.80 0.76 0.78 0.83 0.89 0.95 0.98 0.99 0.99 1.00  turns/layer 0.5 0.4 0.5 0.4 0.5 0.9 1.4 0.9 1.4 1.6 2.3 5.7 10.5 21.1 60.2 153.8
+  ep   3  loss 2.3157  train 0.0997  test 0.1052  wrapped/layer 0.58 0.36 0.54 0.60 0.73 0.71 0.70 0.74 0.76 0.76 0.80 0.82 0.88 0.92 0.96 0.98  turns/layer 0.5 0.3 0.4 0.5 1.1 1.4 1.2 1.0 1.0 1.1 1.1 1.3 1.9 3.2 7.9 21.2
+  ep   4  loss 2.3124  train 0.0965  test 0.1005  wrapped/layer 0.58 0.37 0.56 0.61 0.72 0.72 0.77 0.80 0.86 0.84 0.91 0.94 0.97 0.99 0.99 1.00  turns/layer 0.5 0.3 0.4 0.5 1.1 1.4 1.7 1.3 2.3 2.2 2.4 6.0 12.1 23.7 51.2 117.9
+  ep   5  loss 2.3100  train 0.1041  test 0.1015  wrapped/layer 0.57 0.40 0.58 0.65 0.74 0.75 0.81 0.81 0.91 0.89 0.92 0.94 0.98 0.99 1.00 1.00  turns/layer 0.5 0.3 0.4 0.6 1.2 1.5 2.0 1.7 2.3 2.8 3.3 5.7 14.2 34.8 76.5 92.5
+  ep   6  loss 2.3083  train 0.0965  test 0.1007  wrapped/layer 0.58 0.37 0.57 0.62 0.72 0.72 0.80 0.83 0.91 0.91 0.95 0.96 0.97 0.99 0.99 1.00  turns/layer 0.5 0.3 0.4 0.6 1.0 1.4 1.8 2.0 3.3 3.9 4.1 8.1 13.2 19.3 58.2 156.3
+  ep   7  loss 2.3075  train 0.0983  test 0.1004  wrapped/layer 0.57 0.34 0.55 0.55 0.68 0.66 0.74 0.76 0.87 0.86 0.91 0.93 0.95 0.98 0.99 1.00  turns/layer 0.5 0.3 0.4 0.5 0.9 1.1 1.3 1.4 2.2 2.6 2.6 4.1 6.0 11.6 36.0 78.3
+  ep   8  loss 2.3070  train 0.0992  test 0.0991  wrapped/layer 0.57 0.37 0.58 0.63 0.73 0.73 0.81 0.83 0.92 0.91 0.94 0.97 0.98 0.99 1.00 1.00  turns/layer 0.5 0.3 0.4 0.6 1.1 1.4 1.8 2.0 3.1 3.9 4.7 6.0 15.1 42.8 103.7 132.0
+  ep   9  loss 2.3060  train 0.0983  test 0.1031  wrapped/layer 0.57 0.28 0.54 0.46 0.62 0.57 0.64 0.64 0.75 0.74 0.82 0.87 0.92 0.97 0.99 0.99  turns/layer 0.5 0.3 0.3 0.4 0.6 0.8 0.8 0.8 1.0 1.2 1.3 1.8 3.9 11.7 28.7 37.0
+  ep  10  loss 2.3054  train 0.0967  test 0.0992  wrapped/layer 0.57 0.25 0.51 0.39 0.57 0.49 0.58 0.61 0.70 0.68 0.79 0.83 0.86 0.93 0.98 0.99  turns/layer 0.5 0.4 0.3 0.3 0.5 0.7 0.6 0.6 0.9 0.9 0.9 1.7 2.3 5.0 14.1 29.0
+  ep  11  loss 2.3050  train 0.0971  test 0.1031  wrapped/layer 0.57 0.24 0.50 0.35 0.55 0.47 0.57 0.58 0.67 0.66 0.77 0.82 0.86 0.92 0.97 0.98  turns/layer 0.5 0.4 0.3 0.3 0.5 0.6 0.6 0.6 0.8 0.7 0.9 1.8 2.6 4.5 11.5 26.4
+  ep  12  loss 2.3041  train 0.0992  test 0.0999  wrapped/layer 0.57 0.25 0.48 0.33 0.54 0.47 0.58 0.56 0.64 0.63 0.74 0.79 0.84 0.90 0.95 0.97  turns/layer 0.5 0.4 0.3 0.3 0.4 0.6 0.5 0.6 0.6 0.6 0.8 1.5 2.0 3.3 8.7 19.6
+  ep  13  loss 2.3041  train 0.0952  test 0.1016  wrapped/layer 0.57 0.24 0.49 0.33 0.55 0.48 0.62 0.62 0.72 0.71 0.80 0.84 0.87 0.93 0.97 0.98  turns/layer 0.5 0.4 0.3 0.3 0.5 0.6 0.7 0.8 0.9 1.1 1.5 2.3 2.9 7.1 22.0 45.7
+  ep  14  loss 2.3043  train 0.1042  test 0.1012  wrapped/layer 0.60 0.30 0.56 0.49 0.69 0.72 0.89 0.93 0.94 0.94 0.97 0.98 0.99 0.99 1.00 1.00  turns/layer 0.5 0.6 0.4 0.4 1.1 1.4 2.4 3.7 5.3 7.2 9.8 20.5 35.8 60.5 177.1 456.9
+  ep  15  loss 2.3040  train 0.1018  test 0.1010  wrapped/layer 0.58 0.22 0.49 0.34 0.54 0.51 0.69 0.75 0.82 0.81 0.87 0.92 0.94 0.97 0.99 0.99  turns/layer 0.5 0.5 0.3 0.3 0.5 0.7 0.9 1.2 1.5 1.8 2.3 3.6 5.3 15.1 44.8 84.4
+  ep  16  loss 2.3036  train 0.0998  test 0.1006  wrapped/layer 0.59 0.28 0.55 0.48 0.65 0.68 0.88 0.94 0.94 0.93 0.96 0.98 0.99 1.00 1.00 1.00  turns/layer 0.5 0.6 0.4 0.4 0.8 1.1 1.9 2.9 4.1 4.9 7.3 12.1 26.4 74.9 202.9 340.4
+  ep  17  loss 2.3035  train 0.1046  test 0.1016  wrapped/layer 0.58 0.25 0.50 0.35 0.57 0.50 0.59 0.64 0.73 0.71 0.79 0.85 0.93 0.96 0.98 0.98  turns/layer 0.5 0.6 0.4 0.3 0.6 0.6 0.5 0.7 1.0 1.1 1.0 2.0 4.6 8.1 18.0 21.9
+  ep  18  loss 2.3037  train 0.0939  test 0.1010  wrapped/layer 0.58 0.26 0.49 0.34 0.56 0.49 0.58 0.58 0.69 0.64 0.74 0.79 0.88 0.93 0.97 0.98  turns/layer 0.5 0.6 0.4 0.3 0.5 0.5 0.5 0.5 0.9 0.9 0.8 1.2 2.5 4.4 10.6 16.7
+  ep  19  loss 2.3033  train 0.0983  test 0.0987  wrapped/layer 0.58 0.25 0.49 0.34 0.56 0.49 0.58 0.59 0.70 0.65 0.74 0.81 0.89 0.93 0.97 0.98  turns/layer 0.5 0.6 0.4 0.3 0.5 0.6 0.5 0.5 0.9 1.0 0.8 1.4 2.7 4.0 9.2 15.8
+  ep  20  loss 2.3035  train 0.0974  test 0.1005  wrapped/layer 0.61 0.60 0.62 0.77 0.87 0.89 0.92 0.95 0.98 0.98 0.98 0.99 0.99 1.00 1.00 1.00  turns/layer 0.6 0.9 0.8 0.8 2.5 3.2 4.5 5.5 11.9 16.1 20.0 26.2 69.5 227.2 586.8 752.6
+  ep  21  loss 2.3031  train 0.0992  test 0.0972  wrapped/layer 0.60 0.38 0.52 0.39 0.60 0.54 0.61 0.66 0.78 0.76 0.83 0.87 0.92 0.95 0.98 0.99  turns/layer 0.5 0.7 0.5 0.4 0.5 0.6 0.5 0.6 1.3 1.5 1.5 2.1 4.1 7.0 20.5 41.1
+  ep  22  loss 2.3034  train 0.0953  test 0.1000  wrapped/layer 0.59 0.36 0.51 0.40 0.61 0.55 0.62 0.68 0.80 0.77 0.83 0.88 0.94 0.97 0.99 0.99  turns/layer 0.5 0.7 0.5 0.4 0.6 0.7 0.6 0.7 1.5 1.7 1.7 2.3 4.2 10.3 32.3 58.2
+  ep  23  loss 2.3030  train 0.1054  test 0.1001  wrapped/layer 0.59 0.32 0.50 0.35 0.55 0.49 0.58 0.60 0.72 0.69 0.78 0.82 0.89 0.94 0.97 0.98  turns/layer 0.5 0.7 0.5 0.4 0.4 0.5 0.5 0.6 0.9 1.0 1.1 1.5 3.0 6.0 15.9 27.0
+  ep  24  loss 2.3031  train 0.0994  test 0.0993  wrapped/layer 0.58 0.26 0.47 0.32 0.53 0.46 0.56 0.56 0.70 0.67 0.77 0.84 0.90 0.93 0.95 0.97  turns/layer 0.5 0.6 0.4 0.3 0.4 0.5 0.5 0.5 0.8 0.9 1.0 1.9 3.7 4.8 8.4 12.4
+  ep  25  loss 2.3029  train 0.1023  test 0.1026  wrapped/layer 0.58 0.24 0.48 0.35 0.54 0.51 0.65 0.64 0.74 0.73 0.83 0.88 0.93 0.97 0.99 0.99  turns/layer 0.5 0.6 0.4 0.3 0.5 0.6 0.8 0.7 0.8 0.9 1.2 2.7 4.3 9.0 21.3 36.7
+  ep  26  loss 2.3028  train 0.0938  test 0.0980  wrapped/layer 0.57 0.23 0.46 0.32 0.51 0.47 0.59 0.57 0.68 0.67 0.78 0.83 0.91 0.95 0.98 0.99  turns/layer 0.5 0.6 0.4 0.3 0.4 0.6 0.7 0.6 0.7 0.7 0.9 1.7 3.0 6.7 16.7 28.9
+  ep  27  loss 2.3029  train 0.1026  test 0.1021  wrapped/layer 0.57 0.23 0.45 0.29 0.50 0.45 0.57 0.57 0.67 0.64 0.73 0.78 0.90 0.92 0.94 0.97  turns/layer 0.5 0.6 0.4 0.3 0.4 0.5 0.6 0.6 0.7 0.7 0.7 1.2 3.4 4.4 8.0 11.9
+  ep  28  loss 2.3030  train 0.1015  test 0.1019  wrapped/layer 0.56 0.21 0.45 0.27 0.49 0.40 0.55 0.56 0.67 0.64 0.73 0.79 0.91 0.90 0.94 0.96  turns/layer 0.5 0.5 0.4 0.3 0.4 0.4 0.5 0.5 0.8 0.8 0.7 1.2 3.3 3.5 5.5 9.8
+  ep  29  loss 2.3030  train 0.1005  test 0.0999  wrapped/layer 0.56 0.22 0.45 0.29 0.49 0.41 0.55 0.53 0.65 0.61 0.71 0.78 0.92 0.91 0.94 0.97  turns/layer 0.5 0.6 0.4 0.3 0.4 0.5 0.5 0.5 0.7 0.7 0.7 1.4 3.9 4.5 6.1 10.1
+  ep  30  loss 2.3030  train 0.0976  test 0.1021  wrapped/layer 0.56 0.22 0.45 0.29 0.49 0.44 0.55 0.52 0.63 0.59 0.70 0.77 0.90 0.91 0.95 0.97  turns/layer 0.5 0.6 0.4 0.3 0.3 0.5 0.5 0.5 0.6 0.6 0.7 1.3 3.1 3.9 6.8 11.6
+  -> 0.1021 test   (wrap switched off after training: 0.1021)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   61s
+mlp_checker_L16_tau_init0_s0   12867713 params   cuda
+  ep   1  loss 2.2991  train 0.0984  test 0.0982  wrapped/layer 0.99 0.86 0.85 0.85 0.84 0.76 0.80 0.75 0.81 0.78 0.75 0.68 0.61 0.47 0.47 0.45  turns/layer 64.5 2.5 2.7 2.6 2.1 1.3 1.6 1.5 1.9 1.5 1.4 1.2 0.9 0.5 0.5 0.5
+  ep   2  loss 2.3240  train 0.0991  test 0.1020  wrapped/layer 0.97 0.89 0.91 0.91 0.92 0.92 0.92 0.90 0.91 0.89 0.88 0.91 0.87 0.85 0.67 0.63  turns/layer 23.0 3.8 4.4 4.7 4.6 4.4 4.6 3.5 4.1 3.2 2.9 4.1 2.8 2.7 1.1 0.9
+  ep   3  loss 2.3180  train 0.0987  test 0.1043  wrapped/layer 0.97 0.89 0.92 0.93 0.94 0.94 0.93 0.94 0.94 0.91 0.91 0.90 0.90 0.87 0.75 0.71  turns/layer 23.0 3.8 4.8 6.0 6.2 5.8 5.5 6.0 5.9 4.1 4.0 4.5 3.9 2.9 1.5 1.2
+  ep   4  loss 2.3157  train 0.1014  test 0.1029  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.97 0.96 0.96 0.95 0.95 0.95 0.94 0.93 0.91 0.81 0.78  turns/layer 23.0 3.8 4.8 7.4 7.8 10.6 8.9 9.8 8.0 8.3 7.2 7.8 5.7 4.1 1.9 1.5
+  ep   5  loss 2.3114  train 0.1034  test 0.1058  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.97 0.97 0.96 0.95 0.95 0.95 0.94 0.92 0.85 0.80  turns/layer 23.0 3.8 4.8 7.4 7.8 15.6 14.8 14.8 9.4 8.3 8.2 8.0 7.4 4.7 2.6 1.8
+  ep   6  loss 2.3101  train 0.0990  test 0.0962  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.97 0.97 0.97 0.98 0.97 0.96 0.93 0.87 0.83  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 21.6 17.6 14.3 12.3 15.4 13.0 10.9 5.4 3.0 2.1
+  ep   7  loss 2.3094  train 0.1040  test 0.1004  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.97 0.98 0.97 0.98 0.97 0.96 0.93 0.90 0.85  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 24.9 19.3 16.8 15.5 20.6 14.5 11.9 5.6 4.6 2.4
+  ep   8  loss 2.3086  train 0.0996  test 0.1005  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.96 0.94 0.90 0.85  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 24.8 20.9 17.0 16.9 21.3 15.9 13.5 6.6 4.6 2.7
+  ep   9  loss 2.3077  train 0.0926  test 0.0971  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.97 0.95 0.90 0.84  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 24.0 22.9 17.8 18.1 20.8 16.4 14.5 7.0 4.2 2.7
+  ep  10  loss 2.3071  train 0.0985  test 0.0968  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.97 0.95 0.91 0.85  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 24.4 22.2 17.5 18.9 22.1 16.6 15.3 7.3 4.5 2.9
+  ep  11  loss 2.3058  train 0.1005  test 0.0977  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.97 0.95 0.92 0.86  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 24.4 22.9 17.8 18.8 20.0 16.1 15.0 7.1 5.2 3.2
+  ep  12  loss 2.3056  train 0.0990  test 0.0995  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.98 0.98 0.98 0.98 0.97 0.97 0.95 0.93 0.87  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 25.2 26.1 18.2 20.1 21.4 15.4 15.3 7.9 6.5 3.4
+  ep  13  loss 2.3052  train 0.1028  test 0.1055  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.97 0.97 0.97 0.95 0.94 0.87  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 25.2 29.0 18.7 19.8 20.6 16.4 16.1 9.1 7.5 3.7
+  ep  14  loss 2.3043  train 0.1013  test 0.1041  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.97 0.98 0.97 0.95 0.94 0.88  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 26.0 29.1 19.5 20.2 21.2 16.9 17.5 8.5 7.1 3.9
+  ep  15  loss 2.3048  train 0.1032  test 0.1028  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.97 0.98 0.98 0.95 0.94 0.88  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 27.4 32.0 19.6 22.3 19.6 17.2 19.1 9.0 7.9 4.1
+  ep  16  loss 2.3046  train 0.1008  test 0.0968  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.97 0.98 0.98 0.96 0.94 0.90  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 27.2 31.1 20.1 23.4 20.0 17.6 19.7 8.9 7.7 4.3
+  ep  17  loss 2.3039  train 0.0978  test 0.1032  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.97 0.96 0.94 0.90  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 27.5 31.6 20.1 24.0 20.7 18.9 18.4 10.1 8.7 4.5
+  ep  18  loss 2.3040  train 0.1003  test 0.1008  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.98 0.99 0.98 0.98 0.98 0.98 0.98 0.97 0.96 0.91  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 28.7 33.8 19.0 25.7 22.5 21.6 17.5 14.6 12.0 4.9
+  ep  19  loss 2.3037  train 0.1034  test 0.1002  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.96 0.95 0.90  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 30.2 35.7 19.1 26.7 22.0 23.5 18.4 11.9 10.3 4.9
+  ep  20  loss 2.3036  train 0.1012  test 0.0947  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.97 0.96 0.95 0.90  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 30.8 37.5 18.8 26.9 23.3 23.2 18.0 12.1 9.8 5.0
+  ep  21  loss 2.3036  train 0.1059  test 0.0997  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.96 0.95 0.91  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 31.1 36.4 18.8 26.4 23.3 23.6 19.2 11.7 10.6 5.4
+  ep  22  loss 2.3034  train 0.0974  test 0.1028  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.96 0.95 0.91  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 31.8 37.2 18.8 27.3 22.5 24.0 20.0 12.1 11.2 5.4
+  ep  23  loss 2.3036  train 0.1020  test 0.1027  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.96 0.95 0.91  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.4 38.2 18.4 27.2 23.8 24.8 20.2 11.5 10.0 5.4
+  ep  24  loss 2.3032  train 0.1001  test 0.0978  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.96 0.95 0.92  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 33.2 40.1 19.0 28.8 23.1 24.4 20.8 11.5 10.2 5.6
+  ep  25  loss 2.3032  train 0.1016  test 0.1036  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.95 0.92  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.8 38.9 20.2 28.9 23.5 23.0 20.8 12.7 11.4 5.9
+  ep  26  loss 2.3032  train 0.0997  test 0.1021  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.96 0.92  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.8 39.5 19.9 31.4 22.5 22.6 21.4 12.6 11.9 6.1
+  ep  27  loss 2.3031  train 0.1015  test 0.0995  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.96 0.93  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.8 39.8 20.7 33.1 23.5 22.3 21.7 13.1 12.6 6.4
+  ep  28  loss 2.3032  train 0.1041  test 0.0956  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.96 0.93  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.8 42.3 20.9 31.7 23.4 23.3 21.2 13.1 12.3 6.5
+  ep  29  loss 2.3029  train 0.0980  test 0.1028  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.96 0.93  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.7 43.7 20.0 32.1 25.3 23.8 21.9 12.7 11.6 6.7
+  ep  30  loss 2.3029  train 0.1051  test 0.0988  wrapped/layer 0.97 0.89 0.92 0.95 0.95 0.98 0.99 0.99 0.98 0.99 0.98 0.98 0.98 0.97 0.96 0.92  turns/layer 23.0 3.8 4.8 7.4 7.8 18.4 32.7 43.8 20.9 31.6 28.2 25.0 21.4 12.7 10.5 6.7
+  -> 0.0988 test   (wrap switched off after training: 0.0980)   roundtrip f32 max 3.1e+00 bad 1.0e+00  f64 max 3.1e+00 bad 1.0e+00   141s
