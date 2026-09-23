@@ -1,0 +1,41 @@
+pixels_aligned_s0: 51240 parameters (51240 in the head), 32910 training images, cuda
+  ep  1  loss 0.9493  val 0.7170  test 0.7253  acc 0.7124  0s
+  ep  2  loss 0.7981  val 0.7492  test 0.7535  acc 0.7386  1s
+  ep  3  loss 0.7539  val 0.7572  test 0.7617  acc 0.7556  1s
+  ep  4  loss 0.7326  val 0.7631  test 0.7679  acc 0.7556  1s
+  ep  5  loss 0.7176  val 0.7671  test 0.7718  acc 0.7620  2s
+  ep  6  loss 0.7066  val 0.7688  test 0.7738  acc 0.7705  2s
+  ep  7  loss 0.6991  val 0.7700  test 0.7764  acc 0.7689  2s
+  ep  8  loss 0.6952  val 0.7706  test 0.7764  acc 0.7699  3s
+best epoch 8: test balanced accuracy 0.7764  -> results/runs/pixels_aligned_s0.json
+bands1_aligned_s0: 129640 parameters (128040 in the head), 32910 training images, cuda
+  ep  1  loss 0.9668  val 0.6841  test 0.6936  acc 0.7035  14s
+  ep  2  loss 0.8503  val 0.7288  test 0.7352  acc 0.7245  23s
+  ep  3  loss 0.7963  val 0.7444  test 0.7486  acc 0.7594  31s
+  ep  4  loss 0.7662  val 0.7520  test 0.7581  acc 0.7478  39s
+  ep  5  loss 0.7464  val 0.7616  test 0.7663  acc 0.7583  47s
+  ep  6  loss 0.7348  val 0.7655  test 0.7690  acc 0.7666  55s
+  ep  7  loss 0.7264  val 0.7673  test 0.7714  acc 0.7620  63s
+  ep  8  loss 0.7227  val 0.7683  test 0.7721  acc 0.7644  72s
+best epoch 8: test balanced accuracy 0.7721  -> results/runs/bands1_aligned_s0.json
+stack_aligned_s0: 165352 parameters (128040 in the head), 32910 training images, cuda
+  ep  1  loss 0.9579  val 0.7179  test 0.7265  acc 0.7297  21s
+  ep  2  loss 0.7247  val 0.7874  test 0.7907  acc 0.7837  34s
+  ep  3  loss 0.6364  val 0.8123  test 0.8100  acc 0.8069  48s
+  ep  4  loss 0.5967  val 0.8215  test 0.8178  acc 0.8088  61s
+  ep  5  loss 0.5728  val 0.8255  test 0.8234  acc 0.8189  75s
+  ep  6  loss 0.5560  val 0.8308  test 0.8251  acc 0.8217  88s
+  ep  7  loss 0.5438  val 0.8305  test 0.8273  acc 0.8244  101s
+  ep  8  loss 0.5377  val 0.8325  test 0.8288  acc 0.8234  115s
+best epoch 8: test balanced accuracy 0.8288  -> results/runs/stack_aligned_s0.json
+bands3_aligned_s0: 222120 parameters (128040 in the head), 32910 training images, cuda
+  ep  1  loss 0.9542  val 0.7179  test 0.7252  acc 0.7277  39s
+  ep  2  loss 0.7477  val 0.7832  test 0.7870  acc 0.7759  66s
+  ep  3  loss 0.6569  val 0.8008  test 0.8019  acc 0.7937  92s
+  ep  4  loss 0.6201  val 0.8091  test 0.8080  acc 0.8023  118s
+  ep  5  loss 0.5961  val 0.8144  test 0.8129  acc 0.8054  144s
+  ep  6  loss 0.5791  val 0.8175  test 0.8164  acc 0.8088  170s
+  ep  7  loss 0.5666  val 0.8174  test 0.8185  acc 0.8141  196s
+  ep  8  loss 0.5598  val 0.8179  test 0.8192  acc 0.8155  222s
+best epoch 8: test balanced accuracy 0.8192  -> results/runs/bands3_aligned_s0.json
+SWEEP DONE

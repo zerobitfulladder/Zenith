@@ -105,6 +105,10 @@ a README with the full writeup, and a `results/` folder.
   measure, and a two-track build that reads MNIST at 92.4%.
 - [**2026-09-21**](experiments/2026_09_21/) — Networks made of angles, trained with
   gradients: an exactly invertible network at 96.2% MNIST.
+- [**2026-09-23**](experiments/2026_09_23/) — The basics again, in conversation: cortical
+  layers, thalamic loops, bands and phases. Then a test of the idea that a level needs only a
+  coarser image, not the level below. It lost to a CNN with everything else equal, and with
+  one filter bank per scale it lost to raw pixels. Dropped.
 
 ---
 
@@ -118,7 +122,7 @@ a README with the full writeup, and a `results/` folder.
   inside AxonForge and are kept as a record. Most March scripts also read MNIST from
   AxonForge's data cache, which no longer exists.
 - The 2026-09-16 to 09-21 scripts come from another project and read data from that
-  project's layout; some need `torch`, which is not installed here.
+  project's layout. `torch` was added to the project on 2026-09-23.
 - Trained weights and checkpoints (`*.npz`, `*.npy`, `*.pt`) are not in git. Datasets go in
   `data/` (`mnist/digits`, `mnist/fashion`, `celeba`, `cifar10`).
 - `viewer.py` replays any trained drone or pole controller. `READING_LIST.md` gives the
