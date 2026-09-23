@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.claude
+data/
+
+# Trained weights, checkpoints and cached arrays (regenerable, too big for git)
+*.npz
+*.npy
+*.pt
+*.joblib
+checkpoint*
