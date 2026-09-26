@@ -109,23 +109,13 @@ a README with the full writeup, and a `results/` folder.
   layers, thalamic loops, bands and phases. Then a test of the idea that a level needs only a
   coarser image, not the level below. It lost to a CNN with everything else equal, and with
   one filter bank per scale it lost to raw pixels. Dropped.
-- [**2026-09-26**](experiments/2026_09_26/) — Three days on reasoning: composition in time
-  over live maps, attention as a window, pooling made dynamic by gain and normalisation, and
-  the feedback path as a decoder. Then three tests: a backward path trained only by local
-  mismatch renders and imagines from a 4x4 top map once its unpool is learned; a bag of
-  features plus one pointer for the whole object cannot render at all; and attending
-  windows one at a time and sweeping them rebuilds the digit sharper than one look, down
-  to a quarter of the pixel error with sixteen windows of 8. Last, both directions trained
-  at once with no labels: "copy your twin" collapses to silence, "rebuild the level below"
-  gives a stack that renders, imagines, and reads out at 94% without being asked to. And
-  faces at full crop: the decoder renders attributes from their mean codes and sharpens an
-  attended mouth, but a mustache added to a woman brings the man with it, sampling a
-  window's missing detail from a squared-error model gives an average, not a crisp part, and
-  a render-read-correct loop helps for one cycle and then satisfies the stack instead of the
-  face. Last, a painter that draws parts from a library and keeps the ones that make the
-  whole read as the goal: sharp and consistent faces, real and imagined, for the first time;
-  a faint mustache on a woman who stays a woman; and, given only lines and ovals, a drawing
-  the stack reads as the face and a person does not.
+- [**2026-09-26**](experiments/2026_09_26/) — Three days on reasoning as composition in
+  time, attention as a window, and the feedback path as a decoder learned from local
+  mismatch. Nine experiments: the decoder renders and imagines from a coarse grid but cannot
+  invent the codes of parts it has not seen, and a painter that takes parts from memory and
+  keeps what makes the whole read as the goal gives sharp, consistent faces, a faint mustache
+  on a woman who stays a woman, and, with only lines and ovals, a drawing in the stack's own
+  style.
 
 ---
 
