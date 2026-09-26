@@ -1,0 +1,37 @@
+library: 1000 faces x 49 positions  (13s)
+  100 faces  (102s)
+  200 faces  (188s)
+  300 faces  (273s)
+first      agreement 0.592   pixel error 0.0265   sharpness 0.0165   fine agreement 0.866
+random     agreement 0.561   pixel error 0.0281   sharpness 0.0161   fine agreement 0.857
+coarse1    agreement 0.746   pixel error 0.0225   sharpness 0.0177   fine agreement 0.853
+coarse2    agreement 0.768   pixel error 0.0232   sharpness 0.0183   fine agreement 0.837
+both2      agreement 0.562   pixel error 0.0259   sharpness 0.0126   fine agreement 0.923
+blur       agreement 0.585   pixel error 0.0194   sharpness 0.0126   fine agreement 0.000
+from_real  agreement 0.800   pixel error 0.0061   sharpness 0.0191   fine agreement 0.000
+imagined: coarse agree 0.502 sharp 0.0091   first agree 0.576 sharp 0.0149   coarse2 agree 0.763 sharp 0.0181   both2 agree 0.534 sharp 0.0090
+# Results
+
+300 test faces as goals; library of 1000 faces x 49 positions; 8 candidates per window.
+
+agreement = cosine between the goal and the read-back of the finished canvas.  fine = mean cosine between each chosen part and the read-back of its window.
+
+| arm | agreement | pixel error | sharpness | fine agreement |
+|---|---|---|---|---|
+| blur | 0.585 | 0.0194 | 0.0126 | 0.000 |
+| first | 0.592 | 0.0265 | 0.0165 | 0.866 |
+| random | 0.561 | 0.0281 | 0.0161 | 0.857 |
+| coarse1 | 0.746 | 0.0225 | 0.0177 | 0.853 |
+| coarse2 | 0.768 | 0.0232 | 0.0183 | 0.837 |
+| both2 | 0.562 | 0.0259 | 0.0126 | 0.923 |
+| from_real | 0.800 | 0.0061 | 0.0191 | 0.000 |
+
+Imagined goals (8 pca64 samples):
+
+| arm | agreement | sharpness |
+|---|---|---|
+| coarse | 0.502 | 0.0091 |
+| first | 0.576 | 0.0149 |
+| coarse2 | 0.763 | 0.0181 |
+| both2 | 0.534 | 0.0090 |
+done in 285s

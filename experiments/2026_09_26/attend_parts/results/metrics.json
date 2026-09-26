@@ -1,0 +1,32 @@
+{
+ "judge_acc": 0.9884,
+ "forward_acc": 0.9855,
+ "epochs": 5,
+ "seed": 0,
+ "sets": {
+  "whole": {
+   "windows": 1,
+   "mse": 0.015874237728118898,
+   "judge": 0.9523,
+   "judge_norm": 0.9527
+  },
+  "tiles16": {
+   "windows": 4,
+   "mse": 0.012793055248260498,
+   "judge": 0.9733,
+   "judge_norm": 0.9733
+  },
+  "overlap16": {
+   "windows": 9,
+   "mse": 0.010615339994430543,
+   "judge": 0.983,
+   "judge_norm": 0.983
+  },
+  "tiles8": {
+   "windows": 16,
+   "mse": 0.0040417970061302185,
+   "judge": 0.9851,
+   "judge_norm": 0.9851
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "pca64_variance_kept": 0.5174547433853149,
+ "diversity": {
+  "real renders": 0.2594032287597656,
+  "diag": 0.07907085120677948,
+  "pca64": 0.1675502359867096
+ },
+ "rebuild": {
+  "real": {
+   "pixel_error": 0.0,
+   "sharpness": 0.06073972511291504
+  },
+  "blur": {
+   "pixel_error": 0.019248219108581544,
+   "sharpness": 0.012558813333511352
+  },
+  "from_blur": {
+   "pixel_error": 0.02025892696380615,
+   "sharpness": 0.01189325499534607
+  },
+  "mean": {
+   "pixel_error": 0.020540843772888184,
+   "sharpness": 0.011421007871627807
+  },
+  "sample": {
+   "pixel_error": 0.022823240852355958,
+   "sharpness": 0.011426978945732117
+  },
+  "nearest": {
+   "pixel_error": 0.03275220413208008,
+   "sharpness": 0.016217779040336607
+  },
+  "from_real": {
+   "pixel_error": 0.008791583824157716,
+   "sharpness": 0.017258501648902892
+  }
+ },
+ "imagined": {
+  "coarse": 0.009070206433534622,
+  "from_blur": 0.007654300890862942,
+  "sample": 0.008345846086740494,
+  "nearest": 0.011866574175655842,
+  "two samples differ by": 0.03704681620001793
+ },
+ "fixes": {
+  "80x64 hard": {
+   "from_blur": {
+    "pixel_error": 0.02025891990661621,
+    "sharpness": 0.01189325487613678
+   },
+   "sample": {
+    "pixel_error": 0.022684678268432616,
+    "sharpness": 0.011447522163391113
+   },
+   "from_real": {
+    "pixel_error": 0.008791583824157716,
+    "sharpness": 0.017258501410484316
+   }
+  },
+  "80x64 feathered": {
+   "from_blur": {
+    "pixel_error": 0.020381335067749026,
+    "sharpness": 0.0076582756042480465
+   },
+   "sample": {
+    "pixel_error": 0.022754965019226078,
+    "sharpness": 0.007644339442253113
+   },
+   "from_real": {
+    "pixel_error": 0.00898646764755249,
+    "sharpness": 0.013022187829017639
+   }
+  },
+  "40x32 hard": {
+   "from_blur": {
+    "pixel_error": 0.019290130615234376,
+    "sharpness": 0.01282713007926941
+   },
+   "sample": {
+    "pixel_error": 0.022024823570251463,
+    "sharpness": 0.015455453038215636
+   },
+   "from_real": {
+    "pixel_error": 0.0037748267412185663,
+    "sharpness": 0.023661028385162354
+   }
+  },
+  "40x32 feathered": {
+   "from_blur": {
+    "pixel_error": 0.01924161491394043,
+    "sharpness": 0.007750281691551208
+   },
+   "sample": {
+    "pixel_error": 0.023070202636718756,
+    "sharpness": 0.009507993042469024
+   },
+   "from_real": {
+    "pixel_error": 0.0038496309518814085,
+    "sharpness": 0.019023117542266845
+   }
+  }
+ },
+ "imagined2": {
+  "coarse": 0.009070206433534622,
+  "80x64 feathered, from_blur": 0.004745560698211193,
+  "80x64 feathered, sample": 0.005583532154560089,
+  "40x32 feathered, from_blur": 0.005149411968886852,
+  "40x32 feathered, sample": 0.0076127685606479645
+ }
+}

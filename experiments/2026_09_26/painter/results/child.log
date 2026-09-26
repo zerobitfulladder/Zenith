@@ -1,0 +1,12 @@
+118 primitives: blank 1, fill 2, line 48, oval 20, filled oval 20, arc up 9, arc down 9, dot 9
+  8 faces drawn  (12s)
+  16 faces drawn  (23s)
+agreement with the goal: paper 0.118   coarse render 0.584   drawing 0.630
+head right on the drawing / on the coarse render: Male 0.88/0.88  Smiling 0.94/0.81  Eyeglasses 0.94/1.00  Blond_Hair 1.00/0.75
+  brow/eyes (rows 60-120)    blank 67, line 55, filled oval 40, dot 29, fill 20, arc down 7, arc up 3, oval 3
+  mouth (rows 100-140)       line 43, blank 26, dot 15, filled oval 11, fill 9, arc down 6, oval 2
+  hair/top (rows 0-40)       line 77, filled oval 54, fill 41, blank 23, dot 16, oval 11, arc down 1, arc up 1
+  chin/neck (row 120)        line 39, blank 20, dot 17, fill 15, filled oval 12, oval 6, arc up 2, arc down 1
+windows redrawn in the second sweep: 0.49
+imagined: agreement coarse 0.533   drawing 0.605  (38s)
+done in 40s

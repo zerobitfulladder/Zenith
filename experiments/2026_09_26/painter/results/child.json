@@ -1,0 +1,63 @@
+{
+ "agree_paper": 0.11758739873766899,
+ "agree_blur": 0.5843158066272736,
+ "agree_drawing": 0.6300623714923859,
+ "head_on_drawing": {
+  "Male": 0.875,
+  "Smiling": 0.9375,
+  "Eyeglasses": 0.9375,
+  "Blond_Hair": 1.0
+ },
+ "head_on_blur": {
+  "Male": 0.875,
+  "Smiling": 0.8125,
+  "Eyeglasses": 1.0,
+  "Blond_Hair": 0.75
+ },
+ "kinds_by_region": {
+  "brow/eyes (rows 60-120)": {
+   "blank": 67,
+   "line": 55,
+   "filled oval": 40,
+   "dot": 29,
+   "fill": 20,
+   "arc down": 7,
+   "arc up": 3,
+   "oval": 3
+  },
+  "mouth (rows 100-140)": {
+   "line": 43,
+   "blank": 26,
+   "dot": 15,
+   "filled oval": 11,
+   "fill": 9,
+   "arc down": 6,
+   "oval": 2
+  },
+  "hair/top (rows 0-40)": {
+   "line": 77,
+   "filled oval": 54,
+   "fill": 41,
+   "blank": 23,
+   "dot": 16,
+   "oval": 11,
+   "arc down": 1,
+   "arc up": 1
+  },
+  "chin/neck (row 120)": {
+   "line": 39,
+   "blank": 20,
+   "dot": 17,
+   "fill": 15,
+   "filled oval": 12,
+   "oval": 6,
+   "arc up": 2,
+   "arc down": 1
+  }
+ },
+ "changed_in_sweep_2": 0.49362245202064514,
+ "imagined_agree": {
+  "coarse": 0.5327268838882446,
+  "drawing": 0.6052148342132568
+ }
+}

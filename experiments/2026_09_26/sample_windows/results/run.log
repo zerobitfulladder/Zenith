@@ -1,0 +1,80 @@
+unique: pca64 keeps 0.52 of the variance; mean pixel distance between faces: real renders 0.259  diag 0.079  pca64 0.168  (4s)
+32910 window pairs of 80x64; code values up to 11.5  (21s)
+    ep 1  code error 0.6178  KL 14.7 nats
+    ep 2  code error 0.4979  KL 38.9 nats
+    ep 3  code error 0.4568  KL 51.5 nats
+    ep 4  code error 0.4321  KL 58.8 nats
+    ep 5  code error 0.4149  KL 63.7 nats
+    ep 6  code error 0.4016  KL 67.1 nats
+    ep 7  code error 0.3911  KL 69.4 nats
+    ep 8  code error 0.3826  KL 70.9 nats
+    ep 9  code error 0.3755  KL 71.9 nats
+    ep 10  code error 0.3694  KL 72.5 nats
+rebuild real       pixel error 0.0000   sharpness 0.0607
+rebuild blur       pixel error 0.0192   sharpness 0.0126
+rebuild from_blur  pixel error 0.0203   sharpness 0.0119
+rebuild mean       pixel error 0.0205   sharpness 0.0114
+rebuild sample     pixel error 0.0228   sharpness 0.0114
+rebuild nearest    pixel error 0.0328   sharpness 0.0162
+rebuild from_real  pixel error 0.0088   sharpness 0.0173
+(52s)
+imagined faces: sharpness coarse 0.0091  from_blur 0.0077  sample 0.0083  nearest 0.0119  two samples differ by 0.0370
+40x32 window decoder, by mismatch:
+    ep 1  pixel mismatch 0.1833
+    ep 2  pixel mismatch 0.0130
+    ep 3  pixel mismatch 0.0079
+    ep 4  pixel mismatch 0.0059
+32910 window pairs of 40x32  (150s)
+    ep 1  code error 0.6095  KL 24.6 nats
+    ep 2  code error 0.4881  KL 55.3 nats
+    ep 3  code error 0.4437  KL 68.2 nats
+    ep 4  code error 0.4153  KL 75.5 nats
+    ep 5  code error 0.3948  KL 80.6 nats
+    ep 6  code error 0.3791  KL 84.1 nats
+    ep 7  code error 0.3662  KL 86.7 nats
+    ep 8  code error 0.3559  KL 88.7 nats
+    ep 9  code error 0.3471  KL 90.2 nats
+    ep 10  code error 0.3394  KL 91.5 nats
+fix 80x64 hard       from_blur err 0.0203 sharp 0.0119   sample err 0.0227 sharp 0.0114   from_real err 0.0088 sharp 0.0173
+fix 80x64 feathered  from_blur err 0.0204 sharp 0.0077   sample err 0.0228 sharp 0.0076   from_real err 0.0090 sharp 0.0130
+fix 40x32 hard       from_blur err 0.0193 sharp 0.0128   sample err 0.0220 sharp 0.0155   from_real err 0.0038 sharp 0.0237
+fix 40x32 feathered  from_blur err 0.0192 sharp 0.0078   sample err 0.0231 sharp 0.0095   from_real err 0.0038 sharp 0.0190
+imagined, fixed: sharpness coarse 0.0091  80x64 feathered, from_blur 0.0047  80x64 feathered, sample 0.0056  40x32 feathered, from_blur 0.0051  40x32 feathered, sample 0.0076  (290s)
+# Results
+
+Unique: a Gaussian over the real top codes.  The 64-component version keeps 0.52 of the variance.
+Mean pixel distance between rendered faces (diversity): real renders 0.259, diag 0.079, pca64 0.168
+
+Rebuild of 1000 test faces from nine windows.  Pixel error to the real face; sharpness = mean absolute Laplacian.
+
+| way | pixel error | sharpness |
+|---|---|---|
+| real | 0.0000 | 0.0607 |
+| blur | 0.0192 | 0.0126 |
+| from_blur | 0.0203 | 0.0119 |
+| mean | 0.0205 | 0.0114 |
+| sample | 0.0228 | 0.0114 |
+| nearest | 0.0328 | 0.0162 |
+| from_real | 0.0088 | 0.0173 |
+
+Imagined faces (pca64 samples): sharpness coarse 0.0091, from_blur 0.0077, sample 0.0083, nearest 0.0119, two samples differ by 0.0370.
+
+## Two fixes: feathered blending, and 40x32 windows on a 7x7 grid
+
+| windows | source | pixel error | sharpness |
+|---|---|---|---|
+| 80x64 hard | from_blur | 0.0203 | 0.0119 |
+| 80x64 hard | sample | 0.0227 | 0.0114 |
+| 80x64 hard | from_real | 0.0088 | 0.0173 |
+| 80x64 feathered | from_blur | 0.0204 | 0.0077 |
+| 80x64 feathered | sample | 0.0228 | 0.0076 |
+| 80x64 feathered | from_real | 0.0090 | 0.0130 |
+| 40x32 hard | from_blur | 0.0193 | 0.0128 |
+| 40x32 hard | sample | 0.0220 | 0.0155 |
+| 40x32 hard | from_real | 0.0038 | 0.0237 |
+| 40x32 feathered | from_blur | 0.0192 | 0.0078 |
+| 40x32 feathered | sample | 0.0231 | 0.0095 |
+| 40x32 feathered | from_real | 0.0038 | 0.0190 |
+
+Imagined faces, fixed: sharpness coarse 0.0091, 80x64 feathered, from_blur 0.0047, 80x64 feathered, sample 0.0056, 40x32 feathered, from_blur 0.0051, 40x32 feathered, sample 0.0076.
+done in 293s

@@ -1,0 +1,21 @@
+judge 0.9884, forward 0.9855 on real test digits  (9s)
+    decoder for windows of 32: final mismatch pixels 0.0031  L1 0.0068  L2 0.0426
+    decoder for windows of 16: final mismatch pixels 0.0021  L1 0.0036  L2 0.0314
+    decoder for windows of 8: final mismatch pixels 0.0013  L1 0.0026  L2 0.0104
+decoders trained  (37s)
+whole       1 windows   mse 0.0159   judge 0.952 / 0.953
+tiles16     4 windows   mse 0.0128   judge 0.973 / 0.973
+overlap16   9 windows   mse 0.0106   judge 0.983 / 0.983
+tiles8     16 windows   mse 0.0040   judge 0.985 / 0.985
+# Results
+
+Judge 0.9884, forward 0.9855 on real test digits.  mse = pixel error of the composite to the original;
+judge = fraction of composites named correctly, as rendered / brightness-normalised.
+
+| window set | windows | window size | mse | judge |
+|---|---|---|---|---|
+| whole | 1 | 32 | 0.0159 | 0.952 / 0.953 |
+| tiles16 | 4 | 16 | 0.0128 | 0.973 / 0.973 |
+| overlap16 | 9 | 16 | 0.0106 | 0.983 / 0.983 |
+| tiles8 | 16 | 8 | 0.0040 | 0.985 / 0.985 |
+done in 44s

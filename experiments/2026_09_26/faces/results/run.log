@@ -1,0 +1,79 @@
+32910 training faces, 5000 test faces, crop 160x128, cuda
+loaded trained nets from nets.pt
+forward: 0.8378 balanced accuracy on real test faces
+recon: pixel error 0.0190; own head on renders 0.6585 (real 0.8378); mouth region error whole 0.0161 vs attended 0.0101  (8s)
+concept Male              present: P(Male)=0.86   absent: P(Male)=0.00
+concept Smiling           present: P(Smiling)=0.93   absent: P(Smiling)=0.07
+concept Eyeglasses        present: P(Eyeglasses)=0.81   absent: P(Eyeglasses)=0.00
+concept Mustache          present: P(Mustache)=0.42   absent: P(Mustache)=0.00
+concept Blond_Hair        present: P(Blond_Hair)=0.94   absent: P(Blond_Hair)=0.46
+concept Wearing_Hat       present: P(Wearing_Hat)=0.03   absent: P(Wearing_Hat)=0.00
+concept Bald              present: P(Bald)=0.69   absent: P(Bald)=0.00
+concept Young             present: P(Young)=0.56   absent: P(Young)=0.26
+concept Wearing_Lipstick  present: P(Wearing_Lipstick)=0.39   absent: P(Wearing_Lipstick)=0.01
+compose woman            P(Male)=0.00  P(Mustache)=0.00  P(No_Beard)=1.00
+compose man + mustache   P(Male)=0.99  P(Mustache)=0.42  P(No_Beard)=0.07
+compose arith            P(Male)=0.00  P(Mustache)=0.00  P(No_Beard)=1.00
+compose arith x3         P(Male)=0.73  P(Mustache)=0.74  P(No_Beard)=0.04
+compose grid             P(Male)=0.00  P(Mustache)=0.00  P(No_Beard)=1.00
+compose window           P(Male)=0.06  P(Mustache)=0.00  P(No_Beard)=0.92
+compose window x3        P(Male)=0.84  P(Mustache)=0.94  P(No_Beard)=0.01
+compose replace          P(Male)=0.62  P(Mustache)=0.06  P(No_Beard)=0.50
+real women: P(Male)=0.06 P(Mustache)=0.01;  real men with mustache: P(Male)=0.99 P(Mustache)=0.84
+locate dy= +0 dx= +0: mouth row 3, found row in 0.96, cell within one of 0.96; rows found [2, 3, 0, 289, 6]
+locate dy= +0 dx=-20: mouth row 3, found row in 0.95, cell within one of 0.95; rows found [0, 4, 1, 286, 9]
+locate dy= +0 dx=+20: mouth row 3, found row in 0.97, cell within one of 0.96; rows found [0, 2, 0, 291, 7]
+locate dy=-24 dx= +0: mouth row 4, found row in 0.19, cell within one of 0.17; rows found [1, 11, 48, 183, 57]
+locate dy=+24 dx= +0: mouth row 3, found row in 0.01, cell within one of 0.01; rows found [0, 3, 275, 4, 18]
+# Results
+
+Forward stack: 0.8378 balanced accuracy on real test faces (40 attributes, mean).
+
+## Reconstruction from the top map alone
+
+- pixel error 0.0190
+- the stack's own head on the renders: 0.6585 balanced accuracy against the true attributes (real faces 0.8378)
+- mouth region pixel error: whole render 0.0161, mouth window attended and rendered 0.0101
+
+## Concept renders: the head's probability of the attribute on the render
+
+| attribute | render of faces with it | render of faces without it |
+|---|---|---|
+| Male | 0.86 | 0.00 |
+| Smiling | 0.93 | 0.07 |
+| Eyeglasses | 0.81 | 0.00 |
+| Mustache | 0.42 | 0.00 |
+| Blond_Hair | 0.94 | 0.46 |
+| Wearing_Hat | 0.03 | 0.00 |
+| Bald | 0.69 | 0.00 |
+| Young | 0.56 | 0.26 |
+| Wearing_Lipstick | 0.39 | 0.01 |
+
+## Woman + mustache
+
+| render | P(Male) | P(Mustache) |
+|---|---|---|
+| woman | 0.00 | 0.00 |
+| man + mustache | 0.99 | 0.42 |
+| arith | 0.00 | 0.00 |
+| arith x3 | 0.73 | 0.74 |
+| grid | 0.00 | 0.00 |
+| window | 0.06 | 0.00 |
+| window x3 | 0.84 | 0.94 |
+| replace | 0.62 | 0.06 |
+| real women | 0.06 | 0.01 |
+| real men w/ mustache | 0.99 | 0.84 |
+
+## Finding the mouth from the face's own map (300 test women, shifted)
+
+Cosine of a mouth signature (mean feature vector at the mouth cells of aligned training faces) against every top-map cell; the best cell is the mouth.
+row hit = the found cell is in the row holding the mouth line; cell hit = and within one column.  found rows = how many of the 300 landed in each of the five rows.
+
+| shift | mouth row | row hit | cell hit | found rows |
+|---|---|---|---|---|
+| dy=+0 dx=+0 | 3 | 0.96 | 0.96 | [2, 3, 0, 289, 6] |
+| dy=+0 dx=-20 | 3 | 0.95 | 0.95 | [0, 4, 1, 286, 9] |
+| dy=+0 dx=+20 | 3 | 0.97 | 0.96 | [0, 2, 0, 291, 7] |
+| dy=-24 dx=+0 | 4 | 0.19 | 0.17 | [1, 11, 48, 183, 57] |
+| dy=+24 dx=+0 | 3 | 0.01 | 0.01 | [0, 3, 275, 4, 18] |
+done in 18s

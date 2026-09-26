@@ -1,0 +1,68 @@
+judge 0.9880 on real test digits  (7s)
+labels:
+    forward by labels: 0.9858 on real test digits
+    ep 1  mismatch  pixels 0.0238  L1 0.0161  L2 0.1027
+    ep 2  mismatch  pixels 0.0053  L1 0.0079  L2 0.0502
+    ep 3  mismatch  pixels 0.0041  L1 0.0072  L2 0.0458
+    ep 4  mismatch  pixels 0.0035  L1 0.0069  L2 0.0444
+    ep 5  mismatch  pixels 0.0030  L1 0.0067  L2 0.0439
+    ep 6  mismatch  pixels 0.0028  L1 0.0067  L2 0.0436
+    ep 7  mismatch  pixels 0.0025  L1 0.0066  L2 0.0435
+    ep 8  mismatch  pixels 0.0024  L1 0.0066  L2 0.0434
+    readout 0.9888  recon 0.950  concept 1.0  code 0.96 (floor 0.65)  alive 0.92  activity 1.111  (27s)
+random:
+    ep 1  mismatch  pixels 0.0334  L1 0.0110  L2 0.0024
+    ep 2  mismatch  pixels 0.0106  L1 0.0079  L2 0.0020
+    ep 3  mismatch  pixels 0.0066  L1 0.0077  L2 0.0020
+    ep 4  mismatch  pixels 0.0052  L1 0.0076  L2 0.0019
+    ep 5  mismatch  pixels 0.0044  L1 0.0076  L2 0.0019
+    ep 6  mismatch  pixels 0.0039  L1 0.0075  L2 0.0019
+    ep 7  mismatch  pixels 0.0037  L1 0.0075  L2 0.0019
+    ep 8  mismatch  pixels 0.0035  L1 0.0075  L2 0.0019
+    readout 0.8622  recon 0.855  concept 1.0  code 0.97 (floor 0.95)  alive 0.94  activity 0.042  (43s)
+agree:
+    ep 1  mismatch  pixels 0.0818  L1 0.0029  L2 0.0001
+    ep 2  mismatch  pixels 0.0745  L1 0.0001  L2 0.0000
+    ep 3  mismatch  pixels 0.0745  L1 0.0000  L2 0.0000
+    ep 4  mismatch  pixels 0.0746  L1 0.0000  L2 0.0000
+    ep 5  mismatch  pixels 0.0745  L1 0.0000  L2 0.0000
+    ep 6  mismatch  pixels 0.0745  L1 0.0000  L2 0.0000
+    ep 7  mismatch  pixels 0.0745  L1 0.0000  L2 0.0000
+    ep 8  mismatch  pixels 0.0744  L1 0.0000  L2 0.0000
+    readout 0.1135  recon 0.114  concept 0.1  code 1.00 (floor 1.00)  alive 0.00  activity 0.001  (67s)
+reconstruct:
+    ep 1  mismatch  pixels 0.0055  L1 0.0046  L2 0.0082
+    ep 2  mismatch  pixels 0.0014  L1 0.0047  L2 0.0045
+    ep 3  mismatch  pixels 0.0009  L1 0.0069  L2 0.0040
+    ep 4  mismatch  pixels 0.0008  L1 0.0076  L2 0.0034
+    ep 5  mismatch  pixels 0.0007  L1 0.0073  L2 0.0030
+    ep 6  mismatch  pixels 0.0006  L1 0.0053  L2 0.0029
+    ep 7  mismatch  pixels 0.0005  L1 0.0035  L2 0.0023
+    ep 8  mismatch  pixels 0.0005  L1 0.0034  L2 0.0021
+    readout 0.9384  recon 0.949  concept 1.0  code 0.98 (floor 0.92)  alive 0.81  activity 0.211  (101s)
+both:
+    ep 1  mismatch  pixels 0.0058  L1 0.0030  L2 0.0005
+    ep 2  mismatch  pixels 0.0014  L1 0.0006  L2 0.0001
+    ep 3  mismatch  pixels 0.0010  L1 0.0004  L2 0.0001
+    ep 4  mismatch  pixels 0.0008  L1 0.0003  L2 0.0001
+    ep 5  mismatch  pixels 0.0007  L1 0.0002  L2 0.0000
+    ep 6  mismatch  pixels 0.0006  L1 0.0002  L2 0.0000
+    ep 7  mismatch  pixels 0.0005  L1 0.0001  L2 0.0000
+    ep 8  mismatch  pixels 0.0005  L1 0.0001  L2 0.0000
+    readout 0.6441  recon 0.888  concept 0.9  code 1.00 (floor 1.00)  alive 0.66  activity 0.014  (140s)
+# Results
+
+Judge on real test digits: 0.9880.  One seed, 8 epochs.
+
+readout = linear classifier trained on the frozen top map afterwards (the only place labels enter, as a measurement).
+recon = judge on the render from the top map alone, as rendered / brightness-normalised.  concept = judge on the ten class-mean renders.
+code = cosine between the top map and the top map recomputed from its render (floor: shuffled).  alive = fraction of top channels that vary.
+
+| forward trained by | readout | recon | recon mse | concept | code (floor) | alive | activity |
+|---|---|---|---|---|---|---|---|
+| labels | 0.9888 | 0.950 / 0.950 | 0.0153 | 1.0 / 1.0 | 0.96 (0.65) | 0.92 | 1.111 |
+| random | 0.8622 | 0.854 / 0.855 | 0.0272 | 1.0 / 1.0 | 0.97 (0.95) | 0.94 | 0.042 |
+| agree | 0.1135 | 0.114 / 0.114 | 0.0756 | 0.1 / 0.1 | 1.00 (1.00) | 0.00 | 0.001 |
+| reconstruct | 0.9384 | 0.947 / 0.949 | 0.0200 | 1.0 / 1.0 | 0.98 (0.92) | 0.81 | 0.211 |
+| both | 0.6441 | 0.888 / 0.888 | 0.0161 | 0.9 / 0.9 | 1.00 (1.00) | 0.66 | 0.014 |
+done in 143s

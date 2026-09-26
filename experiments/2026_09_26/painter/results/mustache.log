@@ -1,0 +1,21 @@
+library: 1000 faces, 34 of them with a mustache  (12s)
+  4 arms, batch done  (58s)
+  4 arms, batch done  (96s)
+real women               P(Male) 0.06   P(Mustache) 0.01   P(No_Beard) 0.98
+plain                    P(Male) 0.05   P(Mustache) 0.00   P(No_Beard) 0.99
+parts                    P(Male) 0.06   P(Mustache) 0.01   P(No_Beard) 0.97
+parts+goal               P(Male) 0.11   P(Mustache) 0.11   P(No_Beard) 0.76
+real men with mustache   P(Male) 0.98   P(Mustache) 0.85   P(No_Beard) 0.07
+imagined done  (105s)
+# A mustache for a woman
+
+100 test women as goals.  The stack's own head on the finished canvas.
+
+| painting | P(Male) | P(Mustache) | P(No_Beard) |
+|---|---|---|---|
+| real women | 0.06 | 0.01 | 0.98 |
+| plain | 0.05 | 0.00 | 0.99 |
+| parts | 0.06 | 0.01 | 0.97 |
+| parts+goal | 0.11 | 0.11 | 0.76 |
+| real men with mustache | 0.98 | 0.85 | 0.07 |
+done in 106s
