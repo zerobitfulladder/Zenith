@@ -1,0 +1,702 @@
+{
+ "setup": {
+  "K": 400,
+  "stride": 2,
+  "grid": 6,
+  "n_learn": 50000,
+  "n_names": 300,
+  "rounds": 3
+ },
+ "baseline": {
+  "test": 0.9725,
+  "choose": 0.9752,
+  "learn": 0.97424,
+  "tokens_per_image": 81.6689,
+  "table_rows": 14400,
+  "median_margin": 70.91849517822266,
+  "median_margin_per_token": 0.8742405936053899
+ },
+ "baseline_stride1": {
+  "test": 0.9771,
+  "tokens_per_image": 329.9393
+ },
+ "store": {
+  "freq_replace_300": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9738,
+    "choose": 0.9764,
+    "tokens_per_image": 68.4881,
+    "names": 300,
+    "vocab": 700,
+    "accepted_per_image": 13.1808
+   },
+   {
+    "round": 2,
+    "test": 0.9729,
+    "choose": 0.9755,
+    "tokens_per_image": 60.5742,
+    "names": 300,
+    "vocab": 1000,
+    "accepted_per_image": 7.9139
+   },
+   {
+    "round": 3,
+    "test": 0.9707,
+    "choose": 0.975,
+    "tokens_per_image": 55.9323,
+    "names": 300,
+    "vocab": 1300,
+    "accepted_per_image": 4.6419
+   }
+  ],
+  "gain_replace_300": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9728,
+    "choose": 0.9749,
+    "tokens_per_image": 71.4733,
+    "names": 300,
+    "vocab": 700,
+    "accepted_per_image": 10.1956
+   },
+   {
+    "round": 2,
+    "test": 0.9713,
+    "choose": 0.9758,
+    "tokens_per_image": 64.8797,
+    "names": 300,
+    "vocab": 1000,
+    "accepted_per_image": 6.5936
+   },
+   {
+    "round": 3,
+    "test": 0.9718,
+    "choose": 0.9742,
+    "tokens_per_image": 60.3597,
+    "names": 300,
+    "vocab": 1300,
+    "accepted_per_image": 4.52
+   }
+  ],
+  "freq_add_300": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9722,
+    "choose": 0.9741,
+    "tokens_per_image": 94.8497,
+    "names": 300,
+    "vocab": 700,
+    "accepted_per_image": 13.1808
+   }
+  ],
+  "gain_add_300": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9726,
+    "choose": 0.9752,
+    "tokens_per_image": 91.8645,
+    "names": 300,
+    "vocab": 700,
+    "accepted_per_image": 10.1956
+   }
+  ],
+  "freq_replace_1000": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9734,
+    "choose": 0.9756,
+    "tokens_per_image": 59.1633,
+    "names": 1000,
+    "vocab": 1400,
+    "accepted_per_image": 22.5056
+   }
+  ],
+  "freq_add_1000": [
+   {
+    "round": 0,
+    "test": 0.9725,
+    "tokens_per_image": 81.6689,
+    "names": 0,
+    "vocab": 400,
+    "accepted_per_image": 0.0
+   },
+   {
+    "round": 1,
+    "test": 0.9708,
+    "choose": 0.974,
+    "tokens_per_image": 104.1745,
+    "names": 1000,
+    "vocab": 1400,
+    "accepted_per_image": 22.5056
+   }
+  ]
+ },
+ "substitute": {
+  "singles": {
+   "chosen": {
+    "cost": 0.0,
+    "trigger": null,
+    "choose": 0.9766,
+    "test": 0.9737
+   },
+   "flipped_right": 26,
+   "flipped_wrong": 14,
+   "moves_taken_frac": 0.25,
+   "oracle": 0.9959,
+   "free_moves_no_cost": 0.9774,
+   "grid": {
+    "cost 0 trigger inf": {
+     "choose": 0.9766,
+     "test": 0.9737
+    },
+    "cost 0 trigger 0.4": {
+     "choose": 0.9766,
+     "test": 0.9738
+    },
+    "cost 0 trigger 0.2": {
+     "choose": 0.9763,
+     "test": 0.9738
+    },
+    "cost 0 trigger 0.1": {
+     "choose": 0.9761,
+     "test": 0.9733
+    },
+    "cost 0 trigger 0.05": {
+     "choose": 0.9762,
+     "test": 0.9732
+    },
+    "cost 0.02 trigger inf": {
+     "choose": 0.9763,
+     "test": 0.9737
+    },
+    "cost 0.02 trigger 0.4": {
+     "choose": 0.9763,
+     "test": 0.9737
+    },
+    "cost 0.02 trigger 0.2": {
+     "choose": 0.976,
+     "test": 0.9738
+    },
+    "cost 0.02 trigger 0.1": {
+     "choose": 0.9758,
+     "test": 0.9733
+    },
+    "cost 0.02 trigger 0.05": {
+     "choose": 0.9759,
+     "test": 0.9732
+    },
+    "cost 0.05 trigger inf": {
+     "choose": 0.9762,
+     "test": 0.9732
+    },
+    "cost 0.05 trigger 0.4": {
+     "choose": 0.9762,
+     "test": 0.9732
+    },
+    "cost 0.05 trigger 0.2": {
+     "choose": 0.9759,
+     "test": 0.9732
+    },
+    "cost 0.05 trigger 0.1": {
+     "choose": 0.9758,
+     "test": 0.9731
+    },
+    "cost 0.05 trigger 0.05": {
+     "choose": 0.9759,
+     "test": 0.9731
+    },
+    "cost 0.1 trigger inf": {
+     "choose": 0.9763,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.4": {
+     "choose": 0.9763,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.2": {
+     "choose": 0.976,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.1": {
+     "choose": 0.9759,
+     "test": 0.9726
+    },
+    "cost 0.1 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9727
+    },
+    "cost 0.2 trigger inf": {
+     "choose": 0.9762,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.4": {
+     "choose": 0.9762,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.2": {
+     "choose": 0.9759,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.1": {
+     "choose": 0.9759,
+     "test": 0.9729
+    },
+    "cost 0.2 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9728
+    },
+    "cost 0.4 trigger inf": {
+     "choose": 0.9757,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.4": {
+     "choose": 0.9757,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.2": {
+     "choose": 0.9756,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.1": {
+     "choose": 0.9755,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.05": {
+     "choose": 0.9755,
+     "test": 0.9726
+    }
+   },
+   "U": {
+    "none": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "deskew": [
+     -0.064,
+     0.186,
+     0.069,
+     -0.001,
+     -0.009,
+     -0.156,
+     0.066,
+     0.02,
+     -0.063,
+     -0.007
+    ],
+    "thin": [
+     -0.43,
+     -0.592,
+     -0.369,
+     -0.324,
+     -0.342,
+     -0.305,
+     -0.535,
+     -0.331,
+     -0.463,
+     -0.401
+    ],
+    "thicken": [
+     -0.376,
+     -0.501,
+     -0.311,
+     -0.305,
+     -0.263,
+     -0.291,
+     -0.367,
+     -0.256,
+     -0.368,
+     -0.283
+    ],
+    "shift_up": [
+     -0.888,
+     -0.677,
+     -0.726,
+     -0.677,
+     -0.513,
+     -0.513,
+     -0.883,
+     -0.784,
+     -0.805,
+     -0.685
+    ],
+    "shift_down": [
+     -0.565,
+     -0.833,
+     -0.592,
+     -0.536,
+     -0.673,
+     -0.493,
+     -0.898,
+     -0.79,
+     -0.667,
+     -0.745
+    ],
+    "shift_left": [
+     -0.707,
+     -1.222,
+     -0.453,
+     -0.4,
+     -0.478,
+     -0.468,
+     -0.648,
+     -0.396,
+     -0.462,
+     -0.456
+    ],
+    "shift_right": [
+     -0.848,
+     -1.61,
+     -0.36,
+     -0.459,
+     -0.368,
+     -0.399,
+     -0.424,
+     -0.423,
+     -0.345,
+     -0.334
+    ],
+    "scale_up": [
+     -0.113,
+     -0.159,
+     -0.101,
+     -0.088,
+     -0.105,
+     -0.106,
+     -0.194,
+     -0.149,
+     -0.106,
+     -0.116
+    ],
+    "scale_down": [
+     -0.222,
+     -0.214,
+     -0.142,
+     -0.148,
+     -0.22,
+     -0.13,
+     -0.199,
+     -0.172,
+     -0.183,
+     -0.204
+    ]
+   }
+  },
+  "singles+pairs": {
+   "chosen": {
+    "cost": 0.05,
+    "trigger": null,
+    "choose": 0.9762,
+    "test": 0.9733
+   },
+   "flipped_right": 14,
+   "flipped_wrong": 6,
+   "moves_taken_frac": 0.1618,
+   "oracle": 0.9987,
+   "free_moves_no_cost": 0.9722,
+   "grid": {
+    "cost 0 trigger inf": {
+     "choose": 0.976,
+     "test": 0.9737
+    },
+    "cost 0 trigger 0.4": {
+     "choose": 0.976,
+     "test": 0.9737
+    },
+    "cost 0 trigger 0.2": {
+     "choose": 0.9756,
+     "test": 0.9738
+    },
+    "cost 0 trigger 0.1": {
+     "choose": 0.976,
+     "test": 0.9736
+    },
+    "cost 0 trigger 0.05": {
+     "choose": 0.9759,
+     "test": 0.9732
+    },
+    "cost 0.02 trigger inf": {
+     "choose": 0.9761,
+     "test": 0.9737
+    },
+    "cost 0.02 trigger 0.4": {
+     "choose": 0.9761,
+     "test": 0.9737
+    },
+    "cost 0.02 trigger 0.2": {
+     "choose": 0.9757,
+     "test": 0.9738
+    },
+    "cost 0.02 trigger 0.1": {
+     "choose": 0.9758,
+     "test": 0.9736
+    },
+    "cost 0.02 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9734
+    },
+    "cost 0.05 trigger inf": {
+     "choose": 0.9762,
+     "test": 0.9733
+    },
+    "cost 0.05 trigger 0.4": {
+     "choose": 0.9762,
+     "test": 0.9733
+    },
+    "cost 0.05 trigger 0.2": {
+     "choose": 0.9758,
+     "test": 0.9733
+    },
+    "cost 0.05 trigger 0.1": {
+     "choose": 0.9758,
+     "test": 0.9732
+    },
+    "cost 0.05 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9731
+    },
+    "cost 0.1 trigger inf": {
+     "choose": 0.9762,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.4": {
+     "choose": 0.9762,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.2": {
+     "choose": 0.9759,
+     "test": 0.9727
+    },
+    "cost 0.1 trigger 0.1": {
+     "choose": 0.9759,
+     "test": 0.9726
+    },
+    "cost 0.1 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9727
+    },
+    "cost 0.2 trigger inf": {
+     "choose": 0.9762,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.4": {
+     "choose": 0.9762,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.2": {
+     "choose": 0.9759,
+     "test": 0.973
+    },
+    "cost 0.2 trigger 0.1": {
+     "choose": 0.9759,
+     "test": 0.9729
+    },
+    "cost 0.2 trigger 0.05": {
+     "choose": 0.9758,
+     "test": 0.9728
+    },
+    "cost 0.4 trigger inf": {
+     "choose": 0.9757,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.4": {
+     "choose": 0.9757,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.2": {
+     "choose": 0.9756,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.1": {
+     "choose": 0.9755,
+     "test": 0.9726
+    },
+    "cost 0.4 trigger 0.05": {
+     "choose": 0.9755,
+     "test": 0.9726
+    }
+   },
+   "U": {
+    "none": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "deskew": [
+     -0.064,
+     0.186,
+     0.069,
+     -0.001,
+     -0.009,
+     -0.156,
+     0.066,
+     0.02,
+     -0.063,
+     -0.007
+    ],
+    "thin": [
+     -0.43,
+     -0.592,
+     -0.369,
+     -0.324,
+     -0.342,
+     -0.305,
+     -0.535,
+     -0.331,
+     -0.463,
+     -0.401
+    ],
+    "thicken": [
+     -0.376,
+     -0.501,
+     -0.311,
+     -0.305,
+     -0.263,
+     -0.291,
+     -0.367,
+     -0.256,
+     -0.368,
+     -0.283
+    ],
+    "shift_up": [
+     -0.888,
+     -0.677,
+     -0.726,
+     -0.677,
+     -0.513,
+     -0.513,
+     -0.883,
+     -0.784,
+     -0.805,
+     -0.685
+    ],
+    "shift_down": [
+     -0.565,
+     -0.833,
+     -0.592,
+     -0.536,
+     -0.673,
+     -0.493,
+     -0.898,
+     -0.79,
+     -0.667,
+     -0.745
+    ],
+    "shift_left": [
+     -0.707,
+     -1.222,
+     -0.453,
+     -0.4,
+     -0.478,
+     -0.468,
+     -0.648,
+     -0.396,
+     -0.462,
+     -0.456
+    ],
+    "shift_right": [
+     -0.848,
+     -1.61,
+     -0.36,
+     -0.459,
+     -0.368,
+     -0.399,
+     -0.424,
+     -0.423,
+     -0.345,
+     -0.334
+    ],
+    "scale_up": [
+     -0.113,
+     -0.159,
+     -0.101,
+     -0.088,
+     -0.105,
+     -0.106,
+     -0.194,
+     -0.149,
+     -0.106,
+     -0.116
+    ],
+    "scale_down": [
+     -0.222,
+     -0.214,
+     -0.142,
+     -0.148,
+     -0.22,
+     -0.13,
+     -0.199,
+     -0.172,
+     -0.183,
+     -0.204
+    ]
+   }
+  }
+ },
+ "always": {
+  "deskew": 0.9766,
+  "thin": 0.9658,
+  "thicken": 0.9679,
+  "shift_up": 0.9717,
+  "shift_down": 0.9717,
+  "shift_left": 0.9733,
+  "shift_right": 0.9734,
+  "scale_up": 0.973,
+  "scale_down": 0.9736
+ }
+}

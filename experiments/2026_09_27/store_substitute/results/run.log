@@ -1,0 +1,28 @@
+data: learn 50000, choose 10000, test 10000; device cuda
+palette: 400 templates from 500000 patches, 0 reseeded at the end
+arm 1 baseline, stride 2: test 0.9725  tokens/image 81.7  median margin 70.9   [1s]
+       stride 1 reference: test 0.9771  tokens/image 329.9
+arm 2 store/freq/replace/300 round 1: test 0.9738  tokens/image 68.5  names 300  vocab 700  pairs replaced/image 13.2   [10s]
+arm 2 store/freq/replace/300 round 2: test 0.9729  tokens/image 60.6  names 300  vocab 1000  pairs replaced/image 7.9   [15s]
+arm 2 store/freq/replace/300 round 3: test 0.9707  tokens/image 55.9  names 300  vocab 1300  pairs replaced/image 4.6   [18s]
+arm 2 store/gain/replace/300 round 1: test 0.9728  tokens/image 71.5  names 300  vocab 700  pairs replaced/image 10.2   [25s]
+arm 2 store/gain/replace/300 round 2: test 0.9713  tokens/image 64.9  names 300  vocab 1000  pairs replaced/image 6.6   [29s]
+arm 2 store/gain/replace/300 round 3: test 0.9718  tokens/image 60.4  names 300  vocab 1300  pairs replaced/image 4.5   [33s]
+arm 2 store/freq/add/300 round 1: test 0.9722  tokens/image 94.8  names 300  vocab 700  pairs replaced/image 13.2   [40s]
+arm 2 store/gain/add/300 round 1: test 0.9726  tokens/image 91.9  names 300  vocab 700  pairs replaced/image 10.2   [46s]
+arm 2 store/freq/replace/1000 round 1: test 0.9734  tokens/image 59.2  names 1000  vocab 1400  pairs replaced/image 22.5   [57s]
+arm 2 store/freq/add/1000 round 1: test 0.9708  tokens/image 104.2  names 1000  vocab 1400  pairs replaced/image 22.5   [68s]
+arm 3: 45 moved versions of every image (9 single moves, 36 pairs)
+       scored   [109s]
+arm 3 substitute, menu singles: chosen cost 0 trigger inf -> test 0.9737  (baseline 0.9725; flipped right 26, wrong 14; moves taken on 25.0%; oracle 0.9959; every move free 0.9774)   [109s]
+arm 3 substitute, menu singles+pairs: chosen cost 0.05 trigger inf -> test 0.9733  (baseline 0.9725; flipped right 14, wrong 6; moves taken on 16.2%; oracle 0.9987; every move free 0.9722)   [111s]
+control always-deskew: test 0.9766
+control always-thin: test 0.9658
+control always-thicken: test 0.9679
+control always-shift_up: test 0.9717
+control always-shift_down: test 0.9717
+control always-shift_left: test 0.9733
+control always-shift_right: test 0.9734
+control always-scale_up: test 0.9730
+control always-scale_down: test 0.9736
+done   [119s]

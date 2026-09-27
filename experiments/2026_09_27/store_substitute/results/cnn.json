@@ -1,0 +1,16 @@
+{
+ "cnn": {
+  "parameters": 118346,
+  "choose": 0.9896999597549438,
+  "test": 0.9907999634742737,
+  "epoch": 8,
+  "seconds": 7
+ },
+ "linear": {
+  "parameters": 7850,
+  "choose": 0.9281999468803406,
+  "test": 0.9241999983787537,
+  "epoch": 8,
+  "seconds": 2
+ }
+}

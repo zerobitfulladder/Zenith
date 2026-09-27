@@ -116,6 +116,11 @@ a README with the full writeup, and a `results/` folder.
   keeps what makes the whole read as the goal gives sharp, consistent faces, a faint mustache
   on a woman who stays a woman, and, with only lines and ovals, a drawing in the stack's own
   style.
+- [**2026-09-27**](experiments/2026_09_27/) — Search in place of the stack, in conversation:
+  a palette, the actions compose, store and substitute, values distributed along the path
+  instead of weights. The flat test of two actions on full MNIST: naming pairs compressed the
+  description and added nothing, and choosing a move per goal was beaten by applying the
+  same move to every image. The search was not built.
 
 ---
 
