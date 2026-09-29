@@ -17,3 +17,6 @@ data/
 *.pt
 *.joblib
 checkpoint*
+
+# Experiment records read out of the READMEs, kept for redrawing the overview chart
+catalog/

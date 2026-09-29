@@ -1,23 +1,74 @@
 # Zenith
 
-A personal research project on learning without gradients.
+An exploration of learning algorithms. The questions behind them: can a system learn locally,
+keep what it learned when new things arrive, and both recognise and generate from the same
+memory? Every experiment keeps its code, its numbers and a written reading, including the ideas
+that failed.
 
-A layer is a set of stored patterns, called **templates**, each a unit-length vector. Templates
-compete for every input, and only the ones that win move a little toward what they saw, by
-rotating on the unit sphere. Everything the system knows is read back out of those same
-templates: what an input is, what it looks like, and what comes next. There is no loss
-function, no backpropagation and no batch. Inputs arrive one at a time, and learning something
-new should not erase what was learned before.
-
-The words are borrowed from the cortex. A template is also called a **minicolumn**; a
-**hypercolumn** is a group of templates competing over the same input; a **layer** is one or
-more hypercolumns. The goal is for each template to mean something on its own (a stroke, a
-part, a whole digit, a moment in time), and for more precision to come from more templates
-rather than from denser codes.
+![The directions explored, and the techniques each one borrowed](figures/explored_dark.png)
 
 ---
 
-## Highlights
+## What I found so far
+
+- **Learning without forgetting works when only the winner learns.** Taught digits 0–4 and then
+  5–9, a layer where only the winning group of templates learns kept the old digits at 0.9526
+  (from 0.9757). A standard network trained the same way fell to 0.0000.
+  [`2026_08_31/continual_fixed/`](experiments/2026_08_31/continual_fixed/)
+- **Counting what wins did better than stacking layers.** One wide layer of 5x5 patch templates,
+  read by counting which templates won for which digit, reaches 0.9730 on MNIST with nothing
+  fitted, and 0.9869 with one linear map on top (0.8989 on Fashion-MNIST). Nothing stacked on
+  top of it did better. A CNN still leads, at 0.9908.
+  [`2026_09_01/stack/`](experiments/2026_09_01/stack/)
+- **Top-down feedback did not help recognition.** In March the stack without feedback read MNIST
+  better in all five feedback settings, and in August the line was tested again and closed.
+  Feedback came back as a decoder learned from local mismatch, where it earns its place in
+  drawing rather than naming. [`2026_03_20/`](experiments/2026_03_20/),
+  [`2026_08_23/`](experiments/2026_08_23/), [`2026_09_26/`](experiments/2026_09_26/)
+- **In control, a slow counted memory steering a fast reflex works; reward alone did not.** The
+  cascade chases a target in 100 of 100 episodes. Learning a drone policy from reward alone
+  left it worse than it started: success 0.000 after 8,000 episodes, against 0.942 for the
+  teacher. [`2026_08_29/cascade/`](experiments/2026_08_29/cascade/),
+  [`2026_08_31/drone_rl/`](experiments/2026_08_31/drone_rl/)
+- **Recognition as a search for an explanation: promising, not yet ahead.** Causes built as trees
+  of Gaussian splats, each keeping how far its parts may vary, name MNIST digits at 0.9593 with
+  nothing fitted by gradient, and draw each digit from its label. That beats the same learning
+  rule on raw pixels (0.9322) with an eighth of the numbers, but not keeping every training
+  image (0.9666). [`2026_09_29/splat_causes/`](experiments/2026_09_29/splat_causes/)
+
+## Directions
+
+The chart above as a table. Worked and failed follow each experiment's own write-up; the rest
+were mixed or exploratory.
+
+| direction | experiments | worked | failed | techniques borrowed |
+|---|---|---|---|---|
+| Motor control | 30 | 9 | 13 | DAgger, Place codes, Competitive learning, TD learning, Cascaded control, Nearest neighbour, Cortical columns, Sparse coding, World models |
+| Sequence and time | 23 | 11 | 5 | Competitive learning, Explaining away, CNNs, Hebbian learning, Refractoriness, Rehearsal, Ensembles, Matching pursuit, Place codes |
+| Sparse codes and reconstruction | 21 | 10 | 3 | Matching pursuit, Competitive learning, Linear readouts, PCA, Sparse coding, Adaptive resonance, Cortical columns, Fourier / Gabor, Place codes |
+| Search, programs and composition | 20 | 7 | 3 | k-means, Counting tables, Beam search, Competitive learning, Decision trees, DAgger, Lateral inhibition, Adaptive resonance, SOAR / Copycat, CNNs, EM, Gaussian splatting, Hashing, Hebbian learning, LRTA\*, Matching pursuit, MDL, Nearest neighbour, Pictorial structures, DreamCoder, Sparse coding |
+| Local learning rules | 18 | 9 | 5 | Competitive learning, Cortical columns, Hebbian learning, Lateral inhibition, Linear readouts, Ensembles, LVQ, PCA, Quantization, Sampling |
+| Generation and completion | 17 | 11 | 2 | CNNs, Place codes, Backprop, Competitive learning, Counting tables, Diffusion, Gaussian splatting, Linear readouts, PCA, Random projection, Rehearsal, Annealing, VAE |
+| Associative memory and relations | 15 | 3 | 6 | Competitive learning, Contrastive learning, Sampling |
+| Depth and stacking | 15 | 11 | 3 | Competitive learning, CNNs, Adaptive resonance, Cortical columns, Counting tables, Hebbian learning, Image pyramids, Matching pursuit, Rehearsal, k-means |
+| Feedback and error signals | 11 | 6 | 3 | Gain modulation, Competitive learning, Backprop, CNNs, Lateral inhibition, LVQ, Predictive coding, Sampling |
+| Counted tables and readouts | 10 | 5 | 2 | Counting tables, Explaining away, Competitive learning, CNNs, Saliency maps |
+| Angle codes and invertible networks | 9 | 8 | 1 | Phase codes, Fourier / Gabor, Normalizing flows, Symbolic binding (HRR), Cat map, Grokking, Random projection, Self-supervised |
+| Continual learning | 8 | 4 | 4 | Competitive learning, Adaptive resonance, Counting tables, Hebbian learning, PCA, k-means |
+| Attention and glimpses | 4 | 2 | 0 | CNNs, Active inference, Metric learning, MDL, Symbolic binding (HRR) |
+
+## The recurring building block
+
+Many of the experiments share one unit. A layer is a set of stored patterns, called templates,
+each a unit-length vector. Templates compete for every input, and only the winners move a
+little toward what they saw. What an input is, what it looks like and what comes next are all
+read back out of the same templates. These experiments use no loss function, no
+backpropagation and no batches: inputs arrive one at a time, and learning something new should
+not erase what was learned before. Other experiments set the unit aside to test a different
+idea, such as networks made of angles trained with gradients, search over programs, or trees of
+splats. CNNs and linear maps appear throughout as the baselines to beat.
+
+## Best results
 
 Test accuracy unless stated, with learning switched off while testing. Single-seed numbers are
 marked. Every folder is under `experiments/`.
@@ -27,16 +78,18 @@ marked. Every folder is under `experiments/`.
 | MNIST | 0.9869 ± 0.0009 (3 seeds) | one wide layer of 5x5 patch templates, win counts kept per image position, one linear map on top | [`2026_09_01/stack/`](experiments/2026_09_01/stack/) |
 | MNIST, nothing fitted | 0.9730 | the same layer, read only by counting which templates won for which digit | [`2026_09_01/`](experiments/2026_09_01/) |
 | MNIST, small | 0.9492 with 103k parameters | two layers of competing templates, each passing on only which template won | [`2026_08_31/kmeans/`](experiments/2026_08_31/kmeans/) |
-| MNIST, whole-digit templates | 0.946 (3 seeds) | one hypercolumn over image + label, step size set by how sure each template is | [`2026_09_03/purity_plasticity/`](experiments/2026_09_03/purity_plasticity/) |
+| MNIST, whole-digit templates | 0.946 (3 seeds) | one group of templates over image + label, step size set by how sure each template is | [`2026_09_03/purity_plasticity/`](experiments/2026_09_03/purity_plasticity/) |
 | Fashion-MNIST | 0.8989 ± 0.0017 (3 seeds); linear model on pixels 0.8512 | as for MNIST | [`2026_09_01/stack/`](experiments/2026_09_01/stack/) |
-| No forgetting: digits 0–4, then 5–9 | old digits 0.9757 → 0.9526 (a standard network: 0.9765 → 0.0000) | 40 hypercolumns; only the winning hypercolumn learns | [`2026_08_31/continual_fixed/`](experiments/2026_08_31/continual_fixed/) |
+| No forgetting: digits 0–4, then 5–9 | old digits 0.9757 → 0.9526 (a standard network: 0.9765 → 0.0000) | 40 groups of templates; only the winning group learns | [`2026_08_31/continual_fixed/`](experiments/2026_08_31/continual_fixed/) |
 | Filling in a deleted slice of a curve | error 0.033 vs 0.149 for a standard network | a second layer over windows of the first layer's answers | [`2026_08_29/two_layer/`](experiments/2026_08_29/two_layer/) |
 | Simulated drone, chasing a target | 100/100 episodes, teacher parity | a slow counted memory (10 Hz) steering a fast reflex (50 Hz) | [`2026_08_29/cascade/`](experiments/2026_08_29/cascade/) |
 | Cart-pole swing-up | 87/100 (single run) | two-track pole rig, imitation of an energy-pumping teacher | [`2026_08_28/pole2track/`](experiments/2026_08_28/pole2track/) |
-
----
+| MNIST, causes as trees of splats | 0.9593 (single run); same rule on pixels 0.9322 | whole-digit causes, each a tree of Gaussian splats with a spread per part, learned by counting | [`2026_09_29/splat_causes/`](experiments/2026_09_29/splat_causes/) |
 
 ## Day by day
+
+<details>
+<summary>The full log</summary>
 
 Each day folder has a README indexing its experiments; each experiment folder has its scripts,
 a README with the full writeup, and a `results/` folder.
@@ -61,7 +114,7 @@ a README with the full writeup, and a `results/` folder.
 **August — rebuilding the unit, time and control.**
 
 - [**2026-08-05**](experiments/2026_08_05/) — The hidden-permutation arc: recognising pairs
-  does not turn into generating them, but giving each hypercolumn a local window nearly
+  does not turn into generating them, but giving each group of templates a local window nearly
   doubled generation.
 - [**2026-08-23**](experiments/2026_08_23/) — Top-down feedback tested and closed; the unit
   rebuilt from patches into the consolidated unit, trained on the GPU, used on CelebA faces.
@@ -121,6 +174,14 @@ a README with the full writeup, and a `results/` folder.
   instead of weights. The flat test of two actions on full MNIST: naming pairs compressed the
   description and added nothing, and choosing a move per goal was beaten by applying the
   same move to every image. The search was not built.
+- [**2026-09-29**](experiments/2026_09_29/) — From "fuzzy search" to a design in conversation:
+  causes as trees of splats, each keeping how far its parts may vary, every choice priced as
+  the cost of the explanation. Built on whole MNIST digits with nothing fitted by gradient:
+  0.9593, beating the same learning rule on raw pixels by 2.7 points with an eighth of the
+  numbers, below keeping every training image (0.9666). It also draws each digit from its
+  label and fills in a hidden half, faintly.
+
+</details>
 
 ---
 
