@@ -1,0 +1,82 @@
+{
+ "pilot": {
+  "0.2": {
+   "acc": 0.9390000700950623,
+   "causes": 769,
+   "seconds": 82.76470017433167
+  },
+  "0.3": {
+   "acc": 0.9150000214576721,
+   "causes": 992,
+   "seconds": 71.26111626625061
+  },
+  "0.5": {
+   "acc": 0.780500054359436,
+   "causes": 2421,
+   "seconds": 58.03778076171875
+  }
+ },
+ "table": {
+  "causes": 2628,
+  "hired": 2645,
+  "retired": 17,
+  "leaves_grown": 93,
+  "leaves_median": 7.0,
+  "leaves_max": 17,
+  "at_depth_cap": 5,
+  "depth_hist": {
+   "0": 17,
+   "1": 61,
+   "2": 211,
+   "3": 1115,
+   "4": 1095,
+   "5": 124,
+   "6": 5
+  },
+  "numbers": 424968,
+  "train_seconds": 342.1939158439636
+ },
+ "classify": {
+  "cheapest": 0.9592999815940857,
+  "blend": 0.9592999815940857,
+  "fast": 0.8773999810218811,
+  "seconds": 28.52780246734619,
+  "nearest_image": 0.9666000008583069
+ },
+ "fill": {
+  "bottom half hidden": {
+   "label_cheapest": 0.8410000205039978,
+   "label_blend": 0.8450000286102295,
+   "label_nearest_image": 0.9150000214576721,
+   "label_full_image": 0.956000030040741,
+   "mse_cause": 0.06589317321777344,
+   "mse_mean_image": 0.07031066715717316,
+   "mse_nearest_image": 0.06682426482439041,
+   "mse_blank": 0.12044069916009903
+  },
+  "12x12 box over ink hidden": {
+   "label_cheapest": 0.862000048160553,
+   "label_blend": 0.8630000352859497,
+   "label_nearest_image": 0.9310000538825989,
+   "label_full_image": 0.956000030040741,
+   "mse_cause": 0.11413663625717163,
+   "mse_mean_image": 0.13739901781082153,
+   "mse_nearest_image": 0.10883456468582153,
+   "mse_blank": 0.2510772943496704
+  }
+ },
+ "settings": {
+  "D_MAX": 6,
+  "N_EM": 4,
+  "M_MIN": 0.5,
+  "K0": 2.0,
+  "SIG0_FRAC": 0.5,
+  "DELTA": 0.1,
+  "N_GROW": 10,
+  "S_SHORT": 16,
+  "CH": 32,
+  "SIG_PIX": 0.2,
+  "FILL_ITERS": 4
+ },
+ "seconds": 608.3786609172821
+}

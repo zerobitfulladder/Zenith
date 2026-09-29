@@ -1,0 +1,52 @@
+{
+ "parts": {
+  "full cost": 0.9593,
+  "pixel term only": 0.6407,
+  "tree surprise only": 0.8164
+ },
+ "pixels": {
+  "condensed pixels (Hart)": {
+   "stored": 4362,
+   "numbers": 3419808,
+   "test": 0.9321999549865723
+  },
+  "2645 random training images": {
+   "stored": 2645,
+   "numbers": 2073680,
+   "test": 0.9195999503135681
+  }
+ },
+ "hidden": {
+  "bottom half hidden": {
+   "condensed pixels (Hart)": {
+    "label": 0.7890000343322754,
+    "mse": 0.08408195525407791
+   },
+   "2645 random training images": {
+    "label": 0.8560000658035278,
+    "mse": 0.07542864233255386
+   }
+  },
+  "12x12 box over ink hidden": {
+   "condensed pixels (Hart)": {
+    "label": 0.7980000376701355,
+    "mse": 0.1484815925359726
+   },
+   "2645 random training images": {
+    "label": 0.8640000224113464,
+    "mse": 0.12866897881031036
+   }
+  }
+ },
+ "pilot": {
+  "0.1": {
+   "acc": 0.9360000491142273,
+   "causes": 960
+  },
+  "0.15": {
+   "acc": 0.9445000290870667,
+   "causes": 780
+  }
+ },
+ "seconds": 193.53281426429749
+}

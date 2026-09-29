@@ -1,0 +1,35 @@
+data: learn 50000, choose 2000, test 10000; device cuda
+spread over all images, per depth (dx, dy, shape x3, ink share):
+  depth 0: 0.289 0.282 0.813 0.487 0.300 0.344
+  depth 1: 0.403 0.776 0.962 0.547 0.680 0.149
+  depth 2: 0.626 0.616 0.786 0.544 0.748 0.104
+  depth 3: 0.579 0.654 0.594 0.398 0.591 0.120
+  depth 4: 0.615 0.591 0.426 0.267 0.469 0.116
+  depth 5: 0.608 0.582 0.454 0.284 0.476 0.169
+  depth 6: 0.603 0.603 0.560 0.207 0.564 0.241
+
+pilot: learn 10000, choose on 2000
+   10000 images  right before learning 0.923  causes 769 (hired 775, retired 6)  leaves grown 28  77s
+SIG_PIX 0.2: choose-set accuracy 0.9390, causes 769, 83s
+   10000 images  right before learning 0.899  causes 992 (hired 1006, retired 14)  leaves grown 9  67s
+SIG_PIX 0.3: choose-set accuracy 0.9150, causes 992, 71s
+   10000 images  right before learning 0.754  causes 2421 (hired 2465, retired 44)  leaves grown 1  55s
+SIG_PIX 0.5: choose-set accuracy 0.7805, causes 2421, 58s
+chosen SIG_PIX = 0.2
+
+full run: learn 50000
+    5025 images  right before learning 0.908  causes 458 (hired 462, retired 4)  leaves grown 22  37s
+   10017 images  right before learning 0.937  causes 769 (hired 775, retired 6)  leaves grown 28  74s
+   15009 images  right before learning 0.938  causes 1079 (hired 1085, retired 6)  leaves grown 34  110s
+   20001 images  right before learning 0.950  causes 1328 (hired 1336, retired 8)  leaves grown 38  144s
+   25025 images  right before learning 0.956  causes 1548 (hired 1558, retired 10)  leaves grown 53  177s
+   30017 images  right before learning 0.954  causes 1775 (hired 1788, retired 13)  leaves grown 59  209s
+   35009 images  right before learning 0.957  causes 1988 (hired 2003, retired 15)  leaves grown 73  242s
+   40001 images  right before learning 0.959  causes 2191 (hired 2206, retired 15)  leaves grown 82  274s
+   45025 images  right before learning 0.960  causes 2391 (hired 2407, retired 16)  leaves grown 89  307s
+   50000 images  right before learning 0.952  causes 2628 (hired 2645, retired 17)  leaves grown 93  342s
+{"causes": 2628, "hired": 2645, "retired": 17, "leaves_grown": 93, "leaves_median": 7.0, "leaves_max": 17, "at_depth_cap": 5, "depth_hist": {"0": 17, "1": 61, "2": 211, "3": 1115, "4": 1095, "5": 124, "6": 5}, "numbers": 424968, "train_seconds": 342.1939158439636}
+classify: {"cheapest": 0.9592999815940857, "blend": 0.9592999815940857, "fast": 0.8773999810218811, "seconds": 28.52780246734619, "nearest_image": 0.9666000008583069}
+bottom half hidden: {"label_cheapest": 0.8410000205039978, "label_blend": 0.8450000286102295, "label_nearest_image": 0.9150000214576721, "label_full_image": 0.956000030040741, "mse_cause": 0.06589317321777344, "mse_mean_image": 0.07031066715717316, "mse_nearest_image": 0.06682426482439041, "mse_blank": 0.12044069916009903}
+12x12 box over ink hidden: {"label_cheapest": 0.862000048160553, "label_blend": 0.8630000352859497, "label_nearest_image": 0.9310000538825989, "label_full_image": 0.956000030040741, "mse_cause": 0.11413663625717163, "mse_mean_image": 0.13739901781082153, "mse_nearest_image": 0.10883456468582153, "mse_blank": 0.2510772943496704}
+done in 608s
