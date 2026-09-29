@@ -9,32 +9,48 @@ that failed.
 
 ---
 
-## What I found so far
+## Notes from the experiments
 
-- **Learning without forgetting works when only the winner learns.** Taught digits 0–4 and then
-  5–9, a layer where only the winning group of templates learns kept the old digits at 0.9526
-  (from 0.9757). A standard network trained the same way fell to 0.0000.
+Each note comes from one setup on small benchmarks. Read them as notes on my own rigs, set
+against the known work they echo, not as general results.
+
+- **Forgetting.** When each digit class ends up owned by its own group of templates (40 groups
+  of 36) and only the winning group updates, learning digits 5–9 after 0–4 barely disturbed the
+  old ones in a split-MNIST test (0.9757 → 0.9526). This is the protection that adaptive
+  resonance theory and mixture-of-experts gating are known for, not a new result, and the only
+  comparison run was plain fine-tuning, not replay or EWC (Kirkpatrick et al., 2017).
   [`2026_08_31/continual_fixed/`](experiments/2026_08_31/continual_fixed/)
-- **Counting what wins did better than stacking layers.** One wide layer of 5x5 patch templates,
-  read by counting which templates won for which digit, reaches 0.9730 on MNIST with nothing
-  fitted, and 0.9869 with one linear map on top (0.8989 on Fashion-MNIST). Nothing stacked on
-  top of it did better. A CNN still leads, at 0.9908.
+- **Counting.** One wide layer of 5x5 patch templates, read by counting which templates won for
+  which digit at each position, reached 0.9730 on MNIST with nothing fitted, and 0.9869 with a
+  linear map on the counts. None of my stacked versions improved on it. Counting what fired for
+  which class is Bledsoe and Browning's n-tuple method (1959), single-layer learned features are
+  known to be strong (Coates, Lee and Ng, 2011), and these numbers are about where well-tuned
+  classical methods sit on MNIST; a small CNN reaches 0.9908.
   [`2026_09_01/stack/`](experiments/2026_09_01/stack/)
-- **Top-down feedback did not help recognition.** In March the stack without feedback read MNIST
-  better in all five feedback settings, and in August the line was tested again and closed.
-  Feedback came back as a decoder learned from local mismatch, where it earns its place in
-  drawing rather than naming. [`2026_03_20/`](experiments/2026_03_20/),
-  [`2026_08_23/`](experiments/2026_08_23/), [`2026_09_26/`](experiments/2026_09_26/)
-- **In control, a slow counted memory steering a fast reflex works; reward alone did not.** The
-  cascade chases a target in 100 of 100 episodes. Learning a drone policy from reward alone
-  left it worse than it started: success 0.000 after 8,000 episodes, against 0.942 for the
-  teacher. [`2026_08_29/cascade/`](experiments/2026_08_29/cascade/),
+- **Top-down feedback.** Gain feedback from the top layer did not help recognition in a
+  two-layer rig. In March the stack without feedback read MNIST better in all five settings. In
+  August, feedback on the input lowered accuracy as its gain grew (0.70 → 0.51), and a small
+  gain from feedback on the learning step, seen on one seed, did not replicate over eight seeds
+  of Fashion-MNIST. That concerns these mechanisms only. Used instead as a decoder learned from
+  local mismatch, the backward path could render and imagine digits from a coarse grid, which
+  is closer to predictive coding.
+  [`2026_03_20/`](experiments/2026_03_20/), [`2026_08_23/`](experiments/2026_08_23/),
+  [`2026_09_26/`](experiments/2026_09_26/)
+- **Control.** A simulated drone chased a target in 100 of 100 episodes with a slow outer loop
+  (10 Hz) that learned, by counting, which of 32 velocity commands an autopilot gave in each
+  situation, over a fast attitude reflex (50 Hz) taken from the autopilot itself rather than
+  learned. This is the usual split of cascaded control. Learning the policy from reward alone
+  with my own rule failed (success 0.000 after 8,000 episodes, against 0.942 for the teacher);
+  the write-up traces that to the rule's credit assignment, not to learning from reward.
+  [`2026_08_29/cascade/`](experiments/2026_08_29/cascade/),
   [`2026_08_31/drone_rl/`](experiments/2026_08_31/drone_rl/)
-- **Recognition as a search for an explanation: promising, not yet ahead.** Causes built as trees
-  of Gaussian splats, each keeping how far its parts may vary, name MNIST digits at 0.9593 with
-  nothing fitted by gradient, and draw each digit from its label. That beats the same learning
-  rule on raw pixels (0.9322) with an eighth of the numbers, but not keeping every training
-  image (0.9666). [`2026_09_29/splat_causes/`](experiments/2026_09_29/splat_causes/)
+- **Recognition as explanation.** A first version of recognition as a search for the cause of an
+  image: whole-digit causes, each a tree of Gaussian splats that keeps how far each part may
+  vary, learned by counting and hired on error. On MNIST it read 0.9593 (one seed) and drew each
+  digit from its label. The same learning rule storing raw images read 0.9322, keeping every
+  training image 0.9666. The design follows pictorial structures (Fischler and Elschlager, 1973)
+  and Lake's Bayesian Program Learning (2015); it has no shared parts yet.
+  [`2026_09_29/splat_causes/`](experiments/2026_09_29/splat_causes/)
 
 ## Directions
 
@@ -67,24 +83,6 @@ backpropagation and no batches: inputs arrive one at a time, and learning someth
 not erase what was learned before. Other experiments set the unit aside to test a different
 idea, such as networks made of angles trained with gradients, search over programs, or trees of
 splats. CNNs and linear maps appear throughout as the baselines to beat.
-
-## Best results
-
-Test accuracy unless stated, with learning switched off while testing. Single-seed numbers are
-marked. Every folder is under `experiments/`.
-
-| Task | Result | How | Folder |
-|---|---|---|---|
-| MNIST | 0.9869 ± 0.0009 (3 seeds) | one wide layer of 5x5 patch templates, win counts kept per image position, one linear map on top | [`2026_09_01/stack/`](experiments/2026_09_01/stack/) |
-| MNIST, nothing fitted | 0.9730 | the same layer, read only by counting which templates won for which digit | [`2026_09_01/`](experiments/2026_09_01/) |
-| MNIST, small | 0.9492 with 103k parameters | two layers of competing templates, each passing on only which template won | [`2026_08_31/kmeans/`](experiments/2026_08_31/kmeans/) |
-| MNIST, whole-digit templates | 0.946 (3 seeds) | one group of templates over image + label, step size set by how sure each template is | [`2026_09_03/purity_plasticity/`](experiments/2026_09_03/purity_plasticity/) |
-| Fashion-MNIST | 0.8989 ± 0.0017 (3 seeds); linear model on pixels 0.8512 | as for MNIST | [`2026_09_01/stack/`](experiments/2026_09_01/stack/) |
-| No forgetting: digits 0–4, then 5–9 | old digits 0.9757 → 0.9526 (a standard network: 0.9765 → 0.0000) | 40 groups of templates; only the winning group learns | [`2026_08_31/continual_fixed/`](experiments/2026_08_31/continual_fixed/) |
-| Filling in a deleted slice of a curve | error 0.033 vs 0.149 for a standard network | a second layer over windows of the first layer's answers | [`2026_08_29/two_layer/`](experiments/2026_08_29/two_layer/) |
-| Simulated drone, chasing a target | 100/100 episodes, teacher parity | a slow counted memory (10 Hz) steering a fast reflex (50 Hz) | [`2026_08_29/cascade/`](experiments/2026_08_29/cascade/) |
-| Cart-pole swing-up | 87/100 (single run) | two-track pole rig, imitation of an energy-pumping teacher | [`2026_08_28/pole2track/`](experiments/2026_08_28/pole2track/) |
-| MNIST, causes as trees of splats | 0.9593 (single run); same rule on pixels 0.9322 | whole-digit causes, each a tree of Gaussian splats with a spread per part, learned by counting | [`2026_09_29/splat_causes/`](experiments/2026_09_29/splat_causes/) |
 
 ## Day by day
 
@@ -185,7 +183,7 @@ a README with the full writeup, and a `results/` folder.
 
 ---
 
-## Notes
+## About the code
 
 - This is a personal research log, not a library. Code is written to answer one question at a
   time and is not maintained afterwards.
@@ -198,5 +196,4 @@ a README with the full writeup, and a `results/` folder.
   project's layout. `torch` was added to the project on 2026-09-23.
 - Trained weights and checkpoints (`*.npz`, `*.npy`, `*.pt`) are not in git. Datasets go in
   `data/` (`mnist/digits`, `mnist/fashion`, `celeba`, `cifar10`).
-- `viewer.py` replays any trained drone or pole controller. `READING_LIST.md` gives the
-  established names and papers for the ideas used here.
+- `READING_LIST.md` gives the established names and papers for the ideas used here.
