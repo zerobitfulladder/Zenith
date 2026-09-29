@@ -29,7 +29,7 @@ are the queued experiments. But the TASK is solved, and the cognitive
 organ that solved it is the memory.
 
 View:  VIEW_CKPT=experiments/2026_08_29/cascade/results/checkpoint.npz \\
-         .venv/bin/python viewer.py    (pick "pupil", click targets)
+         .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py    (pick "pupil", click targets)
 
 ## Inner co-tuning: REFUTED, with a law worth keeping
 

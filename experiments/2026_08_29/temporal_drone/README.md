@@ -1,13 +1,18 @@
 # temporal_drone — the shared drone rig
 
 Not an experiment of its own: the modules that the drone experiments of
-2026-08-29 → 08-31 import, kept in one place so the viewer at the repo root
-(`viewer.py`) can find them with one path. The account of the whole line of
+2026-08-29 → 08-31 import, kept in one place beside the viewer, `viewer.py`, which flies
+any trained drone controller:
+
+    .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
+
+Its docstring explains how a checkpoint names the module that brings it to life. The account of the whole line of
 work — the world, the champion, the laws, the exact computations — is
 [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
 | module | what it is | used by |
 |---|---|---|
+| `viewer.py` | flies any trained drone controller, the autopilots, or you | run it from the repo root |
 | `fast_oracle.py` | the retuned autopilot the pupils imitate | all the CPU rigs, `viewer.py` |
 | `td_stack.py` | two layers over time, the reservoir, the policy | [`../temporal_stack/`](../temporal_stack/README.md) |
 | `td3_stack.py` | the three-layer version | `../temporal_stack/`, and as a base by `td_bound`, `td_balance` |

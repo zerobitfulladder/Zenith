@@ -99,7 +99,7 @@ that the hypercolumns contribute one.
 ## Watching it fly
 
     VIEW_CKPT=experiments/2026_08_31/drone_imitate/results/imitate_64.npz \
-        .venv/bin/python viewer.py
+        .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
 
 Select "pupil". This one actually flies.
 

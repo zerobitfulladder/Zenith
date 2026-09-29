@@ -387,7 +387,7 @@ class Stack:
 
 
 def load_policy(npz, cfg):
-    """Hook for the shared viewer at the repo root."""
+    """Hook for the shared viewer (viewer.py in this folder)."""
     st = Stack(k1=int(cfg["k1"]), k2=int(cfg["k2"]), topm=int(cfg["topm"]),
                seed=int(cfg.get("seed", 0)))
     st.l1.hc.W = npz["W1"]

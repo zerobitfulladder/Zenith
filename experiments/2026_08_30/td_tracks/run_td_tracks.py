@@ -10,7 +10,7 @@
 
 Run:  .venv/bin/python experiments/2026_08_30/td_tracks/run_td_tracks.py
 Then: VIEW_CKPT=experiments/2026_08_30/td_tracks/results/two_track.npz \
-      .venv/bin/python viewer.py
+      .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
 """
 
 import json, sys, time
@@ -188,7 +188,7 @@ def main():
               open(OUT / "metrics.json", "w"), indent=2)
     print(f"done in {time.time()-t0:.0f}s -> {OUT}")
     print(f"\nviewer:\n  VIEW_CKPT=experiments/2026_08_30/td_tracks/"
-          f"results/two_track.npz .venv/bin/python viewer.py")
+          f"results/two_track.npz .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py")
 
 
 if __name__ == "__main__":

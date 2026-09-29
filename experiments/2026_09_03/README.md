@@ -206,7 +206,7 @@ reads as a pilot would), and one joint tally over the pair of motor levels was
 the one real gain (0.852 within one level offline). But the flights fail: the
 pupil climbs with the teacher and never brakes, because "target above AND
 rising fast -> cut" is a conjunction and a sum of per-feature votes has no place
-for it. DAgger made the offline score worse every round. The viewer at the repo
-root flies it from `results/pupil.npz`.
+for it. DAgger made the offline score worse every round. The drone viewer
+(`2026_08_29/temporal_drone/viewer.py`) flies it from `results/pupil.npz`.
 
 Full writeup: [`vision_drone/README.md`](vision_drone/README.md).

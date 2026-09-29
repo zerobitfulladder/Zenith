@@ -5,7 +5,7 @@
 ## Where things are
 
 - `sl_drone.py` — the rig module (world, oracle, encoder, hypercolumn). Other folders import it:
-  `viewer.py` at the repo root, the 08-30 and 08-31 drone work, and the 09-03 vision drone.
+  the drone viewer in `2026_08_29/temporal_drone/`, the 08-30 and 08-31 drone work, and the 09-03 vision drone.
 - `sl_viz.py` — template pictures used by the run scripts.
 - `run_sl_drone.py`, `run_sl_rl.py`, `sl_viewer.py` — see Files below.
 - `results/` — the main continual run (`weights_best`, `checkpoint`, metrics.json, samples,

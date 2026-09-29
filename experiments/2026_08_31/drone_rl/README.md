@@ -121,7 +121,7 @@ and changes only what lives inside an expert.
 ## Watching it
 
     VIEW_CKPT=experiments/2026_08_31/drone_rl/results/bank.npz \
-        .venv/bin/python viewer.py
+        .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
 
 `viewer.py` is not forked — `drone_rl.load_policy` plus the `bank.json`
 sidecar is all it takes, per the convention in the viewer's own docstring.

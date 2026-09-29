@@ -1,13 +1,13 @@
 """The viewer. One of them, for every drone rig — present and future.
 
-    .venv/bin/python viewer.py
+    .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py      (from the repo root)
 
 Controllers: human (W/S thrust, A/D tilt), the two autopilots, and the
 pupil once something has been trained. Click to set a target, "New
 target" to move it without resetting the drone, Gust to kick it. The
 fading trail is the easiest way to compare how two controllers approach.
 
-WHERE THE PUPIL COMES FROM. Set VIEW_CKPT to a .npz written by any rig;
+WROOT THE PUPIL COMES FROM. Set VIEW_CKPT to a .npz written by any rig;
 it defaults to the newest one in any results folder under experiments/. Beside it
 there must be a .json saying how to bring it to life:
 
@@ -29,10 +29,10 @@ from pathlib import Path
 
 import numpy as np
 
-HERE = Path(__file__).resolve().parent
-SLD = HERE / "experiments" / "2026_08_28" / "single_layer_drone"
+ROOT = Path(__file__).resolve().parents[3]   # the repo root
+SLD = ROOT / "experiments" / "2026_08_28" / "single_layer_drone"
 sys.path.insert(0, str(SLD))
-sys.path.insert(0, str(HERE / "experiments" / "2026_08_29" / "temporal_drone"))
+sys.path.insert(0, str(ROOT / "experiments" / "2026_08_29" / "temporal_drone"))
 
 import dearpygui.dearpygui as dpg          # noqa: E402
 import sl_drone as W                       # noqa: E402
@@ -44,7 +44,7 @@ except Exception:                          # rig not present — hide the option
     FAST = None
 
 # the drone's eye: the egocentric frame of 2026_09_03/vision_drone
-sys.path.insert(0, str(HERE / "experiments" / "2026_09_03" / "vision_drone"))
+sys.path.insert(0, str(ROOT / "experiments" / "2026_09_03" / "vision_drone"))
 try:
     import box_world as EYE                # noqa: E402
 except Exception:
@@ -72,7 +72,7 @@ def _from_module(npz, cfg):
     """A rig that brings its own loader — see the note at the top."""
     d = cfg.get("dir")
     if d:
-        sys.path.insert(0, str(HERE / d))
+        sys.path.insert(0, str(ROOT / d))
     mod = __import__(cfg["module"])
     fn = mod.load_policy(npz, cfg)
     return lambda s, tgt, lv_prev: fn(s, tgt, lv_prev)
@@ -82,7 +82,7 @@ KINDS = {"single_layer": _single_layer, "module": _from_module}
 
 
 def load_pupil():
-    VISION = HERE / "experiments" / "2026_09_03" / "vision_drone" / "results" / "pupil.npz"
+    VISION = ROOT / "experiments" / "2026_09_03" / "vision_drone" / "results" / "pupil.npz"
     pick = os.environ.get("VIEW_CKPT", "vision" if VISION.exists() else "latest")
     if pick == "none":
         return None, "pupil disabled"
@@ -90,10 +90,10 @@ def load_pupil():
         cands = [VISION.resolve()]
     elif pick != "latest":
         p = Path(pick)
-        p = p if p.is_absolute() else (HERE / p)
+        p = p if p.is_absolute() else (ROOT / p)
         cands = [p.resolve()] if p.exists() else []
     else:
-        cands = sorted((q for q in HERE.glob("experiments/**/*.npz")
+        cands = sorted((q for q in ROOT.glob("experiments/**/*.npz")
                         if any(part.startswith("results") for part in q.parts)),
                        key=lambda q: q.stat().st_mtime, reverse=True)
     for npz_path in cands:
@@ -107,7 +107,7 @@ def load_pupil():
                 continue
             act = KINDS[kind](np.load(npz_path), cfg)
             try:
-                rel = npz_path.resolve().relative_to(HERE)
+                rel = npz_path.resolve().relative_to(ROOT)
             except ValueError:
                 rel = npz_path
             return act, (f"{rel}  kind={kind} "

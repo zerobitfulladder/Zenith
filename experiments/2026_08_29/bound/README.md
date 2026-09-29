@@ -83,7 +83,7 @@ windows are still part-empty.
 Viewing:
 
     VIEW_CKPT=experiments/2026_08_29/bound/results/weights_best.npz \
-      .venv/bin/python viewer.py        # pick "pupil" in the dropdown
+      .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py        # pick "pupil" in the dropdown
 
 `weights_best` = the final state (EVAL tied at 0.0 all run, so best is
 by on-path read; the sidecar json says so). `run_td_bound.py` now

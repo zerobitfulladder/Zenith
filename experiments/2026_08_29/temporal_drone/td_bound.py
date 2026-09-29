@@ -201,7 +201,7 @@ def load_stack(npz, cfg):
 
 
 def load_policy(npz, cfg):
-    """Hook for the shared viewer at the repo root.
+    """Hook for the shared viewer (viewer.py in this folder).
 
     The viewer teleports the drone (Reset) and swaps targets (click)
     without telling the policy, so the policy watches for its own

@@ -101,11 +101,12 @@ apart from a memory failure:
 
 Env: `TD_TICKS TD_WARM TD_REPLAY TD_K1 TD_K2 TD_REPORT TD_ORACLE TD_TAG`.
 
-To watch it fly, use the shared viewer at the repo root — this rig does
+To watch it fly, use the shared viewer in
+`../temporal_drone/` — this rig does
 not have its own:
 
     VIEW_CKPT=experiments/2026_08_29/temporal_stack/results/two_layer/weights_best.npz \
-      .venv/bin/python viewer.py
+      .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
 
 then pick **pupil** in the dropdown. The checkpoint's sidecar json says
 `{"kind": "module", "module": "td_stack", ...}`, and the viewer imports

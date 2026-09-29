@@ -33,8 +33,8 @@ tally   one table over the joint command (left x right level, 169 columns),
         read as the joint argmax, the two marginal argmaxes, or the count-weighted MEAN level per motor
 ```
 
-`vision_pupil.load_policy` renders the frame itself, so the viewer (repo
-root, patched: the drone's eye is drawn live top-right, and it defaults to
+`vision_pupil.load_policy` renders the frame itself, so the viewer
+(`2026_08_29/temporal_drone/viewer.py`, patched: the drone's eye is drawn live top-right, and it defaults to
 `results/pupil.npz`) only hands it the state.
 
 ## First results
@@ -125,4 +125,4 @@ so the conjunction lives in the index rather than in a sum. Not run.
     uv run python collect.py                          # ~20 s
     uv run python train.py --frames 2 --tag f2signed  # ~8 min with the flights
     uv run python objects.py; uv run python templates.py
-    uv run python ../../../viewer.py                  # from the repo root: loads results/pupil.npz
+    uv run python ../../2026_08_29/temporal_drone/viewer.py   # loads results/pupil.npz

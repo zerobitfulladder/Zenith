@@ -52,7 +52,7 @@ sensory state?). Its output was not kept.
 | `results/two_track.npz`, `results/two_track.json` | the trained memory, loadable in the viewer |
 
     .venv/bin/python experiments/2026_08_30/td_tracks/run_td_tracks.py
-    VIEW_CKPT=experiments/2026_08_30/td_tracks/results/two_track.npz .venv/bin/python viewer.py
+    VIEW_CKPT=experiments/2026_08_30/td_tracks/results/two_track.npz .venv/bin/python experiments/2026_08_29/temporal_drone/viewer.py
 
 Uses `sl_drone` from `experiments/2026_08_28/single_layer_drone` and
 `fast_oracle` from `experiments/2026_08_29/temporal_drone`.
